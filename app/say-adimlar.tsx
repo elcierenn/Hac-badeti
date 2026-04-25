@@ -20,11 +20,11 @@ const STEP_KEYS = [
 
 const STEP_DETAIL_HREFS: (Href | null)[] = [
   '/say-adim-1-safa',
-  null,
-  null,
-  null,
-  null,
-  null,
+  '/say-adim-2-tekbir',
+  '/say-adim-3-safa-merve',
+  '/say-adim-4-merve',
+  '/say-adim-5-savt',
+  '/say-adim-6-merve-son-dua',
 ];
 
 export default function SayAdimlarScreen() {

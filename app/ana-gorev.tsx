@@ -49,7 +49,7 @@ function AnaGorevPage({
   t: (k: string) => string;
   startPress: () => void;
   router: Pick<Router, 'back' | 'push'>;
-  swipeHint: 'forward' | 'back' | null;
+  swipeHint: 'forward' | 'back' | 'both' | null;
   totalPages: number;
 }) {
   return (
@@ -102,12 +102,23 @@ function AnaGorevPage({
         </View>
       </SafeAreaView>
       {swipeHint && totalPages > 1 ? (
-        <View
-          style={[styles.swipeHintEdge, swipeHint === 'back' && styles.swipeHintEdgeLeft]}
-          pointerEvents="none"
-        >
-          <SwipeScrollHint direction={swipeHint} tintColor={GOLD} />
-        </View>
+        swipeHint === 'both' ? (
+          <>
+            <View style={[styles.swipeHintEdge, styles.swipeHintEdgeLeft]} pointerEvents="none">
+              <SwipeScrollHint direction="back" tintColor={GOLD} />
+            </View>
+            <View style={styles.swipeHintEdge} pointerEvents="none">
+              <SwipeScrollHint direction="forward" tintColor={GOLD} />
+            </View>
+          </>
+        ) : (
+          <View
+            style={[styles.swipeHintEdge, swipeHint === 'back' && styles.swipeHintEdgeLeft]}
+            pointerEvents="none"
+          >
+            <SwipeScrollHint direction={swipeHint} tintColor={GOLD} />
+          </View>
+        )
       ) : null}
     </View>
   );
@@ -177,7 +188,11 @@ export default function AnaGorevScreen() {
             router={router}
             totalPages={PAGES.length}
             swipeHint={
-              index === 0 ? 'forward' : index === PAGES.length - 1 ? 'back' : null
+              index === 0
+                ? 'forward'
+                : index === PAGES.length - 1
+                  ? 'back'
+                  : 'both'
             }
           />
         ))}
