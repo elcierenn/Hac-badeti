@@ -32,13 +32,22 @@ export function LanguageProvider({ children }: Props) {
     let cancelled = false;
 
     (async () => {
-      const stored = getStoredLanguage();
-      const next = stored ?? initialLng;
+      let next: AppLanguage = initialLng;
+      try {
+        const stored = await getStoredLanguage();
+        next = stored ?? initialLng;
+      } catch {
+        // Storage yok / bozuk kurulum: yine de uygulamayı aç
+      }
       if (cancelled) return;
       setLanguageState(next);
-      await i18n.changeLanguage(next);
-      if (isLanguageRtl(next) !== I18nManager.isRTL) {
-        await applyLayoutDirectionForLanguage(next);
+      try {
+        await i18n.changeLanguage(next);
+        if (isLanguageRtl(next) !== I18nManager.isRTL) {
+          await applyLayoutDirectionForLanguage(next);
+        }
+      } catch {
+        // i18n / RTL: devam
       }
       if (!cancelled) setReady(true);
     })();
@@ -50,7 +59,11 @@ export function LanguageProvider({ children }: Props) {
 
   const setLanguage = useCallback(async (lang: AppLanguage) => {
     setLanguageState(lang);
-    setStoredLanguage(lang);
+    try {
+      await setStoredLanguage(lang);
+    } catch {
+      // Kalıcı yazılamazsa yine de oturum içi dili uygula
+    }
     await i18n.changeLanguage(lang);
     if (isLanguageRtl(lang) !== I18nManager.isRTL) {
       await applyLayoutDirectionForLanguage(lang);

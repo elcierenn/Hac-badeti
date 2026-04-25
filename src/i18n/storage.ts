@@ -1,5 +1,6 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 import type { AppLanguage } from './config';
-import { appStorage } from '../lib/mmkv';
 
 const KEY = 'language';
 
@@ -7,11 +8,12 @@ function isAppLanguage(v: string | undefined): v is AppLanguage {
   return v === 'tr' || v === 'en' || v === 'ar';
 }
 
-export function getStoredLanguage(): AppLanguage | null {
-  const raw = appStorage.getString(KEY);
+export async function getStoredLanguage(): Promise<AppLanguage | null> {
+  const raw = await AsyncStorage.getItem(KEY);
+  if (raw == null) return null;
   return isAppLanguage(raw) ? raw : null;
 }
 
-export function setStoredLanguage(lang: AppLanguage): void {
-  appStorage.set(KEY, lang);
+export async function setStoredLanguage(lang: AppLanguage): Promise<void> {
+  await AsyncStorage.setItem(KEY, lang);
 }
