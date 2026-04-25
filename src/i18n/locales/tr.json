@@ -144,6 +144,19 @@
     "step5": "5. Adım: 7 şavt tamamlanana kadar devam etmek (4 gidiş + 3 dönüş)",
     "step6": "6. Adım: Merve'de duayı tamamlamak"
   },
+  "sayAdim1Safa": {
+    "backA11y": "Önceki ekrana dön",
+    "ayetLabel": "Safa'ya yaklaşırken okunacak ayet:",
+    "ayetArabic": "إِنَّ الصَّفَا وَالْمَرْوَةَ مِنْ شَعَائِرِ اللَّهِ",
+    "ayetMeaning": "Şüphesiz Safa ile Merve Allah'ın nişanelerindendir. (Bakara, 158)",
+    "niyetLabel": "Niyet:",
+    "niyet": "Allah'ım! Senin rızan için say yapmayı niyet ettim. Onu bana kolaylaştır ve kabul eyle.",
+    "notesTitle": "Küçük notlar:",
+    "note1": "📍 Say Safa'dan başlar, Merve'de biter.",
+    "note2": "🕋 Kabe'ye dönerek eller açılır, tekbir ve tehlil getirilir.",
+    "note3": "🔢 Safa'dan Merve'ye 1 şavt, Merve'den Safa'ya 1 şavt sayılır.",
+    "note4": "🏃 Erkekler yeşil ışıklı bölgede hervele yapar, kadınlar normal yürür."
+  },
   "ihramAdim1Temizlik": {
     "back": "← Geri",
     "backA11y": "Önceki ekrana dön",

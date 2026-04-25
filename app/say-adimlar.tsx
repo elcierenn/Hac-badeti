@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { useRouter } from 'expo-router';
+import { useRouter, type Href } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
@@ -17,6 +17,15 @@ const STEP_KEYS = [
   'sayAdimlar.step5',
   'sayAdimlar.step6',
 ] as const;
+
+const STEP_DETAIL_HREFS: (Href | null)[] = [
+  '/say-adim-1-safa',
+  null,
+  null,
+  null,
+  null,
+  null,
+];
 
 export default function SayAdimlarScreen() {
   const { t } = useTranslation();
@@ -50,11 +59,26 @@ export default function SayAdimlarScreen() {
           contentContainerStyle={styles.scrollContent}
           showsVerticalScrollIndicator={false}
         >
-          {STEP_KEYS.map((key) => (
-            <View key={key} style={styles.stepRow}>
-              <Text style={styles.stepText}>{t(key)}</Text>
-            </View>
-          ))}
+          {STEP_KEYS.map((key, index) => {
+            const href = STEP_DETAIL_HREFS[index];
+            if (href) {
+              return (
+                <Pressable
+                  key={key}
+                  onPress={() => router.push(href)}
+                  style={({ pressed }) => [styles.stepRow, pressed && { opacity: 0.9 }]}
+                  accessibilityRole="button"
+                >
+                  <Text style={styles.stepText}>{t(key)}</Text>
+                </Pressable>
+              );
+            }
+            return (
+              <View key={key} style={styles.stepRow}>
+                <Text style={styles.stepText}>{t(key)}</Text>
+              </View>
+            );
+          })}
         </ScrollView>
       </SafeAreaView>
     </View>
