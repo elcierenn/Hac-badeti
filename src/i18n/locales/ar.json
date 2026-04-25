@@ -1,12 +1,20 @@
 {
-  "appTitle": "عبادة الحج",
-  "tagline": "مقاطع الصور والنصوص مبنية على تعدد اللغات.",
-  "selectLanguage": "اللغة",
-  "langTr": "Türkçe",
-  "langEn": "English",
-  "langAr": "العربية",
-  "homeBody": "للنصوص الطويلة أضف المحتوى في `src/i18n/locales`. اتجاه RTL للعربية يُضبط تلقائياً.",
-  "imageDemoCaption": "expo-image · مورد محلي",
-  "notFoundHint": "هذه الشاشة غير موجودة.",
-  "notFoundHome": "العودة للرئيسية"
+  "common": {
+    "appTitle": "عبادة الحج",
+    "selectLanguage": "اللغة"
+  },
+  "languages": {
+    "tr": "Türkçe",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "home": {
+    "tagline": "مقاطع الصور والنصوص مبنية على تعدد اللغات.",
+    "body": "لإضافة نصوص جديدة، أضف نفس المفاتيح في ملفات tr و en و ar. يُفعّل اتجاه RTL تلقائياً عند اختيار العربية.",
+    "imageDemoCaption": "expo-image · مورد محلي"
+  },
+  "notFound": {
+    "hint": "هذه الشاشة غير موجودة.",
+    "backHome": "العودة للرئيسية"
+  }
 }

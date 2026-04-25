@@ -1,12 +1,20 @@
 {
-  "appTitle": "Hac İbadeti",
-  "tagline": "Image-heavy and text sections run on a multilingual base.",
-  "selectLanguage": "Language",
-  "langTr": "Türkçe",
-  "langEn": "English",
-  "langAr": "العربية",
-  "homeBody": "For text-heavy areas, add copy under `src/i18n/locales`. Arabic RTL layout is handled automatically when needed.",
-  "imageDemoCaption": "expo-image · local asset",
-  "notFoundHint": "This screen does not exist.",
-  "notFoundHome": "Back to home"
+  "common": {
+    "appTitle": "Hac İbadeti",
+    "selectLanguage": "Language"
+  },
+  "languages": {
+    "tr": "Türkçe",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "home": {
+    "tagline": "Image-heavy and text sections run on a multilingual base.",
+    "body": "Add the same keys to tr, en, and ar JSON files for new copy. Arabic RTL is applied when the language is Arabic.",
+    "imageDemoCaption": "expo-image · local asset"
+  },
+  "notFound": {
+    "hint": "This screen does not exist.",
+    "backHome": "Back to home"
+  }
 }

@@ -8,11 +8,7 @@ import ar from './locales/ar.json';
 
 export type AppLanguage = 'tr' | 'en' | 'ar';
 
-const resources = {
-  tr: { translation: tr as Record<string, string> },
-  en: { translation: en as Record<string, string> },
-  ar: { translation: ar as Record<string, string> },
-} as const;
+const resources = { tr: { translation: tr }, en: { translation: en }, ar: { translation: ar } } as const;
 
 const device = Localization.getLocales()[0];
 const code = device?.languageCode;

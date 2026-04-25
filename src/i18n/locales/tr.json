@@ -1,12 +1,20 @@
 {
-  "appTitle": "Hac İbadeti",
-  "tagline": "Görsel ve metinler çok dilli altyapı üzerinde.",
-  "selectLanguage": "Dil",
-  "langTr": "Türkçe",
-  "langEn": "English",
-  "langAr": "العربية",
-  "homeBody": "Metin ağırlıklı bölümler için çevirileri `src/i18n/locales` altındaki JSON dosyalarına ekleyin. Arapça sağdan sola düzen otomatik yönetilir.",
-  "imageDemoCaption": "expo-image · yerel görsel",
-  "notFoundHint": "Aradığınız ekran yok veya kaldırıldı.",
-  "notFoundHome": "Ana ekrana dön"
+  "common": {
+    "appTitle": "Hac İbadeti",
+    "selectLanguage": "Dil"
+  },
+  "languages": {
+    "tr": "Türkçe",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "home": {
+    "tagline": "Görsel ve metinler çok dilli altyapı üzerinde.",
+    "body": "Yeni metinler için aynı anahtarı tr / en / ar dosyalarına ekleyin. Arapçada sağdan sola düzen otomatik yönetilir.",
+    "imageDemoCaption": "expo-image · yerel görsel"
+  },
+  "notFound": {
+    "hint": "Aradığınız ekran yok veya kaldırıldı.",
+    "backHome": "Ana ekrana dön"
+  }
 }

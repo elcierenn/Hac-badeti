@@ -8,10 +8,10 @@ import { colors, radius, space } from '../theme/tokens';
 
 const LANGS: AppLanguage[] = ['tr', 'en', 'ar'];
 
-const langLabelKey: Record<AppLanguage, 'langTr' | 'langEn' | 'langAr'> = {
-  tr: 'langTr',
-  en: 'langEn',
-  ar: 'langAr',
+const langLabelKey: Record<AppLanguage, 'languages.tr' | 'languages.en' | 'languages.ar'> = {
+  tr: 'languages.tr',
+  en: 'languages.en',
+  ar: 'languages.ar',
 };
 
 export function HomeScreen() {
@@ -24,12 +24,12 @@ export function HomeScreen() {
       style={[styles.root, { direction: isRtl ? 'rtl' : 'ltr' }]}
     >
       <View style={styles.header}>
-        <Text style={styles.title}>{t('appTitle')}</Text>
-        <Text style={styles.tagline}>{t('tagline')}</Text>
+        <Text style={styles.title}>{t('common.appTitle')}</Text>
+        <Text style={styles.tagline}>{t('home.tagline')}</Text>
       </View>
 
       <View style={styles.card}>
-        <Text style={styles.label}>{t('selectLanguage')}</Text>
+        <Text style={styles.label}>{t('common.selectLanguage')}</Text>
         <View style={styles.langRow}>
           {LANGS.map((code) => (
             <Pressable
@@ -54,7 +54,7 @@ export function HomeScreen() {
       </View>
 
       <View style={styles.imageCard}>
-        <Text style={styles.imageCaption}>{t('imageDemoCaption')}</Text>
+        <Text style={styles.imageCaption}>{t('home.imageDemoCaption')}</Text>
         <Image
           source={require('../../assets/splash-icon.png')}
           style={styles.heroImage}
@@ -63,7 +63,7 @@ export function HomeScreen() {
         />
       </View>
 
-      <Text style={styles.body}>{t('homeBody')}</Text>
+      <Text style={styles.body}>{t('home.body')}</Text>
     </ScrollView>
   );
 }

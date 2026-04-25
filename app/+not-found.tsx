@@ -8,13 +8,13 @@ export default function NotFound() {
   const { t } = useTranslation();
   return (
     <>
-      <Stack.Screen options={{ title: t('appTitle') }} />
+      <Stack.Screen options={{ title: t('common.appTitle') }} />
       <View style={styles.wrap}>
         <Text style={styles.title}>{'404'}</Text>
-        <Text style={styles.hint}>{t('notFoundHint')}</Text>
+        <Text style={styles.hint}>{t('notFound.hint')}</Text>
         <Link href="/" asChild>
           <Pressable style={styles.btn}>
-            <Text style={styles.btnText}>{t('notFoundHome')}</Text>
+            <Text style={styles.btnText}>{t('notFound.backHome')}</Text>
           </Pressable>
         </Link>
       </View>
