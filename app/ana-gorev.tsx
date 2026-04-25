@@ -24,12 +24,13 @@ const DARK_TEXT = '#1a1a1a';
 type PageDef = {
   image: ImageSourcePropType;
   suffix: string;
-  missionKey: 'anaGorev.missionHeading' | 'anaGorev.mission2Heading';
+  missionKey: 'anaGorev.missionHeading' | 'anaGorev.mission2Heading' | 'anaGorev.mission3Heading';
 };
 
 const PAGES: PageDef[] = [
   { image: require('../assets/images/hac_ibadeti_ihrama_giris.jpeg'), suffix: '1', missionKey: 'anaGorev.missionHeading' },
   { image: require('../assets/images/mekke_kudüm.jpeg'), suffix: '2', missionKey: 'anaGorev.mission2Heading' },
+  { image: require(`../assets/images/sa'y_safa-merve.jpeg`), suffix: '3', missionKey: 'anaGorev.mission3Heading' },
 ];
 
 function AnaGorevPage({
@@ -145,8 +146,10 @@ export default function AnaGorevScreen() {
   const onStart = () => {
     if (activePage === 0) {
       router.push('/ihram-adimlar' as Href);
-    } else {
+    } else if (activePage === 1) {
       router.push('/kudum-adimlar' as Href);
+    } else {
+      router.push('/say-adimlar' as Href);
     }
   };
 

@@ -25,13 +25,14 @@
     "screenTitle": "Ana Görev",
     "missionHeading": "İhram Giriş",
     "mission2Heading": "MEKKE'YE VARIŞ & KUDÜM TAVAFI",
+    "mission3Heading": "SA'Y (Safa - Merve)",
     "start": "Başla",
     "allTasks": "Tüm görevler",
     "allTasksA11y": "Tüm ana görevler listesini aç",
     "closeList": "Kapat",
     "task1": "Ana Görev 1: İHRAMA GİRİŞ",
     "task2": "Ana Görev 2: MEKKE'YE VARIŞ & KUDÜM TAVAFI",
-    "task3": "Ana Görev 3: SA'Y",
+    "task3": "Ana Görev 3: SA'Y (Safa - Merve)",
     "task4": "Ana Görev 4: MİNA'DA GECELEME",
     "task5": "Ana Görev 5: ARAFAT VAKFESİ",
     "task6": "Ana Görev 6: MÜZDELİFE VAKFESİ",
@@ -134,6 +135,14 @@
     "note2": "💧 Bol bol içilir, israf edilmez.",
     "note3": "🤲 İçtikten sonra kişisel dua yapılır, bu an çok kıymetlidir.",
     "note4": "✨ Zemzem hangi niyetle içilirse o niyete şifa olur (hadis-i şerif)"
+  },
+  "sayAdimlar": {
+    "step1": "1. Adım: Safa tepesine çıkıp say'a niyet etmek",
+    "step2": "2. Adım: Kabe'ye dönerek tekbir, tehlil ve dua etmek",
+    "step3": "3. Adım: Safa'dan Merve'ye doğru yürümek (erkekler yeşil ışıklarda hervele yapar)",
+    "step4": "4. Adım: Merve'de Kabe'ye dönerek tekbir ve dua etmek",
+    "step5": "5. Adım: 7 şavt tamamlanana kadar devam etmek (4 gidiş + 3 dönüş)",
+    "step6": "6. Adım: Merve'de duayı tamamlamak"
   },
   "ihramAdim1Temizlik": {
     "back": "← Geri",

@@ -25,13 +25,14 @@
     "screenTitle": "Main task",
     "missionHeading": "Entering Ihram",
     "mission2Heading": "ARRIVAL IN MAKKAH & TAWĀF AL-QUDŪM",
+    "mission3Heading": "SAʿY (Safa and Marwah)",
     "start": "Start",
     "allTasks": "All tasks",
     "allTasksA11y": "Open the list of all main tasks",
     "closeList": "Close",
     "task1": "Main task 1: ENTERING IHRAM",
     "task2": "Main task 2: ARRIVAL IN MAKKAH & TAWĀF AL-QUDŪM",
-    "task3": "Main task 3: SAʿY",
+    "task3": "Main task 3: SAʿY (Safa and Marwah)",
     "task4": "Main task 4: OVERNIGHT IN MINĀ",
     "task5": "Main task 5: WAQF AT ʿARAFĀH",
     "task6": "Main task 6: WAQF AT MUZDALIFAH",
@@ -134,6 +135,14 @@
     "note2": "💧 Drink plenty, but do not waste.",
     "note3": "🤲 Afterwards one makes a personal supplication; this is a very precious time.",
     "note4": "✨ It is authentically reported that Zamzam is for whatever intention it is drunk for (hadith)."
+  },
+  "sayAdimlar": {
+    "step1": "1. Step: Go up to Safa and form the intention for saʿy",
+    "step2": "2. Step: Face the Kaʿbah, say the takbīr, tahlīl, and supplicate",
+    "step3": "3. Step: Walk from Safa toward Marwah (men may walk briskly at the green lights)",
+    "step4": "4. Step: At Marwah, turn toward the Kaʿbah and say the takbīr and supplicate",
+    "step5": "5. Step: Continue until 7 rounds are complete (4 outward + 3 return legs)",
+    "step6": "6. Step: At Marwah, complete the supplication as appropriate"
   },
   "ihramAdim1Temizlik": {
     "back": "← Back",
