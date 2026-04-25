@@ -1,0 +1,12 @@
+{
+  "appTitle": "عبادة الحج",
+  "tagline": "مقاطع الصور والنصوص مبنية على تعدد اللغات.",
+  "selectLanguage": "اللغة",
+  "langTr": "Türkçe",
+  "langEn": "English",
+  "langAr": "العربية",
+  "homeBody": "للنصوص الطويلة أضف المحتوى في `src/i18n/locales`. اتجاه RTL للعربية يُضبط تلقائياً.",
+  "imageDemoCaption": "expo-image · مورد محلي",
+  "notFoundHint": "هذه الشاشة غير موجودة.",
+  "notFoundHome": "العودة للرئيسية"
+}

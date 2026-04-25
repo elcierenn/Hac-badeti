@@ -1,0 +1,12 @@
+{
+  "appTitle": "Hac İbadeti",
+  "tagline": "Image-heavy and text sections run on a multilingual base.",
+  "selectLanguage": "Language",
+  "langTr": "Türkçe",
+  "langEn": "English",
+  "langAr": "العربية",
+  "homeBody": "For text-heavy areas, add copy under `src/i18n/locales`. Arabic RTL layout is handled automatically when needed.",
+  "imageDemoCaption": "expo-image · local asset",
+  "notFoundHint": "This screen does not exist.",
+  "notFoundHome": "Back to home"
+}

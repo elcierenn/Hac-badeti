@@ -33,6 +33,9 @@ yarn-error.*
 # local env files
 .env*.local
 
+# nested copy / local clone
+Hac-badeti/
+
 # typescript
 *.tsbuildinfo
 
