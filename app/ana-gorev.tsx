@@ -85,14 +85,24 @@ function AnaGorevPage({
           >
             <Text style={styles.backBtnArrow}>←</Text>
           </Pressable>
-          <Pressable
-            onPress={() => router.push('/tum-gorevler' as Href)}
-            style={({ pressed }) => [styles.allTasksBtn, pressed && { opacity: 0.88 }]}
-            accessibilityLabel={t('anaGorev.allTasksA11y')}
-            accessibilityRole="button"
-          >
-            <Text style={styles.allTasksBtnText}>{t('anaGorev.allTasks')}</Text>
-          </Pressable>
+          <View style={styles.topRightCol}>
+            <Pressable
+              onPress={() => router.push('/tum-gorevler' as Href)}
+              style={({ pressed }) => [styles.allTasksBtn, pressed && { opacity: 0.88 }]}
+              accessibilityLabel={t('anaGorev.allTasksA11y')}
+              accessibilityRole="button"
+            >
+              <Text style={styles.allTasksBtnText}>{t('anaGorev.allTasks')}</Text>
+            </Pressable>
+            <Pressable
+              onPress={() => router.push('/bilgi-kosesi' as Href)}
+              style={({ pressed }) => [styles.allTasksBtn, pressed && { opacity: 0.88 }]}
+              accessibilityLabel={t('anaGorev.infoCornerA11y')}
+              accessibilityRole="button"
+            >
+              <Text style={styles.allTasksBtnText}>{t('anaGorev.infoCorner')}</Text>
+            </Pressable>
+          </View>
         </View>
         <View style={styles.middle}>
           <View style={styles.screenTitleFrame}>
@@ -238,9 +248,10 @@ const styles = StyleSheet.create({
     paddingBottom: 72,
   },
   swipeHintEdgeLeft: { right: undefined, left: 6 },
+  topRightCol: { alignItems: 'flex-end', gap: 8 },
   topRow: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     justifyContent: 'space-between',
     paddingHorizontal: 16,
     paddingTop: 4,

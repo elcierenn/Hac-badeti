@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "kategori": "Haccın Önemi",
+    "baslik": "Hac İslam'ın Beşinci Şartı",
+    "icerik": "Hac, İslam'ın beş şartından biridir. Maddi ve bedeni gücü yeten her Müslümana ömründe bir kez farzdır. Kur'an-ı Kerim'de 'Oraya yol bulabilenlerin Beyt'i haccetmesi, Allah'ın insanlar üzerinde bir hakkıdır' buyurulmaktadır. (Al-i İmran, 97)"
+  },
+  {
+    "id": 2,
+    "kategori": "Haccın Önemi",
+    "baslik": "Mebrur Hac",
+    "icerik": "Hz. Peygamber (s.a.v.) 'Kim Allah için hacceder de kötü söz ve davranışlardan kaçınır, günaha sapmazsa, annesinden doğduğu günkü gibi günahsız olarak döner' buyurmuştur. Mebrur hac, kendisine günah karışmayan ve Allah tarafından kabul edilen hacdır. Mebrur haccın karşılığı ise ancak cennettir. (Buhari, Müslim)"
+  },
+  {
+    "id": 3,
+    "kategori": "Haccın Önemi",
+    "baslik": "Hac ve Umre Yapanlar Allah'ın Misafirleridir",
+    "icerik": "Hz. Peygamber (s.a.v.) 'Hac ve umre yapanlar Allah'ın misafirleridir. O'ndan bir şey isterlerse onlara cevap verir, af isterlerse onları affeder' buyurmuştur. Bu müjde, hac yolculuğunun ne denli kıymetli olduğunu göstermektedir."
+  },
+  {
+    "id": 4,
+    "kategori": "Haccın Önemi",
+    "baslik": "Haca Acele Edin",
+    "icerik": "Hz. Peygamber (s.a.v.) 'Hac yapmakta acele ediniz, çünkü sizden biriniz ölümün kendisine ne zaman geleceğini bilmez' buyurmuştur. Hac farz olduğu ilk yılda eda edilmesi gereken bir ibadettir, geciktirilmesi doğru değildir. (Ebu Davud, İbn Mace)"
+  },
+  {
+    "id": 5,
+    "kategori": "Haccın Önemi",
+    "baslik": "Hac Eşitliğin Simgesidir",
+    "icerik": "Hac'da herkes aynı beyaz ihramı giyer; zengin fakir, sultan köle aynı kıyafette, aynı mekânda, aynı amaçla bir araya gelir. Bu durum Allah katında tüm insanların eşit olduğu bilincini güçlendirir ve kibri törpüler. Hac, dünyanın en büyük kardeşlik buluşmasıdır."
+  },
+  {
+    "id": 6,
+    "kategori": "Kutsal Mekanlar",
+    "baslik": "Kabe'nin İnşası",
+    "icerik": "Kabe, yeryüzünde ibadet için inşa edilen ilk mabeddir. Hz. İbrahim ve oğlu Hz. İsmail tarafından Allah'ın emriyle yeniden inşa edilmiştir. Kur'an'da 'İnsanlar için yeryüzünde kurulan ilk ev Mekke'deki Kabe'dir' buyurulmaktadır. (Al-i İmran, 96)"
+  },
+  {
+    "id": 7,
+    "kategori": "Kutsal Mekanlar",
+    "baslik": "Hacerülesved",
+    "icerik": "Hacerülesved, Kabe'nin doğu köşesine yerleştirilmiş kutsal bir taştır. Hz. Peygamber (s.a.v.) 'Hacerülesved cennetten inmiş bir taştır, sütten daha beyazdı; Ademoğullarının günahları onu kararttı' buyurmuştur. Tavafa Hacerülesved'i selamlayarak başlanır. (Tirmizi)"
+  },
+  {
+    "id": 8,
+    "kategori": "Kutsal Mekanlar",
+    "baslik": "Zemzem Suyunun Tarihi",
+    "icerik": "Zemzem suyu, Hz. Hacer'in oğlu Hz. İsmail için su ararken Allah'ın lütfuyla ortaya çıkmıştır. Binlerce yıldır akmaya devam eden bu kutsal su, milyonlarca insana hizmet etmektedir. Hz. Peygamber (s.a.v.) 'Zemzem ne niyetle içilirse ona şifa olur' buyurmuştur. (İbn Mace)"
+  },
+  {
+    "id": 9,
+    "kategori": "Kutsal Mekanlar",
+    "baslik": "Makam-ı İbrahim",
+    "icerik": "Makam-ı İbrahim, Hz. İbrahim'in Kabe'yi inşa ederken üzerine çıktığı taştır. Üzerinde Hz. İbrahim'in ayak izleri bulunmaktadır. Kur'an-ı Kerim'de 'Makam-ı İbrahim'i namaz yeri edinin' buyurulmaktadır. Tavaf namazı bu taşın arkasında kılınır. (Bakara, 125)"
+  },
+  {
+    "id": 10,
+    "kategori": "Kutsal Mekanlar",
+    "baslik": "Arafat — Haccın Kalbi",
+    "icerik": "Hz. Peygamber (s.a.v.) 'Hac Arafat'tır' buyurmuştur. Arafat vakfesi haccın en temel rüknüdür; bu vakfeyi yapmayan kimse hac yapmamış sayılır. Her yıl arefe günü milyonlarca Müslüman bu ovada Allah'a yalvarır, gözyaşı döker ve günahlarından arınır. (Tirmizi)"
+  },
+  {
+    "id": 11,
+    "kategori": "Kutsal Mekanlar",
+    "baslik": "Cebel-i Rahme — Rahmet Dağı",
+    "icerik": "Arafat ovasının ortasında yükselen Cebel-i Rahme, Hz. Adem ile Hz. Havva'nın yeryüzüne indikten sonra buluştuğu yer olarak rivayet edilmektedir. Hz. Peygamber (s.a.v.) Veda Haccı'nda bu dağın yakınında vakfe yapmıştır. Arafat vakfesini bu dağın yanında yapmak faziletlidir."
+  },
+  {
+    "id": 12,
+    "kategori": "Kutsal Mekanlar",
+    "baslik": "Mina — Çadırlar Şehri",
+    "icerik": "Mina, Mekke ile Arafat arasında yer alan ve hac günlerinde milyonlarca hacının çadır kurduğu kutsal bir vadidir. Hacılar burada toplam 3-4 gece geçirir, şeytan taşlama ibadeti burada yapılır. Cemerat köprüsü, üç cemrenin bulunduğu meşhur yapıdır."
+  },
+  {
+    "id": 13,
+    "kategori": "Kutsal Mekanlar",
+    "baslik": "Müzdelife — Açık Hava İbadeti",
+    "icerik": "Müzdelife, Arafat ile Mina arasında yer alan kutsal bir mekândır. Hacılar arefe gecesi burada açık havada geceleyerek ibadet ederler. Kur'an-ı Kerim'de 'Meş'ar-i Haram'da Allah'ı anın' buyurulmaktadır. Şeytan taşlamak için taşlar buradan toplanır. (Bakara, 198)"
+  },
+  {
+    "id": 14,
+    "kategori": "Kutsal Mekanlar",
+    "baslik": "Safa ile Merve",
+    "icerik": "Safa ve Merve, Mescid-i Haram'ın içinde yer alan iki tepedir. Sa'y ibadeti Hz. Hacer'in oğlu Hz. İsmail için su ararken bu iki tepe arasında koşmasını simgeler. Kur'an-ı Kerim'de 'Şüphesiz Safa ile Merve Allah'ın nişanelerindendir' buyurulmaktadır. (Bakara, 158)"
+  },
+  {
+    "id": 15,
+    "kategori": "Kutsal Mekanlar",
+    "baslik": "Mescid-i Nebevi",
+    "icerik": "Mescid-i Nebevi, Hz. Peygamber'in Medine'ye hicreti sonrasında bizzat inşa ettiği camiidir. Hz. Peygamber 'Benim bu mescidimde kılınan bir namaz, Mescid-i Haram'daki namaz dışında diğer mescitlerde kılınan bin namazdan daha faziletlidir' buyurmuştur. (Buhari, Müslim)"
+  },
+  {
+    "id": 16,
+    "kategori": "Kutsal Mekanlar",
+    "baslik": "Ravza-i Mutahhara",
+    "icerik": "Ravza, Mescid-i Nebevi'de Hz. Peygamber'in minberi ile kabri arasındaki yeşil halılı kutsal alandır. Hz. Peygamber 'Evimle minberimin arası cennet bahçelerinden bir bahçedir' buyurmuştur. Bu alanda namaz kılmak büyük fazilet taşır. (Buhari)"
+  },
+  {
+    "id": 17,
+    "kategori": "Peygamberimizden",
+    "baslik": "Veda Haccı",
+    "icerik": "Hz. Peygamber (s.a.v.) hayatında yalnızca bir kez hac yapmıştır. Hicretin 10. yılında gerçekleşen bu hac, 'Veda Haccı' olarak tarihe geçmiştir. Peygamberimiz vefatından yaklaşık üç ay önce yaptığı bu hac sırasında yaklaşık 100.000 sahabeye hitap eden Veda Hutbesi'ni irad etmiştir."
+  },
+  {
+    "id": 18,
+    "kategori": "Peygamberimizden",
+    "baslik": "Veda Hutbesi'nin Önemi",
+    "icerik": "Hz. Peygamber Veda Hutbesi'nde 'Ey insanlar! Kanlarınız, mallarınız ve namuslarınız birbirinize karşı dokunulmazdır' buyurmuştur. Bu hutbe, insan hakları tarihinin en önemli belgelerinden biri olarak kabul edilmektedir. Tüm insanlığa eşitlik ve adalet mesajı vermiştir."
+  },
+  {
+    "id": 19,
+    "kategori": "Peygamberimizden",
+    "baslik": "Hac İbadetlerini Benden Alın",
+    "icerik": "Hz. Peygamber (s.a.v.) Veda Haccı'nda 'Hac ibadetlerinizi benden alınız, belki bu yıldan sonra bir daha haccetme imkânı bulamam' buyurmuştur. Bu söz, hac ibadetinin nasıl yapılacağını bizzat gösterdiğinin ifadesidir. Hac, Sünnet-i Nebeviyye'ye uygun yapılmalıdır."
+  },
+  {
+    "id": 20,
+    "kategori": "Peygamberimizden",
+    "baslik": "Telbiyenin Fazileti",
+    "icerik": "Hz. Peygamber (s.a.v.) 'Bir Müslüman telbiye getirdiğinde, sağında ve solunda bulunan her taş, ağaç ve toprak da onunla birlikte telbiye getirir; bu ses yerin sonuna kadar devam eder' buyurmuştur. Telbiye, hacının Allah'a olan teslimiyetinin en güzel ifadesidir. (Tirmizi)"
+  },
+  {
+    "id": 21,
+    "kategori": "Peygamberimizden",
+    "baslik": "Arefe Gününün Fazileti",
+    "icerik": "Hz. Peygamber (s.a.v.) 'Arefe gününden daha çok Allah'ın cehennem ateşinden insanları azat ettiği bir gün yoktur' buyurmuştur. Bu gün yapılan dualar geri çevrilmez, günahlar affedilir. Arefe günü oruç tutmak ise geçmiş ve gelecek bir yılın günahlarına kefaret olur. (Müslim)"
+  },
+  {
+    "id": 22,
+    "kategori": "Peygamberimizden",
+    "baslik": "Kabe'yi Selamlamak",
+    "icerik": "Hz. Peygamber (s.a.v.) Mekke'ye her girişinde Kabe'yi görünce tekbir getirir, salavat okur ve dua ederdi. Kabe'ye ilk bakışta yapılan dua kabul olur diye rivayet edilmektedir. Bu nedenle hacılar Mescid-i Haram'a ilk girdiklerinde gözlerini Kabe'ye diker ve içtenlikle dua eder."
+  },
+  {
+    "id": 23,
+    "kategori": "Peygamberimizden",
+    "baslik": "Hac Cihat Gibidir",
+    "icerik": "Hz. Aişe (r.a.) 'Ya Resulullah, cihadı en faziletli amel olarak görüyoruz, biz de cihad edelim mi?' diye sormuş, Hz. Peygamber 'Sizin için en faziletli cihad mebrur hacdır' cevabını vermiştir. Bu hadis, kadınlar için haccın ne kadar büyük bir ibadet olduğunu göstermektedir. (Buhari)"
+  },
+  {
+    "id": 24,
+    "kategori": "Peygamberimizden",
+    "baslik": "Zemzem Bereketle Doludur",
+    "icerik": "Hz. Peygamber (s.a.v.) 'Yeryüzünün en hayırlı suyu zemzemdir; o doyurucu bir yiyecek ve hastalıklara şifadır' buyurmuştur. Aynı zamanda 'Zemzem hangi amaçla içilirse o amaca ulaştırır' buyurarak bu suyun bereketini açıklamıştır. Zemzem kıyamete kadar akmaya devam edecektir. (İbn Mace)"
+  },
+  {
+    "id": 25,
+    "kategori": "Hz. İbrahim",
+    "baslik": "Hz. İbrahim ve Kabe'nin İnşası",
+    "icerik": "Allah, Hz. İbrahim'e Kabe'yi inşa etmesini emretti. Hz. İbrahim, oğlu Hz. İsmail ile birlikte Kabe'nin temellerini yükseltti. İnşa ederken 'Rabbimiz! Bizden kabul et, şüphesiz sen işitensin, bilensin' diye dua etti. Bu dua Kur'an'da aynen yer almaktadır. (Bakara, 127)"
+  },
+  {
+    "id": 26,
+    "kategori": "Hz. İbrahim",
+    "baslik": "Hz. İbrahim'in İnsanları Hacca Davet Etmesi",
+    "icerik": "Allah, Kabe'nin inşasının ardından Hz. İbrahim'e 'İnsanları hacca çağır' diye emretti. Hz. İbrahim 'Ey Rabbim! Sesim onlara nasıl ulaşır?' diye sorunca Allah 'Sen çağır, ulaştırmak bize aittir' buyurdu. O günden bu yana insanlar her yıl Kabe'yi ziyaret etmektedir. (Hac, 27)"
+  },
+  {
+    "id": 27,
+    "kategori": "Hz. İbrahim",
+    "baslik": "Hz. Hacer ve Zemzemin Çıkışı",
+    "icerik": "Hz. İbrahim, Allah'ın emriyle eşi Hz. Hacer ve küçük oğlu Hz. İsmail'i Mekke vadisine bıraktı. Su biten Hz. Hacer, oğluna su bulmak için Safa ile Merve arasında yedi kez koştu. Allah'ın lütfuyla İsmail'in ayağının dibinden zemzem suyu fışkırdı. Sa'y ibadeti bu olayı anmaktadır."
+  },
+  {
+    "id": 28,
+    "kategori": "Hz. İbrahim",
+    "baslik": "Kurban İbadetinin Kökeni",
+    "icerik": "Hz. İbrahim rüyasında oğlu Hz. İsmail'i kurban ettiğini gördü. Sabah kalktığında bu emri yerine getirmeye hazırlandı. Hz. İsmail de babasına 'Emredileni yap, inşallah sabredenlerden olacağım' dedi. Allah bu büyük teslimiyeti kabul ederek İsmail'in yerine bir koç gönderdi. (Saffat, 102-107)"
+  },
+  {
+    "id": 29,
+    "kategori": "Hz. İbrahim",
+    "baslik": "Şeytan Taşlamanın Kökeni",
+    "icerik": "Hz. İbrahim oğlunu kurban etmek için giderken şeytan üç kez yolunu kesti ve onu bu ibadetten alıkoymaya çalıştı. Hz. İbrahim her seferinde şeytanı taşladı. Şeytan taşlama ibadeti bu olayı simgelemekte; hacılar şeytanı ve onun temsil ettiği kötülükleri sembolik olarak reddetmektedir."
+  },
+  {
+    "id": 30,
+    "kategori": "İhram",
+    "baslik": "İhramın Anlamı",
+    "icerik": "İhram, hacının dünya hayatındaki tüm makam ve ayrıcalıklarını geride bıraktığının simgesidir. Beyaz ihram elbisesi hem eşitliği hem de kefeni temsil eder. İhrama giren kişi adeta yeniden doğar; günahlarından arınmış, temiz ve saf bir kulluğa adım atar."
+  },
+  {
+    "id": 31,
+    "kategori": "İhram",
+    "baslik": "Mikat Nedir?",
+    "icerik": "Mikat, hacıların ihrama girmeden geçemeyeceği sınır noktalarıdır. Türkiye'den giden hacıların çoğunun ihrama girdiği yer Medine yakınındaki Zülhuleyfe mikatıdır. Mekke'ye bu sınırları geçmeden ihrama girmeden girenlere ceza kurbanı gerekir. Her yönden gelen hacılar için ayrı mikat noktaları belirlenmiştir."
+  },
+  {
+    "id": 32,
+    "kategori": "İhram",
+    "baslik": "İhram Yasaklarının Hikmeti",
+    "icerik": "İhramlıyken koku, tıraş, tırnak kesme ve avlanma gibi şeyler yasaklanır. Bu yasaklar kişiyi dünyevi zevklerden uzaklaştırarak tamamen Allah'a yönelmesini sağlar. Kişi bu süreçte sabrını, iradesini ve Allah'a teslimiyetini pekiştirir. İhram, derin bir iç disiplin ve arınma sürecidir."
+  },
+  {
+    "id": 33,
+    "kategori": "Tavaf",
+    "baslik": "Tavafın Anlamı",
+    "icerik": "Tavaf, Kabe'nin etrafında saat yönünün tersine yedi tur dönmektir. Her tur bir şavt, yedi şavt bir tavaf oluşturur. Tavaf, kulun Allah etrafında döndüğünü, yalnızca O'na yöneldiğini simgeler. Hz. Peygamber 'Kabe'yi tavaf etmek namaz kılmak gibidir' buyurmuştur. (Tirmizi)"
+  },
+  {
+    "id": 34,
+    "kategori": "Tavaf",
+    "baslik": "Rükn-i Yemani",
+    "icerik": "Rükn-i Yemani, Kabe'nin dört köşesinden güneybatıdakidir. Tavaf sırasında bu köşeye el sürülür, öpülmez. Hacerülesved ile Rükn-i Yemani arasında 'Rabbenâ âtinâ fid dünyâ haseneten...' duası okunması sünnettir. Bu köşe, Hz. Peygamber'in tavaf sırasında özellikle önem verdiği bir noktadır."
+  },
+  {
+    "id": 35,
+    "kategori": "Tavaf",
+    "baslik": "Mültezem",
+    "icerik": "Mültezem, Kabe'nin kapısı ile Hacerülesved arasındaki yaklaşık 2 metrelik kutsal alandır. Bu bölgeye 'yapışılan yer' anlamına gelen Mültezem denir. Hz. Peygamber bu bölgeye yüzünü, göğsünü ve ellerini dayayarak dua ederdi. Hacılar bu kutsal alanda içtenlikle dua eder ve ağlarlar."
+  },
+  {
+    "id": 36,
+    "kategori": "Arafat Vakfesi",
+    "baslik": "Arefe Günü En Büyük Af Günüdür",
+    "icerik": "Hz. Peygamber (s.a.v.) arefe gününe dair 'Allah o gün şeytanın en zelil, en küçük ve en öfkeli olduğu günden başka, onu hiçbir günde arefe gününde olduğundan daha küçük, zelil ve öfkeli görmez' buyurmuştur. Çünkü o gün Allah'ın rahmet ve bağışlaması azami noktaya ulaşır. (Muvatta)"
+  },
+  {
+    "id": 37,
+    "kategori": "Arafat Vakfesi",
+    "baslik": "Vakfenin Zamanı",
+    "icerik": "Arafat vakfesinin zamanı arefe günü öğle zevalinden kurban bayramının birinci günü fecr-i sadığa kadar olan süredir. Bu süre içinde bir an bile Arafat'ta bulunan kimse vakfesini yerine getirmiş olur. Uykuda veya baygın olmak vakfenin geçerliliğini etkilemez."
+  },
+  {
+    "id": 38,
+    "kategori": "Sa'y",
+    "baslik": "Sa'y'ın Hikmeti",
+    "icerik": "Sa'y, Hz. Hacer'in oğluna su bulmak için Safa ile Merve arasında yedi kez koşmasını anmaktadır. Bu ibadet, Allah'a olan tevekkülü, sabırlı olmayı ve çaba göstermeyi simgeler. Mümin, sa'y yaparken tıpkı Hz. Hacer gibi Allah'ın rahmetine koştuğunu hisseder."
+  },
+  {
+    "id": 39,
+    "kategori": "Sa'y",
+    "baslik": "Hervele Nedir?",
+    "icerik": "Hervele, sa'y sırasında yeşil ışıklı bölgede erkeklerin omuz silkeleyerek hızlıca yürümesidir. Bu gelenek, Hz. Hacer'in çocuğuna su ararken koşmasını, aynı zamanda erken Müslümanların düşmanlarına güçlü göründüklerini simgelemektedir. Kadınlar yeşil ışıklarda normal tempoda yürür."
+  },
+  {
+    "id": 40,
+    "kategori": "Şeytan Taşlama",
+    "baslik": "Cemreler Nedir?",
+    "icerik": "Cemre, Mina'daki şeytan taşlama sütunlarına verilen isimdir. Üç cemre bulunmaktadır: Küçük Cemre, Orta Cemre ve Büyük Cemre. Bayramın birinci günü yalnızca Büyük Cemre'ye, sonraki günlerde ise üç cemreye yedişer taş atılır. Her taş atışında 'Bismillahi Allahü Ekber' denir."
+  },
+  {
+    "id": 41,
+    "kategori": "Şeytan Taşlama",
+    "baslik": "Taşların Özellikleri",
+    "icerik": "Şeytan taşlamak için kullanılan taşların nohut büyüklüğünde, temiz küçük çakıl taşları olması tavsiye edilir. Müzdelife'den toplanması sünnettir ancak başka yerden de toplanabilir. Daha önce atılmış taşların tekrar kullanılması doğru değildir. Her taş teker teker ve tekbir getirilerek atılır."
+  },
+  {
+    "id": 42,
+    "kategori": "Kurban",
+    "baslik": "Kurban İbadetinin Önemi",
+    "icerik": "Hz. Peygamber (s.a.v.) 'Hiç bir kul, kurban günü, Allah indinde kan akıtmaktan daha sevimli bir iş yapamaz. Zira, kesilen hayvan kıyamet günü boynuzlarıyla, kıllarıyla ve tırnakları ile gelecektir' buyurmuştur. Temettu ve kıran haccı yapanlar için kurban kesmek vaciptir. (Tirmizi)"
+  },
+  {
+    "id": 43,
+    "kategori": "Kurban",
+    "baslik": "Tahallül Nedir?",
+    "icerik": "Tahallül, ihramdan çıkmak demektir. Şeytan taşladıktan ve kurban kestikten sonra tıraş olunur; bu anda birinci tahallül gerçekleşir ve ihram yasaklarının büyük çoğunluğu kalkar. Ziyaret tavafının ardından ikinci tahallül gerçekleşir ve tüm ihram yasakları sona erer."
+  },
+  {
+    "id": 44,
+    "kategori": "Pratik Bilgiler",
+    "baslik": "Hac Öncesi Hazırlık",
+    "icerik": "Hacca gitmeden önce dini bilgileri öğrenmek, borçları ödemek, helalleşmek ve samimi bir niyet taşımak çok önemlidir. Hz. Peygamber 'Hacca çıkan kişi, yurt ve ailesini Allah'a emanet etmelidir' buyurmuştur. Maddi hazırlığın yanında manevi hazırlık da ihmal edilmemelidir."
+  },
+  {
+    "id": 45,
+    "kategori": "Pratik Bilgiler",
+    "baslik": "İhram Giymeden Önce Yapılacaklar",
+    "icerik": "İhrama girmeden önce tırnak kesmek, koltuk altı ve kasık temizliği yapmak, gusül abdesti almak ve mümkünse güzel koku sürmek tavsiye edilir. Çünkü ihrama girdikten sonra bu işlemlerin yapılması yasaklanır. Erkekler dikişsiz beyaz iki parça giyer, kadınlar normal tesettür kıyafetiyle ihrama girer."
+  },
+  {
+    "id": 46,
+    "kategori": "Pratik Bilgiler",
+    "baslik": "Kalabalıkta Dikkat Edilecekler",
+    "icerik": "Hac, dünyanın en kalabalık organizasyonudur. Tavaf, sa'y ve şeytan taşlama sırasında milyonlarca insan aynı alanda bulunur. Bu nedenle başkalarına eziyet vermemek, sakin olmak ve acele etmemek büyük önem taşır. Hz. Peygamber 'Hacda kavga etmek, kötü söz söylemek ve günah işlemek yoktur' buyurmuştur."
+  },
+  {
+    "id": 47,
+    "kategori": "Pratik Bilgiler",
+    "baslik": "Kadınlar İçin Hac",
+    "icerik": "Kadınlar için haccın farz olmasının şartlarından biri yanında koca veya mahrem bir erkek bulunmasıdır. Hanefi mezhebine göre bu şart zorunludur. Kadınlar tavaf sırasında tenha bölgeleri tercih eder, remel ve hervele yapmaz, seslerini yükseltmez. Adet halindeki kadınlar tavaf dışındaki tüm görevleri yapabilir."
+  },
+  {
+    "id": 48,
+    "kategori": "Pratik Bilgiler",
+    "baslik": "Hac Türleri Arasındaki Fark",
+    "icerik": "Türkiye'den giden hacıların büyük çoğunluğu temettu haccı yapar. Temettu'da önce umre yapılır, ihramdan çıkılır, hac günlerinde tekrar ihrama girilir. İfrad haccında umre olmadan doğrudan hac yapılır. Kıran haccında ise aynı ihramla hem umre hem hac birlikte yapılır."
+  },
+  {
+    "id": 49,
+    "kategori": "Pratik Bilgiler",
+    "baslik": "Nefr-i Evvel ve Nefr-i Sani",
+    "icerik": "Hacılar 12 Zilhicce'de taşlamayı tamamladıktan sonra güneş batmadan Mina'dan ayrılabilirler; buna Nefr-i Evvel denir. Güneş batımına kadar Mina'da kalanlar ise 13 Zilhicce'de de taşlama yaparak ayrılır; buna Nefr-i Sani denir. Hz. Peygamber Nefr-i Sani ile ayrılmıştır, daha faziletlidir."
+  },
+  {
+    "id": 50,
+    "kategori": "Pratik Bilgiler",
+    "baslik": "Hac Sonrası Hayat",
+    "icerik": "Hz. Peygamber (s.a.v.) 'Mebrur haccın karşılığı yalnızca cennettir' buyurmuştur. Hac, kişinin hayatında bir dönüm noktası olmalıdır. Hacdan dönüşte günahlardan uzak durmak, ibadetlere daha fazla özen göstermek ve kazanılan manevi birikimi korumak büyük önem taşır."
+  },
+  {
+    "id": 51,
+    "kategori": "Mekke Tarihi",
+    "baslik": "Mekke'nin Önemi",
+    "icerik": "Mekke, İslam'ın en kutsal şehridir ve Harem bölgesi içinde yer alır. Kur'an'da 'Ümmü'l-Kura' yani şehirlerin anası olarak anılmaktadır. Mekke'de kılınan bir namaz diğer mescitlerde kılınan 100.000 namazdan daha faziletlidir. Bu şehre Müslümanlar dışında giriş yasaktır. (Al-i İmran, 96)"
+  },
+  {
+    "id": 52,
+    "kategori": "Mekke Tarihi",
+    "baslik": "Kabe'nin Yeniden İnşaları",
+    "icerik": "Kabe tarih boyunca birçok kez yıkılıp yeniden inşa edilmiştir. Hz. İbrahim ve Hz. İsmail tarafından inşa edilen Kabe, Hz. Peygamber'in gençliğinde de yeniden inşa edilmiştir. Hacerülesved'in yerleştirilmesi konusundaki anlaşmazlık Hz. Peygamber tarafından akıllıca çözülmüştür."
+  },
+  {
+    "id": 53,
+    "kategori": "Mekke Tarihi",
+    "baslik": "Mescid-i Haram'ın Genişlemesi",
+    "icerik": "Mescid-i Haram, İslam tarihinin ilk dönemlerinden itibaren defalarca genişletilmiştir. Günümüzde yaklaşık 356.000 metrekare alana sahiptir. Hac mevsiminde aynı anda 2 milyonu aşkın kişiye ev sahipliği yapabilmektedir. Bu yapı, dünyanın en büyük ve en fazla ziyaret edilen camisidir."
+  },
+  {
+    "id": 54,
+    "kategori": "Mekke Tarihi",
+    "baslik": "Hatim Nedir?",
+    "icerik": "Hatim, Kabe'nin kuzey cephesindeki yarım daire şeklindeki alçak duvarla çevrili alandır. Bu alan Kabe'nin bir parçası sayılmaktadır. Tavaf sırasında Hatim'in dışından dolaşılması zorunludur; Hatim'in içinden geçilirse tavaf geçersiz olur. İçinde namaz kılmak Kabe'nin içinde namaz kılmak gibidir."
+  },
+  {
+    "id": 55,
+    "kategori": "Medine",
+    "baslik": "Medine'nin Önemi",
+    "icerik": "Medine, Hz. Peygamber'in hicret yurdu ve kabrinin bulunduğu kutsal şehirdir. Hz. Peygamber 'Medine haramdır; Ayr'dan Sevr'e kadar olan alan kutsal ve dokunulmazdır' buyurmuştur. Mescid-i Nebevi'de kılınan namaz, Mescid-i Haram dışındaki mescitlerde kılınan bin namazdan daha faziletlidir. (Buhari)"
+  },
+  {
+    "id": 56,
+    "kategori": "Medine",
+    "baslik": "Hz. Peygamber'in Kabri Ziyareti",
+    "icerik": "Hz. Peygamber (s.a.v.) 'Kabrimi ziyaret eden kimseye şefaatim vacip olur' buyurmuştur. Medine'ye gelen hacılar Hz. Peygamber'in kabrini ziyaret ederek selam verirler. Bu ziyaret haccın farzı değil, büyük sevap kazandıran ve Peygamberimize duyulan sevginin göstergesi olan güzel bir sünnettir."
+  },
+  {
+    "id": 57,
+    "kategori": "Medine",
+    "baslik": "Mescid-i Kuba",
+    "icerik": "Mescid-i Kuba, İslam tarihinde inşa edilen ilk camiidir. Hz. Peygamber Medine'ye hicret ederken burada namaz kılmıştır. Hz. Peygamber 'Mescid-i Kuba'da kılınan namaz, umre sevabına eşittir' buyurmuştur. Medine ziyaretinde Mescid-i Kuba'ya gitmek önemli bir sünnettir. (İbn Mace)"
+  },
+  {
+    "id": 58,
+    "kategori": "Medine",
+    "baslik": "Cennetü'l-Baki Mezarlığı",
+    "icerik": "Cennetü'l-Baki, Mescid-i Nebevi'nin yanındaki tarihi İslam mezarlığıdır. Hz. Peygamber'in eşleri, kızı Hz. Fatıma ve birçok sahabe burada medfundur. Hz. Peygamber bu mezarlığı ziyaret ederek 'Selam olsun size ey müminler diyarının sakinleri' derdi. Medine ziyaretinde buraya gitmek tavsiye edilir."
+  },
+  {
+    "id": 59,
+    "kategori": "İlginç Bilgiler",
+    "baslik": "Her Yıl Kaç Kişi Hac Yapar?",
+    "icerik": "Hac, dünyanın en büyük yıllık insan topluluğu organizasyonudur. Normal yıllarda yaklaşık 2-3 milyon Müslüman hac ibadetini ifa etmek için Mekke'ye gelir. Türkiye'den her yıl yaklaşık 80.000-90.000 kişi Diyanet İşleri Başkanlığı organizasyonuyla hacca gitmektedir."
+  },
+  {
+    "id": 60,
+    "kategori": "İlginç Bilgiler",
+    "baslik": "Kabe'nin İçi",
+    "icerik": "Kabe'nin içi boş bir odadır ve yılda iki kez temizlenmektedir. İçinde üç sütun, bir masa ve kandiller bulunmaktadır. Kabe'nin içine girmek herkese nasip olmayan büyük bir şereftir. Hz. Peygamber Kabe'nin içine girmiş ve burada namaz kılmıştır. İçeride kıble yoktur, her yöne namaz kılınabilir."
+  },
+  {
+    "id": 61,
+    "kategori": "İlginç Bilgiler",
+    "baslik": "Kabe'nin Örtüsü Kısvesi",
+    "icerik": "Kabe her yıl yenilenen siyah ipek örtüyle kaplanır. Bu örtüye 'Kisve' denir. Üzerine altın ipliklerle Kur'an ayetleri işlenmektedir. Her yıl Zilhicce'nin 9. günü arefe günü eski kisve çıkarılır, yenisi giydirilir. Kisvenin üretimi için yılda yaklaşık 800 kg altın ve gümüş iplik kullanılmaktadır."
+  },
+  {
+    "id": 62,
+    "kategori": "İlginç Bilgiler",
+    "baslik": "Zemzem Kuyusunun Derinliği",
+    "icerik": "Zemzem kuyusu yaklaşık 30 metre derinliğindedir. Kuyunun suyu her yıl milyonlarca litre çekilmesine rağmen hiç kurumamaktadır. Bilimsel incelemelere göre zemzem suyunun mineral bileşimi normal içme suyundan farklı olup çeşitli mineraller açısından zengindir. Bu su binlerce yıldır aynı kaynaktan akmaktadır."
+  },
+  {
+    "id": 63,
+    "kategori": "İlginç Bilgiler",
+    "baslik": "Tavafın Yönü",
+    "icerik": "Tavaf Kabe'nin saat yönünün tersine yapılır. Bilim insanları bunun evrendeki elektronların atom çekirdeği etrafındaki dönüş yönüyle aynı olduğuna dikkat çekmiştir. Dünya da güneş etrafında aynı yönde döner. Bu durum, insanın ibadetinin evrensel bir uyum içinde olduğuna işaret etmektedir."
+  },
+  {
+    "id": 64,
+    "kategori": "İlginç Bilgiler",
+    "baslik": "Safa ve Merve Arasındaki Mesafe",
+    "icerik": "Safa ile Merve arasındaki mesafe yaklaşık 450 metredir. Sa'y sırasında bu mesafe 7 kez gidip gelinerek yaklaşık 3,15 km yürünür. Günümüzde bu güzergah Mescid-i Haram'ın içinde kapalı ve klimatize bir koridora dönüştürülmüştür. Eskiden açık havada yapılan bu ibadet artık daha konforlu şartlarda ifa edilmektedir."
+  },
+  {
+    "id": 65,
+    "kategori": "İlginç Bilgiler",
+    "baslik": "Mina'daki Çadırlar",
+    "icerik": "Mina'daki çadırlar yangına karşı dayanıklı özel malzemelerden üretilmektedir. Yaklaşık 100.000 çadırdan oluşan bu dev kamp alanı dünyanın en büyük geçici yerleşim yeridir. Her hacı kafilesi belirlenmiş bir alanda kalmaktadır. Bu çadır şehri yılın geri kalanında tamamen boş kalmakta, yalnızca hac mevsiminde kullanılmaktadır."
+  },
+  {
+    "id": 66,
+    "kategori": "Dualar",
+    "baslik": "Arefe Günü En Faziletli Dua",
+    "icerik": "Hz. Peygamber (s.a.v.) 'Duaların en faziletlisi arefe günü yapılan duadır. Benim ve benden önceki peygamberlerin söylediği en faziletli söz: La ilahe illallahu vahdehü la şerike leh, lehül mülkü ve lehül hamdü ve hüve ala külli şey'in kadir sözüdür' buyurmuştur. (Tirmizi)"
+  },
+  {
+    "id": 67,
+    "kategori": "Dualar",
+    "baslik": "Veda Duası",
+    "icerik": "Mekke'den ayrılırken 'Allahümme la tec'al haza ahiral ahdi min beytikel haram' yani 'Allah'ım! Bunu Beyt-i Haram'ı ziyaretimin sonu kılma' duasını okumak sünnettir. Hz. Peygamber bu duayı ederek Mekke'den ayrılmıştır. Hacılar bu duayı okuyarak tekrar hacca gelmeyi Allah'tan ister."
+  },
+  {
+    "id": 68,
+    "kategori": "Dualar",
+    "baslik": "Telbiyenin Önemi",
+    "icerik": "Telbiye ihramın simgesidir ve 'Lebbeyk Allahümme Lebbeyke' sözleriyle başlar. Anlamı 'Emrindeyim Allah'ım, emrindeyim' demektir. İhrama girildiği andan itibaren Mekke'ye varıncaya kadar her fırsatta telbiye getirilir. Erkekler yüksek sesle, kadınlar ise yalnızca kendilerinin duyabileceği şekilde okur."
+  },
+  {
+    "id": 69,
+    "kategori": "Maneviyat",
+    "baslik": "Haccın Manevi Boyutu",
+    "icerik": "Hac, sadece fiziksel bir yolculuk değil; nefsin terbiyesi, günahlardan arınma ve Allah'a yaklaşma yolculuğudur. İhramın beyazlığı temizliği, telbiye teslimiyeti, tavaf Allah etrafında dönmeyi, sa'y çaba göstermeyi ve vakfe samimi yakarışı temsil eder. Hac, tüm İslami ibadetlerin özünü bünyesinde taşır."
+  },
+  {
+    "id": 70,
+    "kategori": "Maneviyat",
+    "baslik": "Hac Kardeşliği",
+    "icerik": "Hac, dünyanın dört bir yanından gelen Müslümanları bir araya getiren eşsiz bir kardeşlik buluşmasıdır. Farklı dil, renk ve kültürden insanlar aynı kıyafetle, aynı mekânda, aynı Allah için bir araya gelir. Bu büyük buluşma ümmet bilincini güçlendirir ve İslam kardeşliğinin somut bir ifadesidir."
+  },
+  {
+    "id": 71,
+    "kategori": "Maneviyat",
+    "baslik": "Hacda Sabır",
+    "icerik": "Hac, sabır gerektiren zorlu bir ibadettir. Kalabalık, sıcak hava, uzun yürüyüşler ve yorgunluk hacıyı sabır konusunda sınar. Hz. Peygamber 'Kim hac yapar, kötü söz söylemez ve günah işlemezse annesinden doğduğu günkü gibi döner' buyurmuştur. Hac sırasında gösterilen sabır büyük sevap kazandırır. (Buhari)"
+  },
+  {
+    "id": 72,
+    "kategori": "Maneviyat",
+    "baslik": "Mahşerin Provası",
+    "icerik": "Birçok İslam alimi haccı mahşerin bir provası olarak yorumlamaktadır. Beyaz kefene benzeyen ihram, hesap günündeki eşitliği; milyonların bir arada bulunması kıyametteki toplanmayı; Arafat'ta yalvarmak ise mahşerde Allah'a yakarışı hatırlatır. Hacı bu ibadette ölümü ve ahireti derinden hisseder."
+  },
+  {
+    "id": 73,
+    "kategori": "Maneviyat",
+    "baslik": "Hacda Niyet",
+    "icerik": "Hac'da niyetin samimi olması büyük önem taşır. Hz. Peygamber 'Ameller niyetlere göredir' buyurmuştur. Hac, gösteriş veya dünyevi bir amaç için değil, yalnızca Allah'ın rızasını kazanmak için yapılmalıdır. Allah'ın davetine 'Lebbeyk!' diyerek icabet eden hacı, O'nun misafiri olma şerefine erer. (Buhari)"
+  },
+  {
+    "id": 74,
+    "kategori": "Önemli Kavramlar",
+    "baslik": "Mebrur Hac Ne Demektir?",
+    "icerik": "Mebrur hac, içinde günah bulunmayan, eksiksiz ifa edilen ve Allah tarafından kabul edilen hacdır. Hz. Peygamber 'Mebrur haccın karşılığı yalnızca cennettir' buyurmuştur. Hac dönüşünde kişinin tutum ve davranışlarındaki olumlu değişim, haccın kabul göstergesinden biridir. (Buhari, Müslim)"
+  },
+  {
+    "id": 75,
+    "kategori": "Önemli Kavramlar",
+    "baslik": "Hedy Kurbanı Nedir?",
+    "icerik": "Hedy, temettu ve kıran haccı yapanların kesmesi gereken vacip kurbandır. Bu kurban şükran ve ibadetin tamamlanmasının nişanesidir. Bayramın birinci, ikinci veya üçüncü günü kesilir. Kurbanı kendisi kesemeyen hacı bir vekile kestirtebilir veya yetkili kurumlara bedelini ödeyebilir."
+  },
+  {
+    "id": 76,
+    "kategori": "Önemli Kavramlar",
+    "baslik": "Dem Kurbanı Nedir?",
+    "icerik": "Dem kurbanı, hac görevlerinden birinin terk edilmesi veya yasaklardan birinin ihlal edilmesi durumunda kesilmesi gereken ceza kurbanıdır. Örneğin veda tavafını yapmadan Mekke'den ayrılmak veya ihram yasaklarından birini çiğnemek dem kurbanı gerektirir. Bu kurban Mekke'de kesilmek zorundadır."
+  },
+  {
+    "id": 77,
+    "kategori": "Önemli Kavramlar",
+    "baslik": "Bedel Hac Nedir?",
+    "icerik": "Hacca gitme gücüne sahip olan ancak hastalık veya yaşlılık gibi nedenlerle gidemeyecek durumda olan kişi, yerine başka birini gönderebilir; buna bedel hac denir. Vefat etmiş kişi adına da bedel hac yaptırılabilir. Bedel hac yapacak kişinin daha önce kendi farz haccını ifa etmiş olması şarttır."
+  },
+  {
+    "id": 78,
+    "kategori": "Önemli Kavramlar",
+    "baslik": "İstilam Nedir?",
+    "icerik": "İstilam, Hacerülesved veya Rükn-i Yemani'yi selamlama işlemidir. Mümkünse Hacerülesved öpülür; kalabalıktan dolayı mümkün değilse uzaktan elleri kaldırarak 'Bismillahi Allahü Ekber' denilerek selamlanır. Her tavaf şavtının başında Hacerülesved istilam edilir. Rükn-i Yemani ise el sürerek selamlanır, öpülmez."
+  },
+  {
+    "id": 79,
+    "kategori": "Önemli Kavramlar",
+    "baslik": "Kasr Nedir?",
+    "icerik": "Kasr, dört rekatlık namazların iki rekat olarak kısaltılarak kılınmasıdır. Seferiliğin hükümleri gereği hacılar hac süresince namazlarını kısaltarak kılarlar. Mina'da ve diğer kutsal mekânlarda öğle, ikindi ve yatsı namazları iki rekat olarak eda edilir. Akşam namazı üç rekat olduğu için kısaltılmaz."
+  },
+  {
+    "id": 80,
+    "kategori": "Önemli Kavramlar",
+    "baslik": "Cem Nedir?",
+    "icerik": "Cem, iki namazı birleştirerek kılmaktır. Arafat'ta öğle ile ikindi namazı öğle vaktinde birlikte kılınır; buna Cem-i Takdim denir. Müzdelife'de akşam ile yatsı namazı yatsı vaktinde birlikte kılınır; buna Cem-i Tehir denir. Bu uygulama Hz. Peygamber'in sünnetine dayanmaktadır ve yalnızca bu özel günlerde geçerlidir."
+  }
+]

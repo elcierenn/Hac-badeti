@@ -9,9 +9,9 @@ const GOLD = '#C9A84C';
 const DARK = '#1a1a1a';
 const BUBBLE = 'rgba(255, 252, 247, 0.78)';
 
-const k = 'seytanKurbanTirasAdim4';
+const k = 'vedaTavafAdim5';
 
-export default function SeytanKurbanTirasAdim4Screen() {
+export default function VedaTavafAdim5Screen() {
   const { t } = useTranslation();
   const router = useRouter();
   const insets = useSafeAreaInsets();
@@ -21,7 +21,7 @@ export default function SeytanKurbanTirasAdim4Screen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/minadan_mekkeye.jpeg')}
+        source={require('../assets/images/büyük_kapıdan_ayrılık.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}
@@ -40,13 +40,20 @@ export default function SeytanKurbanTirasAdim4Screen() {
                     showsVerticalScrollIndicator
                     nestedScrollEnabled
                   >
-                    <Text style={styles.sectionTitle}>{t(`${k}.onemLabel`)}</Text>
-                    <Text style={styles.meaningText}>{t(`${k}.onemBody`)}</Text>
+                    <Text style={styles.sectionTitle}>{t(`${k}.cikarkenDuaLabel`)}</Text>
+                    <Text style={styles.duaText}>{t(`${k}.cikarkenDuaArap`)}</Text>
+                    <Text style={styles.meaningText}>{t(`${k}.cikarkenDuaMeaning`)}</Text>
+
+                    <Text style={styles.sectionTitleSpaced}>{t(`${k}.ayrilisDuaLabel`)}</Text>
+                    <Text style={styles.duaText}>{t(`${k}.ayrilisDuaArap`)}</Text>
+                    <Text style={styles.meaningText}>{t(`${k}.ayrilisDuaMeaning`)}</Text>
 
                     <Text style={styles.sectionTitleSpaced}>{t(`${k}.notesTitle`)}</Text>
                     <Text style={styles.noteFirstAfterTitle}>{t(`${k}.note1`)}</Text>
                     <Text style={styles.noteNext}>{t(`${k}.note2`)}</Text>
                     <Text style={styles.noteNext}>{t(`${k}.note3`)}</Text>
+                    <Text style={styles.noteNext}>{t(`${k}.note4`)}</Text>
+                    <Text style={styles.noteNext}>{t(`${k}.note5`)}</Text>
                   </ScrollView>
                 </View>
               </View>
@@ -140,6 +147,13 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     fontWeight: '800',
     marginTop: 16,
+  },
+  duaText: {
+    color: DARK,
+    fontSize: 15,
+    lineHeight: 24,
+    fontWeight: '600',
+    marginTop: 8,
   },
   meaningText: {
     color: DARK,

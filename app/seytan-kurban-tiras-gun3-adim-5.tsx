@@ -9,9 +9,9 @@ const GOLD = '#C9A84C';
 const DARK = '#1a1a1a';
 const BUBBLE = 'rgba(255, 252, 247, 0.78)';
 
-const k = 'seytanKurbanTirasAdim4';
+const k = 'seytanKurbanTirasGun3Adim5';
 
-export default function SeytanKurbanTirasAdim4Screen() {
+export default function SeytanKurbanTirasGun3Adim5Screen() {
   const { t } = useTranslation();
   const router = useRouter();
   const insets = useSafeAreaInsets();
@@ -21,7 +21,7 @@ export default function SeytanKurbanTirasAdim4Screen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/minadan_mekkeye.jpeg')}
+        source={require('../assets/images/mina_son_taslama.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}
@@ -40,13 +40,23 @@ export default function SeytanKurbanTirasAdim4Screen() {
                     showsVerticalScrollIndicator
                     nestedScrollEnabled
                   >
-                    <Text style={styles.sectionTitle}>{t(`${k}.onemLabel`)}</Text>
-                    <Text style={styles.meaningText}>{t(`${k}.onemBody`)}</Text>
+                    <Text style={styles.sectionTitle}>{t(`${k}.duaLabel`)}</Text>
+                    <Text style={styles.duaText}>{t(`${k}.duaArap`)}</Text>
+                    <Text style={styles.meaningText}>{t(`${k}.duaMeaning`)}</Text>
+
+                    <Text style={styles.sectionTitleSpaced}>{t(`${k}.nefrTitle`)}</Text>
+                    <Text style={styles.bodyPara}>{t(`${k}.nefrBody`)}</Text>
+
+                    <Text style={styles.sectionTitleSpaced}>{t(`${k}.siraTitle`)}</Text>
+                    <Text style={styles.siraLine}>{t(`${k}.sira1`)}</Text>
+                    <Text style={styles.siraLineNext}>{t(`${k}.sira2`)}</Text>
+                    <Text style={styles.siraLineNext}>{t(`${k}.sira3`)}</Text>
 
                     <Text style={styles.sectionTitleSpaced}>{t(`${k}.notesTitle`)}</Text>
                     <Text style={styles.noteFirstAfterTitle}>{t(`${k}.note1`)}</Text>
                     <Text style={styles.noteNext}>{t(`${k}.note2`)}</Text>
                     <Text style={styles.noteNext}>{t(`${k}.note3`)}</Text>
+                    <Text style={styles.noteNext}>{t(`${k}.note4`)}</Text>
                   </ScrollView>
                 </View>
               </View>
@@ -141,12 +151,40 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     marginTop: 16,
   },
+  duaText: {
+    color: DARK,
+    fontSize: 15,
+    lineHeight: 24,
+    fontWeight: '600',
+    marginTop: 8,
+  },
   meaningText: {
     color: DARK,
     fontSize: 15,
     lineHeight: 24,
     fontWeight: '500',
     marginTop: 8,
+  },
+  bodyPara: {
+    color: DARK,
+    fontSize: 15,
+    lineHeight: 24,
+    fontWeight: '500',
+    marginTop: 8,
+  },
+  siraLine: {
+    color: DARK,
+    fontSize: 15,
+    lineHeight: 24,
+    fontWeight: '500',
+    marginTop: 8,
+  },
+  siraLineNext: {
+    color: DARK,
+    fontSize: 15,
+    lineHeight: 24,
+    fontWeight: '500',
+    marginTop: 10,
   },
   noteFirstAfterTitle: {
     color: DARK,

@@ -1,12 +1,23 @@
 import { Image } from 'expo-image';
-import { useRouter } from 'expo-router';
+import { useRouter, type Href } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useTranslation } from 'react-i18next';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const OVERLAY = 'rgba(0,0,0,0.45)';
 const GOLD = '#C9A84C';
+const BTN_BG = 'rgba(12, 10, 8, 0.72)';
+
+const K = 'vedaTavafAdimlar' as const;
+const STEP_KEYS = ['step1', 'step2', 'step3', 'step4', 'step5'] as const;
+const STEP_HREFS: (Href | null)[] = [
+  '/veda-tavaf-adim-1' as Href,
+  '/veda-tavaf-adim-2' as Href,
+  '/veda-tavaf-adim-3' as Href,
+  '/veda-tavaf-adim-4' as Href,
+  '/veda-tavaf-adim-5' as Href,
+];
 
 export default function VedaTavafAdimlarScreen() {
   const { t } = useTranslation();
@@ -28,16 +39,41 @@ export default function VedaTavafAdimlarScreen() {
           <Pressable
             onPress={() => router.back()}
             style={({ pressed }) => [styles.backBtn, pressed && { opacity: 0.88 }]}
-            accessibilityLabel={t('vedaTavafAdimlar.backA11y')}
+            accessibilityLabel={t(`${K}.backA11y`)}
             accessibilityRole="button"
           >
             <Text style={styles.backBtnArrow}>←</Text>
           </Pressable>
         </View>
-        <View style={styles.middle}>
-          <Text style={styles.title}>{t('anaGorev.mission8Heading')}</Text>
-          <Text style={styles.placeholder}>{t('vedaTavafAdimlar.comingSoon')}</Text>
-        </View>
+        <Text style={styles.title}>{t('anaGorev.mission8Heading')}</Text>
+        <ScrollView
+          style={styles.scroll}
+          contentContainerStyle={styles.scrollContent}
+          showsVerticalScrollIndicator={false}
+        >
+          <View style={styles.stepList}>
+            {STEP_KEYS.map((key, index) => {
+              const href = STEP_HREFS[index];
+              if (href) {
+                return (
+                  <Pressable
+                    key={key}
+                    onPress={() => router.push(href)}
+                    style={({ pressed }) => [styles.stepRow, pressed && { opacity: 0.9 }]}
+                    accessibilityRole="button"
+                  >
+                    <Text style={styles.stepText}>{t(`${K}.${key}`)}</Text>
+                  </Pressable>
+                );
+              }
+              return (
+                <View key={key} style={styles.stepRow} accessible accessibilityRole="text">
+                  <Text style={styles.stepText}>{t(`${K}.${key}`)}</Text>
+                </View>
+              );
+            })}
+          </View>
+        </ScrollView>
       </SafeAreaView>
     </View>
   );
@@ -59,15 +95,45 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.5)',
     borderWidth: 1.5,
     borderColor: GOLD,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.35,
+    shadowRadius: 4,
   },
-  backBtnArrow: { color: GOLD, fontSize: 24, fontWeight: '600' },
-  middle: { flex: 1, paddingHorizontal: 24, justifyContent: 'center' },
+  backBtnArrow: {
+    color: GOLD,
+    fontSize: 24,
+    fontWeight: '600',
+    lineHeight: 28,
+  },
   title: {
     color: '#fff',
     fontSize: 20,
     fontWeight: '800',
     textAlign: 'center',
-    marginBottom: 16,
+    paddingHorizontal: 20,
+    marginBottom: 12,
   },
-  placeholder: { color: 'rgba(255,255,255,0.9)', fontSize: 16, lineHeight: 24, textAlign: 'center' },
+  scroll: { flex: 1 },
+  scrollContent: {
+    paddingHorizontal: 20,
+    paddingBottom: 24,
+  },
+  stepList: { gap: 12 },
+  stepRow: {
+    backgroundColor: BTN_BG,
+    borderRadius: 16,
+    borderWidth: 1.5,
+    borderColor: GOLD,
+    paddingVertical: 16,
+    paddingHorizontal: 16,
+    minHeight: 52,
+    justifyContent: 'center',
+  },
+  stepText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: '700',
+    lineHeight: 24,
+  },
 });
