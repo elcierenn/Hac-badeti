@@ -65,7 +65,7 @@ export default function MinaGecelemeAdimlarScreen() {
             <Text style={styles.backBtnArrow}>←</Text>
           </Pressable>
         </View>
-        <Text style={styles.title}>{t('ihramAdimlar.title')}</Text>
+        <Text style={styles.title}>{t('anaGorev.mission4Heading')}</Text>
         <View
           style={styles.scrollShell}
           onLayout={(e: LayoutChangeEvent) => {

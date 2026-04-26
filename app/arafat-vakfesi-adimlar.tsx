@@ -69,7 +69,7 @@ export default function ArafatVakfesiAdimlarScreen() {
             <Text style={styles.backBtnArrow}>←</Text>
           </Pressable>
         </View>
-        <Text style={styles.title}>{t('ihramAdimlar.title')}</Text>
+        <Text style={styles.title}>{t('anaGorev.mission5Heading')}</Text>
         <View
           style={styles.scrollShell}
           onLayout={(e: LayoutChangeEvent) => {

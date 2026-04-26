@@ -193,6 +193,10 @@ export default function TumGorevlerScreen() {
                         router.replace({ pathname: '/ana-gorev', params: { p: '4' } });
                       } else if (i === 6) {
                         router.replace({ pathname: '/ana-gorev', params: { p: '5' } });
+                      } else if (i === 7) {
+                        router.replace({ pathname: '/ana-gorev', params: { p: '6' } });
+                      } else {
+                        router.replace({ pathname: '/ana-gorev', params: { p: '7' } });
                       }
                     }}
                     style={({ pressed }) => [

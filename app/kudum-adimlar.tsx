@@ -53,7 +53,7 @@ export default function KudumAdimlarScreen() {
             <Text style={styles.backBtnArrow}>←</Text>
           </Pressable>
         </View>
-        <Text style={styles.title}>{t('ihramAdimlar.title')}</Text>
+        <Text style={styles.title}>{t('anaGorev.mission2Heading')}</Text>
         <ScrollView
           style={styles.scroll}
           contentContainerStyle={styles.scrollContent}

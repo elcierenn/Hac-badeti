@@ -10,31 +10,27 @@ const GOLD = '#C9A84C';
 const BTN_BG = 'rgba(12, 10, 8, 0.72)';
 
 const STEP_KEYS = [
-  'sayAdimlar.step1',
-  'sayAdimlar.step2',
-  'sayAdimlar.step3',
-  'sayAdimlar.step4',
-  'sayAdimlar.step5',
-  'sayAdimlar.step6',
+  'seytanKurbanTirasAdimlar.step1',
+  'seytanKurbanTirasAdimlar.step2',
+  'seytanKurbanTirasAdimlar.step3',
+  'seytanKurbanTirasAdimlar.step4',
 ] as const;
 
 const STEP_DETAIL_HREFS: (Href | null)[] = [
-  '/say-adim-1-safa',
-  '/say-adim-2-tekbir',
-  '/say-adim-3-safa-merve',
-  '/say-adim-4-merve',
-  '/say-adim-5-savt',
-  '/say-adim-6-merve-son-dua',
+  '/seytan-kurban-tiras-adim-1' as Href,
+  '/seytan-kurban-tiras-adim-2' as Href,
+  '/seytan-kurban-tiras-adim-3' as Href,
+  '/seytan-kurban-tiras-adim-4' as Href,
 ];
 
-export default function SayAdimlarScreen() {
+export default function SeytanKurbanTirasAdimlarScreen() {
   const { t } = useTranslation();
   const router = useRouter();
 
   return (
     <View style={styles.root}>
       <Image
-        source={require(`../assets/images/sa'y_safa-merve.jpeg`)}
+        source={require('../assets/images/cemaat_köprüsü.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}
@@ -47,13 +43,13 @@ export default function SayAdimlarScreen() {
           <Pressable
             onPress={() => router.back()}
             style={({ pressed }) => [styles.backBtn, pressed && { opacity: 0.88 }]}
-            accessibilityLabel={t('ihramAdimlar.backA11y')}
+            accessibilityLabel={t('seytanKurbanTirasAdimlar.backA11y')}
             accessibilityRole="button"
           >
             <Text style={styles.backBtnArrow}>←</Text>
           </Pressable>
         </View>
-        <Text style={styles.title}>{t('anaGorev.mission3Heading')}</Text>
+        <Text style={styles.title}>{t('anaGorev.mission7Heading')}</Text>
         <ScrollView
           style={styles.scroll}
           contentContainerStyle={styles.scrollContent}

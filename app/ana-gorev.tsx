@@ -30,7 +30,9 @@ type PageDef = {
     | 'anaGorev.mission3Heading'
     | 'anaGorev.mission4Heading'
     | 'anaGorev.mission5Heading'
-    | 'anaGorev.mission6Heading';
+    | 'anaGorev.mission6Heading'
+    | 'anaGorev.mission7Heading'
+    | 'anaGorev.mission8Heading';
 };
 
 const PAGES: PageDef[] = [
@@ -40,6 +42,8 @@ const PAGES: PageDef[] = [
   { image: require('../assets/images/mina_geceleme.jpeg'), suffix: '4', missionKey: 'anaGorev.mission4Heading' },
   { image: require('../assets/images/arafat_ovası.jpeg'), suffix: '5', missionKey: 'anaGorev.mission5Heading' },
   { image: require('../assets/images/müzdelife_gece.jpeg'), suffix: '6', missionKey: 'anaGorev.mission6Heading' },
+  { image: require('../assets/images/cemaat_köprüsü.jpeg'), suffix: '7', missionKey: 'anaGorev.mission7Heading' },
+  { image: require('../assets/images/kabe_7_tavaf.jpeg'), suffix: '8', missionKey: 'anaGorev.mission8Heading' },
 ];
 
 function AnaGorevPage({
@@ -174,8 +178,12 @@ export default function AnaGorevScreen() {
       router.push('/mina-geceleme-adimlar' as Href);
     } else if (activePage === 4) {
       router.push('/arafat-vakfesi-adimlar' as Href);
-    } else {
+    } else if (activePage === 5) {
       router.push('/muzdelife-vakfesi-adimlar' as Href);
+    } else if (activePage === 6) {
+      router.push('/seytan-kurban-tiras-adimlar' as Href);
+    } else {
+      router.push('/veda-tavaf-adimlar' as Href);
     }
   };
 

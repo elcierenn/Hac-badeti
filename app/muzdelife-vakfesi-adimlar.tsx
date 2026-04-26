@@ -69,7 +69,7 @@ export default function MuzdelifeVakfesiAdimlarScreen() {
             <Text style={styles.backBtnArrow}>←</Text>
           </Pressable>
         </View>
-        <Text style={styles.title}>{t('muzdelifeVakfesiAdimlar.title')}</Text>
+        <Text style={styles.title}>{t('anaGorev.mission6Heading')}</Text>
         <View
           style={styles.scrollShell}
           onLayout={(e: LayoutChangeEvent) => {
