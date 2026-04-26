@@ -8,18 +8,21 @@ const STAGGER = -8;
 
 type Direction = 'forward' | 'back';
 
+type Axis = 'horizontal' | 'vertical';
+
 type Props = {
-  /** Sona doğru (sağa) / öncekine (sola) */
+  /** Sona doğru (sağa) / öncekine (sola) — yatayda; aşağı / yukarı — dikeyde */
   direction?: Direction;
+  /** Yatay (varsayılan) veya dikey kaydırma ipucu */
+  axis?: Axis;
   /** Ok rengi */
   tintColor?: string;
 };
 
 /**
- * Yatay kaydırma yönü ipucu (yalnızca şekil, metin yok).
- * Başka yatay kaydırmalı ekranlarda aynı bileşen kullanılabilir.
+ * Yatay veya dikey kaydırma yönü ipucu (yalnızca şekil, metin yok).
  */
-export function SwipeScrollHint({ direction = 'forward', tintColor = DEFAULT_TINT }: Props) {
+export function SwipeScrollHint({ direction = 'forward', axis = 'horizontal', tintColor = DEFAULT_TINT }: Props) {
   const nudge = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
@@ -45,7 +48,15 @@ export function SwipeScrollHint({ direction = 'forward', tintColor = DEFAULT_TIN
       nudge.stopAnimation();
       anim.stop();
     };
-  }, [direction, nudge]);
+  }, [direction, nudge, axis]);
+
+  const transform =
+    axis === 'vertical'
+      ? ([
+          { rotate: direction === 'forward' ? '90deg' : '-90deg' } as const,
+          { translateY: nudge },
+        ] as const)
+      : ([{ translateX: nudge }] as const);
 
   return (
     <View
@@ -54,7 +65,7 @@ export function SwipeScrollHint({ direction = 'forward', tintColor = DEFAULT_TIN
       accessibilityElementsHidden
       importantForAccessibility="no-hide-descendants"
     >
-      <Animated.View style={[styles.chevronRow, { transform: [{ translateX: nudge }] }]}>
+      <Animated.View style={[styles.chevronRow, { transform: [...transform] }]}>
         {direction === 'forward' ? (
           <>
             <ForwardChevron color={tintColor} index={0} />

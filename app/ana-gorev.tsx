@@ -24,13 +24,22 @@ const DARK_TEXT = '#1a1a1a';
 type PageDef = {
   image: ImageSourcePropType;
   suffix: string;
-  missionKey: 'anaGorev.missionHeading' | 'anaGorev.mission2Heading' | 'anaGorev.mission3Heading';
+  missionKey:
+    | 'anaGorev.missionHeading'
+    | 'anaGorev.mission2Heading'
+    | 'anaGorev.mission3Heading'
+    | 'anaGorev.mission4Heading'
+    | 'anaGorev.mission5Heading'
+    | 'anaGorev.mission6Heading';
 };
 
 const PAGES: PageDef[] = [
   { image: require('../assets/images/hac_ibadeti_ihrama_giris.jpeg'), suffix: '1', missionKey: 'anaGorev.missionHeading' },
   { image: require('../assets/images/mekke_kudüm.jpeg'), suffix: '2', missionKey: 'anaGorev.mission2Heading' },
   { image: require(`../assets/images/sa'y_safa-merve.jpeg`), suffix: '3', missionKey: 'anaGorev.mission3Heading' },
+  { image: require('../assets/images/mina_geceleme.jpeg'), suffix: '4', missionKey: 'anaGorev.mission4Heading' },
+  { image: require('../assets/images/arafat_ovası.jpeg'), suffix: '5', missionKey: 'anaGorev.mission5Heading' },
+  { image: require('../assets/images/müzdelife_gece.jpeg'), suffix: '6', missionKey: 'anaGorev.mission6Heading' },
 ];
 
 function AnaGorevPage({
@@ -159,8 +168,14 @@ export default function AnaGorevScreen() {
       router.push('/ihram-adimlar' as Href);
     } else if (activePage === 1) {
       router.push('/kudum-adimlar' as Href);
-    } else {
+    } else if (activePage === 2) {
       router.push('/say-adimlar' as Href);
+    } else if (activePage === 3) {
+      router.push('/mina-geceleme-adimlar' as Href);
+    } else if (activePage === 4) {
+      router.push('/arafat-vakfesi-adimlar' as Href);
+    } else {
+      router.push('/muzdelife-vakfesi-adimlar' as Href);
     }
   };
 
