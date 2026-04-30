@@ -1,7 +1,7 @@
 import { Image } from 'expo-image';
 import { useLocalSearchParams, useRouter, type Href, type Router } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { NativeScrollEvent, NativeSyntheticEvent } from 'react-native';
 import {
@@ -55,6 +55,8 @@ function AnaGorevPage({
   router,
   swipeHint,
   totalPages,
+  onSwipeBack,
+  onSwipeForward,
 }: {
   width: number;
   height: number;
@@ -64,6 +66,8 @@ function AnaGorevPage({
   router: Pick<Router, 'back' | 'push'>;
   swipeHint: 'forward' | 'back' | 'both' | null;
   totalPages: number;
+  onSwipeBack: () => void;
+  onSwipeForward: () => void;
 }) {
   return (
     <View style={{ width, height, backgroundColor: '#000' }}>
@@ -107,8 +111,19 @@ function AnaGorevPage({
         <View style={styles.middle}>
           <View style={styles.screenTitleFrame}>
             <View style={styles.titleRow}>
-              <Text style={styles.screenTitle}>{t('anaGorev.screenTitle')}</Text>
-              <Text style={styles.screenTitleSuffix}>{page.suffix}</Text>
+              <View style={styles.titleTextWrap}>
+                <Text
+                  style={styles.screenTitle}
+                  numberOfLines={1}
+                  adjustsFontSizeToFit
+                  minimumFontScale={0.65}
+                >
+                  {t('anaGorev.screenTitle')}
+                </Text>
+              </View>
+              <Text style={styles.screenTitleSuffix} numberOfLines={1}>
+                {page.suffix}
+              </Text>
             </View>
           </View>
           <Text style={styles.missionLabel}>{t(page.missionKey)}</Text>
@@ -127,19 +142,28 @@ function AnaGorevPage({
       {swipeHint && totalPages > 1 ? (
         swipeHint === 'both' ? (
           <>
-            <View style={[styles.swipeHintEdge, styles.swipeHintEdgeLeft]} pointerEvents="none">
-              <SwipeScrollHint direction="back" tintColor={GOLD} />
+            <View pointerEvents="box-none" style={[styles.swipeHintEdge, styles.swipeHintEdgeLeft]}>
+              <Pressable accessibilityRole="button" onPress={onSwipeBack}>
+                <SwipeScrollHint direction="back" tintColor={GOLD} />
+              </Pressable>
             </View>
-            <View style={styles.swipeHintEdge} pointerEvents="none">
-              <SwipeScrollHint direction="forward" tintColor={GOLD} />
+            <View pointerEvents="box-none" style={styles.swipeHintEdge}>
+              <Pressable accessibilityRole="button" onPress={onSwipeForward}>
+                <SwipeScrollHint direction="forward" tintColor={GOLD} />
+              </Pressable>
             </View>
           </>
         ) : (
           <View
+            pointerEvents="box-none"
             style={[styles.swipeHintEdge, swipeHint === 'back' && styles.swipeHintEdgeLeft]}
-            pointerEvents="none"
           >
-            <SwipeScrollHint direction={swipeHint} tintColor={GOLD} />
+            <Pressable
+              accessibilityRole="button"
+              onPress={swipeHint === 'forward' ? onSwipeForward : onSwipeBack}
+            >
+              <SwipeScrollHint direction={swipeHint} tintColor={GOLD} />
+            </Pressable>
           </View>
         )
       ) : null}
@@ -176,6 +200,18 @@ export default function AnaGorevScreen() {
     if (width <= 0) return;
     setActivePage(Math.round(x / width));
   };
+
+  const goAdjacent = useCallback((dir: 'forward' | 'back') => {
+    if (width <= 0) return;
+    const delta = dir === 'forward' ? 1 : -1;
+    setActivePage((current) => {
+      const next = Math.min(Math.max(0, current + delta), PAGES.length - 1);
+      if (next !== current) {
+        scrollRef.current?.scrollTo({ x: next * width, animated: true });
+      }
+      return next;
+    });
+  }, [width]);
 
   const onStart = () => {
     if (activePage === 0) {
@@ -227,6 +263,8 @@ export default function AnaGorevScreen() {
                   ? 'back'
                   : 'both'
             }
+            onSwipeBack={() => goAdjacent('back')}
+            onSwipeForward={() => goAdjacent('forward')}
           />
         ))}
       </ScrollView>
@@ -313,24 +351,32 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingHorizontal: 14,
     paddingVertical: 8,
+    maxWidth: '100%',
+    alignSelf: 'center',
   },
   titleRow: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    flexWrap: 'wrap',
+    flexWrap: 'nowrap',
+    maxWidth: '100%',
     gap: 8,
+  },
+  titleTextWrap: {
+    flexShrink: 1,
+    minWidth: 0,
   },
   screenTitle: {
     color: GOLD,
     fontSize: 18,
     fontWeight: '700',
-    textAlign: 'center',
+    textAlign: 'right',
   },
   screenTitleSuffix: {
     color: GOLD,
     fontSize: 18,
     fontWeight: '700',
+    flexShrink: 0,
   },
   missionLabel: {
     color: '#fff',
