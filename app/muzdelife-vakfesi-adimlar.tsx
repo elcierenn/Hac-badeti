@@ -50,7 +50,7 @@ export default function MuzdelifeVakfesiAdimlarScreen() {
   return (
     <View style={styles.root}>
       <Image
-        source={require('../assets/images/müzdelife_gece.jpeg')}
+        source={require('../assets/images/muzdelife_gece.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

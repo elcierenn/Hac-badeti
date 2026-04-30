@@ -18,7 +18,7 @@ export default function KudumAdim2HacerulesvedScreen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/hacerülesved.png')}
+        source={require('../assets/images/hacerulesved.png')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

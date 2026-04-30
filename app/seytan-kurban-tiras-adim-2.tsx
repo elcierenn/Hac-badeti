@@ -21,7 +21,7 @@ export default function SeytanKurbanTirasAdim2Screen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/kurban_baslangıcı.jpeg')}
+        source={require('../assets/images/kurban_baslangici.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

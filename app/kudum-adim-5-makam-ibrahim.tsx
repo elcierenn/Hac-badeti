@@ -19,7 +19,7 @@ export default function KudumAdim5MakamIbrahimScreen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/makam-ı_ibrahim.jpeg')}
+        source={require('../assets/images/makam-i_ibrahim.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

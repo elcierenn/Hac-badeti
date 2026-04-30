@@ -21,7 +21,7 @@ export default function SeytanKurbanTirasGun2Adim4Screen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/minada_gece_cadır_oturmak.jpeg')}
+        source={require('../assets/images/minada_gece_cadir_oturmak.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

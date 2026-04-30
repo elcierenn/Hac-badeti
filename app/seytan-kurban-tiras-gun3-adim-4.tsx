@@ -21,7 +21,7 @@ export default function SeytanKurbanTirasGun3Adim4Screen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/minadan_ayrlıs.jpeg')}
+        source={require('../assets/images/minadan_ayrlis.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

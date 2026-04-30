@@ -21,7 +21,7 @@ export default function SeytanKurbanTirasAdim1Screen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/cemre_sütunu.jpeg')}
+        source={require('../assets/images/cemre_sutunu.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

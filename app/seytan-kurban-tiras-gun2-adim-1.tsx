@@ -21,7 +21,7 @@ export default function SeytanKurbanTirasGun2Adim1Screen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/cemresütununa_taslama.jpeg')}
+        source={require('../assets/images/cemresutununa_taslama.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

@@ -19,7 +19,7 @@ export default function ArafatVakfesiAdim2GuslScreen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/cadır_yanında_abdest.jpeg')}
+        source={require('../assets/images/cadir_yaninda_abdest.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

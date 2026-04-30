@@ -28,7 +28,7 @@ export default function IhramAdim4NamazScreen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/ihram_namazı.jpeg')}
+        source={require('../assets/images/ihram_namazi.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

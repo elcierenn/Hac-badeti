@@ -21,7 +21,7 @@ export default function MuzdelifeVakfesiAdim2Screen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/müzdelife_panoramik.jpeg')}
+        source={require('../assets/images/muzdelife_panoramik.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

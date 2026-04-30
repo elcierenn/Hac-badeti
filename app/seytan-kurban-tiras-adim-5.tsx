@@ -21,7 +21,7 @@ export default function SeytanKurbanTirasAdim5Screen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/kabe_dönen_hacılar.jpeg')}
+        source={require('../assets/images/kabe_donen_hacilar.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

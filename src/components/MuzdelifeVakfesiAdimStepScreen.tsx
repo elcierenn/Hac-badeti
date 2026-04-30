@@ -9,7 +9,7 @@ const GOLD = '#C9A84C';
 const DARK = '#1a1a1a';
 const BUBBLE = 'rgba(255, 252, 247, 0.78)';
 
-const MUZDELIFE_IMAGE = require('../../assets/images/müzdelife_gece.jpeg');
+const MUZDELIFE_IMAGE = require('../../assets/images/muzdelife_gece.jpeg');
 
 type StepIndex = 1 | 2 | 3 | 4 | 5 | 6;
 

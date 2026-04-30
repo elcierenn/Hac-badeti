@@ -21,7 +21,7 @@ export default function MuzdelifeVakfesiAdim5Screen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/müzdelifede_sabah_namazı.jpeg')}
+        source={require('../assets/images/muzdelifede_sabah_namazi.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

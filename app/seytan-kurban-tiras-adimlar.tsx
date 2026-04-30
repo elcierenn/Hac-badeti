@@ -113,7 +113,7 @@ export default function SeytanKurbanTirasAdimlarScreen() {
   return (
     <View style={styles.root}>
       <Image
-        source={require('../assets/images/cemaat_köprüsü.jpeg')}
+        source={require('../assets/images/cemaat_koprusu.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

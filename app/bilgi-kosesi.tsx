@@ -53,7 +53,7 @@ export default function BilgiKosesiScreen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/bilgi_kosesı_background.jpeg')}
+        source={require('../assets/images/bilgi_kosesi_background.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

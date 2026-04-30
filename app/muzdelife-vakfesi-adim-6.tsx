@@ -21,7 +21,7 @@ export default function MuzdelifeVakfesiAdim6Screen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/müzdelife_minaya_yol.jpeg')}
+        source={require('../assets/images/muzdelife_minaya_yol.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

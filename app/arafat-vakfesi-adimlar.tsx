@@ -50,7 +50,7 @@ export default function ArafatVakfesiAdimlarScreen() {
   return (
     <View style={styles.root}>
       <Image
-        source={require('../assets/images/arafat_ovası.jpeg')}
+        source={require('../assets/images/arafat_ovasi.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

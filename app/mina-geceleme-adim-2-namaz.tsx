@@ -19,7 +19,7 @@ export default function MinaGecelemeAdim2NamazScreen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/mina_beyaz_cadır.jpeg')}
+        source={require('../assets/images/mina_beyaz_cadir.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

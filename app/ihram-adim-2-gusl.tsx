@@ -29,7 +29,7 @@ export default function IhramAdim2GuslScreen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/gusül_abdest.jpeg')}
+        source={require('../assets/images/gusul_abdest.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

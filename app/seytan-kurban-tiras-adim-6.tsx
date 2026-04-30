@@ -21,7 +21,7 @@ export default function SeytanKurbanTirasAdim6Screen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/makamıibrahim_namaz.jpeg')}
+        source={require('../assets/images/makamiibrahim_namaz.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

@@ -21,7 +21,7 @@ export default function VedaTavafAdim5Screen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/büyük_kapıdan_ayrılık.jpeg')}
+        source={require('../assets/images/buyuk_kapidan_ayrilik.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

@@ -19,7 +19,7 @@ export default function KudumAdim4RuknYemaniScreen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/rükn-i_yemani.jpeg')}
+        source={require('../assets/images/rukn-i_yemani.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

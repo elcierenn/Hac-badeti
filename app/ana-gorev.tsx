@@ -37,12 +37,12 @@ type PageDef = {
 
 const PAGES: PageDef[] = [
   { image: require('../assets/images/hac_ibadeti_ihrama_giris.jpeg'), suffix: '1', missionKey: 'anaGorev.missionHeading' },
-  { image: require('../assets/images/mekke_kudüm.jpeg'), suffix: '2', missionKey: 'anaGorev.mission2Heading' },
-  { image: require(`../assets/images/sa'y_safa-merve.jpeg`), suffix: '3', missionKey: 'anaGorev.mission3Heading' },
+  { image: require('../assets/images/mekke_kudum.jpeg'), suffix: '2', missionKey: 'anaGorev.mission2Heading' },
+  { image: require(`../assets/images/sa_y_safa-merve.jpeg`), suffix: '3', missionKey: 'anaGorev.mission3Heading' },
   { image: require('../assets/images/mina_geceleme.jpeg'), suffix: '4', missionKey: 'anaGorev.mission4Heading' },
-  { image: require('../assets/images/arafat_ovası.jpeg'), suffix: '5', missionKey: 'anaGorev.mission5Heading' },
-  { image: require('../assets/images/müzdelife_gece.jpeg'), suffix: '6', missionKey: 'anaGorev.mission6Heading' },
-  { image: require('../assets/images/cemaat_köprüsü.jpeg'), suffix: '7', missionKey: 'anaGorev.mission7Heading' },
+  { image: require('../assets/images/arafat_ovasi.jpeg'), suffix: '5', missionKey: 'anaGorev.mission5Heading' },
+  { image: require('../assets/images/muzdelife_gece.jpeg'), suffix: '6', missionKey: 'anaGorev.mission6Heading' },
+  { image: require('../assets/images/cemaat_koprusu.jpeg'), suffix: '7', missionKey: 'anaGorev.mission7Heading' },
   { image: require('../assets/images/kabe_7_tavaf.jpeg'), suffix: '8', missionKey: 'anaGorev.mission8Heading' },
 ];
 

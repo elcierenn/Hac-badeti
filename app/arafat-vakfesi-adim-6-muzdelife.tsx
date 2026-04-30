@@ -19,7 +19,7 @@ export default function ArafatVakfesiAdim6MuzdelifeScreen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/arafat_müzdelife.jpeg')}
+        source={require('../assets/images/arafat_muzdelife.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

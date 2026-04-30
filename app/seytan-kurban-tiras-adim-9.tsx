@@ -21,7 +21,7 @@ export default function SeytanKurbanTirasAdim9Screen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/mekke_minaya_dönmek.jpeg')}
+        source={require('../assets/images/mekke_minaya_donmek.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

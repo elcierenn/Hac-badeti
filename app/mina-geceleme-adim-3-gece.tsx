@@ -19,7 +19,7 @@ export default function MinaGecelemeAdim3GeceScreen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/cadır_icerisi.jpeg')}
+        source={require('../assets/images/cadir_icerisi.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

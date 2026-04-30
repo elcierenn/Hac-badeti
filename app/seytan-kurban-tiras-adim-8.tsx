@@ -21,7 +21,7 @@ export default function SeytanKurbanTirasAdim8Screen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/safamerve_hacılar.jpeg')}
+        source={require('../assets/images/safamerve_hacilar.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

@@ -26,7 +26,7 @@ export default function IhramAdimlarScreen() {
   return (
     <View style={styles.root}>
       <Image
-        source={require('../assets/images/ihram_adımlarımız.jpeg')}
+        source={require('../assets/images/ihram_adimlarimiz.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

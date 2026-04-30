@@ -34,7 +34,7 @@ export default function KudumAdimlarScreen() {
   return (
     <View style={styles.root}>
       <Image
-        source={require('../assets/images/mekke_kudüm.jpeg')}
+        source={require('../assets/images/mekke_kudum.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

@@ -19,7 +19,7 @@ export default function ArafatVakfesiAdim3NamazScreen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/arafat_ovası_namaz.jpeg')}
+        source={require('../assets/images/arafat_ovasi_namaz.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

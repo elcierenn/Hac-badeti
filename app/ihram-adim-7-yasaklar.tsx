@@ -28,7 +28,7 @@ export default function IhramAdim7YasaklarScreen() {
     <View style={styles.root}>
       <StatusBar style="light" />
       <Image
-        source={require('../assets/images/ihram_öğrenmek.jpeg')}
+        source={require('../assets/images/ihram_ogrenmek.jpeg')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

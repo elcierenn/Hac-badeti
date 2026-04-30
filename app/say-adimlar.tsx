@@ -34,7 +34,7 @@ export default function SayAdimlarScreen() {
   return (
     <View style={styles.root}>
       <Image
-        source={require(`../assets/images/sa'y_safa-merve.jpeg`)}
+        source={require(`../assets/images/sa_y_safa-merve.jpeg`)}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}
