@@ -11,7 +11,7 @@ import type { AppLanguage } from '../src/i18n/config';
 
 const GOLD = '#C9A84C';
 const DARK_TEXT = '#1a1a1a';
-const SHELF_BG = '#0a0a0a';
+const OVERLAY = 'rgba(0,0,0,0.55)';
 
 const LANGS: AppLanguage[] = ['tr', 'en', 'ar'];
 
@@ -26,6 +26,14 @@ export default function Index() {
 
   return (
     <View style={styles.root}>
+      <Image
+        source={require('../assets/images/hac_ibadeti_anasayfa.jpeg')}
+        style={StyleSheet.absoluteFill}
+        contentFit="cover"
+        transition={0}
+        priority="high"
+      />
+      <View style={[StyleSheet.absoluteFill, styles.overlay]} />
       <StatusBar
         style="light"
         hidden
@@ -36,13 +44,6 @@ export default function Index() {
       <SafeAreaView style={styles.safe} edges={['top', 'left', 'right', 'bottom']}>
         <View style={styles.content}>
           <View style={styles.topBlock}>
-            <Image
-              source={require('../assets/icon.png')}
-              style={styles.logo}
-              contentFit="contain"
-              transition={160}
-              priority="high"
-            />
             <Text style={[styles.bismillah, isRtl && styles.textRtlUi]} selectable={false}>
               {t('home.bismillah')}
             </Text>
@@ -101,20 +102,13 @@ export default function Index() {
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: SHELF_BG },
+  root: { flex: 1, backgroundColor: '#000' },
+  overlay: { backgroundColor: OVERLAY },
   safe: { flex: 1 },
   content: {
     flex: 1,
     justifyContent: 'center',
     paddingHorizontal: 24,
-  },
-  logo: {
-    width: 136,
-    height: 136,
-    alignSelf: 'center',
-    marginBottom: 20,
-    borderRadius: 28,
-    backgroundColor: 'rgba(255,255,255,0.06)',
   },
   topBlock: { alignItems: 'center' },
   bismillah: {
