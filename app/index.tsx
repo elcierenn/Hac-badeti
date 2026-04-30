@@ -11,14 +11,14 @@ import type { AppLanguage } from '../src/i18n/config';
 
 const GOLD = '#C9A84C';
 const DARK_TEXT = '#1a1a1a';
-const OVERLAY = 'rgba(0,0,0,0.55)';
+const SHELF_BG = '#0a0a0a';
 
 const LANGS: AppLanguage[] = ['tr', 'en', 'ar'];
 
 export default function Index() {
   const { t } = useTranslation();
   const router = useRouter();
-  const { language, setLanguage } = useAppLanguage();
+  const { language, setLanguage, isRtl } = useAppLanguage();
 
   const onHacaBasla = useCallback(() => {
     router.push('/ana-gorev');
@@ -26,14 +26,6 @@ export default function Index() {
 
   return (
     <View style={styles.root}>
-      <Image
-        source={require('../assets/images/hac_ibadeti_anasayfa.jpeg')}
-        style={StyleSheet.absoluteFill}
-        contentFit="cover"
-        transition={0}
-        priority="high"
-      />
-      <View style={[StyleSheet.absoluteFill, styles.overlay]} />
       <StatusBar
         style="light"
         hidden
@@ -44,13 +36,26 @@ export default function Index() {
       <SafeAreaView style={styles.safe} edges={['top', 'left', 'right', 'bottom']}>
         <View style={styles.content}>
           <View style={styles.topBlock}>
-            <Text style={styles.bismillah}>
+            <Image
+              source={require('../assets/icon.png')}
+              style={styles.logo}
+              contentFit="contain"
+              transition={160}
+              priority="high"
+            />
+            <Text style={[styles.bismillah, isRtl && styles.textRtlUi]} selectable={false}>
               {t('home.bismillah')}
             </Text>
-            <Text style={styles.title} accessibilityRole="header">
+            <Text
+              style={[styles.title, isRtl && styles.textRtlUi]}
+              accessibilityRole="header"
+              selectable={false}
+            >
               {t('common.appTitle')}
             </Text>
-            <Text style={styles.subtitle}>{t('home.subtitle')}</Text>
+            <Text style={[styles.subtitle, isRtl && styles.textRtlUi]} selectable={false}>
+              {t('home.subtitle')}
+            </Text>
           </View>
 
           <View style={styles.divider} />
@@ -96,13 +101,20 @@ export default function Index() {
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: '#000' },
-  overlay: { backgroundColor: OVERLAY },
+  root: { flex: 1, backgroundColor: SHELF_BG },
   safe: { flex: 1 },
   content: {
     flex: 1,
     justifyContent: 'center',
     paddingHorizontal: 24,
+  },
+  logo: {
+    width: 136,
+    height: 136,
+    alignSelf: 'center',
+    marginBottom: 20,
+    borderRadius: 28,
+    backgroundColor: 'rgba(255,255,255,0.06)',
   },
   topBlock: { alignItems: 'center' },
   bismillah: {
@@ -116,14 +128,14 @@ const styles = StyleSheet.create({
   },
   title: {
     color: '#fff',
-    fontSize: 36,
+    fontSize: 34,
     fontWeight: '800',
     textAlign: 'center',
     letterSpacing: 0.5,
   },
   subtitle: {
-    color: 'rgba(255,255,255,0.8)',
-    fontSize: 18,
+    color: 'rgba(255,255,255,0.76)',
+    fontSize: 17,
     fontWeight: '600',
     marginTop: 8,
     textAlign: 'center',
@@ -170,4 +182,8 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
   langTextActive: { color: GOLD, fontWeight: '800' },
+  textRtlUi: {
+    writingDirection: 'rtl',
+    textAlign: 'center',
+  },
 });
