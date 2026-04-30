@@ -7,7 +7,7 @@ import {
   useState,
   type ReactNode,
 } from 'react';
-import { ActivityIndicator, I18nManager, StyleSheet, View } from 'react-native';
+import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
 import { i18n, initialLng, type AppLanguage } from '../i18n/config';
 import { applyLayoutDirectionForLanguage, isLanguageRtl } from '../i18n/rtl';
@@ -43,11 +43,9 @@ export function LanguageProvider({ children }: Props) {
       setLanguageState(next);
       try {
         await i18n.changeLanguage(next);
-        if (isLanguageRtl(next) !== I18nManager.isRTL) {
-          await applyLayoutDirectionForLanguage(next);
-        }
+        await applyLayoutDirectionForLanguage(next);
       } catch {
-        // i18n / RTL: devam
+        // i18n / düzen ayarı başarısız olsa bile uygulama açılsın
       }
       if (!cancelled) setReady(true);
     })();
@@ -65,9 +63,7 @@ export function LanguageProvider({ children }: Props) {
       // Kalıcı yazılamazsa yine de oturum içi dili uygula
     }
     await i18n.changeLanguage(lang);
-    if (isLanguageRtl(lang) !== I18nManager.isRTL) {
-      await applyLayoutDirectionForLanguage(lang);
-    }
+    await applyLayoutDirectionForLanguage(lang);
   }, []);
 
   const isRtl = useMemo(() => isLanguageRtl(language), [language]);

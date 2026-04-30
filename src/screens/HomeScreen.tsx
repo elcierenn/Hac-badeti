@@ -19,10 +19,7 @@ export function HomeScreen() {
   const { language, setLanguage, isRtl } = useAppLanguage();
 
   return (
-    <ScrollView
-      contentContainerStyle={styles.scroll}
-      style={[styles.root, { direction: isRtl ? 'rtl' : 'ltr' }]}
-    >
+    <ScrollView contentContainerStyle={styles.scroll} style={[styles.root, styles.rootLtr]}>
       <View style={styles.header}>
         <Text style={styles.title}>{t('common.appTitle')}</Text>
         <Text style={styles.tagline}>{t('home.tagline')}</Text>
@@ -63,13 +60,14 @@ export function HomeScreen() {
         />
       </View>
 
-      <Text style={styles.body}>{t('home.body')}</Text>
+      <Text style={[styles.body, isRtl ? styles.bodyRtl : null]}>{t('home.body')}</Text>
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   root: { flex: 1, backgroundColor: colors.background },
+  rootLtr: { direction: 'ltr' },
   scroll: { padding: space.lg, paddingBottom: space.xl * 2, gap: space.lg },
   header: { gap: space.sm },
   title: { fontSize: 26, fontWeight: '700', color: colors.text },
@@ -110,4 +108,5 @@ const styles = StyleSheet.create({
   },
   heroImage: { width: '100%', height: 160 },
   body: { fontSize: 15, lineHeight: 22, color: colors.text },
+  bodyRtl: { writingDirection: 'rtl', textAlign: 'right' },
 });

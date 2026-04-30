@@ -13,26 +13,37 @@ function setWebDocumentDir(rtl: boolean) {
 }
 
 /**
- * Arapçaya (veya LTR dillerine) geçerken yerel düzende tam tutarlılık için
- * yön değişiminde uygulama yeniden yüklenir. Geliştirme modunda
- * `Updates.reloadAsync` her zaman mevcut olmayabilir; o zaman Metro ile `r` ile yenileyin.
+ * Arapça metin için bileğimsel düzen (writingDirection/textAlign vb.) kullanıyoruz;
+ * `I18nManager.forceRTL(true)` kullanmıyoruz — küresel ayna yatay pager ana görev
+ * sırasını (1→8) ve düğüm yerlerini ters çevirir; production/TestFlight’ta özellikle belirgin olur.
+ *
+ * Eskiden forceRTL kullanan yüklü sürümlerden yükselten kullanıcılar için: native RTL
+ * açıksa bir kez reload ile normale döndürülür.
  */
-export async function applyLayoutDirectionForLanguage(lang: AppLanguage) {
-  const needRtl = isLanguageRtl(lang);
-  setWebDocumentDir(needRtl);
-
-  if (I18nManager.isRTL === needRtl) return;
-
-  I18nManager.allowRTL(needRtl);
-  I18nManager.forceRTL(needRtl);
+export async function applyLayoutDirectionForLanguage(lang: AppLanguage): Promise<void> {
+  const webRtl = isLanguageRtl(lang);
+  setWebDocumentDir(webRtl);
 
   if (Platform.OS === 'web') return;
+
+  const hadNativeRtlMirror = I18nManager.isRTL;
+
+  try {
+    I18nManager.swapLeftAndRightInRTL(false);
+  } catch {
+    //
+  }
+
+  I18nManager.allowRTL(true);
+  I18nManager.forceRTL(false);
+
+  if (!hadNativeRtlMirror) return;
 
   try {
     if (typeof Updates.reloadAsync === 'function') {
       await Updates.reloadAsync();
     }
   } catch {
-    // Dev client / sınırlı ortamlar: yenileme yok, kullanıcı manuel reload yapabilir.
+    //
   }
 }
