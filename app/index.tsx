@@ -27,7 +27,7 @@ export default function Index() {
   return (
     <View style={styles.root}>
       <Image
-        source={require('../assets/images/hac_ibadeti_anasayfa.jpeg')}
+        source={require('../assets/images/hac_ibadetianasayfa.png')}
         style={StyleSheet.absoluteFill}
         contentFit="cover"
         transition={0}

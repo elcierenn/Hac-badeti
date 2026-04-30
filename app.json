@@ -8,11 +8,11 @@
       "policy": "appVersion"
     },
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/hac_ibadetianasayfa.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/images/hac_ibadetianasayfa.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -26,14 +26,14 @@
     "android": {
       "package": "com.hacibadeti.app",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/hac_ibadetianasayfa.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/images/hac_ibadetianasayfa.png"
     },
     "plugins": [
       "expo-localization",
