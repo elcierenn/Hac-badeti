@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { AdBanner } from '../src/components/AdBanner';
 import { useProgress } from '../src/context/ProgressContext';
 
 const BG = '#ECE6DC';
@@ -233,6 +234,7 @@ export default function TumGorevlerScreen() {
             </View>
           </View>
         </View>
+        <AdBanner />
       </SafeAreaView>
     </View>
   );

@@ -4,6 +4,9 @@ import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { useInterstitialAd } from '../src/ads/useInterstitialAd';
+import { AdBanner } from '../src/components/AdBanner';
+
 const BG = '#ECE6DC';
 const GOLD = '#C9A84C';
 const GOLD_DIM = 'rgba(201,168,76,0.18)';
@@ -53,6 +56,7 @@ function AmbientBlobs() {
 export default function AraclarScreen() {
   const { t } = useTranslation();
   const router = useRouter();
+  const maybeShowInterstitial = useInterstitialAd();
 
   const pairs: Tool[][] = [];
   const fullWidths: Tool[] = [];
@@ -88,15 +92,16 @@ export default function AraclarScreen() {
           {pairs.map((pair, rowIdx) => (
             <View key={rowIdx} style={styles.row}>
               {pair.map((tool) => (
-                <ToolCard key={tool.key} tool={tool} t={t} router={router} />
+                <ToolCard key={tool.key} tool={tool} t={t} router={router} onOpen={maybeShowInterstitial} />
               ))}
               {pair.length === 1 && <View style={styles.halfPlaceholder} />}
             </View>
           ))}
           {fullWidths.map((tool) => (
-            <ToolCard key={tool.key} tool={tool} t={t} router={router} full />
+            <ToolCard key={tool.key} tool={tool} t={t} router={router} onOpen={maybeShowInterstitial} full />
           ))}
         </ScrollView>
+        <AdBanner />
       </SafeAreaView>
     </View>
   );
@@ -106,11 +111,13 @@ function ToolCard({
   tool,
   t,
   router,
+  onOpen,
   full,
 }: {
   tool: Tool;
   t: (k: string) => string;
   router: ReturnType<typeof useRouter>;
+  onOpen: () => void;
   full?: boolean;
 }) {
   const borderColor = tool.danger ? DANGER : GOLD;
@@ -118,7 +125,10 @@ function ToolCard({
 
   return (
     <Pressable
-      onPress={() => router.push(tool.route)}
+      onPress={() => {
+        onOpen();
+        router.push(tool.route);
+      }}
       style={({ pressed }) => [
         styles.card,
         full && styles.cardFull,
