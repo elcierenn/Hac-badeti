@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { AdEventType, InterstitialAd } from 'react-native-google-mobile-ads';
 
+import { usePurchase } from '../context/PurchaseContext';
 import { INTERSTITIAL_AD_UNIT_ID } from './adUnits';
 
 /** Show an interstitial at most this often, to keep the app from feeling ad-heavy. */
@@ -20,8 +21,12 @@ export function useInterstitialAd() {
   const adRef = useRef<InterstitialAd | null>(null);
   const [loaded, setLoaded] = useState(false);
   const callCount = useRef(0);
+  const { isAdFree } = usePurchase();
 
   useEffect(() => {
+    if (isAdFree) {
+      return;
+    }
     let unsubscribers: Array<() => void> = [];
 
     const attach = (ad: InterstitialAd) => {
@@ -44,9 +49,12 @@ export function useInterstitialAd() {
     attach(loadInterstitial());
 
     return () => unsubscribers.forEach((unsub) => unsub());
-  }, []);
+  }, [isAdFree]);
 
   return useCallback(() => {
+    if (isAdFree) {
+      return;
+    }
     callCount.current += 1;
     if (callCount.current % SHOW_EVERY_N_CALLS !== 0) {
       return;
@@ -54,5 +62,5 @@ export function useInterstitialAd() {
     if (loaded && adRef.current) {
       adRef.current.show();
     }
-  }, [loaded]);
+  }, [isAdFree, loaded]);
 }

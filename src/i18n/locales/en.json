@@ -972,7 +972,24 @@
     "backHome": "Back to home"
   },
   "homeExtra": {
-    "toolsCta": "Tools & Guide"
+    "toolsCta": "Tools & Guide",
+    "removeAdsCta": "Ad-free"
+  },
+  "reklamKaldir": {
+    "title": "Remove Ads",
+    "backA11y": "Back",
+    "heroTitle": "An ad-free, peaceful experience",
+    "heroDesc": "Support the app with this small contribution and enjoy an uninterrupted journey, completely free of ads. Your support helps the app keep growing.",
+    "benefits": {
+      "noBanner": "Removes banner ads from every screen",
+      "noInterstitial": "Removes interstitial ads when opening tools",
+      "support": "Supports the developer and helps keep the app alive",
+      "forever": "One-time payment — permanently ad-free"
+    },
+    "buyCta": "Remove ads for {{price}}",
+    "restoreCta": "Restore purchases",
+    "alreadyOwned": "Ads are already removed on this device. Thank you! 🤲",
+    "note": "Purchases are processed securely through your App Store / Google Play account."
   },
   "araclar": {
     "title": "Tools & Guide",

@@ -7,6 +7,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { useAppLanguage } from '../src/context/LanguageContext';
+import { usePurchase } from '../src/context/PurchaseContext';
 import type { AppLanguage } from '../src/i18n/config';
 
 const GOLD = '#C9A84C';
@@ -19,6 +20,7 @@ export default function Index() {
   const { t } = useTranslation();
   const router = useRouter();
   const { language, setLanguage, isRtl } = useAppLanguage();
+  const { isAdFree } = usePurchase();
 
   const onHacaBasla = useCallback(() => {
     router.push('/ana-gorev');
@@ -42,6 +44,21 @@ export default function Index() {
       />
 
       <SafeAreaView style={styles.safe} edges={['top', 'left', 'right', 'bottom']}>
+        {!isAdFree && (
+          <Pressable
+            onPress={() => router.push('/reklam-kaldir')}
+            style={({ pressed }) => [
+              styles.noAdsBtn,
+              isRtl ? styles.noAdsBtnRtl : styles.noAdsBtnLtr,
+              pressed && { opacity: 0.85 },
+            ]}
+            accessibilityRole="button"
+            accessibilityLabel={t('homeExtra.removeAdsCta')}
+          >
+            <Text style={styles.noAdsIcon}>🚫</Text>
+            <Text style={styles.noAdsText}>{t('homeExtra.removeAdsCta')}</Text>
+          </Pressable>
+        )}
         <View style={styles.content}>
           <View style={styles.topBlock}>
             <Text style={[styles.bismillah, isRtl && styles.textRtlUi]} selectable={false}>
@@ -205,4 +222,22 @@ const styles = StyleSheet.create({
     writingDirection: 'rtl',
     textAlign: 'center',
   },
+  noAdsBtn: {
+    position: 'absolute',
+    top: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    backgroundColor: 'rgba(0,0,0,0.4)',
+    borderWidth: 1,
+    borderColor: 'rgba(201,168,76,0.6)',
+    borderRadius: 999,
+    paddingVertical: 8,
+    paddingHorizontal: 14,
+    zIndex: 10,
+  },
+  noAdsBtnLtr: { right: 16 },
+  noAdsBtnRtl: { left: 16, flexDirection: 'row-reverse' },
+  noAdsIcon: { fontSize: 14 },
+  noAdsText: { color: GOLD, fontSize: 12, fontWeight: '700' },
 });

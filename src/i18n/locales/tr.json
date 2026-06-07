@@ -972,7 +972,24 @@
     "backHome": "Ana ekrana dön"
   },
   "homeExtra": {
-    "toolsCta": "Araçlar & Rehber"
+    "toolsCta": "Araçlar & Rehber",
+    "removeAdsCta": "Reklamsız"
+  },
+  "reklamKaldir": {
+    "title": "Reklamları Kaldır",
+    "backA11y": "Geri",
+    "heroTitle": "Reklamsız, huzurlu bir deneyim",
+    "heroDesc": "Bu küçük destekle uygulamayı reklamsız kullanın ve yolculuğunuza kesintisiz devam edin. Katkınız, uygulamanın gelişmeye devam etmesine yardımcı olur.",
+    "benefits": {
+      "noBanner": "Tüm ekranlardaki banner reklamlar kaldırılır",
+      "noInterstitial": "Araç açılışlarındaki geçiş reklamları kaldırılır",
+      "support": "Geliştiriciye destek olarak uygulamanın yaşamasına katkıda bulunursunuz",
+      "forever": "Tek seferlik ödeme — kalıcı olarak reklamsız kullanım"
+    },
+    "buyCta": "{{price}} karşılığında reklamları kaldır",
+    "restoreCta": "Satın alımları geri yükle",
+    "alreadyOwned": "Reklamlar bu cihazda zaten kaldırıldı. Teşekkürler! 🤲",
+    "note": "Satın alma işlemi App Store / Google Play hesabınız üzerinden güvenle gerçekleştirilir."
   },
   "araclar": {
     "title": "Araçlar & Rehber",

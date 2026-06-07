@@ -38,6 +38,7 @@
     "plugins": [
       "expo-localization",
       "expo-router",
+      "./plugins/withRemoveActivityRecognition",
       [
         "react-native-google-mobile-ads",
         {
@@ -50,7 +51,8 @@
         {
           "userTrackingPermission": "Bu izin, size daha uygun reklamlar gösterilmesine ve uygulamanın ücretsiz kalmasına yardımcı olur."
         }
-      ]
+      ],
+      "react-native-iap"
     ],
     "extra": {
       "router": {},

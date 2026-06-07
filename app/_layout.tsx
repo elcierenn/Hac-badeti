@@ -7,6 +7,7 @@ import mobileAds from 'react-native-google-mobile-ads';
 import { ensureTrackingPermission } from '../src/ads/requestTrackingPermission';
 import { LanguageProvider } from '../src/context/LanguageContext';
 import { ProgressProvider } from '../src/context/ProgressContext';
+import { PurchaseProvider } from '../src/context/PurchaseContext';
 
 export default function RootLayout() {
   useEffect(() => {
@@ -22,7 +23,9 @@ export default function RootLayout() {
     <SafeAreaProvider>
       <LanguageProvider>
         <ProgressProvider>
-          <Stack screenOptions={{ headerShown: false }} />
+          <PurchaseProvider>
+            <Stack screenOptions={{ headerShown: false }} />
+          </PurchaseProvider>
         </ProgressProvider>
       </LanguageProvider>
     </SafeAreaProvider>
