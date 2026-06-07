@@ -70,6 +70,14 @@ export default function Index() {
             >
               <Text style={styles.primaryBtnText}>{t('home.startCta')}</Text>
             </Pressable>
+            <Pressable
+              onPress={() => router.push('/araclar')}
+              style={({ pressed }) => [styles.secondaryBtn, pressed && styles.secondaryBtnPressed]}
+              accessibilityLabel={t('homeExtra.toolsCta')}
+              accessibilityRole="button"
+            >
+              <Text style={styles.secondaryBtnText}>{t('homeExtra.toolsCta')}</Text>
+            </Pressable>
 
             <View style={styles.langRow}>
               {LANGS.map((code, i) => (
@@ -158,6 +166,23 @@ const styles = StyleSheet.create({
     color: DARK_TEXT,
     fontSize: 18,
     fontWeight: '800',
+  },
+  secondaryBtn: {
+    borderWidth: 1.5,
+    borderColor: GOLD,
+    paddingVertical: 14,
+    paddingHorizontal: 20,
+    borderRadius: 16,
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgba(201,168,76,0.08)',
+  },
+  secondaryBtnPressed: { opacity: 0.85 },
+  secondaryBtnText: {
+    color: GOLD,
+    fontSize: 16,
+    fontWeight: '700',
   },
   langRow: {
     flexDirection: 'row',

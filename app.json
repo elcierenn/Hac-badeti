@@ -24,7 +24,7 @@
       }
     },
     "android": {
-      "package": "com.hacibadeti.app",
+      "package": "com.hacibadeti",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/hac_ibadetianasayfa.png",
         "backgroundColor": "#ffffff"

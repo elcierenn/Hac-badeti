@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "kategori": "ihram",
+    "soru": "İhramda dezodorant kullanılabilir mi?",
+    "cevap": "Kokusuz dezodorant kullanılabilir. Ancak parfüm veya koku içeren ürünler ihram yasakları kapsamındadır. İhrama girmeden önce kokulu ürünler kullanılabilir; ihrama girdikten sonra bu ürünlerin etkisi devam etse bile sorun yoktur.",
+    "soru_en": "Can deodorant be used while in Ihram?",
+    "cevap_en": "Unscented deodorant is permitted. However, perfume or scented products are prohibited while in Ihram. Scented products may be applied before entering Ihram; if their effect lingers after, that is acceptable.",
+    "soru_ar": "هل يجوز استخدام مزيل العرق في حالة الإحرام؟",
+    "cevap_ar": "يجوز استخدام مزيل العرق غير المعطّر. أما العطور والمنتجات ذات الرائحة فهي محظورة في الإحرام. يمكن استخدام المنتجات المعطّرة قبل الإحرام، ولا حرج إذا استمر أثرها بعد الإحرام."
+  },
+  {
+    "id": 2,
+    "kategori": "ihram",
+    "soru": "İhramlıyken gözlük takılabilir mi?",
+    "cevap": "Evet, gözlük takmak ihram yasakları arasında değildir. Hem düzeltici gözlük hem de güneş gözlüğü takılabilir. Gözlük çerçevesi kokusuz ise herhangi bir sorun oluşturmaz.",
+    "soru_en": "Can glasses be worn while in Ihram?",
+    "cevap_en": "Yes, wearing glasses is not among the Ihram prohibitions. Both prescription glasses and sunglasses are permitted. As long as the frames have no fragrance, there is no issue.",
+    "soru_ar": "هل يجوز لبس النظارة في حالة الإحرام؟",
+    "cevap_ar": "نعم، لبس النظارة ليس من محظورات الإحرام. يجوز لبس النظارة الطبية والنظارة الشمسية. ولا حرج طالما أن الإطار لا يحتوي على عطر."
+  },
+  {
+    "id": 3,
+    "kategori": "ihram",
+    "soru": "İhramlıyken hastane tedavisi olunabilir mi?",
+    "cevap": "Evet, ihramlıyken tedavi olmak serbesttir. Hastalık durumunda gerekli ilaçlar kullanılabilir. Ancak uygulanan tedavi sırasında kullanılan koku içeren maddeler ihram yasağına girer ve fidye gerektirebilir.",
+    "soru_en": "Can medical treatment be received while in Ihram?",
+    "cevap_en": "Yes, receiving medical treatment while in Ihram is permitted. Necessary medications may be used. However, if scented substances are applied during treatment, this falls under the Ihram prohibition and may require a fidyah (ransom).",
+    "soru_ar": "هل يجوز تلقّي العلاج الطبي في حالة الإحرام؟",
+    "cevap_ar": "نعم، يجوز تلقّي العلاج الطبي في الإحرام. ويجوز استخدام الأدوية اللازمة عند المرض. غير أن استخدام المواد المعطّرة أثناء العلاج يُعدّ من محظورات الإحرام وقد يستوجب الفدية."
+  },
+  {
+    "id": 4,
+    "kategori": "ihram",
+    "soru": "Kadınlar ihramda yüzlerini örtebilir mi?",
+    "cevap": "Hanefî mezhebine göre kadınlar ihramlıyken, başkalarının bakışından korunmak için yüzlerini örtebilir; ancak kumaş yüze değmemelidir. Şafiî mezhebinde ise ihramlı kadının yüzünü örtmesi yasaktır. Mezhebinize göre hareket etmeniz tavsiye edilir.",
+    "soru_en": "Can women cover their faces while in Ihram?",
+    "cevap_en": "According to the Hanafi school, women in Ihram may cover their faces to avoid men's gazes, but the fabric must not touch the skin. In the Shafi'i school, covering the face is prohibited for a woman in Ihram. You are advised to follow your own school of thought.",
+    "soru_ar": "هل يجوز للمرأة تغطية وجهها في الإحرام؟",
+    "cevap_ar": "وفق المذهب الحنفي، يجوز للمرأة المحرمة تغطية وجهها صوناً لنفسها، لكن لا يجوز أن تلمس القماشةُ وجهها. أما في المذهب الشافعي فيُحظر على المرأة تغطية وجهها في الإحرام. ويُنصح بالتصرف وفق مذهبك."
+  },
+  {
+    "id": 5,
+    "kategori": "tavaf",
+    "soru": "Sa'y sırasında abdest şart mı?",
+    "cevap": "Sa'y sırasında abdestin şart olup olmadığı mezheplere göre farklılık gösterir. Hanefî ve Malikî mezhebine göre abdest sünnet olmakla birlikte şart değildir; abdestsiz yapılan sa'y geçerlidir. Ancak mümkünse abdestli olmak tavsiye edilir.",
+    "soru_en": "Is wudu (ablution) required during Sa'y?",
+    "cevap_en": "Whether wudu is required during Sa'y differs by school of thought. According to the Hanafi and Maliki schools, wudu is sunnah but not obligatory; Sa'y performed without wudu is valid. However, being in a state of purity is recommended whenever possible.",
+    "soru_ar": "هل يُشترط الوضوء أثناء السعي؟",
+    "cevap_ar": "تختلف المذاهب في اشتراط الوضوء للسعي. فعند الحنفية والمالكية هو سنة وليس شرطاً، والسعي بغير وضوء صحيح. غير أن الطهارة مستحبة متى أمكن ذلك."
+  },
+  {
+    "id": 6,
+    "kategori": "tavaf",
+    "soru": "Tavaf sırasında konuşmak caiz midir?",
+    "cevap": "Tavaf, namaz gibi huşu ve saygı içinde yapılmalıdır. Dünyevi konuşmalardan kaçınılması tavsiye edilir. Ancak zaruri durumlarda kısa konuşmak tavafı bozmaz. Tavaf sırasında zikir, dua ve Kuran okumak en faziletli ameldir.",
+    "soru_en": "Is talking permitted during Tawaf?",
+    "cevap_en": "Tawaf should be performed with humility and reverence, similar to prayer. Worldly conversation is discouraged. However, brief necessary speech does not invalidate Tawaf. The most virtuous acts during Tawaf are dhikr, supplication, and reciting the Quran.",
+    "soru_ar": "هل يجوز الكلام أثناء الطواف؟",
+    "cevap_ar": "ينبغي أداء الطواف بخشوع وتعظيم كالصلاة. ويُستحب اجتناب الحديث الدنيوي. غير أن الكلام اليسير الضروري لا يُبطل الطواف. وأفضل الأعمال أثناء الطواف هو الذكر والدعاء وتلاوة القرآن."
+  },
+  {
+    "id": 7,
+    "kategori": "tavaf",
+    "soru": "Tekerlekli sandalyeyle tavaf yapılabilir mi?",
+    "cevap": "Evet, yaşlı, hasta veya engelli hacılar tekerlekli sandalye veya görevli personelin yardımıyla tavaf yapabilir. Bir başkası tarafından iter vaziyette tavaf da geçerlidir. Mescid-i Haram'da tekerlekli sandalye ve personel desteği mevcuttur.",
+    "soru_en": "Can Tawaf be performed in a wheelchair?",
+    "cevap_en": "Yes, elderly, ill, or disabled pilgrims may perform Tawaf in a wheelchair or with the assistance of staff. Tawaf while being pushed by another person is also valid. Wheelchairs and assistance are available at Al-Masjid Al-Haram.",
+    "soru_ar": "هل يجوز أداء الطواف على كرسي متحرك؟",
+    "cevap_ar": "نعم، يجوز للحجاج المسنين والمرضى وذوي الإعاقة أداء الطواف على كرسي متحرك أو بمساعدة الموظفين. والطواف مع دفعه من قِبل شخص آخر صحيح. وتتوفر الكراسي المتحركة وخدمات المساعدة في المسجد الحرام."
+  },
+  {
+    "id": 8,
+    "kategori": "say",
+    "soru": "Sa'y'ı tavaftan ayrı bir günde yapabilir miyim?",
+    "cevap": "Mezheplere göre farklılık gösterse de sa'yın tavaftan hemen sonra yapılması sünnettir. Hanefî mezhebinde tavaf ile sa'y arasında uzun süre geçmesi mekruh olmakla birlikte sa'y geçerlidir. Özürsüz ertelemek doğru değildir.",
+    "soru_en": "Can Sa'y be performed on a different day than Tawaf?",
+    "cevap_en": "Although it differs by school of thought, performing Sa'y immediately after Tawaf is the Sunnah. In the Hanafi school, a long delay between Tawaf and Sa'y is disliked but Sa'y remains valid. Delaying without excuse is not recommended.",
+    "soru_ar": "هل يجوز أداء السعي في يوم مختلف عن الطواف؟",
+    "cevap_ar": "وإن اختلفت المذاهب في ذلك، فإن السنة أداء السعي فور الانتهاء من الطواف. وعند الحنفية يُكره التأخير الطويل بين الطواف والسعي، لكن السعي صحيح. ولا يُستحب التأخير بلا عذر."
+  },
+  {
+    "id": 9,
+    "kategori": "say",
+    "soru": "Sa'y sırasında şavt sayısını unutursam ne yapmalıyım?",
+    "cevap": "Şavt sayısında şüpheye düşülürse daha az olan sayı esas alınır ve eksikler tamamlanır. Örneğin 5 mi 6 mı yapıldığından emin değilseniz 5 kabul edip devam edilir. Bu, namaz rekâtındaki şüphe kuralıyla aynıdır.",
+    "soru_en": "What should I do if I lose count of my laps during Sa'y?",
+    "cevap_en": "If you are uncertain about the number of laps, take the lesser count as the basis and complete from there. For example, if unsure whether you completed 5 or 6, count 5 and continue. This follows the same principle as doubting the number of rak'ahs in prayer.",
+    "soru_ar": "ماذا أفعل إذا نسيت عدد الأشواط أثناء السعي؟",
+    "cevap_ar": "إذا شككت في عدد الأشواط، فابنِ على الأقل وأكمل من هناك. فمثلاً إذا شككت هل أتممت خمسة أشواط أم ستة، فاعتبر خمسة وأكمل. وهذا يتبع نفس مبدأ الشك في عدد ركعات الصلاة."
+  },
+  {
+    "id": 10,
+    "kategori": "pratik",
+    "soru": "Adet halindeki kadın hangi ibadetleri yapabilir?",
+    "cevap": "Adet halindeki kadın tavaf ve tavaf namazı dışındaki tüm hac ibadetlerini yapabilir: sa'y, Arafat vakfesi, Müzdelife'de geceleme, şeytan taşlama, tıraş. Tavafını yapabilmek için hayızdan temizlenene kadar beklemesi gerekir. Veda tavafından adet nedeniyle muaf tutulur.",
+    "soru_en": "Which rituals can a menstruating woman perform during Hajj?",
+    "cevap_en": "A menstruating woman may perform all Hajj rituals except Tawaf and its prayer: Sa'y, the standing at Arafah, overnight at Muzdalifah, stoning the Jamarat, and shaving/cutting hair. She must wait until she is purified before performing Tawaf. She is excused from the Farewell Tawaf due to menstruation.",
+    "soru_ar": "ما الشعائر التي يمكن للمرأة الحائض أداؤها في الحج؟",
+    "cevap_ar": "تستطيع المرأة الحائض أداء جميع شعائر الحج ما عدا الطواف وصلاته: السعي، والوقوف بعرفة، والمبيت بمزدلفة، ورمي الجمرات، والحلق أو التقصير. وعليها الانتظار حتى تطهر لتؤدي طوافها. وهي معذورة من طواف الوداع بسبب الحيض."
+  },
+  {
+    "id": 11,
+    "kategori": "pratik",
+    "soru": "Hacda kaç kez namaz kısaltılır?",
+    "cevap": "Hacılar seferî sayıldığından hac süresince 4 rekâtlık namazları 2 rekât olarak kısaltarak kılarlar. Akşam namazı 3 rekât olduğu için kısaltılmaz. Mekke'ye yerleşik olanlar kısaltma yapmazlar; seferilik süresi mezheplere göre değişir.",
+    "soru_en": "Are prayers shortened during Hajj?",
+    "cevap_en": "Since pilgrims are considered travelers, four-rak'ah prayers are shortened to two rak'ahs throughout Hajj. The Maghrib prayer (3 rak'ahs) is not shortened. Residents of Mecca do not shorten prayers; the definition of travel differs by school of thought.",
+    "soru_ar": "هل تُقصَّر الصلاة أثناء الحج؟",
+    "cevap_ar": "بما أن الحجاج يُعدّون مسافرين، تُقصَّر الصلوات الرباعية إلى ركعتين طوال فترة الحج. ولا تُقصَّر صلاة المغرب (ثلاث ركعات). أما المقيمون في مكة فلا يقصّرون، ويختلف تعريف السفر بحسب المذاهب."
+  },
+  {
+    "id": 12,
+    "kategori": "pratik",
+    "soru": "Hac sırasında cep telefonu kullanmak caiz midir?",
+    "cevap": "Evet, cep telefonu kullanmak hac ibadetine engel değildir. Ancak tavaf, sa'y ve vakfe gibi önemli ibadet anlarında telefonu bir kenara bırakmak, ibadetlere odaklanmak daha faziletlidir. Fotoğraf çekmek caiz olmakla birlikte ibadet ortamının huşusunu bozmamalıdır.",
+    "soru_en": "Is using a mobile phone permitted during Hajj?",
+    "cevap_en": "Yes, using a mobile phone does not invalidate Hajj rituals. However, putting the phone aside during important acts of worship such as Tawaf, Sa'y, and the standing at Arafah, and focusing on worship, is more virtuous. Photography is permissible but should not disturb the reverence of the worship environment.",
+    "soru_ar": "هل يجوز استخدام الهاتف المحمول أثناء الحج؟",
+    "cevap_ar": "نعم، استخدام الهاتف المحمول لا يُبطل شعائر الحج. غير أن وضع الهاتف جانباً أثناء الشعائر المهمة كالطواف والسعي والوقوف بعرفة والتفرغ للعبادة أكثر فضلاً. والتصوير جائز لكن لا ينبغي أن يُخلّ بخشوع بيئة العبادة."
+  },
+  {
+    "id": 13,
+    "kategori": "pratik",
+    "soru": "Kurban kesmek yerine vekil tutabilir miyim?",
+    "cevap": "Evet, kurbanı bizzat kesemeyenler vekil aracılığıyla kestirtebilir. Mina'daki yetkili kuruluşlar bu hizmeti sunmaktadır. Ödeme yapıldıktan ve kesim gerçekleştikten sonra ihramdan çıkış gerçekleşebilir.",
+    "soru_en": "Can I authorize someone else to sacrifice the animal on my behalf?",
+    "cevap_en": "Yes, if you are unable to slaughter the animal yourself, you may authorize someone to do it on your behalf. Licensed organizations in Mina offer this service. After the payment is made and the sacrifice is confirmed, you may exit Ihram.",
+    "soru_ar": "هل يجوز توكيل شخص آخر للذبح عني؟",
+    "cevap_ar": "نعم، إذا كنت غير قادر على الذبح بنفسك، يجوز لك توكيل شخص آخر للقيام بذلك. وتقدم المؤسسات المرخصة في منى هذه الخدمة. وبعد الدفع والتأكد من وقوع الذبح، يجوز التحلل من الإحرام."
+  },
+  {
+    "id": 14,
+    "kategori": "pratik",
+    "soru": "Arafat vakfesini kaçırırsam hac geçerli olur mu?",
+    "cevap": "Hayır. Arafat vakfesi haccın en temel rüknüdür. Bu vakfeyi yapamayanın hacı sayılmaz; hac o yıl geçersiz olur. Güneş battıktan sonra bile olsa Arafat'a yetişip vakfe yapabilenin hacı geçerlidir. Mazeretsiz kaçırma durumunda hac ertesi yıla ertelenir.",
+    "soru_en": "Is Hajj valid if I miss the standing at Arafah?",
+    "cevap_en": "No. The standing at Arafah (Wuquf) is the most essential pillar of Hajj. One who misses it is not considered to have performed Hajj; the Hajj for that year is invalid. However, if one reaches Arafah and stands there even after sunset, the Hajj is valid. Missing it without excuse means Hajj must be postponed to the following year.",
+    "soru_ar": "هل الحج صحيح إذا فاتني الوقوف بعرفة؟",
+    "cevap_ar": "لا. الوقوف بعرفة هو الركن الأساسي للحج. ومن فاته هذا الوقوف لا يُعدّ حاجاً، ويكون حجّه في ذلك العام باطلاً. أما من وصل عرفة ووقف فيها ولو بعد غروب الشمس فحجّه صحيح. ومن فاته بلا عذر وجب عليه تأجيل الحج إلى العام القادم."
+  },
+  {
+    "id": 15,
+    "kategori": "ihram",
+    "soru": "İhramda çanta veya kemer takılabilir mi?",
+    "cevap": "Evet, çanta ve kemer ihram yasakları arasında değildir. İhramlı erkekler para kemeri veya bel çantası takabilir. Dikişsiz kumaştan yapılmış kemer de kullanılabilir. Önemli olan dikişli elbise giymemektir; aksesuar ve çantalar bu yasak kapsamına girmez.",
+    "soru_en": "Can a bag or belt be worn in Ihram?",
+    "cevap_en": "Yes, bags and belts are not among the Ihram prohibitions. Male pilgrims in Ihram may wear a money belt or waist pouch. An unstitched fabric belt may also be used. The key prohibition is wearing stitched clothing; accessories and bags do not fall under this restriction.",
+    "soru_ar": "هل يجوز لبس الحقيبة أو الحزام في الإحرام؟",
+    "cevap_ar": "نعم، الحقائب والأحزمة ليست من محظورات الإحرام. يجوز للرجل المحرم لبس حزام النقود أو الحقيبة الخصرية. كما يجوز استخدام حزام من قماش غير مخيط. والمحظور الأساسي هو لبس الثياب المخيطة، أما الإكسسوارات والحقائب فلا تدخل ضمن هذا الحظر."
+  },
+  {
+    "id": 16,
+    "kategori": "tavaf",
+    "soru": "Hatim'in içinden geçersem tavaf geçersiz olur mu?",
+    "cevap": "Evet. Hatim, Kabe'nin bir parçası sayıldığından tavaf Hatim'in dışından yapılmalıdır. Hatim'in içinden geçilirse o şavt geçersiz sayılır ve tekrar yapılması gerekir. Eğer tüm tavaf Hatim'in içinden yapılmışsa tavafın tamamı geçersizdir.",
+    "soru_en": "Is Tawaf invalid if I pass through the Hijr Ismail?",
+    "cevap_en": "Yes. The Hijr Ismail is considered part of the Kaaba, so Tawaf must be performed outside it. If you pass through it during a lap, that lap is invalid and must be repeated. If the entire Tawaf was performed passing through the Hijr, the whole Tawaf is invalid.",
+    "soru_ar": "هل يبطل الطواف إذا مررت من داخل الحِجر؟",
+    "cevap_ar": "نعم. يُعدّ الحِجر جزءاً من الكعبة، لذا يجب أداء الطواف من خارجه. فإذا مررت من داخله في أحد الأشواط، بطل ذلك الشوط وتجب إعادته. وإذا أُدّي الطواف كاملاً من داخل الحِجر، بطل الطواف بأكمله."
+  }
+]

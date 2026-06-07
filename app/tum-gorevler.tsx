@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { useProgress } from '../src/context/ProgressContext';
+
 const BG = '#ECE6DC';
 const GOLD = '#C9A84C';
 const GOLD_DIM = 'rgba(201, 168, 76, 0.18)';
@@ -132,6 +134,9 @@ const cardPatternStyles = StyleSheet.create({
 export default function TumGorevlerScreen() {
   const { t } = useTranslation();
   const router = useRouter();
+  const { completedCount, isTaskComplete, toggleTask } = useProgress();
+  const total = TASK_INDEXES.length;
+  const pct = completedCount / total;
 
   return (
     <View style={styles.root}>
@@ -152,6 +157,16 @@ export default function TumGorevlerScreen() {
           <Text style={styles.headerTitle}>{t('anaGorev.allTasks')}</Text>
           <View style={styles.headerSpacer} />
         </View>
+        <View style={styles.progressWrap}>
+          <View style={styles.progressRow}>
+            <Text style={styles.progressLabel}>{t('tumGorevlerProgress.label')}</Text>
+            <Text style={styles.progressCount}>{completedCount} / {total}</Text>
+          </View>
+          <View style={styles.progressBar}>
+            <View style={[styles.progressFill, { width: `${pct * 100}%` }]} />
+          </View>
+        </View>
+
         <View style={styles.scrollShell}>
           <View style={styles.frameOuter}>
             <View style={styles.frameBevel} />
@@ -177,42 +192,43 @@ export default function TumGorevlerScreen() {
                 contentContainerStyle={styles.scrollContent}
                 showsVerticalScrollIndicator={false}
               >
-                {TASK_INDEXES.map((i) => (
-                  <Pressable
-                    key={i}
-                    onPress={() => {
-                      if (i === 1) {
-                        router.replace({ pathname: '/ana-gorev', params: { p: '0' } });
-                      } else if (i === 2) {
-                        router.replace({ pathname: '/ana-gorev', params: { p: '1' } });
-                      } else if (i === 3) {
-                        router.replace({ pathname: '/ana-gorev', params: { p: '2' } });
-                      } else if (i === 4) {
-                        router.replace({ pathname: '/ana-gorev', params: { p: '3' } });
-                      } else if (i === 5) {
-                        router.replace({ pathname: '/ana-gorev', params: { p: '4' } });
-                      } else if (i === 6) {
-                        router.replace({ pathname: '/ana-gorev', params: { p: '5' } });
-                      } else if (i === 7) {
-                        router.replace({ pathname: '/ana-gorev', params: { p: '6' } });
-                      } else {
-                        router.replace({ pathname: '/ana-gorev', params: { p: '7' } });
-                      }
-                    }}
-                    style={({ pressed }) => [
-                      styles.taskCard,
-                      pressed && { opacity: 0.9, transform: [{ scale: 0.99 }] },
-                    ]}
-                  >
-                    <View style={styles.cardGoldBar} />
-                    <View style={styles.cardBody}>
-                      <CardInnerPattern />
-                      <View style={styles.cardContent}>
-                        <Text style={styles.taskText}>{t(`anaGorev.task${i}`)}</Text>
+                {TASK_INDEXES.map((i) => {
+                  const done = isTaskComplete(i);
+                  return (
+                    <Pressable
+                      key={i}
+                      onPress={() => {
+                        router.replace({ pathname: '/ana-gorev', params: { p: String(i - 1) } });
+                      }}
+                      style={({ pressed }) => [
+                        styles.taskCard,
+                        done && styles.taskCardDone,
+                        pressed && { opacity: 0.9, transform: [{ scale: 0.99 }] },
+                      ]}
+                    >
+                      <View style={[styles.cardGoldBar, done && styles.cardGoldBarDone]} />
+                      <View style={styles.cardBody}>
+                        <CardInnerPattern />
+                        <View style={styles.cardContent}>
+                          <Text style={[styles.taskText, done && styles.taskTextDone]}>
+                            {t(`anaGorev.task${i}`)}
+                          </Text>
+                          <Pressable
+                            onPress={() => toggleTask(i)}
+                            hitSlop={6}
+                            style={({ pressed }) => [styles.doneToggle, done && styles.doneToggleActive, pressed && { opacity: 0.8 }]}
+                            accessibilityRole="checkbox"
+                            accessibilityState={{ checked: done }}
+                          >
+                            <Text style={[styles.doneToggleText, done && styles.doneToggleTextActive]}>
+                              {done ? t('tumGorevlerProgress.completed') : t('tumGorevlerProgress.markDone')}
+                            </Text>
+                          </Pressable>
+                        </View>
                       </View>
-                    </View>
-                  </Pressable>
-                ))}
+                    </Pressable>
+                  );
+                })}
               </ScrollView>
             </View>
           </View>
@@ -339,4 +355,30 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     letterSpacing: 0.2,
   },
+  taskCardDone: { borderColor: 'rgba(39,174,96,0.45)', backgroundColor: '#F7FBF7' },
+  cardGoldBarDone: { backgroundColor: '#27AE60' },
+  taskTextDone: { color: '#7A9A7A', textDecorationLine: 'line-through' },
+  doneToggle: {
+    alignSelf: 'flex-start',
+    marginTop: 6,
+    borderRadius: 10,
+    paddingVertical: 4, paddingHorizontal: 10,
+    borderWidth: 1.5, borderColor: 'rgba(201,168,76,0.4)',
+  },
+  doneToggleActive: { backgroundColor: '#27AE60', borderColor: '#27AE60' },
+  doneToggleText: { color: GOLD, fontSize: 11, fontWeight: '700' },
+  doneToggleTextActive: { color: '#fff' },
+  progressWrap: {
+    paddingHorizontal: 14, paddingVertical: 10,
+    backgroundColor: 'rgba(255,255,255,0.35)',
+    borderBottomWidth: 1, borderBottomColor: GOLD_DIM,
+  },
+  progressRow: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 6 },
+  progressLabel: { color: '#5C481C', fontSize: 13, fontWeight: '600' },
+  progressCount: { color: GOLD, fontSize: 13, fontWeight: '800' },
+  progressBar: {
+    height: 6, borderRadius: 3,
+    backgroundColor: 'rgba(201,168,76,0.2)', overflow: 'hidden',
+  },
+  progressFill: { height: '100%', backgroundColor: '#27AE60', borderRadius: 3 },
 });

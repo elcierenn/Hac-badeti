@@ -3,12 +3,15 @@ import { Stack } from 'expo-router';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { LanguageProvider } from '../src/context/LanguageContext';
+import { ProgressProvider } from '../src/context/ProgressContext';
 
 export default function RootLayout() {
   return (
     <SafeAreaProvider>
       <LanguageProvider>
-        <Stack screenOptions={{ headerShown: false }} />
+        <ProgressProvider>
+          <Stack screenOptions={{ headerShown: false }} />
+        </ProgressProvider>
       </LanguageProvider>
     </SafeAreaProvider>
   );
