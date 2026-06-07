@@ -12,8 +12,12 @@ import {
 } from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { useAppLanguage } from '../src/context/LanguageContext';
 import bilgiKosesiItems from '../src/data/bilgiKosesiItems.json';
+import bilgiKosesiItemsEn from '../src/data/bilgiKosesiItems.en.json';
+import bilgiKosesiItemsAr from '../src/data/bilgiKosesiItems.ar.json';
 import { kategoriBaslikRengi } from '../src/lib/bilgiKosesiKategoriColors';
+import { kategoriEtiketCevir } from '../src/lib/bilgiKosesiKategoriCeviri';
 
 const GOLD = '#C9A84C';
 const OVERLAY = 'rgba(0,0,0,0.38)';
@@ -23,21 +27,50 @@ type BilgiKosesiItem = {
   kategori: string;
   baslik: string;
   icerik: string;
+  baslik_en?: string;
+  icerik_en?: string;
+  baslik_ar?: string;
+  icerik_ar?: string;
 };
 
-const DATA = bilgiKosesiItems as BilgiKosesiItem[];
+type Ceviri = { id: number; baslik: string; icerik: string };
 
-function BilgiKart({ item }: { item: BilgiKosesiItem }) {
+function cevirilerleBirlestir(base: BilgiKosesiItem[], en: Ceviri[], ar: Ceviri[]): BilgiKosesiItem[] {
+  const enById = new Map(en.map((c) => [c.id, c]));
+  const arById = new Map(ar.map((c) => [c.id, c]));
+  return base.map((item) => {
+    const enCeviri = enById.get(item.id);
+    const arCeviri = arById.get(item.id);
+    return {
+      ...item,
+      baslik_en: enCeviri?.baslik,
+      icerik_en: enCeviri?.icerik,
+      baslik_ar: arCeviri?.baslik,
+      icerik_ar: arCeviri?.icerik,
+    };
+  });
+}
+
+const DATA = cevirilerleBirlestir(
+  bilgiKosesiItems as BilgiKosesiItem[],
+  bilgiKosesiItemsEn as Ceviri[],
+  bilgiKosesiItemsAr as Ceviri[],
+);
+
+function BilgiKart({ item, lang }: { item: BilgiKosesiItem; lang: string }) {
   const baslikRengi = kategoriBaslikRengi(item.kategori);
+  const isRtl = lang === 'ar';
+  const baslik = lang === 'en' ? item.baslik_en ?? item.baslik : lang === 'ar' ? item.baslik_ar ?? item.baslik : item.baslik;
+  const icerik = lang === 'en' ? item.icerik_en ?? item.icerik : lang === 'ar' ? item.icerik_ar ?? item.icerik : item.icerik;
   return (
     <View style={styles.kart} accessibilityRole="text">
       <View style={[styles.kartSolSerit, { backgroundColor: baslikRengi }]} />
       <View style={styles.kartIcerik}>
-        <Text style={[styles.kategoriEtiket, { color: baslikRengi }]} numberOfLines={1}>
-          {item.kategori}
+        <Text style={[styles.kategoriEtiket, { color: baslikRengi }, isRtl && styles.metinRtl]} numberOfLines={1}>
+          {kategoriEtiketCevir(item.kategori, lang)}
         </Text>
-        <Text style={[styles.baslik, { color: baslikRengi }]}>{item.baslik}</Text>
-        <Text style={styles.metin}>{item.icerik}</Text>
+        <Text style={[styles.baslik, { color: baslikRengi }, isRtl && styles.metinRtl]}>{baslik}</Text>
+        <Text style={[styles.metin, isRtl && styles.metinRtl]}>{icerik}</Text>
       </View>
     </View>
   );
@@ -45,6 +78,7 @@ function BilgiKart({ item }: { item: BilgiKosesiItem }) {
 
 export default function BilgiKosesiScreen() {
   const { t } = useTranslation();
+  const { language } = useAppLanguage();
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const bottomPad = 16 + insets.bottom;
@@ -75,7 +109,7 @@ export default function BilgiKosesiScreen() {
           style={styles.liste}
           data={DATA}
           keyExtractor={(i) => String(i.id)}
-          renderItem={({ item }) => <BilgiKart item={item} />}
+          renderItem={({ item }) => <BilgiKart item={item} lang={language} />}
           showsVerticalScrollIndicator
           contentContainerStyle={[styles.listContent, { paddingBottom: bottomPad }]}
           initialNumToRender={10}
@@ -147,5 +181,9 @@ const styles = StyleSheet.create({
     color: '#2a2a2a',
     fontWeight: '500',
     marginTop: 8,
+  },
+  metinRtl: {
+    textAlign: 'right',
+    writingDirection: 'rtl',
   },
 });

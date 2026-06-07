@@ -1118,7 +1118,8 @@
     "denied": "Konum izni verilmedi. Lütfen ayarlardan konuma izin verin.",
     "error": "Manyetometre bu cihazda desteklenmiyor.",
     "direction": "Kıble yönü",
-    "distance": "Kabe'ye uzaklık"
+    "distance": "Kabe'ye uzaklık",
+    "kaaba": "Kabe"
   },
   "tumGorevlerProgress": {
     "label": "İlerleme",

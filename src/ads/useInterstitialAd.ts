@@ -26,13 +26,19 @@ export function useInterstitialAd() {
 
     const attach = (ad: InterstitialAd) => {
       adRef.current = ad;
-      const unsubLoaded = ad.addAdEventListener(AdEventType.LOADED, () => setLoaded(true));
+      const unsubLoaded = ad.addAdEventListener(AdEventType.LOADED, () => {
+        console.log('[Interstitial] loaded');
+        setLoaded(true);
+      });
+      const unsubError = ad.addAdEventListener(AdEventType.ERROR, (error) => {
+        console.warn('[Interstitial] failed to load', error);
+      });
       const unsubClosed = ad.addAdEventListener(AdEventType.CLOSED, () => {
         setLoaded(false);
         unsubscribers.forEach((unsub) => unsub());
         attach(loadInterstitial());
       });
-      unsubscribers = [unsubLoaded, unsubClosed];
+      unsubscribers = [unsubLoaded, unsubError, unsubClosed];
     };
 
     attach(loadInterstitial());

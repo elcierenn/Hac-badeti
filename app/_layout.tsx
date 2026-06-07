@@ -11,7 +11,10 @@ import { ProgressProvider } from '../src/context/ProgressContext';
 export default function RootLayout() {
   useEffect(() => {
     ensureTrackingPermission().finally(() => {
-      mobileAds().initialize();
+      mobileAds()
+        .initialize()
+        .then((adapterStatuses) => console.log('[MobileAds] initialized', adapterStatuses))
+        .catch((error) => console.warn('[MobileAds] initialize failed', error));
     });
   }, []);
 

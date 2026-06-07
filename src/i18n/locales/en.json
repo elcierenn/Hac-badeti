@@ -1118,7 +1118,8 @@
     "denied": "Location permission denied. Please allow location access in settings.",
     "error": "Magnetometer is not supported on this device.",
     "direction": "Qibla direction",
-    "distance": "Distance to Kaaba"
+    "distance": "Distance to Kaaba",
+    "kaaba": "Kaaba"
   },
   "tumGorevlerProgress": {
     "label": "Progress",

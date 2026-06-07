@@ -42,3 +42,4 @@ Hac-badeti/
 # generated native folders
 /ios
 /android
+.claude/

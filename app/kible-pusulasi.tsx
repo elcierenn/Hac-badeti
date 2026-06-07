@@ -157,13 +157,17 @@ export default function KiblePusulasiScreen() {
                   <Text style={[styles.cardinal, styles.cardinalW]}>W</Text>
 
                   <Animated.View style={[styles.needleWrap, { transform: [{ rotate: needleRotate }] }]}>
+                    <View style={styles.kaabaMarker}>
+                      <View style={styles.kaabaBadge}>
+                        <Text style={styles.kaabaIcon}>🕋</Text>
+                      </View>
+                      <Text style={styles.kaabaLabel}>{t('kible.kaaba')}</Text>
+                    </View>
                     <View style={styles.needleUp} />
                     <View style={styles.needleDown} />
                   </Animated.View>
 
-                  <View style={styles.compassCenter}>
-                    <Text style={styles.kaabaIcon}>🕋</Text>
-                  </View>
+                  <View style={styles.compassCenter} />
                 </View>
               </View>
 
@@ -239,6 +243,26 @@ const styles = StyleSheet.create({
     height: NEEDLE_H * 2,
     alignItems: 'center',
   },
+  kaabaMarker: {
+    position: 'absolute',
+    top: -34,
+    alignItems: 'center',
+    gap: 2,
+  },
+  kaabaBadge: {
+    width: 36, height: 36, borderRadius: 18,
+    backgroundColor: '#1a1a1a',
+    borderWidth: 2, borderColor: GOLD,
+    alignItems: 'center', justifyContent: 'center',
+    shadowColor: '#000', shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25, shadowRadius: 4, elevation: 4,
+  },
+  kaabaLabel: {
+    color: '#5C481C', fontSize: 10, fontWeight: '800',
+    textTransform: 'uppercase', letterSpacing: 0.5,
+    backgroundColor: 'rgba(255,252,247,0.9)',
+    paddingHorizontal: 6, paddingVertical: 1, borderRadius: 6,
+  },
   needleUp: {
     width: 0, height: 0,
     borderLeftWidth: 5, borderRightWidth: 5, borderBottomWidth: NEEDLE_H,
@@ -251,12 +275,11 @@ const styles = StyleSheet.create({
   },
   compassCenter: {
     position: 'absolute',
-    width: 44, height: 44, borderRadius: 22,
-    backgroundColor: '#FFFCF7',
-    borderWidth: 2, borderColor: GOLD,
-    alignItems: 'center', justifyContent: 'center',
+    width: 14, height: 14, borderRadius: 7,
+    backgroundColor: GOLD,
+    borderWidth: 2, borderColor: '#FFFCF7',
   },
-  kaabaIcon: { fontSize: 22 },
+  kaabaIcon: { fontSize: 18 },
   angleText: { color: GOLD, fontSize: 48, fontWeight: '800' },
   angleLabel: { color: '#5C481C', fontSize: 14, fontWeight: '600', marginTop: -12 },
   distanceWrap: {
