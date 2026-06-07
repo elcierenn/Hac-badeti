@@ -44,6 +44,12 @@
           "androidAppId": "ca-app-pub-9331428503808272~5045683397",
           "iosAppId": "ca-app-pub-9331428503808272~4567857000"
         }
+      ],
+      [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "Bu izin, size daha uygun reklamlar gösterilmesine ve uygulamanın ücretsiz kalmasına yardımcı olur."
+        }
       ]
     ],
     "extra": {

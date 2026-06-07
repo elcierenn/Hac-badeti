@@ -4,12 +4,15 @@ import { useEffect } from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import mobileAds from 'react-native-google-mobile-ads';
 
+import { ensureTrackingPermission } from '../src/ads/requestTrackingPermission';
 import { LanguageProvider } from '../src/context/LanguageContext';
 import { ProgressProvider } from '../src/context/ProgressContext';
 
 export default function RootLayout() {
   useEffect(() => {
-    mobileAds().initialize();
+    ensureTrackingPermission().finally(() => {
+      mobileAds().initialize();
+    });
   }, []);
 
   return (
