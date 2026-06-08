@@ -8,7 +8,7 @@
       "policy": "appVersion"
     },
     "orientation": "portrait",
-    "icon": "./assets/images/hac_ibadetianasayfa.png",
+    "icon": "./assets/images/app_icon_square.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -26,7 +26,7 @@
     "android": {
       "package": "com.hacibadeti",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/hac_ibadetianasayfa.png",
+        "foregroundImage": "./assets/images/app_icon_square.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
