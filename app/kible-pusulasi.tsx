@@ -25,7 +25,7 @@ function qiblaBearing(lat: number, lon: number): number {
 }
 
 function magnetometerHeading(x: number, y: number): number {
-  return ((Math.atan2(y, x) * (180 / Math.PI)) + 360) % 360;
+  return ((Math.atan2(-x, y) * (180 / Math.PI)) + 360) % 360;
 }
 
 type Status = 'idle' | 'loading' | 'ok' | 'denied' | 'error';
