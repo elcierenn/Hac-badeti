@@ -84,26 +84,26 @@ export default function KiblePusulasiScreen() {
     return () => { magSub?.remove(); };
   }, []);
 
-  // Animate needle rotation
+  // Animate compass dial rotation — the dial (with N/E/S/W) turns opposite to
+  // device heading so it always reflects true compass directions, just like a real compass.
   useEffect(() => {
-    if (qiblaAngle === null) return;
-    const needle = (qiblaAngle - deviceHeading + 360) % 360;
+    const target = (360 - deviceHeading) % 360;
     // Pick shortest path
-    let diff = needle - currentAngle.current;
+    let diff = target - currentAngle.current;
     if (diff > 180) diff -= 360;
     if (diff < -180) diff += 360;
-    const target = currentAngle.current + diff;
-    currentAngle.current = target;
+    const next = currentAngle.current + diff;
+    currentAngle.current = next;
 
     Animated.timing(rotateAnim, {
-      toValue: target,
+      toValue: next,
       duration: 200,
       easing: Easing.out(Easing.quad),
       useNativeDriver: true,
     }).start();
-  }, [deviceHeading, qiblaAngle, rotateAnim]);
+  }, [deviceHeading, rotateAnim]);
 
-  const needleRotate = rotateAnim.interpolate({
+  const dialRotate = rotateAnim.interpolate({
     inputRange: [-360, 360],
     outputRange: ['-360deg', '360deg'],
   });
@@ -150,21 +150,23 @@ export default function KiblePusulasiScreen() {
             <>
               <View style={styles.compassOuter}>
                 <View style={styles.compassRing}>
-                  {/* Cardinal directions */}
-                  <Text style={[styles.cardinal, styles.cardinalN]}>N</Text>
-                  <Text style={[styles.cardinal, styles.cardinalS]}>S</Text>
-                  <Text style={[styles.cardinal, styles.cardinalE]}>E</Text>
-                  <Text style={[styles.cardinal, styles.cardinalW]}>W</Text>
+                  <Animated.View style={[styles.dial, { transform: [{ rotate: dialRotate }] }]}>
+                    {/* Cardinal directions — rotate with the dial like a real compass */}
+                    <Text style={[styles.cardinal, styles.cardinalN]}>N</Text>
+                    <Text style={[styles.cardinal, styles.cardinalS]}>S</Text>
+                    <Text style={[styles.cardinal, styles.cardinalE]}>E</Text>
+                    <Text style={[styles.cardinal, styles.cardinalW]}>W</Text>
 
-                  <Animated.View style={[styles.needleWrap, { transform: [{ rotate: needleRotate }] }]}>
-                    <View style={styles.kaabaMarker}>
-                      <View style={styles.kaabaBadge}>
-                        <Text style={styles.kaabaIcon}>🕋</Text>
+                    {/* Single arrow — fixed at the qibla bearing on the dial, always points to the Kaaba */}
+                    <View style={[styles.qiblaPointerWrap, { transform: [{ rotate: `${qiblaAngle}deg` }] }]}>
+                      <View style={styles.kaabaMarker}>
+                        <View style={styles.kaabaBadge}>
+                          <Text style={styles.kaabaIcon}>🕋</Text>
+                        </View>
+                        <Text style={styles.kaabaLabel}>{t('kible.kaaba')}</Text>
                       </View>
-                      <Text style={styles.kaabaLabel}>{t('kible.kaaba')}</Text>
+                      <View style={styles.qiblaArrow} />
                     </View>
-                    <View style={styles.needleUp} />
-                    <View style={styles.needleDown} />
                   </Animated.View>
 
                   <View style={styles.compassCenter} />
@@ -237,7 +239,12 @@ const styles = StyleSheet.create({
   cardinalS: { bottom: 10, alignSelf: 'center' },
   cardinalE: { right: 12, top: COMPASS_SIZE / 2 - 10 },
   cardinalW: { left: 12, top: COMPASS_SIZE / 2 - 10 },
-  needleWrap: {
+  dial: {
+    ...StyleSheet.absoluteFillObject,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  qiblaPointerWrap: {
     position: 'absolute',
     width: 8,
     height: NEEDLE_H * 2,
@@ -263,15 +270,10 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255,252,247,0.9)',
     paddingHorizontal: 6, paddingVertical: 1, borderRadius: 6,
   },
-  needleUp: {
+  qiblaArrow: {
     width: 0, height: 0,
-    borderLeftWidth: 5, borderRightWidth: 5, borderBottomWidth: NEEDLE_H,
+    borderLeftWidth: 7, borderRightWidth: 7, borderBottomWidth: NEEDLE_H * 1.5,
     borderLeftColor: 'transparent', borderRightColor: 'transparent', borderBottomColor: GOLD,
-  },
-  needleDown: {
-    width: 0, height: 0,
-    borderLeftWidth: 5, borderRightWidth: 5, borderTopWidth: NEEDLE_H,
-    borderLeftColor: 'transparent', borderRightColor: 'transparent', borderTopColor: 'rgba(201,168,76,0.3)',
   },
   compassCenter: {
     position: 'absolute',

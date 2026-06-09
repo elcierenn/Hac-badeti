@@ -24,7 +24,7 @@
       }
     },
     "android": {
-      "package": "com.hacibadeti",
+      "package": "com.hacibadeti.app",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/app_icon_square.png",
         "backgroundColor": "#ffffff"
