@@ -84,10 +84,11 @@ export default function KiblePusulasiScreen() {
     return () => { magSub?.remove(); };
   }, []);
 
-  // Animate compass dial rotation — the dial (with N/E/S/W) turns opposite to
-  // device heading so it always reflects true compass directions, just like a real compass.
+  // Animate only the Qibla arrow — dial (N/E/S/W) stays fixed, arrow rotates
+  // to show the Kaaba direction relative to the device heading.
   useEffect(() => {
-    const target = (360 - deviceHeading) % 360;
+    if (qiblaAngle === null) return;
+    const target = (qiblaAngle - deviceHeading + 360) % 360;
     // Pick shortest path
     let diff = target - currentAngle.current;
     if (diff > 180) diff -= 360;
@@ -101,9 +102,9 @@ export default function KiblePusulasiScreen() {
       easing: Easing.out(Easing.quad),
       useNativeDriver: true,
     }).start();
-  }, [deviceHeading, rotateAnim]);
+  }, [deviceHeading, qiblaAngle, rotateAnim]);
 
-  const dialRotate = rotateAnim.interpolate({
+  const qiblaRotate = rotateAnim.interpolate({
     inputRange: [-360, 360],
     outputRange: ['-360deg', '360deg'],
   });
@@ -150,23 +151,23 @@ export default function KiblePusulasiScreen() {
             <>
               <View style={styles.compassOuter}>
                 <View style={styles.compassRing}>
-                  <Animated.View style={[styles.dial, { transform: [{ rotate: dialRotate }] }]}>
-                    {/* Cardinal directions — rotate with the dial like a real compass */}
+                  {/* Fixed compass rose — N/E/S/W stay aligned with the real world */}
+                  <View style={styles.dial}>
                     <Text style={[styles.cardinal, styles.cardinalN]}>N</Text>
                     <Text style={[styles.cardinal, styles.cardinalS]}>S</Text>
                     <Text style={[styles.cardinal, styles.cardinalE]}>E</Text>
                     <Text style={[styles.cardinal, styles.cardinalW]}>W</Text>
+                  </View>
 
-                    {/* Single arrow — fixed at the qibla bearing on the dial, always points to the Kaaba */}
-                    <View style={[styles.qiblaPointerWrap, { transform: [{ rotate: `${qiblaAngle}deg` }] }]}>
-                      <View style={styles.kaabaMarker}>
-                        <View style={styles.kaabaBadge}>
-                          <Text style={styles.kaabaIcon}>🕋</Text>
-                        </View>
-                        <Text style={styles.kaabaLabel}>{t('kible.kaaba')}</Text>
+                  {/* Animated Qibla arrow — rotates to point toward the Kaaba */}
+                  <Animated.View style={[styles.qiblaPointerWrap, { transform: [{ rotate: qiblaRotate }] }]}>
+                    <View style={styles.kaabaMarker}>
+                      <View style={styles.kaabaBadge}>
+                        <Text style={styles.kaabaIcon}>🕋</Text>
                       </View>
-                      <View style={styles.qiblaArrow} />
+                      <Text style={styles.kaabaLabel}>{t('kible.kaaba')}</Text>
                     </View>
+                    <View style={styles.qiblaArrow} />
                   </Animated.View>
 
                   <View style={styles.compassCenter} />
