@@ -39,6 +39,7 @@
       "expo-localization",
       "expo-router",
       "./plugins/withRemoveActivityRecognition",
+      "./plugins/withFixAndroidPackage",
       [
         "react-native-google-mobile-ads",
         {
