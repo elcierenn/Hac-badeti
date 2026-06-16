@@ -20,7 +20,9 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.hacibadeti.app",
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSLocationWhenInUseUsageDescription": "Konumunuz, Kabe'nin bulunduğu yönü (kıble) hesaplamak ve size en doğru kıble yönünü göstermek için kullanılır. Konum bilgisi yalnızca uygulama açıkken kullanılır ve hiçbir sunucuya gönderilmez.",
+        "NSMotionUsageDescription": "Pusula sensörü, cihazınızın yönünü belirleyerek Kabe'nin tam yönünü (kıble) ekranda göstermek için kullanılır."
       }
     },
     "android": {

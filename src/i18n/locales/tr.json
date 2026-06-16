@@ -14,7 +14,7 @@
     "tagline": "Hac yolculuğunuzda yanınızdayız: görevler, rehber ve çok dilli arayüz.",
     "body": "Profilinizi tamamladıktan sonra görevleri seçtiğiniz dilde takip edebilirsiniz. Arapça seçildiğinde metin yönü sağdan sola olur. Uygulama büyüdükçe yeni bölümler aynı dil dosyalarıyla eklenecektir.",
     "imageDemoCaption": "Ana ekran görseli (yerel dosya, expo-image)",
-    "startCta": "Haca Başla →"
+    "startCta": "Hacca Başla →"
   },
   "gorevler": {
     "title": "Görevler",
@@ -23,7 +23,7 @@
   },
   "anaGorev": {
     "screenTitle": "Ana Görev",
-    "missionHeading": "İhram Giriş",
+    "missionHeading": "İhrama Giriş",
     "mission2Heading": "MEKKE'YE VARIŞ & KUDÜM TAVAFI",
     "mission3Heading": "SA'Y (Safa - Merve)",
     "mission4Heading": "MİNA'DA GECELEME",
@@ -1142,7 +1142,7 @@
     "label": "İlerleme",
     "of": "/",
     "completed": "Tamamlandı ✓",
-    "markDone": "Tamamlandı mı? ✓",
+    "markDone": "Tamamla ✓",
     "markUndone": "Geri Al"
   }
 }
