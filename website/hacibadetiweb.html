@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hac İbadeti</title>
+<script>if(/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))location.replace('mobile.html');</script>
+<style>
+:root {
+  --gold: #C9A84C;
+  --gold2: #E8CC80;
+  --gold-glow: rgba(201,168,76,0.25);
+  --bg: #060C18;
+  --bg2: #0A1220;
+  --white: #FFFFFF;
+  --muted: #7A90B8;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{overflow-x:hidden;scroll-behavior:smooth;}
+body{
+  background:var(--bg);color:var(--white);
+  font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+  overflow-x:hidden;
+}
+#webgl{
+  position:fixed;inset:0;
+  width:100vw;height:100vh;
+  z-index:0;pointer-events:none;
+}
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 48px;height:64px;
+  background:rgba(6,12,24,0.7);
+  backdrop-filter:blur(24px);
+  border-bottom:1px solid rgba(201,168,76,0.12);
+  transition:background .3s;
+}
+.nav-logo{
+  display:flex;align-items:center;gap:10px;
+  font-size:18px;font-weight:800;color:#fff;text-decoration:none;
+  letter-spacing:-.3px;
+}
+.nav-logo em{color:var(--gold);font-style:normal;}
+.lang-sw{display:flex;gap:6px;}
+.lb{
+  padding:5px 14px;border-radius:20px;border:1px solid rgba(201,168,76,0.3);
+  background:transparent;color:var(--muted);cursor:pointer;
+  font-size:13px;font-weight:700;transition:all .2s;
+}
+.lb.on,.lb:hover{background:var(--gold);color:#060C18;border-color:var(--gold);}
+
+/* ── SCREENS ── */
+.screen{
+  position:relative;z-index:1;
+  min-height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+
+/* ── HERO ── */
+#hero{flex-direction:column;text-align:center;padding:100px 24px 60px;}
+.hero-over{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse 70% 60% at 50% 45%, rgba(15,30,70,.55) 0%, transparent 80%);
+  z-index:0;pointer-events:none;
+}
+.hero-content{position:relative;z-index:2;max-width:820px;}
+/* Nav star */
+.nav-star{
+  font-size:22px;color:var(--gold);
+  animation:star-spin 8s linear infinite;
+  display:inline-block;
+  filter:drop-shadow(0 0 6px rgba(201,168,76,.8));
+}
+@keyframes star-spin{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+
+/* Hero star */
+.hero-star{
+  font-size:88px;line-height:1;
+  margin:0 auto 28px;
+  color:var(--gold);
+  filter:drop-shadow(0 0 24px rgba(201,168,76,.7)) drop-shadow(0 0 60px rgba(201,168,76,.3));
+  animation:float 7s ease-in-out infinite, star-pulse 3s ease-in-out infinite;
+  width:fit-content;
+}
+@keyframes star-pulse{0%,100%{filter:drop-shadow(0 0 24px rgba(201,168,76,.7)) drop-shadow(0 0 60px rgba(201,168,76,.3));}50%{filter:drop-shadow(0 0 40px rgba(201,168,76,1)) drop-shadow(0 0 90px rgba(201,168,76,.5));}}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0deg);}50%{transform:translateY(-14px) rotate(2deg);}}
+.hero-title{
+  font-size:clamp(52px,8vw,96px);font-weight:900;line-height:1;
+  letter-spacing:-2px;margin-bottom:20px;
+  background:linear-gradient(135deg,#fff 20%,var(--gold2) 60%,var(--gold) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-line{
+  width:60px;height:3px;background:var(--gold);
+  margin:0 auto 20px;border-radius:2px;
+  animation:pulse-bar 3s ease-in-out infinite;
+}
+@keyframes pulse-bar{0%,100%{width:60px;opacity:.8;}50%{width:100px;opacity:1;}}
+.hero-tag{
+  font-size:clamp(18px,2.5vw,26px);
+  color:var(--gold2);font-style:italic;margin-bottom:16px;
+}
+.hero-desc{
+  font-size:16px;color:var(--muted);line-height:1.75;
+  max-width:520px;margin:0 auto 44px;
+}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:64px;}
+.btn-g{
+  padding:15px 38px;border-radius:50px;
+  background:linear-gradient(135deg,var(--gold),#8B5E10);
+  color:#060C18;font-weight:800;font-size:16px;
+  text-decoration:none;border:none;cursor:pointer;
+  box-shadow:0 8px 32px rgba(201,168,76,.4);
+  transition:transform .2s,box-shadow .2s;
+}
+.btn-g:hover{transform:translateY(-3px);box-shadow:0 14px 44px rgba(201,168,76,.6);}
+.btn-o{
+  padding:15px 38px;border-radius:50px;
+  border:2px solid rgba(201,168,76,.5);
+  color:var(--gold);font-weight:700;font-size:16px;
+  text-decoration:none;background:transparent;
+  transition:all .2s;
+}
+.btn-o:hover{background:rgba(201,168,76,.1);border-color:var(--gold);}
+.hero-stats{
+  display:flex;gap:52px;justify-content:center;flex-wrap:wrap;
+  padding-top:36px;border-top:1px solid rgba(201,168,76,.15);
+}
+.stat-num{font-size:30px;font-weight:800;color:var(--gold);}
+.stat-lbl{font-size:12px;color:var(--muted);margin-top:4px;letter-spacing:.5px;}
+
+/* scroll hint */
+.scroll-hint{
+  position:absolute;bottom:36px;left:50%;transform:translateX(-50%);
+  z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;
+  opacity:.6;animation:hint-fade 2s ease-in-out infinite;
+}
+@keyframes hint-fade{0%,100%{opacity:.3;transform:translateX(-50%) translateY(0);}50%{opacity:.8;transform:translateX(-50%) translateY(8px);}}
+.scroll-hint span{font-size:11px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;}
+.scroll-hint svg{width:24px;height:24px;fill:none;stroke:var(--gold);stroke-width:2;}
+
+/* ── FEATURES ── */
+#features{flex-direction:column;padding:100px 40px;}
+.sec-tag{
+  display:inline-block;padding:6px 18px;border-radius:20px;
+  background:rgba(201,168,76,.12);color:var(--gold);
+  font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+  margin-bottom:14px;
+}
+.sec-title{
+  font-size:clamp(28px,4vw,48px);font-weight:800;
+  line-height:1.15;margin-bottom:10px;text-align:center;
+}
+.sec-sub{font-size:16px;color:var(--muted);text-align:center;margin-bottom:60px;max-width:500px;}
+.features-wrap{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;width:100%;max-width:1200px;
+  perspective:1200px;
+}
+.fc{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(201,168,76,.15);
+  border-radius:20px;padding:32px 26px;
+  cursor:default;
+  transform-style:preserve-3d;
+  transition:box-shadow .3s,border-color .3s;
+  will-change:transform;
+  opacity:0;transform:translateY(40px);
+}
+.fc:hover{
+  box-shadow:0 20px 60px rgba(0,0,0,.4),0 0 30px rgba(201,168,76,.15);
+  border-color:rgba(201,168,76,.4);
+}
+.fc-icon{font-size:38px;margin-bottom:18px;display:block;}
+.fc-title{font-size:16px;font-weight:700;color:#fff;margin-bottom:8px;}
+.fc-desc{font-size:13px;color:var(--muted);line-height:1.65;}
+.fc-glow{
+  position:absolute;inset:0;border-radius:20px;
+  background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(201,168,76,.08) 0%,transparent 60%);
+  pointer-events:none;opacity:0;transition:opacity .3s;
+}
+.fc:hover .fc-glow{opacity:1;}
+
+/* ── MARKET ── */
+#market{
+  flex-direction:column;padding:100px 40px;
+  background:linear-gradient(180deg,transparent 0%,rgba(10,18,32,.8) 50%,transparent 100%);
+}
+.market-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:24px;width:100%;max-width:1100px;margin-bottom:50px;
+}
+.mc{
+  background:rgba(255,255,255,.04);border:1px solid rgba(201,168,76,.12);
+  border-radius:20px;padding:36px 24px;text-align:center;
+  opacity:0;transform:scale(.92);
+  transition:border-color .3s;
+}
+.mc:hover{border-color:rgba(201,168,76,.4);}
+.mc-num{
+  font-size:44px;font-weight:900;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  line-height:1;margin-bottom:10px;
+}
+.mc-label{font-size:15px;font-weight:600;color:#fff;margin-bottom:6px;}
+.mc-sub{font-size:12px;color:var(--muted);font-style:italic;}
+.insights{
+  display:grid;grid-template-columns:1fr 1fr;gap:14px;
+  width:100%;max-width:1100px;
+}
+.ins{
+  background:rgba(255,255,255,.03);border:1px solid rgba(201,168,76,.08);
+  border-radius:14px;padding:18px 20px;
+  font-size:14px;color:var(--muted);line-height:1.6;
+  display:flex;gap:12px;align-items:flex-start;
+  opacity:0;transform:translateX(-20px);
+}
+.ins::before{content:"▸";color:var(--gold);flex-shrink:0;font-size:16px;margin-top:1px;}
+
+/* ── REVENUE ── */
+#revenue{flex-direction:column;padding:100px 40px;}
+.rev-wrap{
+  display:flex;align-items:stretch;gap:0;
+  width:100%;max-width:1000px;justify-content:center;
+  flex-wrap:wrap;
+}
+.rv{
+  background:rgba(255,255,255,.04);border:1px solid rgba(201,168,76,.15);
+  border-radius:20px;padding:36px 28px;flex:1;min-width:220px;max-width:300px;
+  text-align:center;
+  opacity:0;transform:translateY(50px);
+}
+.rv-icon{font-size:48px;margin-bottom:18px;display:block;}
+.rv-title{font-size:19px;font-weight:700;color:var(--gold);margin-bottom:12px;}
+.rv-desc{font-size:13px;color:var(--muted);line-height:1.65;margin-bottom:20px;}
+.rv-badge{
+  display:inline-block;padding:7px 20px;border-radius:20px;
+  background:var(--gold);color:#060C18;font-size:12px;font-weight:800;
+}
+.rv-arrow{
+  display:flex;align-items:center;padding:0 10px;
+  color:var(--gold);font-size:36px;
+  opacity:0;transition:opacity .5s .7s;
+  align-self:center;
+}
+.rv-note{
+  margin-top:36px;max-width:720px;
+  background:rgba(201,168,76,.07);border-left:3px solid var(--gold);
+  border-radius:0 14px 14px 0;
+  padding:18px 24px;font-size:14px;color:var(--muted);
+  line-height:1.7;font-style:italic;
+  opacity:0;transform:translateY(20px);
+}
+
+/* ── CONTACT ── */
+#contact{
+  flex-direction:column;text-align:center;padding:80px 24px;
+  background:linear-gradient(180deg,transparent,rgba(5,10,20,.95) 60%);
+}
+.contact-inner{position:relative;z-index:2;max-width:600px;}
+.contact-title{
+  font-size:clamp(36px,6vw,64px);font-weight:900;line-height:1.1;
+  margin-bottom:12px;
+  background:linear-gradient(135deg,#fff,var(--gold2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.contact-sub{font-size:17px;color:var(--muted);margin-bottom:56px;}
+.contact-items{
+  display:flex;gap:20px;justify-content:center;flex-wrap:wrap;
+  margin-bottom:56px;
+}
+.ci{
+  background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.2);
+  border-radius:20px;padding:30px 40px;
+  transition:transform .3s,border-color .3s,box-shadow .3s;
+  opacity:0;transform:translateY(30px);
+  min-width:220px;
+}
+.ci:hover{
+  transform:translateY(-6px);
+  border-color:rgba(201,168,76,.5);
+  box-shadow:0 20px 50px rgba(201,168,76,.15);
+}
+.ci-label{font-size:12px;color:var(--gold);font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;}
+.ci-val{font-size:16px;color:#fff;font-weight:500;word-break:break-all;}
+.contact-quote{
+  font-size:16px;color:var(--muted);font-style:italic;
+  line-height:1.75;max-width:480px;margin:0 auto;
+}
+
+/* ── FOOTER ── */
+footer{
+  text-align:center;padding:24px;
+  background:rgba(5,10,20,0.9);
+  font-size:12px;color:var(--muted);
+  border-top:1px solid rgba(201,168,76,.1);
+  position:relative;z-index:2;
+}
+footer span{color:var(--gold);}
+
+/* ── ANIMATED BG BLOBS ── */
+.blob{
+  position:absolute;border-radius:50%;
+  filter:blur(80px);pointer-events:none;opacity:.12;
+  animation:blob-move 12s ease-in-out infinite;
+}
+@keyframes blob-move{
+  0%,100%{transform:translate(0,0) scale(1);}
+  33%{transform:translate(30px,-20px) scale(1.08);}
+  66%{transform:translate(-20px,30px) scale(0.95);}
+}
+.blob1{width:500px;height:500px;background:var(--gold);top:10%;left:-10%;animation-delay:0s;}
+.blob2{width:400px;height:400px;background:#3060C0;top:40%;right:-8%;animation-delay:-4s;}
+.blob3{width:350px;height:350px;background:var(--gold);bottom:5%;left:20%;animation-delay:-8s;}
+
+/* ── GOLDEN RING ── */
+.ring{
+  position:absolute;border-radius:50%;
+  border:1px solid rgba(201,168,76,.15);
+  pointer-events:none;
+  animation:ring-pulse 4s ease-in-out infinite;
+}
+@keyframes ring-pulse{0%,100%{transform:scale(1);opacity:.15;}50%{transform:scale(1.04);opacity:.3;}}
+
+/* ── UTILS ── */
+.gold{color:var(--gold);}
+.center{text-align:center;}
+.reveal{opacity:0;}
+
+/* ── MOBILE ── */
+@media(max-width:900px){
+  .features-wrap{grid-template-columns:repeat(2,1fr);}
+  .market-grid{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:768px){
+  /* Nav */
+  nav{padding:0 16px;height:56px;}
+  .nav-logo{font-size:15px;}
+  .nav-star{font-size:18px;}
+  .lb{padding:4px 10px;font-size:12px;}
+
+  /* Hero */
+  #hero{padding:80px 20px 50px;}
+  .hero-star{font-size:64px;margin-bottom:20px;}
+  .hero-title{letter-spacing:-1px;}
+  .hero-desc{font-size:14px;margin-bottom:32px;}
+  .hero-btns{gap:12px;}
+  .btn-g,.btn-o{padding:13px 28px;font-size:15px;}
+  .hero-stats{gap:20px;flex-wrap:wrap;justify-content:center;}
+  .stat-num{font-size:22px;}
+  .stat-lbl{font-size:11px;}
+  .ring{display:none;}
+
+  /* Sections */
+  section,.screen{padding:64px 18px!important;}
+  .sec-title{font-size:clamp(22px,6vw,34px);}
+  .sec-sub{font-size:14px;margin-bottom:36px;}
+
+  /* Features */
+  .features-wrap{grid-template-columns:1fr;gap:14px;}
+  .fc{padding:22px 18px;}
+  .fc-icon{font-size:28px;margin-bottom:12px;}
+  .fc-title{font-size:14px;}
+  .fc-desc{font-size:12px;}
+
+  /* Market */
+  .market-grid{grid-template-columns:repeat(2,1fr);gap:14px;}
+  .mc{padding:24px 16px;}
+  .mc-num{font-size:32px;}
+  .insights{grid-template-columns:1fr;}
+  .ins{font-size:13px;padding:14px 16px;}
+
+  /* Revenue */
+  .rev-wrap{flex-direction:column;align-items:center;gap:0;}
+  .rv{max-width:100%;width:100%;padding:26px 20px;margin-bottom:4px;}
+  .rv-arrow{transform:rotate(90deg);padding:4px 0;font-size:28px;}
+  .rv-note{font-size:13px;padding:14px 18px;}
+
+  /* Contact */
+  .contact-items{flex-direction:column;align-items:stretch;}
+  .ci{padding:22px 24px;min-width:unset;}
+  .ci-val{font-size:14px;}
+  .contact-title{font-size:clamp(28px,8vw,48px);}
+  .contact-quote{font-size:14px;}
+
+  /* Blobs smaller on mobile */
+  .blob{filter:blur(60px);opacity:.08!important;}
+}
+
+@media(max-width:420px){
+  .hero-star{font-size:52px;}
+  .market-grid{grid-template-columns:1fr;}
+  .hero-stats{gap:16px;}
+  .stat-num{font-size:20px;}
+  .lang-sw{gap:4px;}
+  .lb{padding:4px 8px;font-size:11px;}
+}
+
+[dir="rtl"] .ins::before{content:"◂";}
+[dir="rtl"] .rv-note{border-left:none;border-right:3px solid var(--gold);}
+[dir="rtl"] .nav-logo{flex-direction:row-reverse;}
+</style>
+</head>
+<body>
+
+<canvas id="webgl"></canvas>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-logo" href="#">
+    <span class="nav-star">★</span>
+    Hac <em>İbadeti</em>
+  </a>
+  <div class="lang-sw">
+    <button class="lb on"  onclick="setLang('tr')">TR</button>
+    <button class="lb"     onclick="setLang('en')">EN</button>
+    <button class="lb"     onclick="setLang('ar')">AR</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="screen" id="hero">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="hero-over"></div>
+  <!-- decorative rings -->
+  <div class="ring" style="width:400px;height:400px;top:50%;left:50%;margin:-200px 0 0 -200px;"></div>
+  <div class="ring" style="width:600px;height:600px;top:50%;left:50%;margin:-300px 0 0 -300px;animation-delay:-2s;"></div>
+  <div class="ring" style="width:800px;height:800px;top:50%;left:50%;margin:-400px 0 0 -400px;animation-delay:-1s;opacity:.08;"></div>
+
+  <div class="hero-content">
+    <div class="hero-star">★</div>
+
+    <h1 class="hero-title" data-i18n="hero_title">Hac İbadeti</h1>
+    <div class="hero-line"></div>
+    <p class="hero-tag" data-i18n="hero_tag">Hacınızın Dijital Rehberi</p>
+    <p class="hero-desc" data-i18n="hero_desc">
+      Dünyanın en büyük yıllık toplanmasına katılan hacılar için tasarlanmış kapsamlı mobil rehber.
+      7 araç, 150+ bilgi kartı, 3 dil, tam çevrimdışı erişim.
+    </p>
+    <div class="hero-btns">
+      <a class="btn-g" data-i18n="cta_ios">App Store</a>
+      <a class="btn-o" data-i18n="cta_and">Google Play</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num" data-count="2000000">0</div>
+        <div class="stat-lbl" data-i18n="s1">Yıllık Hac Ziyaretçisi</div>
+      </div>
+      <div>
+        <div class="stat-num">1.8B</div>
+        <div class="stat-lbl" data-i18n="s2">Dünya Müslüman Nüfusu</div>
+      </div>
+      <div>
+        <div class="stat-num">7</div>
+        <div class="stat-lbl" data-i18n="s3">Entegre Araç</div>
+      </div>
+      <div>
+        <div class="stat-num">3</div>
+        <div class="stat-lbl" data-i18n="s4">Dil Desteği</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span data-i18n="scroll">Kaydır</span>
+    <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="screen" id="features" style="flex-direction:column;">
+  <div class="blob blob3" style="opacity:.07;top:-20%;right:-10%;"></div>
+  <div class="sec-tag" data-i18n="f_tag">Özellikler</div>
+  <h2 class="sec-title" data-i18n="f_title">Bir hacının ihtiyacı olan her şey</h2>
+  <p class="sec-sub" data-i18n="f_sub">7 entegre araç ve kapsamlı içerik ile eksiksiz dijital rehberlik.</p>
+
+  <div class="features-wrap" id="feat-grid">
+    <div class="fc" data-delay="0">
+      <div class="fc-glow"></div>
+      <span class="fc-icon">🗺️</span>
+      <div class="fc-title" data-i18n="f1t">Ana Görev Rehberi</div>
+      <p class="fc-desc" data-i18n="f1d">İhramdan veda tavafına 8 ana görev, adım adım talimatlar, fotoğraflı anlatım.</p>
+    </div>
+    <div class="fc" data-delay="60">
+      <div class="fc-glow"></div>
+      <span class="fc-icon">🧲</span>
+      <div class="fc-title" data-i18n="f2t">Kıble Pusulası</div>
+      <p class="fc-desc" data-i18n="f2d">Gerçek zamanlı GPS tabanlı yön tespiti ve Kabe mesafesi göstergesi.</p>
+    </div>
+    <div class="fc" data-delay="120">
+      <div class="fc-glow"></div>
+      <span class="fc-icon">📿</span>
+      <div class="fc-title" data-i18n="f3t">Tesbih Sayacı</div>
+      <p class="fc-desc" data-i18n="f3d">5 zikir seçeneği, 33 döngü takibi, animasyonlu arayüz.</p>
+    </div>
+    <div class="fc" data-delay="180">
+      <div class="fc-glow"></div>
+      <span class="fc-icon">🤲</span>
+      <div class="fc-title" data-i18n="f4t">Dua Rehberi</div>
+      <p class="fc-desc" data-i18n="f4d">20 dua, 3 dil, kategori filtreleri, Arapça orijinal metinler.</p>
+    </div>
+    <div class="fc" data-delay="240">
+      <div class="fc-glow"></div>
+      <span class="fc-icon">💡</span>
+      <div class="fc-title" data-i18n="f5t">Bilgi Köşesi</div>
+      <p class="fc-desc" data-i18n="f5d">150 bilgi kartı; hac tarihi, ritüellerin anlamı, fıkhi bilgiler.</p>
+    </div>
+    <div class="fc" data-delay="300">
+      <div class="fc-glow"></div>
+      <span class="fc-icon">📋</span>
+      <div class="fc-title" data-i18n="f6t">Hazırlık Listesi</div>
+      <p class="fc-desc" data-i18n="f6d">22 madde, 4 kategori, kalıcı tamamlandı işaretleme.</p>
+    </div>
+    <div class="fc" data-delay="360">
+      <div class="fc-glow"></div>
+      <span class="fc-icon">📝</span>
+      <div class="fc-title" data-i18n="f7t">Hac Notları</div>
+      <p class="fc-desc" data-i18n="f7d">Kişisel journal, sınırsız not, tam çevrimdışı CRUD.</p>
+    </div>
+    <div class="fc" data-delay="420">
+      <div class="fc-glow"></div>
+      <span class="fc-icon">🚨</span>
+      <div class="fc-title" data-i18n="f8t">Acil Durum</div>
+      <p class="fc-desc" data-i18n="f8d">Suudi Arabistan acil hatları, tek tuş erişim.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MARKET -->
+<section class="screen" id="market" style="flex-direction:column;">
+  <div class="sec-tag" data-i18n="m_tag">Pazar Büyüklüğü</div>
+  <h2 class="sec-title" data-i18n="m_title">Küresel, büyüyen, sürekli yenilenen kitle</h2>
+  <p class="sec-sub" data-i18n="m_sub">Her hac sezonu tamamen yeni bir kullanıcı kitlesi oluşturur.</p>
+  <div class="market-grid">
+    <div class="mc reveal">
+      <div class="mc-num">1.8B</div>
+      <div class="mc-label" data-i18n="m1l">Dünya Müslüman Nüfusu</div>
+      <div class="mc-sub" data-i18n="m1s">Erişilebilir toplam pazar</div>
+    </div>
+    <div class="mc reveal">
+      <div class="mc-num">2M+</div>
+      <div class="mc-label" data-i18n="m2l">Yıllık Hac Ziyaretçisi</div>
+      <div class="mc-sub" data-i18n="m2s">Her yıl yenilenen aktif kitle</div>
+    </div>
+    <div class="mc reveal">
+      <div class="mc-num">80K+</div>
+      <div class="mc-label" data-i18n="m3l">Türkiye Yıllık Kotası</div>
+      <div class="mc-sub" data-i18n="m3s">Birincil hedef segment</div>
+    </div>
+    <div class="mc reveal">
+      <div class="mc-num">73%</div>
+      <div class="mc-label" data-i18n="m4l">Akıllı Telefon Kullanımı</div>
+      <div class="mc-sub" data-i18n="m4s">Müslüman nüfus içinde</div>
+    </div>
+  </div>
+  <div class="insights">
+    <div class="ins reveal" data-i18n="i1">Hac kotaları COVID sonrası rekor seviyelere ulaştı ve büyümeye devam ediyor.</div>
+    <div class="ins reveal" data-i18n="i2">Her hac sezonu tamamen yeni bir kullanıcı kitlesi oluşturur — sürekli büyüyen TAM.</div>
+    <div class="ins reveal" data-i18n="i3">Endonezya, Malezya, Nijerya ve Körfez ülkeleri hızlı büyüyen segmentler.</div>
+    <div class="ins reveal" data-i18n="i4">Uygulama içi ibadet araçlarına yönelik mobil pazar her yıl genişlemektedir.</div>
+  </div>
+</section>
+
+<!-- REVENUE -->
+<section class="screen" id="revenue" style="flex-direction:column;">
+  <div class="blob blob1" style="opacity:.06;top:20%;right:-5%;left:auto;animation-delay:-3s;"></div>
+  <div class="sec-tag" data-i18n="r_tag">Gelir Modeli</div>
+  <h2 class="sec-title" data-i18n="r_title">İki tamamlayıcı kaynak</h2>
+  <p class="sec-sub" data-i18n="r_sub">Ücretsiz erişimle geniş kitle, reklam ve premium paketle sürdürülebilir gelir.</p>
+  <div class="rev-wrap">
+    <div class="rv" data-delay="0">
+      <span class="rv-icon">📲</span>
+      <div class="rv-title" data-i18n="r1t">Ücretsiz İndirme</div>
+      <p class="rv-desc" data-i18n="r1d">Engelsiz erişim ile geniş ve hızlı büyüyen kullanıcı tabanı oluşturulur.</p>
+      <span class="rv-badge" data-i18n="r1b">Düşük Edinme Maliyeti</span>
+    </div>
+    <div class="rv-arrow">→</div>
+    <div class="rv" data-delay="150">
+      <span class="rv-icon">📢</span>
+      <div class="rv-title" data-i18n="r2t">Reklam Geliri</div>
+      <p class="rv-desc" data-i18n="r2d">Google AdMob entegrasyonu ile banner ve geçiş reklamları.</p>
+      <span class="rv-badge" data-i18n="r2b">Pasif Sürekli Gelir</span>
+    </div>
+    <div class="rv-arrow">→</div>
+    <div class="rv" data-delay="300">
+      <span class="rv-icon">⭐</span>
+      <div class="rv-title" data-i18n="r3t">Reklamsız Paket</div>
+      <p class="rv-desc" data-i18n="r3d">Tek seferlik 2,99 USD ödemesiyle tüm reklamlar kalıcı kaldırılır.</p>
+      <span class="rv-badge" data-i18n="r3b">Yüksek Dönüşüm</span>
+    </div>
+  </div>
+  <div class="rv-note" id="rev-note" data-i18n="r_note">
+    Hac aylarında reklamsız paket dönüşüm oranının belirgin biçimde artması beklenmektedir.
+    Hacılar ibadet odaklanması için reklamsız deneyimi tercih etme eğilimindedir.
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="screen" id="contact">
+  <div class="blob blob2" style="opacity:.07;bottom:0;top:auto;"></div>
+  <div class="ring" style="width:500px;height:500px;top:50%;left:50%;margin:-250px 0 0 -250px;"></div>
+  <div class="ring" style="width:700px;height:700px;top:50%;left:50%;margin:-350px 0 0 -350px;animation-delay:-1.5s;"></div>
+
+  <div class="contact-inner">
+    <div class="sec-tag" data-i18n="c_tag">İletişim</div>
+    <h2 class="contact-title" data-i18n="c_title">Birlikte büyüyelim</h2>
+    <p class="contact-sub" data-i18n="c_sub">Sorularınız ve iş birliği teklifleri için.</p>
+    <div class="contact-items">
+      <div class="ci">
+        <div class="ci-label" data-i18n="c_email_l">E-posta</div>
+        <div class="ci-val">darklife341@gmail.com</div>
+      </div>
+      <div class="ci">
+        <div class="ci-label" data-i18n="c_phone_l">Telefon</div>
+        <div class="ci-val">+90 546 867 71 69</div>
+      </div>
+    </div>
+    <p class="contact-quote" data-i18n="c_quote">
+      "Her yolculuk bir adımla başlar. Biz o adımı kolaylaştırıyoruz."
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <span>Hac İbadeti</span>. All rights reserved.</p>
+</footer>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+// ── i18n ──────────────────────────────────────────────────────────────────────
+const T = {
+tr:{
+  hero_title:"Hac İbadeti", hero_tag:"Hacınızın Dijital Rehberi",
+  hero_desc:"Dünyanın en büyük yıllık toplanmasına katılan hacılar için tasarlanmış kapsamlı mobil rehber. 7 araç, 150+ bilgi kartı, 3 dil, tam çevrimdışı erişim.",
+  cta_ios:"App Store", cta_and:"Google Play",
+  s1:"Yıllık Hac Ziyaretçisi",s2:"Dünya Müslüman Nüfusu",s3:"Entegre Araç",s4:"Dil Desteği",scroll:"Kaydır",
+  f_tag:"Özellikler",f_title:"Bir hacının ihtiyacı olan her şey",f_sub:"7 entegre araç ve kapsamlı içerik ile eksiksiz dijital rehberlik.",
+  f1t:"Ana Görev Rehberi",f1d:"İhramdan veda tavafına 8 ana görev, adım adım talimatlar, fotoğraflı anlatım.",
+  f2t:"Kıble Pusulası",f2d:"Gerçek zamanlı GPS tabanlı yön tespiti ve Kabe mesafesi göstergesi.",
+  f3t:"Tesbih Sayacı",f3d:"5 zikir seçeneği, 33 döngü takibi, animasyonlu arayüz.",
+  f4t:"Dua Rehberi",f4d:"20 dua, 3 dil, kategori filtreleri, Arapça orijinal metinler.",
+  f5t:"Bilgi Köşesi",f5d:"150 bilgi kartı; hac tarihi, ritüellerin anlamı, fıkhi bilgiler.",
+  f6t:"Hazırlık Listesi",f6d:"22 madde, 4 kategori, kalıcı tamamlandı işaretleme.",
+  f7t:"Hac Notları",f7d:"Kişisel journal, sınırsız not, tam çevrimdışı CRUD.",
+  f8t:"Acil Durum",f8d:"Suudi Arabistan acil hatları, tek tuş erişim.",
+  m_tag:"Pazar Büyüklüğü",m_title:"Küresel, büyüyen, sürekli yenilenen kitle",m_sub:"Her hac sezonu tamamen yeni bir kullanıcı kitlesi oluşturur.",
+  m1l:"Dünya Müslüman Nüfusu",m1s:"Erişilebilir toplam pazar",
+  m2l:"Yıllık Hac Ziyaretçisi",m2s:"Her yıl yenilenen aktif kitle",
+  m3l:"Türkiye Yıllık Kotası",m3s:"Birincil hedef segment",
+  m4l:"Akıllı Telefon Kullanımı",m4s:"Müslüman nüfus içinde",
+  i1:"Hac kotaları COVID sonrası rekor seviyelere ulaştı ve büyümeye devam ediyor.",
+  i2:"Her hac sezonu tamamen yeni bir kullanıcı kitlesi oluşturur — sürekli büyüyen TAM.",
+  i3:"Endonezya, Malezya, Nijerya ve Körfez ülkeleri hızlı büyüyen segmentler.",
+  i4:"Uygulama içi ibadet araçlarına yönelik mobil pazar her yıl genişlemektedir.",
+  r_tag:"Gelir Modeli",r_title:"İki tamamlayıcı kaynak",r_sub:"Ücretsiz erişimle geniş kitle, reklam ve premium paketle sürdürülebilir gelir.",
+  r1t:"Ücretsiz İndirme",r1d:"Engelsiz erişim ile geniş kullanıcı tabanı oluşturulur.",r1b:"Düşük Edinme Maliyeti",
+  r2t:"Reklam Geliri",r2d:"Google AdMob entegrasyonu ile banner ve geçiş reklamları.",r2b:"Pasif Sürekli Gelir",
+  r3t:"Reklamsız Paket",r3d:"Tek seferlik 2,99 USD ödemesiyle tüm reklamlar kalıcı kaldırılır.",r3b:"Yüksek Dönüşüm",
+  r_note:"Hac aylarında reklamsız paket dönüşüm oranının belirgin biçimde artması beklenmektedir. Hacılar ibadet odaklanması için reklamsız deneyimi tercih etme eğilimindedir.",
+  c_tag:"İletişim",c_title:"Birlikte büyüyelim",c_sub:"Sorularınız ve iş birliği teklifleri için.",
+  c_email_l:"E-posta",c_phone_l:"Telefon",
+  c_quote:'"Her yolculuk bir adımla başlar. Biz o adımı kolaylaştırıyoruz."',
+},
+en:{
+  hero_title:"Hajj Guide", hero_tag:"Your Digital Hajj Companion",
+  hero_desc:"A comprehensive mobile guide for pilgrims attending the world's largest annual gathering. 7 tools, 150+ info cards, 3 languages, fully offline.",
+  cta_ios:"App Store",cta_and:"Google Play",
+  s1:"Annual Hajj Visitors",s2:"Global Muslim Population",s3:"Integrated Tools",s4:"Languages",scroll:"Scroll",
+  f_tag:"Features",f_title:"Everything a pilgrim needs",f_sub:"7 integrated tools and comprehensive content for complete digital guidance.",
+  f1t:"Main Task Guide",f1d:"8 Hajj tasks from Ihram to Farewell Tawaf, step-by-step with photos.",
+  f2t:"Qibla Compass",f2d:"Real-time GPS-based direction detection with distance to the Kaaba.",
+  f3t:"Prayer Counter",f3d:"5 dhikr options, 33-cycle tracking, animated interface.",
+  f4t:"Dua Guide",f4d:"20 prayers, 3 languages, category filters, original Arabic texts.",
+  f5t:"Knowledge Corner",f5d:"150 info cards covering history, ritual meanings and jurisprudence.",
+  f6t:"Preparation Checklist",f6d:"22 items, 4 categories, persistent completion tracking.",
+  f7t:"Hajj Notes",f7d:"Personal journal, unlimited entries, fully offline CRUD.",
+  f8t:"Emergency",f8d:"Saudi Arabia emergency numbers, one-tap access.",
+  m_tag:"Market Size",m_title:"Global, growing, self-renewing audience",m_sub:"Every Hajj season creates an entirely new user cohort.",
+  m1l:"Global Muslim Population",m1s:"Total addressable market",
+  m2l:"Annual Hajj Visitors",m2s:"Self-renewing active audience",
+  m3l:"Turkey Annual Quota",m3s:"Primary target segment",
+  m4l:"Smartphone Penetration",m4s:"Among Muslim population",
+  i1:"Hajj quotas reached record levels post-COVID and continue to grow.",
+  i2:"Every Hajj season brings an entirely new user cohort — a continuously growing TAM.",
+  i3:"Indonesia, Malaysia, Nigeria and Gulf states are fast-growing segments.",
+  i4:"The mobile market for in-app worship tools is expanding year over year.",
+  r_tag:"Revenue",r_title:"Two complementary streams",r_sub:"Broad reach with free access, sustainable income through ads and premium package.",
+  r1t:"Free Download",r1d:"Frictionless access builds a large, fast-growing user base.",r1b:"Low Acquisition Cost",
+  r2t:"Ad Revenue",r2d:"Google AdMob integration with banner and interstitial ads.",r2b:"Passive Recurring Income",
+  r3t:"Ad-Free Package",r3d:"One-time $2.99 permanently removes all ads.",r3b:"High Conversion Potential",
+  r_note:"Ad-free conversion is expected to spike significantly during Hajj months. Pilgrims strongly prefer distraction-free worship experiences.",
+  c_tag:"Contact",c_title:"Let's grow together",c_sub:"For questions and partnership inquiries.",
+  c_email_l:"Email",c_phone_l:"Phone",
+  c_quote:'"Every journey begins with a single step. We make that step easier."',
+
+},
+ar:{
+  hero_title:"حج عبادتي", hero_tag:"رفيقك الرقمي في رحلة الحج",
+  hero_desc:"تطبيق دليل شامل مصمم للحجاج المتوجهين إلى أكبر تجمع سنوي في العالم. 7 أدوات، 150+ بطاقة معلومات، 3 لغات، يعمل بدون إنترنت.",
+  cta_ios:"App Store",cta_and:"Google Play",
+  s1:"حاج سنوياً",s2:"مسلم في العالم",s3:"أداة متكاملة",s4:"لغات",scroll:"مرر",
+  f_tag:"المميزات",f_title:"كل ما يحتاجه الحاج",f_sub:"7 أدوات متكاملة ومحتوى شامل لتجربة إرشاد رقمية متكاملة.",
+  f1t:"دليل المهام الرئيسية",f1d:"8 مهام من الإحرام حتى طواف الوداع، تعليمات تفصيلية وشرح مصور.",
+  f2t:"بوصلة القبلة",f2d:"تحديد الاتجاه بالـ GPS في الوقت الفعلي مع المسافة إلى الكعبة.",
+  f3t:"عداد التسبيح",f3d:"5 أذكار، تتبع 33 دورة، واجهة متحركة.",
+  f4t:"دليل الأدعية",f4d:"20 دعاء، 3 لغات، تصفية بالفئة، النصوص العربية الأصلية.",
+  f5t:"ركن المعلومات",f5d:"150 بطاقة تشمل تاريخ الحج ومعاني الشعائر والأحكام.",
+  f6t:"قائمة التجهيز",f6d:"22 عنصراً، 4 فئات، تحديد مكتمل دائم.",
+  f7t:"ملاحظات الحج",f7d:"مفكرة شخصية، إدخالات غير محدودة، يعمل بدون إنترنت.",
+  f8t:"الطوارئ",f8d:"أرقام الطوارئ في المملكة العربية السعودية، وصول بنقرة واحدة.",
+  m_tag:"حجم السوق",m_title:"جمهور عالمي متنامٍ ومتجدد",m_sub:"كل موسم حج يجلب شريحة مستخدمين جديدة بالكامل.",
+  m1l:"مسلم في العالم",m1s:"إجمالي السوق المستهدف",
+  m2l:"حاج سنوياً",m2s:"جمهور نشط متجدد كل عام",
+  m3l:"حصة تركيا السنوية",m3s:"القطاع المستهدف الأساسي",
+  m4l:"نسبة الهواتف الذكية",m4s:"بين المسلمين في العالم",
+  i1:"وصلت حصص الحج إلى مستويات قياسية بعد كوفيد وتواصل النمو.",
+  i2:"كل موسم حج يجلب شريحة مستخدمين جديدة — سوق إجمالي متنامٍ باستمرار.",
+  i3:"إندونيسيا وماليزيا ونيجيريا ودول الخليج قطاعات سريعة النمو.",
+  i4:"سوق التطبيقات الدينية على الهاتف يتوسع سنة بعد سنة.",
+  r_tag:"نموذج الإيراد",r_title:"مصدران متكاملان",r_sub:"وصول واسع مجاني، ودخل مستدام من الإعلانات والباقة المميزة.",
+  r1t:"تنزيل مجاني",r1d:"وصول سلس يبني قاعدة مستخدمين واسعة وسريعة النمو.",r1b:"تكلفة اكتساب منخفضة",
+  r2t:"إيراد الإعلانات",r2d:"تكامل Google AdMob مع إعلانات بانر وتخللية.",r2b:"دخل سلبي متكرر",
+  r3t:"باقة بلا إعلانات",r3d:"2.99 دولار لمرة واحدة تزيل جميع الإعلانات نهائياً.",r3b:"إمكانية تحويل عالية",
+  r_note:"من المتوقع ارتفاع معدلات التحويل بشكل ملحوظ خلال أشهر الحج. الحجاج يفضلون تجربة خالية من المشتتات أثناء العبادة.",
+  c_tag:"التواصل",c_title:"لنكبر معاً",c_sub:"للاستفسارات واقتراحات الشراكة.",
+  c_email_l:"البريد الإلكتروني",c_phone_l:"الهاتف",
+  c_quote:'"كل رحلة تبدأ بخطوة واحدة. نحن نجعل تلك الخطوة أسهل."',
+},
+};
+
+function setLang(l){
+  const t = T[l], isAr = l==='ar';
+  document.documentElement.lang = l;
+  document.documentElement.dir  = isAr ? 'rtl' : 'ltr';
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k = el.dataset.i18n;
+    if(t[k]!==undefined) el.textContent = t[k];
+  });
+  document.querySelectorAll('.lb').forEach(b=>{
+    b.classList.toggle('on', b.textContent===l.toUpperCase());
+  });
+}
+
+// ── BUBBLES & BUTTERFLIES ─────────────────────────────────────────────────────
+(function(){
+  const canvas = document.getElementById('webgl');
+  const ctx    = canvas.getContext('2d');
+  let W, H;
+
+  function resize(){
+    W = canvas.width  = innerWidth;
+    H = canvas.height = innerHeight;
+  }
+  window.addEventListener('resize', ()=>{ resize(); });
+  resize();
+
+  // ── Bubble class ──
+  class Bubble {
+    constructor(){ this.init(true); }
+    init(random){
+      this.r     = Math.random()*22 + 6;
+      this.x     = Math.random()*W;
+      this.y     = random ? Math.random()*H : H + this.r + Math.random()*80;
+      this.vy    = Math.random()*0.55 + 0.2;
+      this.phase = Math.random()*Math.PI*2;
+      this.wobble= Math.random()*1.2 + 0.4;
+      this.opacity = Math.random()*0.28 + 0.08;
+    }
+    update(t){
+      this.y -= this.vy;
+      this.x += Math.sin(t*0.6 + this.phase)*this.wobble*0.35;
+      if(this.y < -this.r*3) this.init(false);
+    }
+    draw(){
+      ctx.save();
+      // Main bubble fill
+      const g = ctx.createRadialGradient(
+        this.x - this.r*.3, this.y - this.r*.3, this.r*.05,
+        this.x, this.y, this.r
+      );
+      g.addColorStop(0,  `rgba(255,228,120,${this.opacity*1.8})`);
+      g.addColorStop(0.4,`rgba(201,168,76,${this.opacity*1.2})`);
+      g.addColorStop(1,  `rgba(180,140,50,0)`);
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.r, 0, Math.PI*2);
+      ctx.fillStyle = g;
+      ctx.shadowColor = 'rgba(201,168,76,0.6)';
+      ctx.shadowBlur  = this.r*2.5;
+      ctx.fill();
+      // Rim highlight
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.r, 0, Math.PI*2);
+      ctx.strokeStyle = `rgba(255,220,100,${this.opacity*1.5})`;
+      ctx.lineWidth   = 1;
+      ctx.shadowBlur  = 0;
+      ctx.stroke();
+      // Glint
+      ctx.beginPath();
+      ctx.arc(this.x - this.r*.32, this.y - this.r*.32, this.r*.2, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(255,248,200,${this.opacity*2})`;
+      ctx.fill();
+      ctx.restore();
+    }
+  }
+
+  // ── Butterfly class ──
+  class Butterfly {
+    constructor(){ this.init(); }
+    init(){
+      this.x  = Math.random()*W;
+      this.y  = Math.random()*H;
+      this.tx = Math.random()*W;
+      this.ty = Math.random()*H*.85 + H*.05;
+      this.sp = Math.random()*0.7 + 0.3;
+      this.s  = Math.random()*18 + 10;
+      this.flap = Math.random()*6 + 4;
+      this.opacity = Math.random()*0.35 + 0.12;
+      this.angle  = 0;
+      this.idleT  = 0;
+      this.idle   = false;
+    }
+    update(t){
+      const dx = this.tx - this.x;
+      const dy = this.ty - this.y;
+      const d  = Math.sqrt(dx*dx + dy*dy);
+      if(d < 8){
+        if(!this.idle){ this.idle = true; this.idleT = t + 1.5 + Math.random()*2; }
+        if(t > this.idleT){
+          this.idle = false;
+          this.tx = Math.random()*W;
+          this.ty = Math.random()*H*.85 + H*.05;
+        }
+      }
+      if(!this.idle){
+        this.angle = Math.atan2(dy, dx);
+        this.x += (dx/d)*this.sp;
+        this.y += (dy/d)*this.sp;
+      } else {
+        // Gentle hover
+        this.x += Math.sin(t*1.2 + this.flap)*0.3;
+        this.y += Math.cos(t*0.9 + this.flap)*0.2;
+      }
+    }
+    draw(t){
+      ctx.save();
+      ctx.translate(this.x, this.y);
+      // Rotate body toward movement, add 90deg offset
+      ctx.rotate(this.angle + Math.PI/2);
+      ctx.globalAlpha = this.opacity;
+
+      const s = this.s;
+      const flap = Math.sin(t * this.flap);  // -1 to 1
+      const scaleX = Math.abs(flap);          // 0 to 1 (wing open/close)
+
+      // ── Upper wings ──
+      ctx.save();
+      ctx.scale(scaleX, 1);
+
+      // Left upper wing
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.bezierCurveTo(-s*1.6, -s*.4, -s*2.1, -s*1.6, -s*.5, -s*1.9);
+      ctx.bezierCurveTo( s*.15, -s*1.5,  s*.1,  -s*.5,  0,  0);
+      const gu1 = ctx.createLinearGradient(-s*1.5, -s, 0, 0);
+      gu1.addColorStop(0, `rgba(255,210,80,0.85)`);
+      gu1.addColorStop(1, `rgba(201,168,76,0.5)`);
+      ctx.fillStyle = gu1;
+      ctx.fill();
+
+      // Right upper wing
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.bezierCurveTo( s*1.6, -s*.4,  s*2.1, -s*1.6,  s*.5, -s*1.9);
+      ctx.bezierCurveTo(-s*.15, -s*1.5, -s*.1, -s*.5,   0,  0);
+      const gu2 = ctx.createLinearGradient(s*1.5, -s, 0, 0);
+      gu2.addColorStop(0, `rgba(255,210,80,0.85)`);
+      gu2.addColorStop(1, `rgba(201,168,76,0.5)`);
+      ctx.fillStyle = gu2;
+      ctx.fill();
+
+      ctx.restore();
+
+      // ── Lower wings ──
+      ctx.save();
+      ctx.scale(scaleX * 0.85, 1);
+
+      // Left lower wing
+      ctx.beginPath();
+      ctx.moveTo(0, s*.1);
+      ctx.bezierCurveTo(-s*1.3,  s*.4, -s*1.6,  s*1.3, -s*.3, s*1.6);
+      ctx.bezierCurveTo( s*.1,   s*1.1,  s*.05,  s*.3,  0, s*.1);
+      const gl1 = ctx.createLinearGradient(-s*1.2, s, 0, s*.1);
+      gl1.addColorStop(0, `rgba(232,196,60,0.7)`);
+      gl1.addColorStop(1, `rgba(170,130,40,0.4)`);
+      ctx.fillStyle = gl1;
+      ctx.fill();
+
+      // Right lower wing
+      ctx.beginPath();
+      ctx.moveTo(0, s*.1);
+      ctx.bezierCurveTo( s*1.3,  s*.4,  s*1.6,  s*1.3,  s*.3, s*1.6);
+      ctx.bezierCurveTo(-s*.1,   s*1.1, -s*.05,  s*.3,   0, s*.1);
+      const gl2 = ctx.createLinearGradient(s*1.2, s, 0, s*.1);
+      gl2.addColorStop(0, `rgba(232,196,60,0.7)`);
+      gl2.addColorStop(1, `rgba(170,130,40,0.4)`);
+      ctx.fillStyle = gl2;
+      ctx.fill();
+
+      ctx.restore();
+
+      // Wing edge glow
+      ctx.save();
+      ctx.scale(scaleX, 1);
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.bezierCurveTo(-s*1.6, -s*.4, -s*2.1, -s*1.6, -s*.5, -s*1.9);
+      ctx.bezierCurveTo( s*.15, -s*1.5,  s*.1,  -s*.5, 0, 0);
+      ctx.bezierCurveTo( s*1.6, -s*.4,  s*2.1, -s*1.6,  s*.5, -s*1.9);
+      ctx.bezierCurveTo(-s*.15, -s*1.5, -s*.1, -s*.5,  0, 0);
+      ctx.strokeStyle = `rgba(255,230,100,0.4)`;
+      ctx.lineWidth   = .8;
+      ctx.shadowColor = 'rgba(201,168,76,0.8)';
+      ctx.shadowBlur  = 8;
+      ctx.stroke();
+      ctx.restore();
+
+      // Body
+      ctx.beginPath();
+      ctx.ellipse(0, s*.4, s*.1, s*.65, 0, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(160,120,30,0.9)`;
+      ctx.shadowBlur = 0;
+      ctx.fill();
+
+      // Antennae
+      ctx.beginPath();
+      ctx.moveTo(-s*.06, -s*.1);
+      ctx.quadraticCurveTo(-s*.5, -s*1.2, -s*.4, -s*1.6);
+      ctx.moveTo( s*.06, -s*.1);
+      ctx.quadraticCurveTo( s*.5, -s*1.2,  s*.4, -s*1.6);
+      ctx.strokeStyle = `rgba(201,168,76,0.7)`;
+      ctx.lineWidth   = .8;
+      ctx.stroke();
+      // Antenna tips
+      ctx.beginPath();
+      ctx.arc(-s*.4, -s*1.6, s*.08, 0, Math.PI*2);
+      ctx.arc( s*.4, -s*1.6, s*.08, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(255,210,80,0.9)`;
+      ctx.fill();
+
+      ctx.restore();
+    }
+  }
+
+  // ── Create instances ──
+  const BUBBLE_COUNT    = 28;
+  const BUTTERFLY_COUNT = 9;
+  const bubbles    = Array.from({length:BUBBLE_COUNT},    ()=>new Bubble());
+  const butterflies= Array.from({length:BUTTERFLY_COUNT}, ()=>new Butterfly());
+
+  // ── Animation loop ──
+  let t = 0;
+  function loop(){
+    requestAnimationFrame(loop);
+    t += 0.016;
+    ctx.clearRect(0, 0, W, H);
+    bubbles.forEach(b=>{ b.update(t); b.draw(); });
+    butterflies.forEach(b=>{ b.update(t); b.draw(t); });
+  }
+  loop();
+})();
+
+// ── GSAP SCROLL ANIMATIONS ────────────────────────────────────────────────────
+gsap.registerPlugin(ScrollTrigger);
+
+// Feature cards stagger
+gsap.utils.toArray('.fc').forEach(card=>{
+  const delay = parseInt(card.dataset.delay||0);
+  gsap.to(card,{
+    opacity:1, y:0,
+    duration:.7, delay:delay/1000,
+    ease:'power3.out',
+    scrollTrigger:{
+      trigger:card, start:'top 85%',
+      once:true,
+    }
+  });
+});
+
+// Market metric cards
+gsap.utils.toArray('.mc').forEach((el,i)=>{
+  gsap.to(el,{
+    opacity:1, scale:1,
+    duration:.6, delay:i*.1,
+    ease:'back.out(1.5)',
+    scrollTrigger:{trigger:el, start:'top 85%', once:true},
+  });
+});
+
+// Insight lines
+gsap.utils.toArray('.ins').forEach((el,i)=>{
+  gsap.to(el,{
+    opacity:1, x:0,
+    duration:.6, delay:i*.1,
+    ease:'power2.out',
+    scrollTrigger:{trigger:el, start:'top 88%', once:true},
+  });
+});
+
+// Revenue cards
+gsap.utils.toArray('.rv').forEach(el=>{
+  const delay = parseInt(el.dataset.delay||0);
+  gsap.to(el,{
+    opacity:1, y:0,
+    duration:.7, delay:delay/1000,
+    ease:'power3.out',
+    scrollTrigger:{trigger:'#revenue', start:'top 70%', once:true},
+  });
+});
+// Revenue arrows
+gsap.utils.toArray('.rv-arrow').forEach((el,i)=>{
+  gsap.to(el,{
+    opacity:1,
+    duration:.4, delay:.5 + i*.2,
+    scrollTrigger:{trigger:'#revenue', start:'top 70%', once:true},
+  });
+});
+// Revenue note
+gsap.to('#rev-note',{
+  opacity:1, y:0,
+  duration:.7, delay:.9,
+  ease:'power2.out',
+  scrollTrigger:{trigger:'#revenue', start:'top 70%', once:true},
+});
+
+// Contact cards
+gsap.utils.toArray('.ci').forEach((el,i)=>{
+  gsap.to(el,{
+    opacity:1, y:0,
+    duration:.6, delay:i*.15,
+    ease:'power3.out',
+    scrollTrigger:{trigger:el, start:'top 90%', once:true},
+  });
+});
+
+// ── 3D CARD TILT ──────────────────────────────────────────────────────────────
+document.querySelectorAll('.fc').forEach(card=>{
+  card.addEventListener('mousemove', e=>{
+    const r   = card.getBoundingClientRect();
+    const cx  = r.left + r.width/2;
+    const cy  = r.top  + r.height/2;
+    const dx  = (e.clientX - cx) / (r.width/2);
+    const dy  = (e.clientY - cy) / (r.height/2);
+    card.style.transform = `perspective(800px) rotateX(${-dy*8}deg) rotateY(${dx*8}deg) translateZ(6px)`;
+    card.style.setProperty('--mx', ((e.clientX-r.left)/r.width*100)+'%');
+    card.style.setProperty('--my', ((e.clientY-r.top)/r.height*100)+'%');
+  });
+  card.addEventListener('mouseleave',()=>{
+    card.style.transform = 'perspective(800px) rotateX(0) rotateY(0) translateZ(0)';
+  });
+});
+
+// ── COUNTER ANIMATION ─────────────────────────────────────────────────────────
+document.querySelectorAll('[data-count]').forEach(el=>{
+  const target = parseInt(el.dataset.count);
+  const io = new IntersectionObserver(([entry])=>{
+    if(!entry.isIntersecting) return;
+    io.disconnect();
+    const dur=2200, fps=60, steps=dur/(1000/fps);
+    let step=0;
+    const timer = setInterval(()=>{
+      step++;
+      el.textContent = Math.floor(target*(step/steps)).toLocaleString()+'+';
+      if(step>=steps){ el.textContent=target.toLocaleString()+'+'; clearInterval(timer); }
+    },1000/fps);
+  },{threshold:.5});
+  io.observe(el);
+});
+
+// ── NAV SCROLL ────────────────────────────────────────────────────────────────
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').style.background =
+    scrollY>60?'rgba(6,12,24,0.97)':'rgba(6,12,24,0.7)';
+});
+</script>
+</body>
+</html>

@@ -1,26 +1,25 @@
 import { Image } from 'expo-image';
 import { useRouter } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { LanguageSwitcherModal } from '../src/components/LanguageSwitcherModal';
 import { useAppLanguage } from '../src/context/LanguageContext';
 import { usePurchase } from '../src/context/PurchaseContext';
-import type { AppLanguage } from '../src/i18n/config';
 
 const GOLD = '#C9A84C';
 const DARK_TEXT = '#1a1a1a';
 const OVERLAY = 'rgba(0,0,0,0.55)';
 
-const LANGS: AppLanguage[] = ['tr', 'en', 'ar'];
-
 export default function Index() {
   const { t } = useTranslation();
   const router = useRouter();
-  const { language, setLanguage, isRtl } = useAppLanguage();
+  const { language, isRtl } = useAppLanguage();
   const { isAdFree } = usePurchase();
+  const [langModalVisible, setLangModalVisible] = useState(false);
 
   const onHacaBasla = useCallback(() => {
     router.push('/ana-gorev');
@@ -96,32 +95,20 @@ export default function Index() {
               <Text style={styles.secondaryBtnText}>{t('homeExtra.toolsCta')}</Text>
             </Pressable>
 
-            <View style={styles.langRow}>
-              {LANGS.map((code, i) => (
-                <View key={code} style={styles.langItem}>
-                  {i > 0 ? <Text style={styles.langSep}>|</Text> : null}
-                  <Pressable
-                    onPress={() => void setLanguage(code)}
-                    hitSlop={8}
-                    accessibilityLabel={t('common.selectLanguage') + `: ${t(`languages.${code}`)}`}
-                    accessibilityRole="button"
-                    accessibilityState={{ selected: language === code }}
-                  >
-                    <Text
-                      style={[
-                        styles.langText,
-                        language === code && styles.langTextActive,
-                      ]}
-                    >
-                      {t(`languages.${code}`)}
-                    </Text>
-                  </Pressable>
-                </View>
-              ))}
-            </View>
+            <Pressable
+              onPress={() => setLangModalVisible(true)}
+              style={({ pressed }) => [styles.langBtn, pressed && { opacity: 0.85 }]}
+              accessibilityRole="button"
+              accessibilityLabel={t('common.selectLanguage') + `: ${t(`languages.${language}`)}`}
+            >
+              <Text style={styles.langBtnIcon}>🌐</Text>
+              <Text style={styles.langBtnText}>{t(`languages.${language}`)}</Text>
+            </Pressable>
           </View>
         </View>
       </SafeAreaView>
+
+      <LanguageSwitcherModal visible={langModalVisible} onClose={() => setLangModalVisible(false)} />
     </View>
   );
 }
@@ -201,23 +188,21 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '700',
   },
-  langRow: {
+  langBtn: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+    alignSelf: 'center',
+    gap: 8,
+    paddingVertical: 10,
+    paddingHorizontal: 18,
+    borderRadius: 999,
+    borderWidth: 1,
+    borderColor: 'rgba(201,168,76,0.5)',
+    backgroundColor: 'rgba(0,0,0,0.25)',
   },
-  langItem: { flexDirection: 'row', alignItems: 'center' },
-  langSep: {
-    color: 'rgba(255,255,255,0.5)',
-    marginHorizontal: 10,
-    fontSize: 14,
-  },
-  langText: {
-    color: 'rgba(255,255,255,0.55)',
-    fontSize: 14,
-    fontWeight: '500',
-  },
-  langTextActive: { color: GOLD, fontWeight: '800' },
+  langBtnIcon: { fontSize: 15 },
+  langBtnText: { color: GOLD, fontSize: 14, fontWeight: '700' },
   textRtlUi: {
     writingDirection: 'rtl',
     textAlign: 'center',

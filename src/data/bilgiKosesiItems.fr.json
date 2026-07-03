@@ -1,0 +1,752 @@
+[
+  {
+    "id": 1,
+    "baslik": "Le Hajj, cinquième pilier de l'Islam",
+    "icerik": "Le Hajj est l'un des cinq piliers de l'Islam. Il est obligatoire une fois dans la vie pour tout musulman qui en a la capacité physique et financière. Le Coran dit : « L'accomplissement du pèlerinage envers la Maison est un devoir envers Allah pour quiconque en a les moyens » (Al-Imran, 97)."
+  },
+  {
+    "id": 2,
+    "baslik": "Le Hajj agréé (Mabrour)",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) a dit : « Quiconque accomplit le Hajj pour Allah, sans obscénité ni désobéissance, revient comme au jour où sa mère l'a mis au monde. » Le Hajj mabrour est celui accompli sans péché et accepté par Allah. Sa seule récompense est le Paradis. (Boukhari, Muslim)"
+  },
+  {
+    "id": 3,
+    "baslik": "Les pèlerins du Hajj et de la Omra sont les invités d'Allah",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) a dit : « Ceux qui accomplissent le Hajj et la Omra sont les invités d'Allah : s'ils L'invoquent, Il leur répond ; s'ils demandent pardon, Il les pardonne. » Cette bonne nouvelle montre à quel point le voyage du Hajj est précieux."
+  },
+  {
+    "id": 4,
+    "baslik": "Hâtez-vous d'accomplir le Hajj",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) a dit : « Hâtez-vous d'accomplir le Hajj, car aucun de vous ne sait quand la mort viendra. » Le Hajj doit être accompli dès la première année où il devient obligatoire ; le retarder n'est pas correct. (Abou Dawud, Ibn Majah)"
+  },
+  {
+    "id": 5,
+    "baslik": "Le Hajj, symbole de l'égalité",
+    "icerik": "Pendant le Hajj, tous portent le même ihram blanc ; riche ou pauvre, souverain ou esclave, tous se rassemblent dans la même tenue, au même endroit, dans le même but. Cela renforce la conscience que tous les hommes sont égaux devant Allah et efface l'orgueil. Le Hajj est le plus grand rassemblement fraternel du monde."
+  },
+  {
+    "id": 6,
+    "baslik": "La construction de la Kaaba",
+    "icerik": "La Kaaba est le premier lieu de culte construit sur terre. Elle fut reconstruite sur ordre d'Allah par le prophète Abraham et son fils Ismaël. Le Coran dit : « La première Maison édifiée pour les hommes est bien celle de la Mecque » (Al-Imran, 96)."
+  },
+  {
+    "id": 7,
+    "baslik": "La Pierre Noire (Hajar al-Aswad)",
+    "icerik": "La Pierre Noire est une pierre sacrée placée à l'angle est de la Kaaba. Le Prophète (paix et bénédiction sur lui) a dit : « La Pierre Noire est descendue du Paradis, plus blanche que le lait ; ce sont les péchés des fils d'Adam qui l'ont noircie. » Le tawaf commence en la saluant. (Tirmidhi)"
+  },
+  {
+    "id": 8,
+    "baslik": "Histoire de l'eau de Zamzam",
+    "icerik": "L'eau de Zamzam a jailli par la grâce d'Allah lorsque Hajar cherchait de l'eau pour son fils Ismaël. Cette eau sacrée, qui coule depuis des milliers d'années, sert des millions de personnes. Le Prophète (paix et bénédiction sur lui) a dit : « L'eau de Zamzam guérit selon l'intention avec laquelle elle est bue. » (Ibn Majah)"
+  },
+  {
+    "id": 9,
+    "baslik": "La Station d'Abraham (Maqam Ibrahim)",
+    "icerik": "La Station d'Abraham est la pierre sur laquelle Abraham se tenait en construisant la Kaaba. On y trouve encore l'empreinte de ses pieds. Le Coran dit : « Adoptez, comme lieu de prière, ce lieu où Abraham se tenait » (Al-Baqara, 125). La prière du tawaf s'accomplit derrière cette pierre."
+  },
+  {
+    "id": 10,
+    "baslik": "Arafat — le cœur du Hajj",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) a dit : « Le Hajj, c'est Arafat. » La station à Arafat est le pilier fondamental du Hajj ; quiconque ne l'accomplit pas n'a pas fait le Hajj. Chaque année, le jour de Arafa, des millions de musulmans implorent Allah sur cette plaine, versent des larmes et se purifient de leurs péchés. (Tirmidhi)"
+  },
+  {
+    "id": 11,
+    "baslik": "Jabal al-Rahma — la Montagne de la Miséricorde",
+    "icerik": "Jabal al-Rahma, qui s'élève au centre de la plaine d'Arafat, serait le lieu où Adam et Ève se seraient retrouvés après leur descente sur terre, selon la tradition. Le Prophète (paix et bénédiction sur lui) a effectué sa station près de cette montagne lors du Pèlerinage d'Adieu. Y accomplir la station est particulièrement méritoire."
+  },
+  {
+    "id": 12,
+    "baslik": "Mina — la ville des tentes",
+    "icerik": "Mina est une vallée sacrée située entre La Mecque et Arafat où des millions de pèlerins dressent leurs tentes pendant les jours du Hajj. Les pèlerins y passent 3 à 4 nuits ; c'est là que se déroule la lapidation de Satan. Le pont de Jamarat est la structure célèbre où se trouvent les trois stèles."
+  },
+  {
+    "id": 13,
+    "baslik": "Muzdalifah — l'adoration à ciel ouvert",
+    "icerik": "Muzdalifah est un lieu sacré situé entre Arafat et Mina. Les pèlerins y passent la nuit de Arafa à ciel ouvert en adoration. Le Coran dit : « Invoquez Allah à al-Mash'ar al-Haram » (Al-Baqara, 198). C'est ici que les petites pierres pour la lapidation sont ramassées."
+  },
+  {
+    "id": 14,
+    "baslik": "Safa et Marwa",
+    "icerik": "Safa et Marwa sont deux collines situées à l'intérieur de la Mosquée Sacrée (Masjid al-Haram). Le sa'i symbolise la course de Hajar entre ces deux collines à la recherche d'eau pour son fils Ismaël. Le Coran dit : « Safa et Marwa sont vraiment parmi les rites prescrits par Allah » (Al-Baqara, 158)."
+  },
+  {
+    "id": 15,
+    "baslik": "La Mosquée du Prophète (Masjid an-Nabawi)",
+    "icerik": "La Mosquée du Prophète est le lieu de culte que le Prophète a lui-même fait construire après son émigration à Médine. Le Prophète a dit : « Une prière accomplie dans ma mosquée vaut mille prières accomplies ailleurs, exception faite de la Mosquée Sacrée. » (Boukhari, Muslim)"
+  },
+  {
+    "id": 16,
+    "baslik": "Ar-Rawda",
+    "icerik": "Ar-Rawda est l'espace sacré au tapis vert situé entre le minbar et le tombeau du Prophète dans sa mosquée à Médine. Le Prophète a dit : « L'espace entre ma maison et mon minbar est l'un des jardins du Paradis. » Y prier revêt un grand mérite. (Boukhari)"
+  },
+  {
+    "id": 17,
+    "baslik": "Le Pèlerinage d'Adieu",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) n'a accompli le Hajj qu'une seule fois dans sa vie. Ce pèlerinage, effectué en l'an 10 de l'Hégire, est resté dans l'histoire sous le nom de « Pèlerinage d'Adieu ». C'est lors de ce Hajj, environ trois mois avant sa mort, qu'il prononça le Sermon d'Adieu devant près de 100 000 compagnons."
+  },
+  {
+    "id": 18,
+    "baslik": "L'importance du Sermon d'Adieu",
+    "icerik": "Dans son Sermon d'Adieu, le Prophète a dit : « Ô hommes ! Votre sang, vos biens et votre honneur sont sacrés les uns pour les autres. » Ce sermon est considéré comme l'un des documents les plus importants de l'histoire des droits humains. Il a délivré un message d'égalité et de justice à toute l'humanité."
+  },
+  {
+    "id": 19,
+    "baslik": "Apprenez de moi les rites du Hajj",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) a dit lors du Pèlerinage d'Adieu : « Apprenez de moi vos rites, car peut-être ne referai-je pas le Hajj après cette année. » Cette parole montre qu'il a lui-même enseigné la manière d'accomplir le Hajj. Le Hajj doit être accompli conformément à la Sunna prophétique."
+  },
+  {
+    "id": 20,
+    "baslik": "Le mérite de la talbiya",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) a dit : « Lorsqu'un musulman prononce la talbiya, chaque pierre, chaque arbre et chaque parcelle de terre à sa droite et à sa gauche la prononcent avec lui, jusqu'aux confins de la terre. » La talbiya est la plus belle expression de la soumission du pèlerin à Allah. (Tirmidhi)"
+  },
+  {
+    "id": 21,
+    "baslik": "Le mérite du jour de Arafa",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) a dit : « Il n'y a pas de jour où Allah délivre plus de gens du Feu que le jour de Arafa. » Les invocations faites ce jour-là ne sont pas repoussées, les péchés sont pardonnés. Jeûner le jour de Arafa efface les péchés de l'année écoulée et de l'année à venir. (Muslim)"
+  },
+  {
+    "id": 22,
+    "baslik": "Saluer la Kaaba",
+    "icerik": "À chaque entrée à La Mecque, le Prophète (paix et bénédiction sur lui), en apercevant la Kaaba, prononçait le takbir, la formule de bénédiction et une invocation. Il est rapporté que l'invocation faite au premier regard sur la Kaaba est exaucée. C'est pourquoi les pèlerins, en entrant pour la première fois dans la Mosquée Sacrée, fixent leur regard sur la Kaaba et invoquent avec sincérité."
+  },
+  {
+    "id": 23,
+    "baslik": "Le Hajj est comme le jihad",
+    "icerik": "Aïcha (qu'Allah l'agrée) demanda : « Ô Messager d'Allah, nous considérons le jihad comme la meilleure œuvre, devons-nous donc combattre ? » Le Prophète répondit : « Le meilleur jihad pour vous est le Hajj mabrour. » Ce hadith montre à quel point le Hajj est une adoration immense pour les femmes. (Boukhari)"
+  },
+  {
+    "id": 24,
+    "baslik": "Zamzam est source de bénédiction",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) a dit : « La meilleure eau sur terre est celle de Zamzam ; elle est une nourriture rassasiante et un remède aux maladies. » Il a également dit : « Zamzam procure ce pour quoi elle est bue », expliquant ainsi la bénédiction de cette eau. Zamzam continuera de couler jusqu'au Jour de la Résurrection. (Ibn Majah)"
+  },
+  {
+    "id": 25,
+    "baslik": "Abraham et la construction de la Kaaba",
+    "icerik": "Allah ordonna à Abraham de construire la Kaaba. Abraham, avec son fils Ismaël, éleva les fondations de la Kaaba. Pendant la construction, il invoqua : « Notre Seigneur ! Accepte ceci de notre part, car c'est Toi l'Audient, l'Omniscient. » Cette invocation figure telle quelle dans le Coran. (Al-Baqara, 127)"
+  },
+  {
+    "id": 26,
+    "baslik": "Abraham invite les hommes au Hajj",
+    "icerik": "Après la construction de la Kaaba, Allah ordonna à Abraham : « Appelle les hommes au pèlerinage. » Abraham demanda : « Ô mon Seigneur ! Comment ma voix leur parviendra-t-elle ? » Allah répondit : « Appelle, il M'appartient de faire parvenir. » Depuis ce jour, les hommes visitent la Kaaba chaque année. (Al-Hajj, 27)"
+  },
+  {
+    "id": 27,
+    "baslik": "Hajar et le jaillissement de Zamzam",
+    "icerik": "Sur l'ordre d'Allah, Abraham laissa son épouse Hajar et son jeune fils Ismaël dans la vallée de La Mecque. L'eau venant à manquer, Hajar courut sept fois entre Safa et Marwa pour trouver de l'eau à son fils. Par la grâce d'Allah, l'eau de Zamzam jaillit sous les pieds d'Ismaël. Le rite du sa'i commémore cet événement."
+  },
+  {
+    "id": 28,
+    "baslik": "L'origine du sacrifice",
+    "icerik": "Abraham vit en rêve qu'il sacrifiait son fils Ismaël. Au matin, il se prépara à exécuter cet ordre. Ismaël dit à son père : « Fais ce qui t'est ordonné ; tu me trouveras, s'il plaît à Allah, parmi les endurants. » Allah accepta cette immense soumission et envoya un bélier à la place d'Ismaël. (As-Saffat, 102-107)"
+  },
+  {
+    "id": 29,
+    "baslik": "L'origine de la lapidation de Satan",
+    "icerik": "Alors qu'Abraham se rendait pour sacrifier son fils, Satan lui barra le chemin à trois reprises pour tenter de le détourner de cet acte d'adoration. Chaque fois, Abraham lui jeta des pierres. Le rite de la lapidation de Satan symbolise cet événement ; les pèlerins rejettent ainsi symboliquement Satan et les maux qu'il représente."
+  },
+  {
+    "id": 30,
+    "baslik": "Le sens de l'ihram",
+    "icerik": "L'ihram symbolise le fait que le pèlerin laisse derrière lui tous ses rangs et privilèges de la vie terrestre. Le vêtement blanc de l'ihram représente à la fois l'égalité et le linceul. Celui qui entre en ihram renaît en quelque sorte ; il fait un pas vers une servitude pure et purifiée de ses péchés."
+  },
+  {
+    "id": 31,
+    "baslik": "Qu'est-ce que le Miqat ?",
+    "icerik": "Le Miqat désigne les limites que les pèlerins ne peuvent franchir sans être en état d'ihram. Un sacrifice expiatoire est requis pour quiconque franchit ces limites vers La Mecque sans être en ihram. Des points de Miqat distincts sont fixés pour les pèlerins venant de chaque direction."
+  },
+  {
+    "id": 32,
+    "baslik": "La sagesse des interdits de l'ihram",
+    "icerik": "En état d'ihram, le parfum, le rasage, la coupe des ongles et la chasse sont interdits. Ces interdits éloignent la personne des plaisirs mondains et l'orientent entièrement vers Allah. Durant ce processus, la personne renforce sa patience, sa volonté et sa soumission à Allah. L'ihram est un profond processus de discipline intérieure et de purification."
+  },
+  {
+    "id": 33,
+    "baslik": "Le sens du tawaf",
+    "icerik": "Le tawaf consiste à tourner sept fois autour de la Kaaba dans le sens inverse des aiguilles d'une montre. Chaque tour est un shawt ; sept shawts constituent un tawaf. Le tawaf symbolise le fait que le serviteur tourne autour d'Allah, uniquement orienté vers Lui. Le Prophète a dit : « Tourner autour de la Kaaba équivaut à accomplir la prière. » (Tirmidhi)"
+  },
+  {
+    "id": 34,
+    "baslik": "Le Rukn al-Yamani",
+    "icerik": "Le Rukn al-Yamani est l'angle sud-ouest de la Kaaba, l'un de ses quatre coins. Pendant le tawaf, on touche cet angle de la main sans l'embrasser. Il est recommandé de réciter entre la Pierre Noire et le Rukn al-Yamani : « Notre Seigneur, accorde-nous belle part ici-bas... ». Cet angle revêtait une importance particulière pour le Prophète pendant le tawaf."
+  },
+  {
+    "id": 35,
+    "baslik": "Al-Multazam",
+    "icerik": "Al-Multazam est l'espace sacré d'environ 2 mètres entre la porte de la Kaaba et la Pierre Noire. On l'appelle « le lieu où l'on s'attache » car le Prophète y appuyait son visage, sa poitrine et ses mains en priant. Les pèlerins y invoquent Allah avec sincérité et versent des larmes en ce lieu sacré."
+  },
+  {
+    "id": 36,
+    "baslik": "Le jour de Arafa, le plus grand jour de pardon",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) a dit à propos du jour de Arafa : « Allah ne voit Satan jamais aussi humilié, méprisé et furieux qu'en ce jour, sauf le jour de Badr. » Car ce jour-là, la miséricorde et le pardon d'Allah atteignent leur apogée. (Muwatta)"
+  },
+  {
+    "id": 37,
+    "baslik": "Le moment de la station",
+    "icerik": "Le moment de la station à Arafat s'étend du zénith du jour de Arafa jusqu'à l'aube du premier jour de la fête du sacrifice. Quiconque se trouve à Arafat ne serait-ce qu'un instant durant cette période a accompli sa station. Le fait de dormir ou d'être inconscient n'affecte pas la validité de la station."
+  },
+  {
+    "id": 38,
+    "baslik": "La sagesse du sa'i",
+    "icerik": "Le sa'i commémore la course de Hajar entre Safa et Marwa, sept fois, pour trouver de l'eau à son fils. Cette adoration symbolise la confiance en Allah, la patience et l'effort. En accomplissant le sa'i, le croyant ressent, tout comme Hajar, qu'il court vers la miséricorde d'Allah."
+  },
+  {
+    "id": 39,
+    "baslik": "Qu'est-ce que le harwala ?",
+    "icerik": "Le harwala consiste, pendant le sa'i, en une marche rapide et vigoureuse des épaules pour les hommes dans la zone marquée de lumières vertes. Cette tradition rappelle la course de Hajar cherchant de l'eau pour son enfant, mais aussi la vigueur affichée par les premiers musulmans face à leurs ennemis. Les femmes marchent à un rythme normal dans cette zone."
+  },
+  {
+    "id": 40,
+    "baslik": "Que sont les Jamarat ?",
+    "icerik": "Jamra est le nom donné aux stèles de la lapidation de Satan à Mina. Il y en a trois : la Petite Jamra, la Moyenne Jamra et la Grande Jamra. Le premier jour de la fête, seule la Grande Jamra est lapidée ; les jours suivants, sept pierres sont jetées sur chacune des trois. À chaque pierre, on dit : « Bismillahi Allahu Akbar »."
+  },
+  {
+    "id": 41,
+    "baslik": "Caractéristiques des pierres",
+    "icerik": "Il est recommandé d'utiliser pour la lapidation de petits cailloux propres, de la taille d'un pois chiche. Il est de tradition (sunna) de les ramasser à Muzdalifah, mais ils peuvent aussi être ramassés ailleurs. Il n'est pas correct de réutiliser des pierres déjà jetées. Chaque pierre est jetée une à une en prononçant le takbir."
+  },
+  {
+    "id": 42,
+    "baslik": "L'importance du sacrifice",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) a dit : « Aucun serviteur n'accomplit, le jour du sacrifice, d'œuvre plus aimée d'Allah que de verser le sang. L'animal sacrifié viendra au Jour de la Résurrection avec ses cornes, ses poils et ses sabots. » Le sacrifice est obligatoire (wajib) pour ceux qui accomplissent le Hajj tamattu' ou qiran. (Tirmidhi)"
+  },
+  {
+    "id": 43,
+    "baslik": "Qu'est-ce que le tahallul ?",
+    "icerik": "Le tahallul signifie sortir de l'état d'ihram. Après avoir lapidé et sacrifié, on se rase la tête ; c'est le premier tahallul, qui lève la majorité des interdits de l'ihram. Après le tawaf de visite (ziyara), le second tahallul survient et tous les interdits de l'ihram prennent fin."
+  },
+  {
+    "id": 44,
+    "baslik": "Préparation avant le Hajj",
+    "icerik": "Avant de partir en Hajj, il est très important d'apprendre les connaissances religieuses nécessaires, de régler ses dettes, de se réconcilier avec autrui et d'avoir une intention sincère. Le Prophète a dit : « Celui qui part en Hajj doit confier sa demeure et sa famille à Allah. » Outre la préparation matérielle, la préparation spirituelle ne doit pas être négligée."
+  },
+  {
+    "id": 45,
+    "baslik": "À faire avant de revêtir l'ihram",
+    "icerik": "Avant d'entrer en ihram, il est recommandé de se couper les ongles, de nettoyer les aisselles et le pubis, de faire les grandes ablutions (ghusl) et, si possible, de se parfumer. Car après l'entrée en ihram, ces gestes deviennent interdits. Les hommes portent deux pièces de tissu blanc sans couture, les femmes entrent en ihram avec une tenue couvrante ordinaire."
+  },
+  {
+    "id": 46,
+    "baslik": "Précautions dans la foule",
+    "icerik": "Le Hajj est le plus grand rassemblement humain au monde. Pendant le tawaf, le sa'i et la lapidation, des millions de personnes se trouvent dans le même espace. Il est donc essentiel de ne pas gêner autrui, de rester calme et de ne pas se précipiter. Le Prophète a dit : « Il n'y a ni dispute, ni obscénité, ni péché durant le Hajj. »"
+  },
+  {
+    "id": 47,
+    "baslik": "Le Hajj pour les femmes",
+    "icerik": "L'une des conditions rendant le Hajj obligatoire pour une femme est la présence de son époux ou d'un mahram (parent proche interdit au mariage). Selon l'école hanafite, cette condition est obligatoire. Pendant le tawaf, les femmes privilégient les zones moins fréquentées, n'accomplissent ni le ramal ni le harwala, et ne haussent pas la voix. Les femmes en période de menstrues peuvent accomplir toutes les étapes du Hajj à l'exception du tawaf."
+  },
+  {
+    "id": 48,
+    "baslik": "Différences entre les types de Hajj",
+    "icerik": "La grande majorité des pèlerins accomplit le Hajj tamattu'. Dans le tamattu', la Omra est d'abord accomplie, on sort de l'ihram, puis on y entre à nouveau pour les jours du Hajj. Dans le Hajj ifrad, seul le Hajj est accompli sans Omra. Dans le Hajj qiran, la Omra et le Hajj sont accomplis ensemble avec le même ihram."
+  },
+  {
+    "id": 49,
+    "baslik": "Nafr al-Awwal et Nafr al-Thani",
+    "icerik": "Les pèlerins peuvent quitter Mina avant le coucher du soleil après avoir terminé la lapidation du 12 Dhul-Hijja ; c'est le Nafr al-Awwal. Ceux qui restent à Mina jusqu'au coucher du soleil accomplissent également la lapidation le 13 Dhul-Hijja avant de partir ; c'est le Nafr al-Thani. Le Prophète est parti selon le Nafr al-Thani, ce qui est plus méritoire."
+  },
+  {
+    "id": 50,
+    "baslik": "La vie après le Hajj",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) a dit : « La seule récompense du Hajj mabrour est le Paradis. » Le Hajj doit marquer un tournant dans la vie du pèlerin. Après le retour du Hajj, il est essentiel de s'éloigner des péchés, d'accorder plus de soin aux adorations et de préserver l'acquis spirituel."
+  },
+  {
+    "id": 51,
+    "baslik": "L'importance de La Mecque",
+    "icerik": "La Mecque est la ville la plus sacrée de l'Islam et se trouve dans la zone du Haram. Le Coran la désigne comme « Umm al-Qura », la mère des cités. Une prière accomplie à La Mecque vaut cent mille prières accomplies ailleurs. L'entrée dans cette ville est interdite à quiconque n'est pas musulman. (Al-Imran, 96)"
+  },
+  {
+    "id": 52,
+    "baslik": "Les reconstructions de la Kaaba",
+    "icerik": "La Kaaba a été détruite puis reconstruite à de nombreuses reprises au cours de l'histoire. Bâtie par Abraham et Ismaël, elle fut à nouveau reconstruite durant la jeunesse du Prophète. Le différend concernant la mise en place de la Pierre Noire fut résolu avec sagesse par le Prophète lui-même."
+  },
+  {
+    "id": 53,
+    "baslik": "L'agrandissement de la Mosquée Sacrée",
+    "icerik": "La Mosquée Sacrée a été agrandie à de nombreuses reprises depuis les premiers temps de l'histoire islamique. Elle couvre aujourd'hui environ 356 000 mètres carrés. Pendant la saison du Hajj, elle peut accueillir simultanément plus de 2 millions de personnes. C'est la plus grande et la plus visitée mosquée du monde."
+  },
+  {
+    "id": 54,
+    "baslik": "Qu'est-ce que le Hijr Ismaïl ?",
+    "icerik": "Le Hijr Ismaïl est l'espace en demi-cercle entouré d'un muret bas sur la façade nord de la Kaaba. Cet espace est considéré comme faisant partie de la Kaaba. Il est obligatoire de contourner le Hijr par l'extérieur pendant le tawaf ; le traverser rend le tawaf invalide. Prier à l'intérieur équivaut à prier à l'intérieur de la Kaaba."
+  },
+  {
+    "id": 55,
+    "baslik": "L'importance de Médine",
+    "icerik": "Médine est la ville sacrée où le Prophète émigra et où se trouve son tombeau. Le Prophète a dit : « Médine est un sanctuaire ; l'espace entre Ayr et Thawr est sacré et inviolable. » La prière accomplie à la Mosquée du Prophète vaut mille prières accomplies dans toute autre mosquée, hormis la Mosquée Sacrée. (Boukhari)"
+  },
+  {
+    "id": 56,
+    "baslik": "La visite du tombeau du Prophète",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) a dit : « Quiconque visite mon tombeau, mon intercession lui devient un devoir. » Les pèlerins venus à Médine visitent le tombeau du Prophète et le saluent. Cette visite n'est pas une obligation du Hajj, mais une belle Sunna qui procure une immense récompense et témoigne de l'amour porté au Prophète."
+  },
+  {
+    "id": 57,
+    "baslik": "La mosquée de Quba",
+    "icerik": "La mosquée de Quba est la première mosquée construite dans l'histoire de l'Islam. Le Prophète y a prié en émigrant vers Médine. Le Prophète a dit : « La prière accomplie à la mosquée de Quba équivaut à la récompense d'une Omra. » Se rendre à la mosquée de Quba lors de la visite de Médine est une Sunna importante. (Ibn Majah)"
+  },
+  {
+    "id": 58,
+    "baslik": "Le cimetière de Jannat al-Baqi",
+    "icerik": "Jannat al-Baqi est l'ancien cimetière islamique situé à côté de la Mosquée du Prophète. Les épouses du Prophète, sa fille Fatima et de nombreux compagnons y sont enterrés. Le Prophète visitait ce cimetière en disant : « Que la paix soit sur vous, ô habitants de la demeure des croyants. » Il est recommandé de s'y rendre lors de la visite de Médine."
+  },
+  {
+    "id": 59,
+    "baslik": "Combien de personnes accomplissent le Hajj chaque année ?",
+    "icerik": "Le Hajj est la plus grande organisation annuelle rassemblant des êtres humains au monde. En année normale, environ 2 à 3 millions de musulmans se rendent à La Mecque pour accomplir le Hajj. Chaque année, environ 80 000 à 90 000 personnes partent en Hajj depuis la Turquie dans le cadre de l'organisation officielle."
+  },
+  {
+    "id": 60,
+    "baslik": "L'intérieur de la Kaaba",
+    "icerik": "L'intérieur de la Kaaba est une salle vide, nettoyée deux fois par an. On y trouve trois piliers, une table et des lampes. Entrer à l'intérieur de la Kaaba est un immense honneur qui n'est accordé qu'à peu de gens. Le Prophète est entré dans la Kaaba et y a prié. Il n'y a pas de qibla à l'intérieur ; on peut prier dans n'importe quelle direction."
+  },
+  {
+    "id": 61,
+    "baslik": "La kiswa, le voile de la Kaaba",
+    "icerik": "La Kaaba est recouverte chaque année d'un voile de soie noire renouvelé, appelé « kiswa ». Des versets coraniques y sont brodés en fils d'or. Chaque année, le 9 Dhul-Hijja, jour de Arafa, l'ancienne kiswa est retirée et la nouvelle est mise en place. Environ 800 kg de fils d'or et d'argent sont utilisés chaque année pour sa fabrication."
+  },
+  {
+    "id": 62,
+    "baslik": "La profondeur du puits de Zamzam",
+    "icerik": "Le puits de Zamzam a une profondeur d'environ 30 mètres. Malgré des millions de litres puisés chaque année, l'eau du puits ne s'est jamais tarie. Selon des études scientifiques, la composition minérale de l'eau de Zamzam diffère de l'eau potable ordinaire et est riche en divers minéraux. Cette eau coule de la même source depuis des milliers d'années."
+  },
+  {
+    "id": 63,
+    "baslik": "Le sens du tawaf",
+    "icerik": "Le tawaf s'accomplit dans le sens inverse des aiguilles d'une montre autour de la Kaaba. Des scientifiques ont souligné que ce sens correspond à celui de la rotation des électrons autour du noyau atomique dans l'univers. La Terre tourne également dans le même sens autour du Soleil. Cela indique que l'adoration de l'homme s'inscrit dans une harmonie universelle."
+  },
+  {
+    "id": 64,
+    "baslik": "La distance entre Safa et Marwa",
+    "icerik": "La distance entre Safa et Marwa est d'environ 450 mètres. Pendant le sa'i, ce trajet est parcouru 7 fois, soit environ 3,15 km. De nos jours, ce parcours a été transformé en un couloir climatisé et couvert à l'intérieur de la Mosquée Sacrée. Cette adoration, autrefois accomplie en plein air, s'effectue désormais dans des conditions plus confortables."
+  },
+  {
+    "id": 65,
+    "baslik": "Les tentes de Mina",
+    "icerik": "Les tentes de Mina sont fabriquées à partir de matériaux spéciaux résistants au feu. Ce gigantesque camp d'environ 100 000 tentes est le plus grand campement temporaire du monde. Chaque groupe de pèlerins occupe une zone qui lui est attribuée. Cette ville de tentes reste totalement vide le reste de l'année et n'est utilisée que pendant la saison du Hajj."
+  },
+  {
+    "id": 66,
+    "baslik": "La meilleure invocation du jour de Arafa",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) a dit : « La meilleure invocation est celle du jour de Arafa. La meilleure parole que j'ai prononcée, moi et les prophètes avant moi, est : Lâ ilâha illa Allâh, wahdahu lâ sharîka lah, lahu-l-mulku wa lahu-l-hamdu wa huwa 'alâ kulli shay'in qadîr. » (Tirmidhi)"
+  },
+  {
+    "id": 67,
+    "baslik": "L'invocation d'adieu",
+    "icerik": "En quittant La Mecque, il est de tradition de réciter : « Allâhumma lâ taj'al hâdhâ âkhira-l-'ahdi min baytika-l-harâm », c'est-à-dire « Ô Allah, ne fais pas de ceci ma dernière visite de Ta Maison Sacrée ». Le Prophète a récité cette invocation en quittant La Mecque. Les pèlerins la récitent pour demander à Allah de leur permettre de revenir accomplir le Hajj."
+  },
+  {
+    "id": 68,
+    "baslik": "L'importance de la talbiya",
+    "icerik": "La talbiya est le symbole de l'ihram et commence par les mots « Labbayk Allâhumma labbayk ». Cela signifie « Me voici à Ton service, ô Allah, me voici ». Dès l'entrée en ihram jusqu'à l'arrivée à La Mecque, la talbiya est récitée à chaque occasion. Les hommes la récitent à voix haute, les femmes de manière à n'être entendues que par elles-mêmes."
+  },
+  {
+    "id": 69,
+    "baslik": "La dimension spirituelle du Hajj",
+    "icerik": "Le Hajj n'est pas seulement un voyage physique ; c'est un voyage d'éducation de l'âme, de purification des péchés et de rapprochement d'Allah. La blancheur de l'ihram représente la pureté, la talbiya la soumission, le tawaf le fait de tourner autour d'Allah, le sa'i l'effort, et la station l'imploration sincère. Le Hajj porte en lui l'essence de toutes les adorations islamiques."
+  },
+  {
+    "id": 70,
+    "baslik": "La fraternité du Hajj",
+    "icerik": "Le Hajj est un rassemblement fraternel unique qui réunit des musulmans venus des quatre coins du monde. Des personnes de langues, couleurs et cultures différentes se retrouvent dans la même tenue, au même endroit, pour le même Allah. Ce grand rassemblement renforce la conscience de la communauté et exprime concrètement la fraternité islamique."
+  },
+  {
+    "id": 71,
+    "baslik": "La patience durant le Hajj",
+    "icerik": "Le Hajj est une adoration exigeante qui requiert de la patience. La foule, la chaleur, les longues marches et la fatigue mettent le pèlerin à l'épreuve de la patience. Le Prophète a dit : « Quiconque accomplit le Hajj sans obscénité ni désobéissance revient comme au jour où sa mère l'a mis au monde. » La patience manifestée pendant le Hajj procure une grande récompense. (Boukhari)"
+  },
+  {
+    "id": 72,
+    "baslik": "La répétition du Jour du Jugement",
+    "icerik": "De nombreux savants musulmans interprètent le Hajj comme une répétition du Jour du Jugement. L'ihram, semblable à un linceul blanc, rappelle l'égalité de ce jour ; la réunion de millions de personnes rappelle le rassemblement du Jour de la Résurrection ; l'imploration à Arafat rappelle l'invocation d'Allah au Jour du Jugement. Le pèlerin y ressent profondément la mort et l'au-delà."
+  },
+  {
+    "id": 73,
+    "baslik": "L'intention dans le Hajj",
+    "icerik": "La sincérité de l'intention revêt une grande importance dans le Hajj. Le Prophète a dit : « Les actes ne valent que par les intentions. » Le Hajj ne doit pas être accompli pour l'ostentation ou un but mondain, mais uniquement pour rechercher l'agrément d'Allah. Le pèlerin qui répond « Labbayk ! » à l'appel d'Allah accède à l'honneur d'être Son invité. (Boukhari)"
+  },
+  {
+    "id": 74,
+    "baslik": "Que signifie le Hajj mabrour ?",
+    "icerik": "Le Hajj mabrour est un Hajj accompli sans péché, réalisé de manière complète et accepté par Allah. Le Prophète a dit : « La seule récompense du Hajj mabrour est le Paradis. » Le changement positif dans l'attitude et le comportement du pèlerin à son retour est l'un des signes de l'acceptation de son Hajj. (Boukhari, Muslim)"
+  },
+  {
+    "id": 75,
+    "baslik": "Qu'est-ce que le sacrifice hady ?",
+    "icerik": "Le hady est le sacrifice obligatoire (wajib) que doivent accomplir ceux qui font le Hajj tamattu' ou qiran. Ce sacrifice est un signe de gratitude et l'achèvement de l'adoration. Il est égorgé le premier, deuxième ou troisième jour de la fête. Le pèlerin qui ne peut égorger lui-même le sacrifice peut mandater quelqu'un ou en payer le prix à un organisme habilité."
+  },
+  {
+    "id": 76,
+    "baslik": "Qu'est-ce que le sacrifice dam ?",
+    "icerik": "Le dam est un sacrifice expiatoire à égorger en cas d'abandon d'un des devoirs du Hajj ou de violation d'un des interdits. Par exemple, quitter La Mecque sans accomplir le tawaf d'adieu ou transgresser l'un des interdits de l'ihram nécessite un sacrifice dam. Ce sacrifice doit obligatoirement être égorgé à La Mecque."
+  },
+  {
+    "id": 77,
+    "baslik": "Qu'est-ce que le Hajj par procuration (badal) ?",
+    "icerik": "Une personne capable financièrement d'accomplir le Hajj mais empêchée d'y aller en raison d'une maladie ou de la vieillesse peut envoyer quelqu'un à sa place ; c'est ce qu'on appelle le Hajj badal. Le Hajj badal peut aussi être accompli au nom d'une personne décédée. Il est indispensable que celui qui accomplit le Hajj badal ait déjà accompli son propre Hajj obligatoire."
+  },
+  {
+    "id": 78,
+    "baslik": "Qu'est-ce que l'istilam ?",
+    "icerik": "L'istilam est le fait de saluer la Pierre Noire ou le Rukn al-Yamani. Si possible, la Pierre Noire est embrassée ; si la foule l'empêche, on la salue de loin en levant les mains et en disant « Bismillahi Allahu Akbar ». La Pierre Noire est saluée au début de chaque shawt du tawaf. Le Rukn al-Yamani, lui, est touché de la main sans être embrassé."
+  },
+  {
+    "id": 79,
+    "baslik": "Qu'est-ce que le qasr ?",
+    "icerik": "Le qasr consiste à raccourcir les prières de quatre unités (rak'at) à deux. En vertu des règles applicables au voyageur, les pèlerins raccourcissent leurs prières pendant toute la durée du Hajj. À Mina et dans les autres lieux sacrés, les prières du dhuhr, de l'asr et du 'ishaa sont accomplies en deux unités. La prière du maghrib, comportant trois unités, n'est pas raccourcie."
+  },
+  {
+    "id": 80,
+    "baslik": "Qu'est-ce que le jam' ?",
+    "icerik": "Le jam' consiste à regrouper deux prières. À Arafat, le dhuhr et l'asr sont accomplis ensemble à l'heure du dhuhr ; c'est le jam' taqdim. À Muzdalifah, le maghrib et le 'ishaa sont accomplis ensemble à l'heure du 'ishaa ; c'est le jam' ta'khir. Cette pratique s'appuie sur la Sunna du Prophète et n'est valable que ces jours particuliers."
+  },
+  {
+    "id": 81,
+    "baslik": "Le Hajj englobe toutes les adorations",
+    "icerik": "Les savants musulmans affirment que le Hajj est une adoration globale renfermant en elle la prière, le jeûne, l'aumône légale et le jihad. Le pèlerin prie en état d'ihram, s'éloigne des plaisirs terrestres, dépense ses biens et déploie ses forces physiques pour la cause d'Allah. C'est pourquoi le Hajj est une formation complète à la servitude qui fait vivre l'essence même de l'Islam."
+  },
+  {
+    "id": 82,
+    "baslik": "Quand le Hajj est-il devenu obligatoire ?",
+    "icerik": "Le Hajj est devenu obligatoire en l'an 9 de l'Hégire. Cette année-là, une caravane fut envoyée en Hajj sous la direction d'Abou Bakr, puis le Prophète accomplit lui-même le Pèlerinage d'Adieu l'année suivante. La preuve fondamentale de l'obligation du Hajj est le verset 97 de la sourate Al-Imran."
+  },
+  {
+    "id": 83,
+    "baslik": "Le Hajj efface les péchés",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) a dit : « La Omra est une expiation des péchés commis entre elle et la Omra suivante ; quant au Hajj mabrour, il n'a d'autre récompense que le Paradis. » Le Hajj purifie la personne de ses péchés passés et lui permet de renaître pour ainsi dire. Cette bonne nouvelle ne vaut cependant que pour le Hajj accompli avec sincérité, dans le respect des règles et en évitant le péché. (Boukhari, Muslim)"
+  },
+  {
+    "id": 84,
+    "baslik": "La grotte de Hira",
+    "icerik": "La grotte de Hira se trouve sur le Mont An-Nour, près de La Mecque. Avant sa prophétie, le Prophète y vivait retiré et s'y adonnait à l'adoration. C'est là que la première révélation, l'ordre « Lis ! », lui fut transmise par l'ange Gabriel. L'ascension jusqu'à la grotte nécessite une marche exigeante d'environ 45 à 60 minutes."
+  },
+  {
+    "id": 85,
+    "baslik": "La grotte de Thawr",
+    "icerik": "La grotte de Thawr se trouve sur le Mont Thawr, au sud de La Mecque. Lors de son émigration vers Médine, le Prophète s'y cacha trois jours avec Abou Bakr. Le Coran relate cet événement en ces termes : « Second de deux, alors qu'ils étaient dans la grotte » (At-Tawba, 40). La grotte symbolise la soumission et la confiance en Allah."
+  },
+  {
+    "id": 86,
+    "baslik": "Jannat al-Mu'alla",
+    "icerik": "Jannat al-Mu'alla est l'ancien cimetière islamique de La Mecque. Y reposent la première épouse du Prophète, Khadija, son grand-père Abd al-Muttalib, ainsi que des notables de Quraysh. Lorsqu'il se trouvait à La Mecque, le Prophète s'y rendait en disant : « Que la paix soit sur vous, ô demeure des croyants. » Il est recommandé de se souvenir de ce lieu lors de la visite de La Mecque."
+  },
+  {
+    "id": 87,
+    "baslik": "La mosquée des Djinns",
+    "icerik": "La mosquée des Djinns fut construite à La Mecque à l'endroit où, selon la croyance, un groupe de djinns embrassa l'Islam en écoutant la récitation du Coran par le Prophète. Le Coran dit : « Il M'a été révélé qu'un groupe de djinns a écouté (le Coran) et a dit : Nous avons entendu une Lecture (le Coran) merveilleuse » (Al-Jinn, 1). Cette mosquée symbolise le fait que l'Islam s'adresse aussi aux djinns."
+  },
+  {
+    "id": 88,
+    "baslik": "Les portes de la Mosquée Sacrée",
+    "icerik": "La Mosquée Sacrée compte aujourd'hui plus de 95 portes. Parmi les plus importantes figurent la Porte du Roi Abdulaziz, Bab as-Safa et Bab al-Umra. En entrant dans la Mosquée Sacrée, le Prophète entrait du pied droit et invoquait : « Ô Allah, ouvre-moi les portes de Ta miséricorde »."
+  },
+  {
+    "id": 89,
+    "baslik": "L'entrée en ihram du Prophète",
+    "icerik": "Le Prophète est entré en ihram au Miqat de Dhul-Hulayfa lors du Pèlerinage d'Adieu. Après avoir accompli les grandes ablutions, il revêtit l'ihram blanc et récita la talbiya. Il récita la talbiya à voix haute tout au long du voyage et ordonna à ceux qui l'accompagnaient de faire de même. Chacun de ses gestes fut minutieusement rapporté par les compagnons."
+  },
+  {
+    "id": 90,
+    "baslik": "La conquête de La Mecque et la Kaaba",
+    "icerik": "Lors de la conquête de La Mecque, le Prophète fit détruire les 360 idoles autour de la Kaaba en déclarant : « La vérité est venue, le faux a disparu. » Il entra ensuite dans la Kaaba, y accomplit deux unités de prière et fit le tour de tous ses angles en prononçant le takbir. Cette conquête symbolise la reconsécration de la Kaaba à Allah seul. Le Prophète accueillit cette victoire non avec orgueil, mais avec gratitude."
+  },
+  {
+    "id": 91,
+    "baslik": "L'invocation du Prophète à Arafat",
+    "icerik": "Lors du Pèlerinage d'Adieu, le Prophète invoqua longuement à Arafat, les mains levées sur sa monture. Il répéta le dhikr « Lâ ilâha illa Allâh, wahdahu lâ sharîka lah... » et adora jusqu'au matin. Les compagnons ont rapporté qu'il invoqua sans cesse ce jour-là. Ce tableau montre que le jour de Arafa est le moment d'adoration le plus précieux."
+  },
+  {
+    "id": 92,
+    "baslik": "Le Prophète buvant l'eau de Zamzam",
+    "icerik": "Le Prophète, en buvant l'eau de Zamzam, se tournait vers la qibla, buvait debout puis prononçait une invocation de gratitude. Il a dit : « Zamzam procure ce pour quoi elle est bue. » Il précisait boire Zamzam pour la santé, le savoir et l'œuvre profitable. Boire Zamzam abondamment et invoquer par la suite font partie de la Sunna du Prophète."
+  },
+  {
+    "id": 93,
+    "baslik": "Les visites d'Abraham à La Mecque",
+    "icerik": "Selon les récits, Abraham revint plusieurs fois rendre visite à sa famille après l'avoir installée à La Mecque. À chaque venue, il retrouvait Ismaël, entretenait la Kaaba et adorait Allah. Ces visites illustrent l'amour du père pour son fils et la soumission de tous deux à Allah."
+  },
+  {
+    "id": 94,
+    "baslik": "L'invocation de gratitude d'Abraham",
+    "icerik": "En construisant la Kaaba, Abraham invoqua : « Notre Seigneur ! Fais de nous Tes soumis, et de notre descendance une communauté soumise à Toi ; montre-nous nos rites et accepte notre repentir. » (Al-Baqara, 128) Cette invocation montre que l'origine du Hajj est la gratitude et la soumission."
+  },
+  {
+    "id": 95,
+    "baslik": "Le rôle d'Ismaël dans la construction de la Kaaba",
+    "icerik": "Ismaël éleva les fondations de la Kaaba avec son père Abraham. Le Coran décrit cette scène ainsi : « Et quand Abraham et Ismaël élevaient les assises de la Maison, ils disaient : Ô notre Seigneur, accepte ceci de notre part ! Tu es Celui qui entend et qui sait tout » (Al-Baqara, 127). Ismaël portait les pierres tandis qu'Abraham bâtissait le mur."
+  },
+  {
+    "id": 96,
+    "baslik": "La tenue d'ihram des hommes",
+    "icerik": "Les hommes portent en ihram une tenue composée de deux pièces blanches sans couture : l'izar, couvrant le bas du corps, et le rida, jeté sur les épaules. La tête reste découverte et les pieds sont chaussés de sandales laissant les talons apparents. Il est interdit de porter des vêtements cousus, des gants, un couvre-chef ou des chaussettes. Cette tenue sobre symbolise l'égalité devant Allah et l'effacement des différences terrestres."
+  },
+  {
+    "id": 97,
+    "baslik": "Les interdits de l'ihram",
+    "icerik": "En état d'ihram, il est interdit de se couper les ongles, de couper ses cheveux ou sa barbe, de se parfumer, d'avoir des relations conjugales ou tout comportement y menant, de chasser, de tuer des êtres vivants, de contracter ou de faire contracter un mariage. La violation de l'un de ces interdits peut entraîner un sacrifice expiatoire ou une compensation (fidya). Ces interdits durent jusqu'à la sortie de l'ihram."
+  },
+  {
+    "id": 98,
+    "baslik": "L'intention d'ihram et la talbiya",
+    "icerik": "Pour entrer en ihram, on accomplit les grandes ablutions, on revêt les vêtements d'ihram, on prie deux unités de prière, puis on formule l'intention et l'on récite la talbiya. C'est avec la talbiya que la personne entre effectivement en ihram et que les interdits commencent. « Labbayk Allâhumma labbayk, labbayk lâ sharîka laka labbayk, inna-l-hamda wa-n-ni'mata laka wa-l-mulk, lâ sharîka lak » est le texte complet de la talbiya."
+  },
+  {
+    "id": 99,
+    "baslik": "L'ihram pour les femmes",
+    "icerik": "Il n'existe pas de tenue d'ihram spécifique pour les femmes ; elles entrent en ihram avec une tenue ordinaire et couvrante. Seuls le visage et les mains doivent rester découverts ; en dehors de la prière, elles ne peuvent porter ni gants ni voile couvrant le visage. Les femmes récitent la talbiya à voix basse, audible uniquement par elles-mêmes. Elles n'accomplissent ni le ramal ni le harwala."
+  },
+  {
+    "id": 100,
+    "baslik": "Les types de tawaf",
+    "icerik": "Plusieurs types de tawaf sont accomplis au cours du Hajj : le tawaf de bienvenue (Qudum, sunna) à l'arrivée à La Mecque, le tawaf de visite/Ifada (obligatoire, pilier du Hajj), le tawaf d'adieu (wajib) avant de quitter La Mecque, et le tawaf de la Omra. Le tawaf de visite est un pilier du Hajj sans lequel le Hajj n'est pas considéré comme accompli. Chaque tawaf comprend sept shawts."
+  },
+  {
+    "id": 101,
+    "baslik": "Les invocations à réciter pendant le tawaf",
+    "icerik": "Il n'existe pas d'invocation fixe pour le tawaf ; toute invocation, tout dhikr et toute récitation coranique peuvent y être accomplis. Il est cependant recommandé de réciter entre le Rukn al-Yamani et la Pierre Noire : « Notre Seigneur, accorde-nous belle part ici-bas et belle part dans l'au-delà, et protège-nous du châtiment du Feu ». Au début du tawaf, en saluant la Pierre Noire, on dit « Bismillahi Allahu Akbar »."
+  },
+  {
+    "id": 102,
+    "baslik": "Qu'est-ce que le ramal ?",
+    "icerik": "Le ramal consiste, pendant les trois premiers shawts du tawaf, en une marche vigoureuse des épaules pour les hommes. Cette tradition, née à l'époque du Prophète pour montrer aux ennemis la force des musulmans, s'est ensuite perpétuée comme Sunna. Le ramal ne s'accomplit que lors du tawaf de bienvenue (Qudum) ; les femmes ne l'effectuent pas."
+  },
+  {
+    "id": 103,
+    "baslik": "La prière du tawaf",
+    "icerik": "Après chaque tawaf, il est de tradition de prier deux unités derrière la Station d'Abraham. Il est recommandé d'y réciter la sourate Al-Kafirun à la première unité et la sourate Al-Ikhlas à la seconde. Si, en raison de la foule, aucune place n'est disponible juste derrière la Station d'Abraham, la prière peut être accomplie n'importe où dans la mosquée. Boire de l'eau de Zamzam après la prière fait également partie de la Sunna."
+  },
+  {
+    "id": 104,
+    "baslik": "Comment invoquer à Arafat ?",
+    "icerik": "Pendant la station à Arafat, il est recommandé de se tourner vers la qibla, de lever les mains et d'invoquer longuement avec sincérité. Le dhikr, la demande de pardon, les bénédictions sur le Prophète et la récitation coranique comptent parmi les meilleures œuvres de ce moment. Le jour de Arafa, le Prophète répétait le plus souvent le dhikr « Lâ ilâha illa Allâh, wahdahu... ». L'invocation faite avec des larmes est le plus précieux cadeau de cette station sacrée."
+  },
+  {
+    "id": 105,
+    "baslik": "Le sermon du jour de Arafa",
+    "icerik": "Le jour de Arafa, avant la prière du dhuhr, un sermon du Hajj est prononcé à Arafat. Ce sermon perpétue la tradition du sermon historique prononcé par le Prophète lors du Pèlerinage d'Adieu. En écoutant ce sermon, les pèlerins se rappellent une fois de plus l'importance du Hajj et les messages fondamentaux de l'Islam. Après le sermon, les prières du dhuhr et de l'asr sont accomplies regroupées en avance (jam' taqdim)."
+  },
+  {
+    "id": 106,
+    "baslik": "Le départ d'Arafat vers Muzdalifah",
+    "icerik": "Après le coucher du soleil, on quitte Arafat pour Muzdalifah. Le Prophète a ordonné de marcher avec calme et dignité, sans gêner la foule. À l'arrivée à Muzdalifah, le maghrib et le 'ishaa sont accomplis ensemble, regroupés en retard (jam' ta'khir). Y passer la nuit est obligatoire (wajib) ; les pierres pour la lapidation y sont ramassées cette nuit-là."
+  },
+  {
+    "id": 107,
+    "baslik": "Les conditions de validité de la station",
+    "icerik": "Pour que la station à Arafat soit valide, il est indispensable de se trouver dans les limites d'Arafat pendant la période fixée. Se trouver à Arafat, ne serait-ce qu'un instant, entre le zénith du jour de Arafa et l'aube du premier jour de la fête, rend la station valide. Ne pas être en état de pureté rituelle ou être endormi n'affecte pas sa validité. Rester en dehors des limites d'Arafat invalide en revanche la station."
+  },
+  {
+    "id": 108,
+    "baslik": "Les conditions du sa'i",
+    "icerik": "Pour que le sa'i soit valide, il doit commencer à Safa, se terminer à Marwa, et sept shawts complets doivent être accomplis. Chaque aller ou retour compte pour un shawt ; aller de Safa à Marwa compte pour un, revenir de Marwa à Safa compte pour deux. Le sa'i est accompli après le tawaf ; être en état de pureté rituelle est recommandé mais non obligatoire."
+  },
+  {
+    "id": 109,
+    "baslik": "Les invocations à réciter pendant le sa'i",
+    "icerik": "En montant sur Safa, on récite le verset : « Safa et Marwa sont vraiment parmi les rites prescrits par Allah ». Sur chaque colline, on se tourne vers la qibla pour prononcer le takbir, le tahlil et une invocation. Le Prophète répéta trois fois sur Safa le dhikr « Lâ ilâha illa Allâh, wahdahu lâ sharîka lah... ». Entre les shawts, toute invocation ou dhikr souhaité peut être récité ; aucun texte précis n'est obligatoire."
+  },
+  {
+    "id": 110,
+    "baslik": "Le couloir du sa'i",
+    "icerik": "De nos jours, le sa'i s'accomplit dans le couloir Al-Mas'a, spécialement construit, couvert et climatisé, à l'intérieur de la Mosquée Sacrée. Le couloir mesure environ 20 mètres de large et comporte plusieurs niveaux. Un service de fauteuils roulants et de voiturettes est disponible pour les personnes handicapées et âgées. Autrefois en plein air, cette zone a été peu à peu intégrée à la mosquée."
+  },
+  {
+    "id": 111,
+    "baslik": "Les horaires de la lapidation de Satan",
+    "icerik": "Le premier jour de la fête, seule la Grande Jamra est lapidée, entre le lever et le coucher du soleil. Les deuxième et troisième jours, il est recommandé de lapider les trois Jamarat l'après-midi. Lapider de nuit sans excuse est réprouvé (makruh) mais permis. Après avoir terminé la lapidation, il est de tradition d'invoquer près des Jamarat, à l'exception de la Grande Jamra."
+  },
+  {
+    "id": 112,
+    "baslik": "Précautions pendant la lapidation",
+    "icerik": "Pendant la lapidation de Satan, il est essentiel de se protéger de la foule, de ne pas se précipiter et de ne gêner personne. Les pierres doivent atteindre le bassin ; celles tombant sur le rebord ne comptent pas. Une lapidation par procuration est possible pour les personnes âgées, malades ou handicapées. Le Prophète a dit : « Gardez-vous de l'excès dans votre religion », recommandant d'éviter toute exagération."
+  },
+  {
+    "id": 113,
+    "baslik": "Le pont de Jamarat",
+    "icerik": "Les trois Jamarat se succèdent dans la vallée de Mina : la Petite Jamra, la plus proche de la Mosquée Sacrée, la Moyenne Jamra au centre, et la Grande Jamra, la plus éloignée. De nos jours, les Jamarat sont intégrées au pont moderne de Jamarat, qui comporte plusieurs niveaux. Cette structure, accessible depuis chaque étage, facilite la gestion de la foule."
+  },
+  {
+    "id": 114,
+    "baslik": "L'heure du sacrifice",
+    "icerik": "L'heure du sacrifice du Hajj s'étend de l'aube du premier jour de la fête jusqu'à la fin des jours du tashriq, c'est-à-dire jusqu'au soir du 13 Dhul-Hijja. Il est cependant plus méritoire de sacrifier après la lapidation et le rasage du premier jour de la fête. Sacrifier de nuit est permis mais réprouvé (makruh)."
+  },
+  {
+    "id": 115,
+    "baslik": "La distribution de la viande sacrifiée",
+    "icerik": "Il est recommandé de manger un tiers de la viande sacrifiée, d'en offrir un tiers aux proches et d'en donner un tiers aux pauvres. Il est plus méritoire pour les pèlerins de laisser la majeure partie de la viande aux nécessiteux. De nos jours, les sacrifices effectués par les organismes habilités sont distribués aux personnes dans le besoin en Arabie Saoudite et dans diverses régions du monde."
+  },
+  {
+    "id": 116,
+    "baslik": "Caractéristiques de l'animal du sacrifice",
+    "icerik": "Pour le sacrifice du Hajj, le mouton et la chèvre doivent avoir au moins un an, le bœuf et le buffle au moins deux ans, et le chameau au moins cinq ans. L'animal doit être en bonne santé et sans défaut apparent. Le mouton et la chèvre peuvent être sacrifiés pour une seule personne, le bœuf et le chameau peuvent être partagés jusqu'à sept personnes."
+  },
+  {
+    "id": 117,
+    "baslik": "Préparation sanitaire pour le Hajj",
+    "icerik": "Il est recommandé d'effectuer un bilan de santé complet avant de partir en Hajj. Le vaccin contre la méningite est rendu obligatoire par l'Arabie Saoudite. Les vaccins contre la grippe et la pneumonie sont également recommandés. Les personnes souffrant de maladies chroniques (cardiaques, tension, diabète) doivent emporter suffisamment de médicaments et consulter leur médecin. Le Hajj requiert une force physique importante."
+  },
+  {
+    "id": 118,
+    "baslik": "Inscription et organisation du Hajj",
+    "icerik": "Les personnes souhaitant partir en Hajj doivent s'inscrire auprès de l'organisme officiel de leur pays. En raison du système de quotas, les inscrits partent selon leur ordre d'inscription. Le délai d'attente peut varier selon la région et l'année. L'organisation du Hajj comprend le billet d'avion, l'hébergement, l'accompagnement et le transport ; les pèlerins voyagent en groupe."
+  },
+  {
+    "id": 119,
+    "baslik": "Formation au Hajj",
+    "icerik": "Avant de partir en Hajj, il est très important d'apprendre les obligations, les devoirs et les recommandations du Hajj. Les organismes officiels dispensent une formation pratique aux pèlerins inscrits. Ces formations expliquent le tawaf, le sa'i, la station et les autres adorations ; des exercices pratiques sont réalisés sur une maquette de la Kaaba. Partir en Hajj sans connaissances suffisantes augmente considérablement le risque d'erreurs involontaires."
+  },
+  {
+    "id": 120,
+    "baslik": "Climat et habillement à La Mecque",
+    "icerik": "À La Mecque, pendant la saison du Hajj, la température peut atteindre 40 à 45 degrés. Il est recommandé de boire beaucoup d'eau, de porter un parapluie contre l'insolation et de vêtir des habits légers et de couleur claire. En dehors de l'ihram, il est préférable de choisir des vêtements en coton respirants. Le choix des chaussures est important ; comme la marche est longue, il convient de porter des sandales confortables et solides."
+  },
+  {
+    "id": 121,
+    "baslik": "Ce qu'il faut emporter dans son sac de Hajj",
+    "icerik": "Le sac du pèlerin doit contenir la tenue d'ihram, les médicaments, les produits d'hygiène personnelle (non parfumés), des vêtements légers, un livret de prières dans sa langue et un guide du Hajj. Des photocopies du passeport, du visa et des documents médicaux doivent être conservées séparément. Porter un sac ou un badge de couleur facilement reconnaissable réduit le risque de se perdre."
+  },
+  {
+    "id": 122,
+    "baslik": "La conquête de La Mecque",
+    "icerik": "La Mecque fut conquise sans effusion de sang au mois de Ramadan de l'an 8 de l'Hégire par l'armée musulmane forte de 10 000 hommes, sous la direction du Prophète. En entrant dans la ville, le Prophète inclina la tête en prosternation de gratitude et déclara : « Aujourd'hui est le jour de la miséricorde. » Il pardonna aux polythéistes de Quraysh ; ce pardon historique est devenu le symbole de la tolérance de l'Islam."
+  },
+  {
+    "id": 123,
+    "baslik": "La clé de la Kaaba",
+    "icerik": "La clé de la Kaaba est détenue depuis des siècles par la famille des Banu Shayba. Cette tradition remonte au moment où le Prophète, après la conquête de La Mecque, restitua la clé au chef de famille, Uthman ibn Talha. Le Prophète a dit : « Ô fils de Shayba, gardez ce dépôt ; nul, hormis un injuste, ne pourra vous en priver jusqu'au Jour de la Résurrection. » (Muslim)"
+  },
+  {
+    "id": 124,
+    "baslik": "Les oiseaux Ababil et l'armée d'Abraha",
+    "icerik": "En l'an 570 de l'ère chrétienne, Abraha, gouverneur abyssin, marcha sur La Mecque avec une armée d'éléphants pour détruire la Kaaba. Selon le récit coranique, Allah envoya des oiseaux Ababil qui écrasèrent l'armée comme une paille mâchée. (Sourate Al-Fil) Cet événement coïncidant avec l'année de naissance du Prophète, cette année fut appelée « l'Année de l'Éléphant »."
+  },
+  {
+    "id": 125,
+    "baslik": "Les Quraysh et l'entretien de la Kaaba",
+    "icerik": "Avant le Prophète, la tribu de Quraysh était responsable de l'entretien et du service de la Kaaba. Offrir eau et nourriture aux visiteurs venus pendant la saison du Hajj était considéré comme un grand honneur. Qusay, l'arrière-grand-père du Prophète, unifia les Quraysh autour de cette mission et organisa la gestion de la Kaaba. Cette tradition a pris une nouvelle dimension avec l'avènement de l'Islam."
+  },
+  {
+    "id": 126,
+    "baslik": "Le Mont Uhud et les martyrs",
+    "icerik": "Le Mont Uhud se trouve au nord de Médine et fut le théâtre de la bataille d'Uhud, où 70 compagnons, dont Hamza, tombèrent en martyrs. Le Prophète loua cette montagne en disant : « Uhud nous aime, et nous l'aimons. » Le cimetière des martyrs d'Uhud est l'un des lieux les plus importants visités à Médine ; il est recommandé de saluer les tombes des compagnons et d'invoquer pour eux."
+  },
+  {
+    "id": 127,
+    "baslik": "La mosquée des Deux Qiblas",
+    "icerik": "La mosquée des Deux Qiblas signifie « la mosquée aux deux qiblas ». Alors que le Prophète y priait, l'ordre de changer la qibla de Jérusalem vers La Mecque lui parvint, et la direction de la prière fut changée en plein milieu de celle-ci. Cet événement historique unique se reflète dans le nom de la mosquée. Rénovée de nos jours, cette mosquée accueille ses visiteurs à Médine."
+  },
+  {
+    "id": 128,
+    "baslik": "Histoire de Médine",
+    "icerik": "Avant l'émigration du Prophète, Médine était connue sous le nom de « Yathrib ». Après l'Hégire, elle prit le nom de « Madinat an-Nabi », c'est-à-dire « la Ville du Prophète ». Cette ville, où fut fondé le premier État islamique et où s'épanouit la civilisation islamique, est la ville la plus sacrée de l'Islam après La Mecque. Visiter cette ville, témoin vivant de l'Âge d'Or, est un immense privilège spirituel."
+  },
+  {
+    "id": 129,
+    "baslik": "Les dattes de Médine",
+    "icerik": "Le Prophète (paix et bénédiction sur lui) a dit : « Quiconque mange sept dattes Ajwa le matin ne sera atteint ce jour-là ni par le poison ni par la sorcellerie. » La datte Ajwa de Médine est considérée comme la variété la plus prisée. Le Prophète aimait visiter les palmeraies. Rapporter des dattes de Médine est considéré comme un souvenir de Hajj plein de sens."
+  },
+  {
+    "id": 130,
+    "baslik": "L'ampleur de l'organisation du Hajj",
+    "icerik": "Le Hajj est la plus grande organisation de rassemblement humain organisée chaque année dans le monde. L'Arabie Saoudite dépense chaque année des milliards de dollars pour les infrastructures du Hajj. Plus de 100 000 agents de sécurité sont mobilisés, des milliers d'ambulances et d'équipes médicales sont en attente. Des systèmes de métro, de tunnels et de ponts modernes ont été construits pour la sécurité des pèlerins."
+  },
+  {
+    "id": 131,
+    "baslik": "La fabrication de la kiswa",
+    "icerik": "La kiswa, le voile de la Kaaba, est fabriquée à la main par 240 artisans spécialisés dans une usine dédiée à La Mecque. Tissée à partir d'environ 670 kg de pure soie, la kiswa est ornée de versets coraniques brodés avec 120 kg de fils d'or et d'argent. Son coût total s'élève à plusieurs dizaines de millions de dollars, et elle est renouvelée chaque année. L'ancienne kiswa est découpée en petits morceaux offerts à des institutions officielles et à des visiteurs."
+  },
+  {
+    "id": 132,
+    "baslik": "Les minarets de la Mosquée Sacrée",
+    "icerik": "La Mosquée Sacrée compte neuf minarets. Le plus haut mesure environ 89 mètres. L'appel à la prière, résonnant cinq fois par jour depuis ces minarets, crée une atmosphère spirituelle qui enveloppe toute La Mecque. Ces minarets, ajoutés au fil de différentes époques, présentent chacun un style architectural qui lui est propre."
+  },
+  {
+    "id": 133,
+    "baslik": "Le nombre de personnes accomplissant le tawaf",
+    "icerik": "Pendant la saison du Hajj, environ 1 à 1,5 million de personnes accomplissent le tawaf chaque jour. L'espace de tawaf autour de la Kaaba se répartit sur plusieurs niveaux : le rez-de-chaussée, le premier étage et le toit. Pour gérer cette immense foule, des systèmes d'analyse de foule assistés par intelligence artificielle et des caméras sont utilisés."
+  },
+  {
+    "id": 134,
+    "baslik": "Les dimensions de la Kaaba",
+    "icerik": "La Kaaba mesure environ 13,1 mètres de hauteur et présente une forme quadrangulaire. Ses quatre côtés mesurent respectivement environ 11,28, 12,86, 11,52 et 13,31 mètres. Sa porte, située à environ 2 mètres du sol, est ornée de plaques dorées. La Kaaba est lavée à l'intérieur comme à l'extérieur chaque année, au début du mois de Rajab, par des équipes spéciales."
+  },
+  {
+    "id": 135,
+    "baslik": "L'invocation au premier regard sur la Kaaba",
+    "icerik": "Il est rapporté que le Prophète invoquait au premier regard qu'il posait sur la Kaaba. L'invocation « Allâhumma anta-s-salâm wa minka-s-salâm, hayyinâ rabbanâ bi-s-salâm » peut être récitée à ces moments. Selon la croyance que l'invocation faite au premier regard est exaucée, les pèlerins formulent des vœux sincères en apercevant la Kaaba pour la première fois. Ce moment est l'un des plus émouvants du voyage du Hajj."
+  },
+  {
+    "id": 136,
+    "baslik": "L'invocation au début du tawaf",
+    "icerik": "En commençant le tawaf, on se tourne vers la Pierre Noire et l'on dit « Bismillahi Allahu Akbar » en formulant l'intention. Aucune invocation précise n'est obligatoire pendant le tawaf ; toute invocation, dhikr ou récitation coranique peut y être faite. Le Prophète est, la plupart du temps, resté silencieux ou a fait le dhikr pendant le tawaf. Il a affirmé que le tawaf équivaut à la prière, recommandant de l'accomplir avec humilité et respect."
+  },
+  {
+    "id": 137,
+    "baslik": "L'invocation du matin à Muzdalifah",
+    "icerik": "À l'aube, à Muzdalifah, invoquer Allah à al-Mash'ar al-Haram en se tournant vers la qibla procure une grande récompense. Le Coran dit : « Quand vous déferlez d'Arafat, invoquez Allah, à al-Mash'ar al-Haram » (Al-Baqara, 198). Le Prophète est parti de là vers Mina avant le lever du soleil ; cette invocation faite dans les premières lueurs de l'aube est extrêmement méritoire."
+  },
+  {
+    "id": 138,
+    "baslik": "Se souvenir de Hajar pendant le sa'i",
+    "icerik": "Se souvenir de Hajar et méditer sur sa confiance en Allah approfondit l'adoration pendant le sa'i. Hajar, dans une soumission totale à Allah, courut demander de l'aide pour son fils, et son invocation fut exaucée. Il convient, sur Safa et Marwa, de lever les mains et d'invoquer, par exemple : « Ô Seigneur, accorde-nous, ainsi qu'à notre descendance, une subsistance bénie, et fais de nous des reconnaissants. » Allah ne repousse jamais l'invocation de ceux qui sont dans le besoin."
+  },
+  {
+    "id": 139,
+    "baslik": "Les takbirs des jours du tashriq",
+    "icerik": "Du matin du 9 Dhul-Hijja jusqu'à l'après-midi du 13 Dhul-Hijja, le takbir du tashriq est récité après chaque prière obligatoire : « Allahu Akbar Allahu Akbar, lâ ilâha illa Allah wa Allahu Akbar, Allahu Akbar wa lillahi-l-hamd. » Ces takbirs sont une expression particulière de la glorification d'Allah pendant les jours du Hajj. Le Coran dit : « Invoquez Allah pendant des jours comptés », faisant référence à ces takbirs. (Al-Baqara, 203)"
+  },
+  {
+    "id": 140,
+    "baslik": "Le Hajj et le repentir",
+    "icerik": "Le Hajj est un processus complet de purification spirituelle. Le Prophète a dit : « Quiconque accomplit le Hajj en s'éloignant du mal revient comme au jour où sa mère l'a mis au monde. » Le Hajj vise, par un repentir sincère, à renoncer aux péchés du passé, à décider de revenir vers Allah et à ouvrir une nouvelle page. C'est pourquoi le retour du Hajj est, pour les pèlerins, une occasion de recommencer leur vie."
+  },
+  {
+    "id": 141,
+    "baslik": "Le Hajj et la confiance en Allah (tawakkul)",
+    "icerik": "Le tawakkul, incarné dans l'adoration du sa'i par Hajar, est l'un des piliers essentiels de l'esprit du Hajj. Le pèlerin s'engage dans l'inconnu en faisant confiance à Allah ; dans la foule, la fatigue et la chaleur, il ne s'appuie que sur Lui. Le tawakkul consiste à déployer des efforts tout en remettant le résultat entre les mains d'Allah. Le Hajj enseigne cet équilibre de la plus belle des manières."
+  },
+  {
+    "id": 142,
+    "baslik": "Le Hajj et la sincérité (ikhlas)",
+    "icerik": "L'ikhlas consiste à accomplir un acte uniquement pour l'agrément d'Allah. Le pèlerin doit entreprendre son voyage non pour l'ostentation ou le prestige social, mais uniquement pour répondre à l'appel d'Allah. Le Prophète a dit : « Les actes ne valent que par les intentions. » Une adoration accomplie sans sincérité reste vaine. Le Hajj est un voyage d'adoration qui pousse à interroger fréquemment son intention et à renouveler sa sincérité."
+  },
+  {
+    "id": 143,
+    "baslik": "Le Hajj et la gratitude",
+    "icerik": "Pouvoir accomplir le Hajj est un immense bienfait. Dans le monde, la proportion de musulmans ayant les moyens d'accomplir le Hajj est assez faible. La gratitude du pèlerin bénéficiant de ce bienfait ne se limite pas à l'invocation ; elle se complète, à son retour, par le fait de devenir un meilleur musulman, de prier à temps, de verser l'aumône légale et d'être utile aux autres. La gratitude est le moyen le plus sûr de faire perdurer un bienfait."
+  },
+  {
+    "id": 144,
+    "baslik": "Le Hajj et la conscience de la mort",
+    "icerik": "La blancheur de l'ihram rappelle le linceul. La réunion de millions de personnes évoque le Jour du Jugement. Implorer à Arafat est un moment profond qui fait ressentir le Jour du compte. Le Prophète a dit : « Rappelez-vous fréquemment la mort ; elle efface les péchés et détache du monde. » Le Hajj fait vivre au pèlerin, de manière vivante, la mort et l'au-delà ; cette prise de conscience est la clé de sa transformation."
+  },
+  {
+    "id": 145,
+    "baslik": "La fraternité du Hajj",
+    "icerik": "Le Hajj est un rassemblement fraternel unique qui réunit des musulmans venus des quatre coins du monde. Des personnes de langues, couleurs et cultures différentes se retrouvent dans la même tenue, pour le même Allah. Même sans comprendre la langue du pèlerin à ses côtés, l'émotion de la même adoration et les larmes se partagent. Le Hajj est l'expérience vécue la plus puissante nourrissant la conscience de la communauté."
+  },
+  {
+    "id": 146,
+    "baslik": "Les piliers du Hajj",
+    "icerik": "Le Hajj comporte quatre piliers : entrer en ihram (l'intention), la station à Arafat, le tawaf de visite et le sa'i. Si l'un de ces piliers n'est pas accompli, le Hajj n'est pas valide ; ni un sacrifice ni aucune autre compensation ne peuvent y remédier. Accomplir les piliers en temps voulu et selon les règles est le fondement de la validité du Hajj."
+  },
+  {
+    "id": 147,
+    "baslik": "Les devoirs du Hajj (wajibat)",
+    "icerik": "Parmi les devoirs (wajibat) du Hajj figurent : entrer en ihram depuis les limites du Miqat, passer la nuit à Muzdalifah, lapider Satan, passer la nuit à Mina, se raser ou raccourcir ses cheveux, et accomplir le tawaf d'adieu. Si un devoir est omis, le Hajj reste valide mais un sacrifice dam doit être égorgé. Les devoirs sont les éléments complémentaires du Hajj."
+  },
+  {
+    "id": 148,
+    "baslik": "Qu'est-ce que le muhsar ?",
+    "icerik": "Le muhsar est celui qui, après être entré en ihram, ne peut achever son Hajj en raison d'une maladie, d'une guerre ou d'un autre empêchement. Le muhsar peut sortir de l'ihram en égorgeant un sacrifice ; s'il ne peut accomplir le Hajj cette année-là, il doit le rattraper l'année suivante. Le Coran dit : « Si vous êtes retenus (empêchés), alors faites un sacrifice qui vous soit facile » (Al-Baqara, 196)."
+  },
+  {
+    "id": 149,
+    "baslik": "Qu'est-ce que la fidya ?",
+    "icerik": "La fidya est la compensation à verser en cas de violation d'un des interdits de l'ihram. Elle consiste en l'une des trois options suivantes : jeûner (trois jours), donner l'aumône (nourrir six pauvres) ou égorger un sacrifice. Le Coran mentionne clairement ces trois options. (Al-Baqara, 196) La compensation exigée selon la violation commise peut varier selon les écoles juridiques."
+  },
+  {
+    "id": 150,
+    "baslik": "La différence entre le Hajj et la Omra",
+    "icerik": "La Omra consiste à faire le tawaf de la Kaaba, accomplir le sa'i et se raser, et peut être effectuée à n'importe quel moment de l'année. Le Hajj, en revanche, est une adoration obligatoire accomplie à des jours précis du mois de Dhul-Hijja, comprenant notamment la station à Arafat et d'autres adorations supplémentaires. La Omra est recommandée (mustahabb), tandis que le Hajj est obligatoire une fois dans la vie. Dans le Hajj tamattu', les deux sont accomplis ensemble."
+  }
+]

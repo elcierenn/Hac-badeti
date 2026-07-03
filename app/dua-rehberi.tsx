@@ -6,7 +6,9 @@ import { FlatList, Pressable, ScrollView, StyleSheet, Text, View } from 'react-n
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useAppLanguage } from '../src/context/LanguageContext';
+import type { AppLanguage } from '../src/i18n/config';
 import duaRehberi from '../src/data/duaRehberi.json';
+import { pickLang, isLanguageRtl } from '../src/lib/multilingual';
 
 const BG = '#ECE6DC';
 const GOLD = '#C9A84C';
@@ -16,35 +18,34 @@ type Dua = {
   id: number;
   kategori: string;
   baslik: string;
-  baslik_en: string;
-  baslik_ar: string;
   arapca: string;
   okunusu: string;
   anlami: string;
-  anlami_en: string;
-  anlami_ar: string;
+  [key: `baslik_${string}`]: string | undefined;
+  [key: `anlami_${string}`]: string | undefined;
 };
 
 type KategoriKey = 'all' | 'ihram' | 'tavaf' | 'say' | 'arafat' | 'muzdelife' | 'mina' | 'veda';
 const KATEGORILER: KategoriKey[] = ['all', 'ihram', 'tavaf', 'say', 'arafat', 'muzdelife', 'mina', 'veda'];
 
-const DATA = duaRehberi as Dua[];
+const DATA = duaRehberi as unknown as Dua[];
 
-function DuaKarti({ item, lang }: { item: Dua; lang: string }) {
-  const baslik = lang === 'en' ? item.baslik_en : lang === 'ar' ? item.baslik_ar : item.baslik;
-  const anlami = lang === 'en' ? item.anlami_en : lang === 'ar' ? item.anlami_ar : item.anlami;
+function DuaKarti({ item, lang, t }: { item: Dua; lang: AppLanguage; t: (key: string) => string }) {
+  const baslik = pickLang(item, 'baslik', lang);
+  const anlami = pickLang(item, 'anlami', lang);
+  const isRtl = isLanguageRtl(lang);
 
   return (
     <View style={styles.kart}>
       <View style={styles.kartHeader}>
-        <Text style={styles.baslik}>{baslik}</Text>
+        <Text style={[styles.baslik, isRtl && styles.anlamiAr]}>{baslik}</Text>
       </View>
       <Text style={styles.arapca}>{item.arapca}</Text>
       <View style={styles.divider} />
-      <Text style={styles.okunusLabel}>Okunuşu</Text>
+      <Text style={styles.okunusLabel}>{t('duaRehberi.reading')}</Text>
       <Text style={styles.okunusu}>{item.okunusu}</Text>
-      <Text style={styles.anlamLabel}>{lang === 'ar' ? 'المعنى' : lang === 'en' ? 'Meaning' : 'Anlamı'}</Text>
-      <Text style={[styles.anlami, lang === 'ar' && styles.anlamiAr]}>{anlami}</Text>
+      <Text style={styles.anlamLabel}>{t('duaRehberi.meaning')}</Text>
+      <Text style={[styles.anlami, isRtl && styles.anlamiAr]}>{anlami}</Text>
     </View>
   );
 }
@@ -102,7 +103,7 @@ export default function DuaRehberiScreen() {
         <FlatList
           data={filtered}
           keyExtractor={(i) => String(i.id)}
-          renderItem={({ item }) => <DuaKarti item={item} lang={language} />}
+          renderItem={({ item }) => <DuaKarti item={item} lang={language} t={t} />}
           contentContainerStyle={[styles.list, { paddingBottom: 16 + insets.bottom }]}
           showsVerticalScrollIndicator={false}
         />

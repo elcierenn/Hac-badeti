@@ -1,11 +1,14 @@
 import { useRouter, type Href } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { useInterstitialAd } from '../src/ads/useInterstitialAd';
 import { AdBanner } from '../src/components/AdBanner';
+import { LanguageSwitcherModal } from '../src/components/LanguageSwitcherModal';
+import { useAppLanguage } from '../src/context/LanguageContext';
 
 const BG = '#ECE6DC';
 const GOLD = '#C9A84C';
@@ -57,6 +60,8 @@ export default function AraclarScreen() {
   const { t } = useTranslation();
   const router = useRouter();
   const maybeShowInterstitial = useInterstitialAd();
+  const { language } = useAppLanguage();
+  const [langModalVisible, setLangModalVisible] = useState(false);
 
   const pairs: Tool[][] = [];
   const fullWidths: Tool[] = [];
@@ -82,7 +87,15 @@ export default function AraclarScreen() {
             <Text style={styles.backArrow}>←</Text>
           </Pressable>
           <Text style={styles.headerTitle}>{t('araclar.title')}</Text>
-          <View style={styles.spacer} />
+          <Pressable
+            onPress={() => setLangModalVisible(true)}
+            hitSlop={12}
+            style={({ pressed }) => [styles.langBtn, pressed && { opacity: 0.8 }]}
+            accessibilityRole="button"
+            accessibilityLabel={t('common.selectLanguage') + `: ${t(`languages.${language}`)}`}
+          >
+            <Text style={styles.langBtnIcon}>🌐</Text>
+          </Pressable>
         </View>
 
         <ScrollView
@@ -103,6 +116,8 @@ export default function AraclarScreen() {
         </ScrollView>
         <AdBanner />
       </SafeAreaView>
+
+      <LanguageSwitcherModal visible={langModalVisible} onClose={() => setLangModalVisible(false)} />
     </View>
   );
 }
@@ -179,7 +194,14 @@ const styles = StyleSheet.create({
     fontSize: 19, fontWeight: '800',
     textAlign: 'center',
   },
-  spacer: { minWidth: 44 },
+  langBtn: {
+    minWidth: 44, minHeight: 44,
+    borderRadius: 14,
+    alignItems: 'center', justifyContent: 'center',
+    backgroundColor: 'rgba(201,168,76,0.14)',
+    borderWidth: 1.5, borderColor: GOLD,
+  },
+  langBtnIcon: { fontSize: 18 },
   content: { padding: 14, paddingBottom: 28, gap: 12 },
   row: { flexDirection: 'row', gap: 12 },
   halfPlaceholder: { flex: 1 },

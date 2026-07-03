@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Hac İbadeti</title>
+<style>
+:root{
+  --gold:#C9A84C;
+  --gold2:#E8CC80;
+  --bg:#060C18;
+  --card:rgba(255,255,255,0.06);
+  --border:rgba(201,168,76,0.18);
+  --white:#fff;
+  --muted:#8899BB;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html{overflow-x:hidden;scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--white);font-family:-apple-system,'Segoe UI',sans-serif;overflow-x:hidden;-webkit-text-size-adjust:100%;}
+
+/* Canvas arka plan */
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+
+/* NAV */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 14px;height:52px;
+  background:rgba(6,12,24,0.92);
+  -webkit-backdrop-filter:blur(16px);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+}
+.logo{
+  display:flex;align-items:center;gap:7px;
+  font-size:15px;font-weight:800;color:#fff;text-decoration:none;
+  white-space:nowrap;flex-shrink:0;
+}
+.logo-star{
+  font-size:18px;color:var(--gold);display:inline-block;
+  animation:spin 8s linear infinite;
+  filter:drop-shadow(0 0 5px rgba(201,168,76,.9));
+  will-change:transform;
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+.logo em{color:var(--gold);font-style:normal;}
+.langs{display:flex;gap:4px;flex-shrink:0;}
+.lb{
+  min-width:40px;min-height:40px;
+  padding:0 10px;border-radius:20px;
+  border:1px solid rgba(201,168,76,.3);
+  background:transparent;color:var(--muted);
+  font-size:12px;font-weight:700;
+  cursor:pointer;touch-action:manipulation;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .15s,color .15s,border-color .15s;
+  -webkit-appearance:none;appearance:none;
+}
+.lb.on{background:var(--gold);color:#060C18;border-color:var(--gold);}
+
+/* SECTIONS */
+.sec{position:relative;z-index:1;padding:56px 16px 40px;}
+
+/* HERO */
+#hero{
+  min-height:100dvh;min-height:100svh;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  text-align:center;padding:72px 16px 32px;
+  gap:0;
+}
+.hero-star{
+  font-size:60px;color:var(--gold);
+  margin-bottom:14px;
+  filter:drop-shadow(0 0 18px rgba(201,168,76,.8));
+  animation:float 6s ease-in-out infinite,glow-pulse 3s ease-in-out infinite;
+  display:inline-block;will-change:transform;
+}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+@keyframes glow-pulse{0%,100%{filter:drop-shadow(0 0 18px rgba(201,168,76,.8));}50%{filter:drop-shadow(0 0 32px rgba(201,168,76,1));}}
+.hero-title{
+  font-size:clamp(36px,10vw,56px);font-weight:900;line-height:1.08;
+  letter-spacing:-1px;margin-bottom:10px;
+  background:linear-gradient(135deg,#fff 20%,var(--gold2) 70%,var(--gold) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-line{
+  width:44px;height:3px;background:var(--gold);
+  margin:0 auto 10px;border-radius:2px;
+  animation:line-pulse 3s ease-in-out infinite;
+}
+@keyframes line-pulse{0%,100%{width:44px;}50%{width:70px;}}
+.hero-tag{font-size:15px;color:var(--gold2);font-style:italic;margin-bottom:10px;}
+.hero-desc{
+  font-size:13px;color:var(--muted);line-height:1.65;
+  margin-bottom:24px;max-width:320px;
+}
+.hero-btns{
+  display:flex;flex-direction:column;gap:10px;
+  width:100%;max-width:280px;margin-bottom:28px;
+}
+.btn-g{
+  display:block;padding:14px;border-radius:50px;text-align:center;
+  background:linear-gradient(135deg,var(--gold),#8B5E10);
+  color:#060C18;font-weight:800;font-size:15px;text-decoration:none;
+  box-shadow:0 6px 24px rgba(201,168,76,.4);touch-action:manipulation;
+}
+.btn-o{
+  display:block;padding:13px;border-radius:50px;text-align:center;
+  border:2px solid rgba(201,168,76,.5);color:var(--gold);
+  font-weight:700;font-size:15px;text-decoration:none;touch-action:manipulation;
+}
+.stats{
+  display:grid;grid-template-columns:1fr 1fr;gap:12px;
+  width:100%;max-width:320px;
+  padding-top:24px;border-top:1px solid rgba(201,168,76,.15);
+}
+.stat{text-align:center;}
+.stat-n{font-size:22px;font-weight:800;color:var(--gold);line-height:1;}
+.stat-l{font-size:10px;color:var(--muted);margin-top:4px;line-height:1.3;}
+.scroll-hint{
+  margin-top:18px;display:flex;flex-direction:column;align-items:center;gap:4px;
+  opacity:.45;animation:sh 2s ease-in-out infinite;
+}
+@keyframes sh{0%,100%{transform:translateY(0);opacity:.3;}50%{transform:translateY(5px);opacity:.6;}}
+.scroll-hint span{font-size:9px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;}
+.scroll-hint svg{width:18px;height:18px;fill:none;stroke:var(--gold);stroke-width:2;}
+
+/* SECTION HEADERS */
+.tag{
+  display:inline-block;padding:4px 12px;border-radius:14px;
+  background:rgba(201,168,76,.12);color:var(--gold);
+  font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  margin-bottom:8px;
+}
+.stitle{font-size:clamp(20px,6vw,26px);font-weight:800;line-height:1.2;margin-bottom:6px;}
+.gold-sep{width:36px;height:3px;background:var(--gold);border-radius:2px;margin-bottom:20px;}
+
+/* FEATURE CARDS */
+.feat-grid{display:flex;flex-direction:column;gap:10px;}
+.fc{
+  background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:16px 14px;display:flex;align-items:flex-start;gap:12px;
+  opacity:0;transform:translateX(-20px);
+  transition:opacity .45s,transform .45s;
+  overflow:hidden;
+}
+.fc.show{opacity:1;transform:none;}
+.fc-ico{
+  font-size:22px;flex-shrink:0;margin-top:1px;
+  width:28px;text-align:center;
+}
+.fc-body{min-width:0;flex:1;}
+.fc-t{font-size:13px;font-weight:700;color:#fff;margin-bottom:4px;}
+.fc-d{font-size:11px;color:var(--muted);line-height:1.5;word-break:break-word;}
+
+/* MARKET */
+.mkt-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;}
+.mc{
+  background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:16px 10px;text-align:center;
+  opacity:0;transform:scale(.92);
+  transition:opacity .45s,transform .45s;
+  overflow:hidden;
+}
+.mc.show{opacity:1;transform:scale(1);}
+.mc-n{
+  font-size:22px;font-weight:900;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  line-height:1;
+}
+.mc-l{font-size:11px;font-weight:600;color:#fff;margin:5px 0 3px;line-height:1.3;word-break:break-word;}
+.mc-s{font-size:10px;color:var(--muted);font-style:italic;line-height:1.3;}
+.ins-list{display:flex;flex-direction:column;gap:8px;}
+.ins{
+  background:var(--card);border:1px solid var(--border);border-radius:12px;
+  padding:12px 14px;font-size:12px;color:var(--muted);line-height:1.5;
+  display:flex;gap:8px;
+  opacity:0;transform:translateY(14px);
+  transition:opacity .45s,transform .45s;
+}
+.ins.show{opacity:1;transform:none;}
+.ins-arrow{color:var(--gold);flex-shrink:0;font-size:12px;}
+
+/* REVENUE */
+.rev-list{display:flex;flex-direction:column;gap:10px;margin-bottom:14px;}
+.rv{
+  background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:18px 16px;
+  opacity:0;transform:translateY(20px);
+  transition:opacity .45s,transform .45s;
+}
+.rv.show{opacity:1;transform:none;}
+.rv-ico{font-size:28px;margin-bottom:8px;display:block;}
+.rv-t{font-size:14px;font-weight:700;color:var(--gold);margin-bottom:6px;}
+.rv-d{font-size:12px;color:var(--muted);line-height:1.55;margin-bottom:10px;}
+.rv-badge{
+  display:inline-block;padding:5px 14px;border-radius:14px;
+  background:var(--gold);color:#060C18;font-size:11px;font-weight:800;
+}
+.rv-arrow{text-align:center;font-size:20px;color:var(--gold);padding:1px 0;}
+.rv-note{
+  background:rgba(201,168,76,.07);border-left:3px solid var(--gold);
+  border-radius:0 12px 12px 0;padding:12px 14px;
+  font-size:12px;color:var(--muted);line-height:1.6;font-style:italic;
+  opacity:0;transform:translateY(20px);transition:opacity .45s,transform .45s;
+}
+.rv-note.show{opacity:1;transform:none;}
+
+/* CONTACT */
+#contact{
+  display:flex;flex-direction:column;align-items:center;
+  text-align:center;padding:56px 16px 48px;
+}
+.c-title{
+  font-size:clamp(26px,8vw,40px);font-weight:900;line-height:1.1;margin-bottom:8px;
+  background:linear-gradient(135deg,#fff,var(--gold2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.c-sub{font-size:13px;color:var(--muted);margin-bottom:28px;}
+.c-cards{display:flex;flex-direction:column;gap:10px;width:100%;max-width:320px;margin-bottom:28px;}
+.ci{
+  background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:18px 16px;text-align:left;
+  opacity:0;transform:translateY(20px);transition:opacity .45s,transform .45s;
+}
+.ci.show{opacity:1;transform:none;}
+.ci-l{font-size:10px;color:var(--gold);font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;}
+.ci-v{font-size:13px;color:#fff;font-weight:500;word-break:break-all;overflow-wrap:anywhere;}
+.c-quote{font-size:13px;color:var(--muted);font-style:italic;line-height:1.65;max-width:280px;}
+
+footer{
+  text-align:center;padding:18px;font-size:11px;color:var(--muted);
+  background:rgba(5,10,20,.95);border-top:1px solid var(--border);
+  position:relative;z-index:1;
+}
+footer span{color:var(--gold);}
+
+/* RTL */
+[dir="rtl"] .fc{flex-direction:row-reverse;}
+[dir="rtl"] .rv-note{border-left:none;border-right:3px solid var(--gold);}
+[dir="rtl"] .ci{text-align:right;}
+</style>
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<nav>
+  <a class="logo" href="#">
+    <span class="logo-star">★</span>
+    Hac <em>İbadeti</em>
+  </a>
+  <div class="langs">
+    <button class="lb on" data-lang="tr">TR</button>
+    <button class="lb"    data-lang="en">EN</button>
+    <button class="lb"    data-lang="ar">AR</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-star">★</div>
+  <h1 class="hero-title" data-i18n="hero_title">Hac İbadeti</h1>
+  <div class="hero-line"></div>
+  <p class="hero-tag" data-i18n="hero_tag">Hacınızın Dijital Rehberi</p>
+  <p class="hero-desc" data-i18n="hero_desc">Dünyanın en büyük yıllık toplanmasına katılan hacılar için tasarlanmış kapsamlı mobil rehber. 7 araç, 150+ bilgi kartı, 3 dil.</p>
+  <div class="hero-btns">
+    <a class="btn-g" data-i18n="cta_ios">App Store</a>
+    <a class="btn-o" data-i18n="cta_and">Google Play</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="stat-n">2M+</div><div class="stat-l" data-i18n="s1">Yıllık Hac Ziyaretçisi</div></div>
+    <div class="stat"><div class="stat-n">1.8B</div><div class="stat-l" data-i18n="s2">Dünya Müslüman Nüfusu</div></div>
+    <div class="stat"><div class="stat-n">7</div><div class="stat-l" data-i18n="s3">Entegre Araç</div></div>
+    <div class="stat"><div class="stat-n">3</div><div class="stat-l" data-i18n="s4">Dil Desteği</div></div>
+  </div>
+  <div class="scroll-hint">
+    <span data-i18n="scroll">Kaydır</span>
+    <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="sec" id="features">
+  <div class="tag" data-i18n="f_tag">Özellikler</div>
+  <h2 class="stitle" data-i18n="f_title">Bir hacının ihtiyacı olan her şey</h2>
+  <div class="gold-sep"></div>
+  <div class="feat-grid">
+    <div class="fc reveal"><span class="fc-ico">🗺️</span><div class="fc-body"><div class="fc-t" data-i18n="f1t">Ana Görev Rehberi</div><p class="fc-d" data-i18n="f1d">İhramdan veda tavafına 8 ana görev, adım adım talimatlar, fotoğraflı anlatım.</p></div></div>
+    <div class="fc reveal"><span class="fc-ico">🧭</span><div class="fc-body"><div class="fc-t" data-i18n="f2t">Kıble Pusulası</div><p class="fc-d" data-i18n="f2d">Gerçek zamanlı GPS tabanlı yön tespiti ve Kabe mesafesi göstergesi.</p></div></div>
+    <div class="fc reveal"><span class="fc-ico">📿</span><div class="fc-body"><div class="fc-t" data-i18n="f3t">Tesbih Sayacı</div><p class="fc-d" data-i18n="f3d">5 zikir seçeneği, 33 döngü takibi, animasyonlu arayüz.</p></div></div>
+    <div class="fc reveal"><span class="fc-ico">🤲</span><div class="fc-body"><div class="fc-t" data-i18n="f4t">Dua Rehberi</div><p class="fc-d" data-i18n="f4d">20 dua, 3 dil, kategori filtreleri, Arapça orijinal metinler.</p></div></div>
+    <div class="fc reveal"><span class="fc-ico">💡</span><div class="fc-body"><div class="fc-t" data-i18n="f5t">Bilgi Köşesi</div><p class="fc-d" data-i18n="f5d">150 bilgi kartı; hac tarihi, ritüellerin anlamı, fıkhi bilgiler.</p></div></div>
+    <div class="fc reveal"><span class="fc-ico">📋</span><div class="fc-body"><div class="fc-t" data-i18n="f6t">Hazırlık Listesi</div><p class="fc-d" data-i18n="f6d">22 madde, 4 kategori, kalıcı tamamlandı işaretleme.</p></div></div>
+    <div class="fc reveal"><span class="fc-ico">📝</span><div class="fc-body"><div class="fc-t" data-i18n="f7t">Hac Notları</div><p class="fc-d" data-i18n="f7d">Kişisel journal, sınırsız not, tam çevrimdışı CRUD.</p></div></div>
+    <div class="fc reveal"><span class="fc-ico">🚨</span><div class="fc-body"><div class="fc-t" data-i18n="f8t">Acil Durum</div><p class="fc-d" data-i18n="f8d">Suudi Arabistan acil hatları, tek tuş erişim.</p></div></div>
+  </div>
+</section>
+
+<!-- MARKET -->
+<section class="sec" id="market">
+  <div class="tag" data-i18n="m_tag">Pazar Büyüklüğü</div>
+  <h2 class="stitle" data-i18n="m_title">Küresel, büyüyen kitle</h2>
+  <div class="gold-sep"></div>
+  <div class="mkt-grid">
+    <div class="mc reveal"><div class="mc-n">1.8B</div><div class="mc-l" data-i18n="m1l">Dünya Müslüman Nüfusu</div><div class="mc-s" data-i18n="m1s">Erişilebilir pazar</div></div>
+    <div class="mc reveal"><div class="mc-n">2M+</div><div class="mc-l" data-i18n="m2l">Yıllık Hac Ziyaretçisi</div><div class="mc-s" data-i18n="m2s">Yenilenen kitle</div></div>
+    <div class="mc reveal"><div class="mc-n">80K+</div><div class="mc-l" data-i18n="m3l">Türkiye Yıllık Kotası</div><div class="mc-s" data-i18n="m3s">Birincil hedef</div></div>
+    <div class="mc reveal"><div class="mc-n">73%</div><div class="mc-l" data-i18n="m4l">Akıllı Telefon</div><div class="mc-s" data-i18n="m4s">Müslüman nüfus içinde</div></div>
+  </div>
+  <div class="ins-list">
+    <div class="ins reveal"><span class="ins-arrow">▸</span><span data-i18n="i1">Hac kotaları COVID sonrası rekor seviyelere ulaştı ve büyümeye devam ediyor.</span></div>
+    <div class="ins reveal"><span class="ins-arrow">▸</span><span data-i18n="i2">Her hac sezonu tamamen yeni bir kullanıcı kitlesi oluşturur.</span></div>
+    <div class="ins reveal"><span class="ins-arrow">▸</span><span data-i18n="i3">Endonezya, Malezya, Nijerya ve Körfez ülkeleri hızlı büyüyen segmentler.</span></div>
+    <div class="ins reveal"><span class="ins-arrow">▸</span><span data-i18n="i4">Uygulama içi ibadet araçlarına yönelik mobil pazar her yıl genişlemektedir.</span></div>
+  </div>
+</section>
+
+<!-- REVENUE -->
+<section class="sec" id="revenue">
+  <div class="tag" data-i18n="r_tag">Gelir Modeli</div>
+  <h2 class="stitle" data-i18n="r_title">İki tamamlayıcı kaynak</h2>
+  <div class="gold-sep"></div>
+  <div class="rev-list">
+    <div class="rv reveal">
+      <span class="rv-ico">📲</span>
+      <div class="rv-t" data-i18n="r1t">Ücretsiz İndirme</div>
+      <p class="rv-d" data-i18n="r1d">Engelsiz erişim ile geniş kullanıcı tabanı oluşturulur.</p>
+      <span class="rv-badge" data-i18n="r1b">Düşük Edinme Maliyeti</span>
+    </div>
+    <div class="rv-arrow">↓</div>
+    <div class="rv reveal">
+      <span class="rv-ico">📢</span>
+      <div class="rv-t" data-i18n="r2t">Reklam Geliri</div>
+      <p class="rv-d" data-i18n="r2d">Google AdMob entegrasyonu ile banner ve geçiş reklamları.</p>
+      <span class="rv-badge" data-i18n="r2b">Pasif Sürekli Gelir</span>
+    </div>
+    <div class="rv-arrow">↓</div>
+    <div class="rv reveal">
+      <span class="rv-ico">⭐</span>
+      <div class="rv-t" data-i18n="r3t">Reklamsız Paket</div>
+      <p class="rv-d" data-i18n="r3d">Tek seferlik 2,99 USD ödemesiyle tüm reklamlar kalıcı kaldırılır.</p>
+      <span class="rv-badge" data-i18n="r3b">Yüksek Dönüşüm</span>
+    </div>
+  </div>
+  <div class="rv-note reveal" data-i18n="r_note">Hac aylarında reklamsız paket dönüşüm oranının belirgin biçimde artması beklenmektedir. Hacılar ibadet odaklanması için reklamsız deneyimi tercih etme eğilimindedir.</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="tag" data-i18n="c_tag">İletişim</div>
+  <h2 class="c-title" data-i18n="c_title">Birlikte büyüyelim</h2>
+  <p class="c-sub" data-i18n="c_sub">Sorularınız ve iş birliği teklifleri için.</p>
+  <div class="c-cards">
+    <div class="ci reveal">
+      <div class="ci-l" data-i18n="c_email_l">E-posta</div>
+      <div class="ci-v">darklife341@gmail.com</div>
+    </div>
+    <div class="ci reveal">
+      <div class="ci-l" data-i18n="c_phone_l">Telefon</div>
+      <div class="ci-v">+90 546 867 71 69</div>
+    </div>
+  </div>
+  <p class="c-quote" data-i18n="c_quote">"Her yolculuk bir adımla başlar. Biz o adımı kolaylaştırıyoruz."</p>
+</section>
+
+<footer>© 2026 <span>Hac İbadeti</span>. All rights reserved.</footer>
+
+<script>
+// ── i18n ──────────────────────────────────────────────────────────────────────
+const T={
+tr:{
+  hero_title:"Hac İbadeti",hero_tag:"Hacınızın Dijital Rehberi",
+  hero_desc:"Dünyanın en büyük yıllık toplanmasına katılan hacılar için tasarlanmış kapsamlı mobil rehber. 7 araç, 150+ bilgi kartı, 3 dil.",
+  cta_ios:"App Store",cta_and:"Google Play",
+  s1:"Yıllık Hac Ziyaretçisi",s2:"Dünya Müslüman Nüfusu",s3:"Entegre Araç",s4:"Dil Desteği",scroll:"Kaydır",
+  f_tag:"Özellikler",f_title:"Bir hacının ihtiyacı olan her şey",
+  f1t:"Ana Görev Rehberi",f1d:"İhramdan veda tavafına 8 ana görev, adım adım talimatlar, fotoğraflı anlatım.",
+  f2t:"Kıble Pusulası",f2d:"Gerçek zamanlı GPS tabanlı yön tespiti ve Kabe mesafesi göstergesi.",
+  f3t:"Tesbih Sayacı",f3d:"5 zikir seçeneği, 33 döngü takibi, animasyonlu arayüz.",
+  f4t:"Dua Rehberi",f4d:"20 dua, 3 dil, kategori filtreleri, Arapça orijinal metinler.",
+  f5t:"Bilgi Köşesi",f5d:"150 bilgi kartı; hac tarihi, ritüellerin anlamı, fıkhi bilgiler.",
+  f6t:"Hazırlık Listesi",f6d:"22 madde, 4 kategori, kalıcı tamamlandı işaretleme.",
+  f7t:"Hac Notları",f7d:"Kişisel journal, sınırsız not, tam çevrimdışı CRUD.",
+  f8t:"Acil Durum",f8d:"Suudi Arabistan acil hatları, tek tuş erişim.",
+  m_tag:"Pazar Büyüklüğü",m_title:"Küresel, büyüyen kitle",
+  m1l:"Dünya Müslüman Nüfusu",m1s:"Erişilebilir pazar",
+  m2l:"Yıllık Hac Ziyaretçisi",m2s:"Yenilenen kitle",
+  m3l:"Türkiye Yıllık Kotası",m3s:"Birincil hedef",
+  m4l:"Akıllı Telefon",m4s:"Müslüman nüfus içinde",
+  i1:"Hac kotaları COVID sonrası rekor seviyelere ulaştı ve büyümeye devam ediyor.",
+  i2:"Her hac sezonu tamamen yeni bir kullanıcı kitlesi oluşturur.",
+  i3:"Endonezya, Malezya, Nijerya ve Körfez ülkeleri hızlı büyüyen segmentler.",
+  i4:"Uygulama içi ibadet araçlarına yönelik mobil pazar her yıl genişlemektedir.",
+  r_tag:"Gelir Modeli",r_title:"İki tamamlayıcı kaynak",
+  r1t:"Ücretsiz İndirme",r1d:"Engelsiz erişim ile geniş kullanıcı tabanı oluşturulur.",r1b:"Düşük Edinme Maliyeti",
+  r2t:"Reklam Geliri",r2d:"Google AdMob entegrasyonu ile banner ve geçiş reklamları.",r2b:"Pasif Sürekli Gelir",
+  r3t:"Reklamsız Paket",r3d:"Tek seferlik 2,99 USD ödemesiyle tüm reklamlar kalıcı kaldırılır.",r3b:"Yüksek Dönüşüm",
+  r_note:"Hac aylarında reklamsız paket dönüşüm oranının belirgin biçimde artması beklenmektedir. Hacılar ibadet odaklanması için reklamsız deneyimi tercih etme eğilimindedir.",
+  c_tag:"İletişim",c_title:"Birlikte büyüyelim",c_sub:"Sorularınız ve iş birliği teklifleri için.",
+  c_email_l:"E-posta",c_phone_l:"Telefon",
+  c_quote:'"Her yolculuk bir adımla başlar. Biz o adımı kolaylaştırıyoruz."',
+},
+en:{
+  hero_title:"Hajj Guide",hero_tag:"Your Digital Hajj Companion",
+  hero_desc:"A comprehensive mobile guide for pilgrims attending the world's largest annual gathering. 7 tools, 150+ info cards, 3 languages.",
+  cta_ios:"App Store",cta_and:"Google Play",
+  s1:"Annual Hajj Visitors",s2:"Global Muslim Population",s3:"Integrated Tools",s4:"Languages",scroll:"Scroll",
+  f_tag:"Features",f_title:"Everything a pilgrim needs",
+  f1t:"Main Task Guide",f1d:"8 Hajj tasks from Ihram to Farewell Tawaf, step-by-step with photos.",
+  f2t:"Qibla Compass",f2d:"Real-time GPS-based direction with distance to the Kaaba.",
+  f3t:"Prayer Counter",f3d:"5 dhikr options, 33-cycle tracking, animated interface.",
+  f4t:"Dua Guide",f4d:"20 prayers, 3 languages, category filters, original Arabic texts.",
+  f5t:"Knowledge Corner",f5d:"150 info cards covering Hajj history, ritual meanings and jurisprudence.",
+  f6t:"Preparation Checklist",f6d:"22 items, 4 categories, persistent completion tracking.",
+  f7t:"Hajj Notes",f7d:"Personal journal, unlimited entries, fully offline CRUD.",
+  f8t:"Emergency",f8d:"Saudi Arabia emergency numbers, one-tap access.",
+  m_tag:"Market Size",m_title:"Global, growing audience",
+  m1l:"Global Muslim Population",m1s:"Total addressable market",
+  m2l:"Annual Hajj Visitors",m2s:"Self-renewing audience",
+  m3l:"Turkey Annual Quota",m3s:"Primary segment",
+  m4l:"Smartphone",m4s:"Among Muslim population",
+  i1:"Hajj quotas reached record levels post-COVID and continue to grow.",
+  i2:"Every Hajj season brings an entirely new user cohort.",
+  i3:"Indonesia, Malaysia, Nigeria and Gulf states are fast-growing segments.",
+  i4:"The mobile market for in-app worship tools expands year over year.",
+  r_tag:"Revenue",r_title:"Two complementary streams",
+  r1t:"Free Download",r1d:"Frictionless access builds a large, fast-growing user base.",r1b:"Low Acquisition Cost",
+  r2t:"Ad Revenue",r2d:"Google AdMob integration with banner and interstitial ads.",r2b:"Passive Recurring Income",
+  r3t:"Ad-Free Package",r3d:"One-time $2.99 permanently removes all ads.",r3b:"High Conversion Potential",
+  r_note:"Ad-free conversion is expected to spike significantly during Hajj months. Pilgrims strongly prefer distraction-free worship.",
+  c_tag:"Contact",c_title:"Let's grow together",c_sub:"For questions and partnership inquiries.",
+  c_email_l:"Email",c_phone_l:"Phone",
+  c_quote:'"Every journey begins with a single step. We make that step easier."',
+},
+ar:{
+  hero_title:"حج عبادتي",hero_tag:"رفيقك الرقمي في رحلة الحج",
+  hero_desc:"تطبيق دليل شامل مصمم للحجاج المتوجهين إلى أكبر تجمع سنوي في العالم. 7 أدوات، 150+ بطاقة معلومات، 3 لغات.",
+  cta_ios:"App Store",cta_and:"Google Play",
+  s1:"حاج سنوياً",s2:"مسلم في العالم",s3:"أداة",s4:"لغات",scroll:"مرر",
+  f_tag:"المميزات",f_title:"كل ما يحتاجه الحاج",
+  f1t:"دليل المهام الرئيسية",f1d:"8 مهام من الإحرام حتى طواف الوداع، تعليمات تفصيلية وشرح مصور.",
+  f2t:"بوصلة القبلة",f2d:"تحديد الاتجاه بالـ GPS في الوقت الفعلي مع المسافة إلى الكعبة.",
+  f3t:"عداد التسبيح",f3d:"5 أذكار، تتبع 33 دورة، واجهة متحركة.",
+  f4t:"دليل الأدعية",f4d:"20 دعاء، 3 لغات، تصفية بالفئة، النصوص العربية الأصلية.",
+  f5t:"ركن المعلومات",f5d:"150 بطاقة تشمل تاريخ الحج ومعاني الشعائر والأحكام.",
+  f6t:"قائمة التجهيز",f6d:"22 عنصراً، 4 فئات، تحديد مكتمل دائم.",
+  f7t:"ملاحظات الحج",f7d:"مفكرة شخصية، إدخالات غير محدودة، يعمل بدون إنترنت.",
+  f8t:"الطوارئ",f8d:"أرقام الطوارئ في المملكة العربية السعودية، وصول بنقرة واحدة.",
+  m_tag:"حجم السوق",m_title:"جمهور عالمي متنامٍ",
+  m1l:"مسلم في العالم",m1s:"إجمالي السوق",
+  m2l:"حاج سنوياً",m2s:"جمهور متجدد",
+  m3l:"حصة تركيا السنوية",m3s:"القطاع الأساسي",
+  m4l:"هواتف ذكية",m4s:"بين المسلمين",
+  i1:"وصلت حصص الحج إلى مستويات قياسية بعد كوفيد وتواصل النمو.",
+  i2:"كل موسم حج يجلب شريحة مستخدمين جديدة بالكامل.",
+  i3:"إندونيسيا وماليزيا ونيجيريا ودول الخليج قطاعات سريعة النمو.",
+  i4:"سوق التطبيقات الدينية على الهاتف يتوسع سنة بعد سنة.",
+  r_tag:"نموذج الإيراد",r_title:"مصدران متكاملان",
+  r1t:"تنزيل مجاني",r1d:"وصول سلس يبني قاعدة مستخدمين واسعة.",r1b:"تكلفة اكتساب منخفضة",
+  r2t:"إيراد الإعلانات",r2d:"تكامل Google AdMob مع إعلانات بانر وتخللية.",r2b:"دخل سلبي متكرر",
+  r3t:"باقة بلا إعلانات",r3d:"2.99 دولار لمرة واحدة تزيل جميع الإعلانات نهائياً.",r3b:"إمكانية تحويل عالية",
+  r_note:"من المتوقع ارتفاع معدلات التحويل بشكل ملحوظ خلال أشهر الحج.",
+  c_tag:"التواصل",c_title:"لنكبر معاً",c_sub:"للاستفسارات واقتراحات الشراكة.",
+  c_email_l:"البريد الإلكتروني",c_phone_l:"الهاتف",
+  c_quote:'"كل رحلة تبدأ بخطوة واحدة. نحن نجعل تلك الخطوة أسهل."',
+},
+};
+
+let currentLang='tr';
+function setLang(l){
+  currentLang=l;
+  const t=T[l],isAr=l==='ar';
+  document.documentElement.lang=l;
+  document.documentElement.dir=isAr?'rtl':'ltr';
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.dataset.i18n;
+    if(t[k]!==undefined)el.textContent=t[k];
+  });
+  document.querySelectorAll('[data-lang]').forEach(b=>{
+    b.classList.toggle('on',b.dataset.lang===l);
+  });
+}
+
+// Dil butonları — addEventListener ile (iOS Safari güvenilir)
+document.querySelectorAll('[data-lang]').forEach(btn=>{
+  btn.addEventListener('touchend',function(e){
+    e.preventDefault();
+    setLang(this.dataset.lang);
+  });
+  btn.addEventListener('click',function(){
+    setLang(this.dataset.lang);
+  });
+});
+
+// ── BUBBLES ───────────────────────────────────────────────────────────────────
+(function(){
+  const canvas=document.getElementById('bg');
+  const ctx=canvas.getContext('2d');
+  let W,H;
+  function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;}
+  window.addEventListener('resize',resize);resize();
+
+  class Bubble{
+    constructor(){this.init(true);}
+    init(rand){
+      this.r=Math.random()*14+4;
+      this.x=Math.random()*W;
+      this.y=rand?Math.random()*H:H+this.r+40;
+      this.vy=Math.random()*0.4+0.12;
+      this.phase=Math.random()*Math.PI*2;
+      this.op=Math.random()*0.2+0.06;
+    }
+    update(t){
+      this.y-=this.vy;
+      this.x+=Math.sin(t*0.5+this.phase)*0.35;
+      if(this.y<-this.r*2)this.init(false);
+    }
+    draw(){
+      const g=ctx.createRadialGradient(
+        this.x-this.r*.3,this.y-this.r*.3,this.r*.05,
+        this.x,this.y,this.r
+      );
+      g.addColorStop(0,`rgba(255,228,120,${this.op*1.8})`);
+      g.addColorStop(0.5,`rgba(201,168,76,${this.op*1.1})`);
+      g.addColorStop(1,`rgba(180,140,50,0)`);
+      ctx.save();
+      ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);
+      ctx.fillStyle=g;
+      ctx.shadowColor='rgba(201,168,76,0.4)';ctx.shadowBlur=this.r*1.5;
+      ctx.fill();
+      ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);
+      ctx.strokeStyle=`rgba(255,220,100,${this.op*1.3})`;
+      ctx.lineWidth=.7;ctx.shadowBlur=0;ctx.stroke();
+      ctx.restore();
+    }
+  }
+
+  class Butterfly{
+    constructor(){this.reset();}
+    reset(){
+      this.x=Math.random()*W;
+      this.y=Math.random()*H;
+      this.tx=Math.random()*W;
+      this.ty=Math.random()*H*.85+H*.08;
+      this.sp=Math.random()*0.5+0.2;
+      this.s=Math.random()*12+7;
+      this.flap=Math.random()*4+3;
+      this.op=Math.random()*0.28+0.1;
+      this.angle=0;this.idleEnd=0;this.idle=false;
+    }
+    update(t){
+      const dx=this.tx-this.x,dy=this.ty-this.y,d=Math.sqrt(dx*dx+dy*dy);
+      if(d<8){
+        if(!this.idle){this.idle=true;this.idleEnd=t+1.5+Math.random()*2;}
+        if(t>this.idleEnd){this.idle=false;this.tx=Math.random()*W;this.ty=Math.random()*H*.85+H*.08;}
+      }
+      if(!this.idle){
+        this.angle=Math.atan2(dy,dx);
+        this.x+=(dx/d)*this.sp;this.y+=(dy/d)*this.sp;
+      }else{
+        this.x+=Math.sin(t*1.0+this.flap)*0.22;
+        this.y+=Math.cos(t*.75+this.flap)*0.18;
+      }
+    }
+    draw(t){
+      ctx.save();
+      ctx.translate(this.x,this.y);
+      ctx.rotate(this.angle+Math.PI/2);
+      ctx.globalAlpha=this.op;
+      const s=this.s,sc=Math.abs(Math.sin(t*this.flap));
+      ctx.save();ctx.scale(sc,1);
+      // üst kanatlar
+      ctx.beginPath();ctx.moveTo(0,0);
+      ctx.bezierCurveTo(-s*1.4,-s*.4,-s*1.9,-s*1.4,-s*.5,-s*1.7);
+      ctx.bezierCurveTo(s*.1,-s*1.3,s*.08,-s*.5,0,0);
+      ctx.fillStyle='rgba(255,200,60,0.8)';ctx.fill();
+      ctx.beginPath();ctx.moveTo(0,0);
+      ctx.bezierCurveTo(s*1.4,-s*.4,s*1.9,-s*1.4,s*.5,-s*1.7);
+      ctx.bezierCurveTo(-s*.1,-s*1.3,-s*.08,-s*.5,0,0);
+      ctx.fillStyle='rgba(255,200,60,0.8)';ctx.fill();
+      // alt kanatlar
+      ctx.beginPath();ctx.moveTo(0,s*.1);
+      ctx.bezierCurveTo(-s*1.1,s*.4,-s*1.4,s*1.1,-s*.3,s*1.4);
+      ctx.bezierCurveTo(s*.08,s*.9,s*.05,s*.25,0,s*.1);
+      ctx.fillStyle='rgba(215,165,45,0.65)';ctx.fill();
+      ctx.beginPath();ctx.moveTo(0,s*.1);
+      ctx.bezierCurveTo(s*1.1,s*.4,s*1.4,s*1.1,s*.3,s*1.4);
+      ctx.bezierCurveTo(-s*.08,s*.9,-s*.05,s*.25,0,s*.1);
+      ctx.fillStyle='rgba(215,165,45,0.65)';ctx.fill();
+      ctx.restore();
+      // gövde
+      ctx.beginPath();ctx.ellipse(0,s*.35,s*.08,s*.55,0,0,Math.PI*2);
+      ctx.fillStyle='rgba(140,100,20,0.9)';ctx.fill();
+      ctx.restore();
+    }
+  }
+
+  const bubbles=Array.from({length:16},()=>new Bubble());
+  const butterflies=Array.from({length:5},()=>new Butterfly());
+  let t=0;
+  function loop(){
+    requestAnimationFrame(loop);t+=0.016;
+    ctx.clearRect(0,0,W,H);
+    bubbles.forEach(b=>{b.update(t);b.draw();});
+    butterflies.forEach(b=>{b.update(t);b.draw(t);});
+  }
+  loop();
+})();
+
+// ── SCROLL REVEAL ─────────────────────────────────────────────────────────────
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const siblings=Array.from(e.target.parentElement.querySelectorAll('.reveal'));
+    const idx=siblings.indexOf(e.target);
+    setTimeout(()=>e.target.classList.add('show'),idx*70);
+    io.unobserve(e.target);
+  });
+},{threshold:0.1,rootMargin:'0px 0px -20px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// ── NAV scroll ────────────────────────────────────────────────────────────────
+window.addEventListener('scroll',()=>{
+  document.querySelector('nav').style.background=
+    window.scrollY>30?'rgba(6,12,24,0.98)':'rgba(6,12,24,0.92)';
+},{passive:true});
+</script>
+</body>
+</html>

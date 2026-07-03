@@ -3,8 +3,10 @@ import * as Updates from 'expo-updates';
 
 import type { AppLanguage } from './config';
 
+const RTL_LANGUAGES: AppLanguage[] = ['ar', 'ur', 'fa'];
+
 export function isLanguageRtl(lang: AppLanguage): boolean {
-  return lang === 'ar';
+  return RTL_LANGUAGES.includes(lang);
 }
 
 function setWebDocumentDir(rtl: boolean) {

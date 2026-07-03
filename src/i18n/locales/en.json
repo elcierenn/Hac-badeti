@@ -1,12 +1,18 @@
 {
   "common": {
     "appTitle": "Hac Ibadeti",
-    "selectLanguage": "Language"
+    "selectLanguage": "Language",
+    "close": "Close"
   },
   "languages": {
     "tr": "Türkçe",
     "en": "English",
-    "ar": "العربية"
+    "ar": "العربية",
+    "ur": "اردو",
+    "id": "Bahasa Indonesia",
+    "bn": "বাংলা",
+    "fr": "Français",
+    "fa": "فارسی"
   },
   "home": {
     "bismillah": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم",

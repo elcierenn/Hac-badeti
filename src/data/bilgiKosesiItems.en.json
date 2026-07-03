@@ -1,1 +1,752 @@
-[]
+[
+  {
+    "id": 1,
+    "baslik": "Hajj Is the Fifth Pillar of Islam",
+    "icerik": "Hajj is one of the five pillars of Islam. It is obligatory once in a lifetime for every Muslim who has the financial and physical means. The Quran states: \"Pilgrimage to the House is a duty owed to Allah by mankind, for whoever is able to find a way.\" (Al-Imran, 97)"
+  },
+  {
+    "id": 2,
+    "baslik": "The Accepted (Mabrur) Hajj",
+    "icerik": "The Prophet (pbuh) said: \"Whoever performs Hajj for the sake of Allah and does not utter obscene speech or commit sin, will return as pure as the day his mother bore him.\" A Mabrur Hajj is one free of sin and accepted by Allah. Its only reward is Paradise. (Bukhari, Muslim)"
+  },
+  {
+    "id": 3,
+    "baslik": "Those Who Perform Hajj and Umrah Are Allah's Guests",
+    "icerik": "The Prophet (pbuh) said: \"Those who perform Hajj and Umrah are Allah's guests. If they ask Him for something, He answers them; if they ask for forgiveness, He forgives them.\" This glad tiding shows how precious the journey of Hajj is."
+  },
+  {
+    "id": 4,
+    "baslik": "Hasten to Perform Hajj",
+    "icerik": "The Prophet (pbuh) said: \"Hasten to perform Hajj, for none of you knows what may befall him.\" Hajj is an act of worship that must be performed in the first year it becomes obligatory; delaying it is not appropriate. (Abu Dawud, Ibn Majah)"
+  },
+  {
+    "id": 5,
+    "baslik": "Hajj Is the Symbol of Equality",
+    "icerik": "In Hajj, everyone wears the same white ihram; rich and poor, ruler and servant gather in the same attire, in the same place, for the same purpose. This strengthens the awareness that all people are equal before Allah and humbles pride. Hajj is the greatest gathering of brotherhood in the world."
+  },
+  {
+    "id": 6,
+    "baslik": "The Construction of the Kaaba",
+    "icerik": "The Kaaba is the first house built on earth for worship. It was rebuilt by Prophet Ibrahim and his son Prophet Ismail by Allah's command. The Quran states: \"Indeed, the first House established for mankind was that at Makkah.\" (Al-Imran, 96)"
+  },
+  {
+    "id": 7,
+    "baslik": "The Black Stone (Hajar al-Aswad)",
+    "icerik": "The Black Stone is a sacred stone set into the eastern corner of the Kaaba. The Prophet (pbuh) said: \"The Black Stone came down from Paradise whiter than milk, but the sins of the children of Adam turned it black.\" Tawaf begins by greeting the Black Stone. (Tirmidhi)"
+  },
+  {
+    "id": 8,
+    "baslik": "The History of Zamzam Water",
+    "icerik": "Zamzam water sprang forth by Allah's grace while Hajar was searching for water for her son Ismail. This sacred water, still flowing after thousands of years, has served millions of people. The Prophet (pbuh) said: \"Zamzam water is for whatever purpose it is drunk.\" (Ibn Majah)"
+  },
+  {
+    "id": 9,
+    "baslik": "The Station of Ibrahim (Maqam Ibrahim)",
+    "icerik": "The Station of Ibrahim is the stone Prophet Ibrahim stood upon while building the Kaaba. His footprints remain on it. The Quran commands: \"Take from the Station of Ibrahim a place of prayer.\" The prayer of Tawaf is performed behind this stone. (Al-Baqarah, 125)"
+  },
+  {
+    "id": 10,
+    "baslik": "Arafat — The Heart of Hajj",
+    "icerik": "The Prophet (pbuh) said: \"Hajj is Arafat.\" The standing at Arafat is the most essential pillar of Hajj; whoever misses it is considered not to have performed Hajj. Every year on the Day of Arafah, millions of Muslims implore Allah on this plain, weep, and are cleansed of their sins. (Tirmidhi)"
+  },
+  {
+    "id": 11,
+    "baslik": "Jabal al-Rahmah — The Mount of Mercy",
+    "icerik": "Jabal al-Rahmah, rising in the middle of the plain of Arafat, is said by tradition to be the place where Adam and Eve reunited after descending to earth. The Prophet (pbuh) stood near this mount during his Farewell Hajj. Standing here during the Arafat wuquf is considered virtuous."
+  },
+  {
+    "id": 12,
+    "baslik": "Mina — The City of Tents",
+    "icerik": "Mina is a sacred valley between Makkah and Arafat where millions of pilgrims pitch tents during the days of Hajj. Pilgrims spend a total of three to four nights here, and the stoning of the devil is performed here. The Jamarat Bridge is the famous structure housing the three jamarat."
+  },
+  {
+    "id": 13,
+    "baslik": "Muzdalifah — Open-Air Worship",
+    "icerik": "Muzdalifah is a sacred site between Arafat and Mina. Pilgrims spend the night of Arafah here in the open air, engaged in worship. The Quran commands: \"Remember Allah at al-Mash'ar al-Haram.\" Stones for the stoning ritual are gathered here. (Al-Baqarah, 198)"
+  },
+  {
+    "id": 14,
+    "baslik": "Safa and Marwah",
+    "icerik": "Safa and Marwah are two hills located within al-Masjid al-Haram. The ritual of Sa'i commemorates Hajar running between these two hills in search of water for her son Ismail. The Quran states: \"Indeed, Safa and Marwah are among the symbols of Allah.\" (Al-Baqarah, 158)"
+  },
+  {
+    "id": 15,
+    "baslik": "Al-Masjid an-Nabawi",
+    "icerik": "Al-Masjid an-Nabawi is the mosque the Prophet himself built after his migration to Madinah. The Prophet said: \"A prayer in this mosque of mine is better than a thousand prayers in any other mosque, except al-Masjid al-Haram.\" (Bukhari, Muslim)"
+  },
+  {
+    "id": 16,
+    "baslik": "Rawdah al-Mutahharah",
+    "icerik": "The Rawdah is the sacred, green-carpeted area in al-Masjid an-Nabawi between the Prophet's pulpit and his grave. The Prophet said: \"Between my house and my pulpit is a garden from the gardens of Paradise.\" Praying in this area carries great virtue. (Bukhari)"
+  },
+  {
+    "id": 17,
+    "baslik": "The Farewell Hajj",
+    "icerik": "The Prophet (pbuh) performed Hajj only once in his life. This Hajj, which took place in the 10th year after the Hijrah, has gone down in history as the \"Farewell Hajj.\" About three months before his death, he delivered the Farewell Sermon to nearly 100,000 companions during this Hajj."
+  },
+  {
+    "id": 18,
+    "baslik": "The Importance of the Farewell Sermon",
+    "icerik": "In the Farewell Sermon, the Prophet said: \"O people! Your blood, your property and your honor are sacred to one another.\" This sermon is regarded as one of the most important documents in the history of human rights, delivering a message of equality and justice to all mankind."
+  },
+  {
+    "id": 19,
+    "baslik": "Take Your Hajj Rites From Me",
+    "icerik": "During the Farewell Hajj, the Prophet (pbuh) said: \"Take your rites of Hajj from me, for perhaps I will not perform Hajj after this year.\" This statement is an expression of his personally demonstrating how Hajj is to be performed. Hajj must be performed in accordance with the Prophetic Sunnah."
+  },
+  {
+    "id": 20,
+    "baslik": "The Virtue of the Talbiyah",
+    "icerik": "The Prophet (pbuh) said: \"No Muslim recites the Talbiyah without every stone, tree and clod of earth on his right and left reciting it with him, until the earth's end.\" The Talbiyah is the most beautiful expression of the pilgrim's submission to Allah. (Tirmidhi)"
+  },
+  {
+    "id": 21,
+    "baslik": "The Virtue of the Day of Arafah",
+    "icerik": "The Prophet (pbuh) said: \"There is no day on which Allah frees more people from the Fire than the Day of Arafah.\" Prayers made on this day are not rejected, and sins are forgiven. Fasting on the Day of Arafah expiates the sins of the past and coming year. (Muslim)"
+  },
+  {
+    "id": 22,
+    "baslik": "Greeting the Kaaba",
+    "icerik": "Whenever the Prophet (pbuh) entered Makkah and saw the Kaaba, he would say the takbir, invoke blessings, and pray. It is narrated that a supplication made upon first sight of the Kaaba is accepted. Hence, when pilgrims first enter al-Masjid al-Haram, they fix their eyes on the Kaaba and pray sincerely."
+  },
+  {
+    "id": 23,
+    "baslik": "Hajj Is Like Jihad",
+    "icerik": "Aisha (may Allah be pleased with her) asked, \"O Messenger of Allah, we regard jihad as the most virtuous deed — shall we not join it?\" The Prophet replied, \"The best jihad for you is an accepted Hajj.\" This hadith shows how great an act of worship Hajj is for women. (Bukhari)"
+  },
+  {
+    "id": 24,
+    "baslik": "Zamzam Is Full of Blessing",
+    "icerik": "The Prophet (pbuh) said: \"The best water on the face of the earth is Zamzam water; it is a nourishing food and a cure for illness.\" He also said, \"Zamzam water is for whatever purpose it is drunk,\" explaining the blessing of this water. Zamzam will continue to flow until the Day of Judgment. (Ibn Majah)"
+  },
+  {
+    "id": 25,
+    "baslik": "Prophet Ibrahim and the Construction of the Kaaba",
+    "icerik": "Allah commanded Prophet Ibrahim to build the Kaaba. Ibrahim, together with his son Ismail, raised the foundations of the Kaaba. While building it, he prayed: \"Our Lord, accept this from us. Indeed You are the Hearing, the Knowing.\" This prayer is recorded verbatim in the Quran. (Al-Baqarah, 127)"
+  },
+  {
+    "id": 26,
+    "baslik": "Ibrahim's Call to Mankind to Perform Hajj",
+    "icerik": "After the construction of the Kaaba, Allah commanded Ibrahim: \"Call mankind to Hajj.\" Ibrahim asked, \"O my Lord, how will my voice reach them?\" Allah replied, \"You call, and conveying it is upon Me.\" Since that day, people have visited the Kaaba every year. (Al-Hajj, 27)"
+  },
+  {
+    "id": 27,
+    "baslik": "Hajar and the Emergence of Zamzam",
+    "icerik": "By Allah's command, Ibrahim left his wife Hajar and infant son Ismail in the valley of Makkah. When the water ran out, Hajar ran seven times between Safa and Marwah searching for water for her son. By Allah's grace, the water of Zamzam gushed forth beneath Ismail's feet. The rite of Sa'i commemorates this event."
+  },
+  {
+    "id": 28,
+    "baslik": "The Origin of the Sacrifice",
+    "icerik": "Ibrahim saw in a dream that he was sacrificing his son Ismail. In the morning he prepared to carry out this command. Ismail said to his father, \"Do as you are commanded; you will find me, if Allah wills, among the steadfast.\" Allah accepted this great act of submission and sent a ram in Ismail's place. (As-Saffat, 102-107)"
+  },
+  {
+    "id": 29,
+    "baslik": "The Origin of Stoning the Devil",
+    "icerik": "As Ibrahim went to sacrifice his son, Satan blocked his path three times, trying to dissuade him from this act of worship. Each time, Ibrahim threw stones at Satan. The rite of stoning the devil commemorates this event; pilgrims symbolically reject Satan and the evils he represents."
+  },
+  {
+    "id": 30,
+    "baslik": "The Meaning of Ihram",
+    "icerik": "Ihram symbolizes that the pilgrim has left behind all worldly rank and privilege. The white ihram garment represents both equality and the burial shroud. One who enters ihram is, as it were, reborn — cleansed of sins and stepping into pure, sincere servanthood."
+  },
+  {
+    "id": 31,
+    "baslik": "What Is the Miqat?",
+    "icerik": "The miqat are the boundary points beyond which pilgrims may not pass without being in ihram. Most pilgrims from Turkey enter ihram at the Dhu'l-Hulayfah miqat near Madinah. Anyone who crosses these boundaries toward Makkah without ihram must offer a penalty sacrifice. Separate miqat points are designated for pilgrims arriving from every direction."
+  },
+  {
+    "id": 32,
+    "baslik": "The Wisdom Behind the Ihram Prohibitions",
+    "icerik": "While in ihram, things such as fragrance, shaving, cutting nails and hunting are forbidden. These prohibitions distance a person from worldly pleasures, enabling complete devotion to Allah. In this process, one strengthens patience, willpower and submission to Allah. Ihram is a profound process of inner discipline and purification."
+  },
+  {
+    "id": 33,
+    "baslik": "The Meaning of Tawaf",
+    "icerik": "Tawaf is circling the Kaaba seven times counter-clockwise. Each circuit is called a shawt; seven shawts make one Tawaf. Tawaf symbolizes the servant revolving around Allah, turning to Him alone. The Prophet said: \"Circling the Kaaba is like performing prayer.\" (Tirmidhi)"
+  },
+  {
+    "id": 34,
+    "baslik": "The Yemeni Corner (Rukn al-Yamani)",
+    "icerik": "The Yemeni Corner is the southwestern of the Kaaba's four corners. During Tawaf, this corner is touched by hand but not kissed. Between the Black Stone and the Yemeni Corner, it is Sunnah to recite: \"Our Lord, give us good in this world and good in the Hereafter...\" This corner held special importance for the Prophet during Tawaf."
+  },
+  {
+    "id": 35,
+    "baslik": "Al-Multazam",
+    "icerik": "Al-Multazam is the sacred area of about two meters between the door of the Kaaba and the Black Stone. This area is called Multazam, meaning \"the place one clings to.\" The Prophet would press his face, chest and hands against this area while supplicating. Pilgrims pray and weep sincerely in this sacred spot."
+  },
+  {
+    "id": 36,
+    "baslik": "The Day of Arafah Is the Greatest Day of Forgiveness",
+    "icerik": "The Prophet (pbuh) said of the Day of Arafah: \"There is no day on which Satan is seen more humiliated, more despised, and more furious than on the Day of Arafah,\" because on that day Allah's mercy and forgiveness reach their peak. (Muwatta)"
+  },
+  {
+    "id": 37,
+    "baslik": "The Time of the Standing (Wuquf)",
+    "icerik": "The time for the standing at Arafat extends from the sun's decline on the Day of Arafah until true dawn on the first day of Eid al-Adha. Anyone present at Arafat for even a moment during this period has fulfilled the standing. Being asleep or unconscious does not affect the validity of the standing."
+  },
+  {
+    "id": 38,
+    "baslik": "The Wisdom of Sa'i",
+    "icerik": "Sa'i commemorates Hajar running seven times between Safa and Marwah in search of water for her son. This act of worship symbolizes trust in Allah, patience, and striving. As the believer performs Sa'i, he feels, like Hajar, that he is running toward Allah's mercy."
+  },
+  {
+    "id": 39,
+    "baslik": "What Is Harwalah?",
+    "icerik": "Harwalah is the brisk walk with shoulders swaying that men perform in the green-lit zone during Sa'i. This tradition commemorates Hajar running to find water for her child, and also how the early Muslims appeared strong before their enemies. Women walk at a normal pace through the green lights."
+  },
+  {
+    "id": 40,
+    "baslik": "What Are the Jamarat?",
+    "icerik": "Jamarat is the name given to the pillars for stoning the devil in Mina. There are three jamarat: the Small Jamrah, the Middle Jamrah, and the Large Jamrah. On the first day of Eid, only the Large Jamrah is stoned; on subsequent days, seven stones are thrown at each of the three. \"Bismillahi Allahu Akbar\" is said with each stone thrown."
+  },
+  {
+    "id": 41,
+    "baslik": "Characteristics of the Stones",
+    "icerik": "The stones used for stoning the devil should be clean, small pebbles about the size of a chickpea. It is Sunnah to gather them from Muzdalifah, though they may be collected elsewhere too. It is not proper to reuse stones that have already been thrown. Each stone is thrown one at a time while saying the takbir."
+  },
+  {
+    "id": 42,
+    "baslik": "The Importance of the Sacrifice",
+    "icerik": "The Prophet (pbuh) said: \"No deed of the son of Adam on the Day of Sacrifice is dearer to Allah than shedding blood; the sacrificed animal will come on the Day of Judgment with its horns, hair and hooves.\" Sacrifice is obligatory (wajib) for those performing Tamattu' or Qiran Hajj. (Tirmidhi)"
+  },
+  {
+    "id": 43,
+    "baslik": "What Is Tahallul?",
+    "icerik": "Tahallul means exiting the state of ihram. After stoning the devil and sacrificing, the pilgrim shaves or trims the hair; at this point the first tahallul occurs and most of the ihram prohibitions are lifted. The second tahallul occurs after the Tawaf al-Ifadah, after which all ihram prohibitions end."
+  },
+  {
+    "id": 44,
+    "baslik": "Preparation Before Hajj",
+    "icerik": "Before going on Hajj, it is very important to learn religious knowledge, pay off debts, seek reconciliation, and carry a sincere intention. The Prophet said: \"One who sets out for Hajj should entrust his home and family to Allah.\" Alongside material preparation, spiritual preparation must not be neglected."
+  },
+  {
+    "id": 45,
+    "baslik": "What to Do Before Putting On Ihram",
+    "icerik": "Before entering ihram, it is recommended to trim the nails, clean the armpits and pubic area, perform the ritual bath (ghusl), and, if possible, apply pleasant fragrance. This is because these actions become forbidden once in ihram. Men wear two seamless white garments; women enter ihram in ordinary modest clothing."
+  },
+  {
+    "id": 46,
+    "baslik": "Points to Note in the Crowds",
+    "icerik": "Hajj is the largest gathering of people in the world. During Tawaf, Sa'i and stoning the devil, millions of people occupy the same space. It is therefore vital not to harm others, to remain calm, and not to rush. The Prophet said: \"There is no obscenity, wickedness or quarrelling in Hajj.\""
+  },
+  {
+    "id": 47,
+    "baslik": "Hajj for Women",
+    "icerik": "One of the conditions for Hajj becoming obligatory upon women is being accompanied by a husband or mahram. According to the Hanafi school, this condition is mandatory. During Tawaf, women prefer less crowded areas, do not perform Ramal or Harwalah, and do not raise their voices. Women who are menstruating may perform all Hajj duties except Tawaf."
+  },
+  {
+    "id": 48,
+    "baslik": "The Difference Between Types of Hajj",
+    "icerik": "The vast majority of pilgrims from Turkey perform Tamattu' Hajj. In Tamattu', Umrah is performed first, ihram is exited, then ihram is re-entered during the Hajj days. In Ifrad Hajj, Hajj is performed directly without Umrah. In Qiran Hajj, both Umrah and Hajj are performed together within the same ihram."
+  },
+  {
+    "id": 49,
+    "baslik": "Nafr al-Awwal and Nafr al-Thani",
+    "icerik": "Pilgrims may leave Mina before sunset after completing the stoning on the 12th of Dhul-Hijjah; this is called Nafr al-Awwal. Those who remain in Mina until sunset perform the stoning again on the 13th before leaving; this is called Nafr al-Thani. The Prophet departed with Nafr al-Thani, making it more virtuous."
+  },
+  {
+    "id": 50,
+    "baslik": "Life After Hajj",
+    "icerik": "The Prophet (pbuh) said: \"The only reward for an accepted Hajj is Paradise.\" Hajj should be a turning point in a person's life. Upon returning from Hajj, it is of great importance to stay away from sin, pay closer attention to worship, and preserve the spiritual gains acquired."
+  },
+  {
+    "id": 51,
+    "baslik": "The Importance of Makkah",
+    "icerik": "Makkah is the holiest city in Islam and lies within the Haram area. The Quran refers to it as \"Umm al-Qura,\" the mother of cities. A prayer performed in Makkah is more virtuous than 100,000 prayers performed in other mosques. Entry into this city is forbidden to non-Muslims. (Al-Imran, 96)"
+  },
+  {
+    "id": 52,
+    "baslik": "The Rebuilding of the Kaaba",
+    "icerik": "The Kaaba has been destroyed and rebuilt many times throughout history. Built by Ibrahim and Ismail, the Kaaba was also rebuilt during the Prophet's youth. The dispute over placing the Black Stone was wisely resolved by the Prophet."
+  },
+  {
+    "id": 53,
+    "baslik": "The Expansion of al-Masjid al-Haram",
+    "icerik": "Al-Masjid al-Haram has been expanded many times since the early period of Islamic history. Today it covers approximately 356,000 square meters. During Hajj season it can host over 2 million people at once. This structure is the largest and most visited mosque in the world."
+  },
+  {
+    "id": 54,
+    "baslik": "What Is the Hatim?",
+    "icerik": "The Hatim is the area enclosed by the low, semicircular wall on the northern side of the Kaaba. This area is considered part of the Kaaba. During Tawaf, one must walk around the outside of the Hatim; passing through it invalidates the Tawaf. Praying inside it is like praying inside the Kaaba."
+  },
+  {
+    "id": 55,
+    "baslik": "The Importance of Madinah",
+    "icerik": "Madinah is the sacred city of the Prophet's migration and the location of his grave. The Prophet said: \"Madinah is sacred; the area between Ayr and Thawr is sacred and inviolable.\" A prayer performed in al-Masjid an-Nabawi is more virtuous than a thousand prayers performed in mosques other than al-Masjid al-Haram. (Bukhari)"
+  },
+  {
+    "id": 56,
+    "baslik": "Visiting the Prophet's Grave",
+    "icerik": "The Prophet (pbuh) said: \"My intercession becomes assured for whoever visits my grave.\" Pilgrims who come to Madinah visit the Prophet's grave and offer their greetings. This visit is not obligatory for Hajj, but it is a beautiful Sunnah that earns great reward and expresses love for the Prophet."
+  },
+  {
+    "id": 57,
+    "baslik": "Masjid Quba",
+    "icerik": "Masjid Quba is the first mosque built in Islamic history. The Prophet prayed here while migrating to Madinah. The Prophet said: \"A prayer performed in Masjid Quba equals the reward of an Umrah.\" Visiting Masjid Quba during a trip to Madinah is an important Sunnah. (Ibn Majah)"
+  },
+  {
+    "id": 58,
+    "baslik": "The Baqi Cemetery",
+    "icerik": "Jannat al-Baqi is the historic Islamic cemetery beside al-Masjid an-Nabawi. The Prophet's wives, his daughter Fatimah, and many companions are buried here. The Prophet would visit this cemetery and say, \"Peace be upon you, O dwellers of the abode of believers.\" Visiting here is recommended during a trip to Madinah."
+  },
+  {
+    "id": 59,
+    "baslik": "How Many People Perform Hajj Each Year?",
+    "icerik": "Hajj is the largest annual gathering of people in the world. In normal years, around 2-3 million Muslims come to Makkah to perform Hajj. Each year, approximately 80,000-90,000 people travel from Turkey for Hajj through the organization of the Presidency of Religious Affairs."
+  },
+  {
+    "id": 60,
+    "baslik": "Inside the Kaaba",
+    "icerik": "The interior of the Kaaba is an empty room that is cleaned twice a year. Inside are three pillars, a table, and lamps. Entering the Kaaba is a great honor not granted to everyone. The Prophet entered the Kaaba and prayed inside it. There is no qiblah direction inside; prayer may be performed facing any direction."
+  },
+  {
+    "id": 61,
+    "baslik": "The Kiswah — The Covering of the Kaaba",
+    "icerik": "The Kaaba is covered each year with a renewed black silk cloth called the Kiswah. Quranic verses are embroidered onto it with gold thread. Every year on the 9th of Dhul-Hijjah, the Day of Arafah, the old kiswah is removed and the new one put in place. About 800 kg of gold and silver thread is used each year in producing the kiswah."
+  },
+  {
+    "id": 62,
+    "baslik": "The Depth of the Zamzam Well",
+    "icerik": "The Zamzam well is about 30 meters deep. Despite millions of liters being drawn from it every year, the well never runs dry. Scientific studies show that Zamzam water's mineral composition differs from ordinary drinking water and is rich in various minerals. This water has flowed from the same source for thousands of years."
+  },
+  {
+    "id": 63,
+    "baslik": "The Direction of Tawaf",
+    "icerik": "Tawaf is performed counter-clockwise around the Kaaba. Scientists have noted that this matches the direction in which electrons orbit an atomic nucleus. The earth also revolves around the sun in the same direction. This points to human worship being in universal harmony."
+  },
+  {
+    "id": 64,
+    "baslik": "The Distance Between Safa and Marwah",
+    "icerik": "The distance between Safa and Marwah is approximately 450 meters. During Sa'i, this distance is covered seven times, totaling about 3.15 km of walking. Today this route has become an enclosed, air-conditioned corridor within al-Masjid al-Haram. This act of worship, once performed outdoors, is now carried out in far more comfortable conditions."
+  },
+  {
+    "id": 65,
+    "baslik": "The Tents of Mina",
+    "icerik": "The tents in Mina are made of special fire-resistant materials. This vast camp of roughly 100,000 tents is the largest temporary settlement in the world. Each pilgrim group stays in a designated area. This tent city remains completely empty for the rest of the year, used only during Hajj season."
+  },
+  {
+    "id": 66,
+    "baslik": "The Most Virtuous Supplication on the Day of Arafah",
+    "icerik": "The Prophet (pbuh) said: \"The best of supplications is the supplication on the Day of Arafah. And the best of what I and the prophets before me have said is: 'La ilaha illallahu wahdahu la sharika lah, lahul mulku wa lahul hamdu wa huwa ala kulli shay'in qadir.'\" (Tirmidhi)"
+  },
+  {
+    "id": 67,
+    "baslik": "The Farewell Supplication",
+    "icerik": "When departing from Makkah, it is Sunnah to recite: \"Allahumma la taj'al haza akhiral ahdi min baytikal haram,\" meaning \"O Allah, do not let this be the last of my visits to Your Sacred House.\" The Prophet made this supplication when leaving Makkah. Pilgrims recite this prayer asking Allah to grant them another Hajj."
+  },
+  {
+    "id": 68,
+    "baslik": "The Importance of the Talbiyah",
+    "icerik": "The Talbiyah is the symbol of ihram and begins with \"Labbayk Allahumma Labbayk.\" It means \"I am here, O Allah, I am here.\" From the moment ihram is entered until arrival in Makkah, the Talbiyah is recited at every opportunity. Men recite it aloud, while women recite it only loudly enough for themselves to hear."
+  },
+  {
+    "id": 69,
+    "baslik": "The Spiritual Dimension of Hajj",
+    "icerik": "Hajj is not merely a physical journey; it is a journey of self-discipline, purification from sin, and drawing closer to Allah. The whiteness of ihram represents purity, the Talbiyah represents submission, Tawaf represents revolving around Allah, Sa'i represents striving, and the standing represents sincere supplication. Hajj carries within it the essence of all Islamic worship."
+  },
+  {
+    "id": 70,
+    "baslik": "The Brotherhood of Hajj",
+    "icerik": "Hajj is a unique gathering of brotherhood that brings together Muslims from every corner of the world. People of different languages, colors and cultures gather in the same attire, in the same place, for the same Allah. This great gathering strengthens the sense of ummah and is a tangible expression of Islamic brotherhood."
+  },
+  {
+    "id": 71,
+    "baslik": "Patience in Hajj",
+    "icerik": "Hajj is a demanding act of worship that requires patience. Crowds, heat, long walks and fatigue test the pilgrim's patience. The Prophet said: \"Whoever performs Hajj without obscene speech or sin will return as the day his mother bore him.\" The patience shown during Hajj earns great reward. (Bukhari)"
+  },
+  {
+    "id": 72,
+    "baslik": "A Rehearsal for the Day of Judgment",
+    "icerik": "Many Islamic scholars interpret Hajj as a rehearsal for the Day of Judgment. The ihram, resembling a burial shroud, recalls equality on the day of reckoning; the gathering of millions recalls the gathering on Judgment Day; and supplicating at Arafat recalls pleading to Allah on that day. The pilgrim deeply senses death and the Hereafter through this worship."
+  },
+  {
+    "id": 73,
+    "baslik": "Intention in Hajj",
+    "icerik": "Sincerity of intention holds great importance in Hajj. The Prophet said: \"Deeds are judged by intentions.\" Hajj must be performed not for show or worldly aims, but solely to earn Allah's pleasure. The pilgrim who responds \"Labbayk!\" to Allah's invitation earns the honor of being His guest. (Bukhari)"
+  },
+  {
+    "id": 74,
+    "baslik": "What Does an Accepted (Mabrur) Hajj Mean?",
+    "icerik": "A Mabrur Hajj is one free of sin, performed completely, and accepted by Allah. The Prophet said: \"The only reward for an accepted Hajj is Paradise.\" A positive change in a person's attitude and behavior upon returning from Hajj is one indication that the Hajj has been accepted. (Bukhari, Muslim)"
+  },
+  {
+    "id": 75,
+    "baslik": "What Is the Hady Sacrifice?",
+    "icerik": "The Hady is the obligatory (wajib) sacrifice that those performing Tamattu' or Qiran Hajj must offer. This sacrifice is a token of gratitude and the completion of worship. It is offered on the first, second, or third day of Eid. A pilgrim unable to slaughter it himself may have a proxy do so, or pay its cost to authorized institutions."
+  },
+  {
+    "id": 76,
+    "baslik": "What Is the Dam Sacrifice?",
+    "icerik": "The Dam sacrifice is the penalty sacrifice required when one of the Hajj duties is neglected or one of the prohibitions is violated. For example, leaving Makkah without performing the Farewell Tawaf, or violating one of the ihram prohibitions, requires a Dam sacrifice. This sacrifice must be slaughtered in Makkah."
+  },
+  {
+    "id": 77,
+    "baslik": "What Is Proxy Hajj (Badal Hajj)?",
+    "icerik": "A person who has the means to perform Hajj but is unable to due to illness or old age may send someone else in his place; this is called Badal Hajj (proxy Hajj). A proxy Hajj may also be performed on behalf of a deceased person. The person performing the proxy Hajj must have already performed their own obligatory Hajj."
+  },
+  {
+    "id": 78,
+    "baslik": "What Is Istilam?",
+    "icerik": "Istilam is the act of greeting the Black Stone or the Yemeni Corner. If possible, the Black Stone is kissed; if this is not possible due to crowds, it is greeted from a distance by raising the hands and saying \"Bismillahi Allahu Akbar.\" The Black Stone is greeted at the start of each Tawaf shawt. The Yemeni Corner is greeted by touching, not kissing."
+  },
+  {
+    "id": 79,
+    "baslik": "What Is Qasr?",
+    "icerik": "Qasr is the shortening of four-rak'ah prayers to two rak'ahs. Under the rulings for travelers, pilgrims shorten their prayers throughout Hajj. In Mina and other sacred sites, the noon, afternoon and night prayers are performed as two rak'ahs. The sunset prayer, being three rak'ahs, is not shortened."
+  },
+  {
+    "id": 80,
+    "baslik": "What Is Jam' (Combining Prayers)?",
+    "icerik": "Jam' means combining two prayers into one. At Arafat, the noon and afternoon prayers are combined and performed at noon time; this is called Jam' Taqdim. At Muzdalifah, the sunset and night prayers are combined and performed at night time; this is called Jam' Ta'khir. This practice is based on the Prophet's Sunnah and applies only on these special days."
+  },
+  {
+    "id": 81,
+    "baslik": "Hajj Encompasses All Acts of Worship",
+    "icerik": "Islamic scholars say that Hajj is a comprehensive act of worship encompassing prayer, fasting, charity and jihad. In ihram, the pilgrim prays, abstains from worldly pleasures, and spends both wealth and physical effort in Allah's cause. For this reason, Hajj is a complete training in servanthood that embodies the essence of Islam."
+  },
+  {
+    "id": 82,
+    "baslik": "When Was Hajj Made Obligatory?",
+    "icerik": "The obligation of Hajj was revealed in the 9th year after the Hijrah. That year, a caravan was sent for Hajj under the leadership of Abu Bakr, and the following year the Prophet himself performed the Farewell Hajj. The primary proof for the obligation of Hajj is verse 97 of Surah Al-Imran."
+  },
+  {
+    "id": 83,
+    "baslik": "Hajj Erases Sins",
+    "icerik": "The Prophet (pbuh) said: \"Umrah is expiation for the sins committed between it and the next Umrah, and the only reward for an accepted Hajj is Paradise.\" Hajj cleanses a person of past sins and grants a fresh start. However, this glad tiding applies to a Hajj performed with sincerity, in accordance with the rules, and while avoiding sin. (Bukhari, Muslim)"
+  },
+  {
+    "id": 84,
+    "baslik": "The Cave of Hira",
+    "icerik": "The Cave of Hira is located on Mount Nur near Makkah. Before his prophethood, the Prophet used to withdraw here in solitude for worship. The first revelation, the command \"Read!\", was sent down here through the angel Gabriel. Reaching the cave requires a difficult walk of about 45-60 minutes."
+  },
+  {
+    "id": 85,
+    "baslik": "The Cave of Thawr",
+    "icerik": "The Cave of Thawr is located on Mount Thawr, south of Makkah. While migrating to Madinah, the Prophet and Abu Bakr hid in this cave for three days. The Quran narrates this event with the phrase \"when he was the second of two.\" (At-Tawbah, 40) The cave symbolizes submission and trust in Allah."
+  },
+  {
+    "id": 86,
+    "baslik": "Jannat al-Mu'alla",
+    "icerik": "Jannat al-Mu'alla is the historic Islamic cemetery in Makkah. The Prophet's first wife Khadijah, his grandfather Abdul Muttalib, and elders of the Quraysh are buried here. When in Makkah, the Prophet would visit this cemetery and say, \"Peace be upon you, O abode of believers.\" Remembering this site is recommended during a visit to Makkah."
+  },
+  {
+    "id": 87,
+    "baslik": "Masjid al-Jinn",
+    "icerik": "Masjid al-Jinn is a mosque built in Makkah at the site where it is believed a group of jinn listened to the Prophet's recitation of the Quran and became Muslims. The Quran states: \"We have revealed to you that a group of jinn listened and said, 'Indeed, we have heard a wondrous Quran.'\" (Al-Jinn, 1) This mosque symbolizes that Islam's message is addressed to jinn as well."
+  },
+  {
+    "id": 88,
+    "baslik": "The Gates of al-Masjid al-Haram",
+    "icerik": "Al-Masjid al-Haram today has more than 95 gates. Among the most important are King Abdulaziz Gate, Bab as-Safa, and Bab al-Umrah. The Prophet would enter al-Masjid al-Haram with his right foot and say, \"O Allah, open for me the gates of Your mercy.\""
+  },
+  {
+    "id": 89,
+    "baslik": "The Prophet's Entry Into Ihram",
+    "icerik": "The Prophet entered ihram at the miqat of Dhu'l-Hulayfah during the Farewell Hajj. After performing ghusl, he put on the white ihram garments and recited the Talbiyah. He recited the Talbiyah aloud throughout the journey and commanded those with him to do the same. Every one of his actions was carefully recorded by the companions."
+  },
+  {
+    "id": 90,
+    "baslik": "The Conquest of Makkah and the Kaaba",
+    "icerik": "At the conquest of Makkah, the Prophet had the 360 idols around the Kaaba destroyed, declaring, \"Truth has come, and falsehood has vanished.\" He then entered the Kaaba, performed a two-rak'ah prayer, and went around every corner saying the takbir. This conquest symbolizes the Kaaba's rededication solely to Allah. The Prophet met this victory not with pride but with gratitude."
+  },
+  {
+    "id": 91,
+    "baslik": "The Prophet's Supplication at Arafat",
+    "icerik": "During the Farewell Hajj, the Prophet raised his hands upon his mount at Arafat and prayed for a long time. He repeated the remembrance \"La ilaha illallahu wahdahu la sharika lah...\" and worshipped until morning. The companions reported that he prayed continuously that day. This shows the Day of Arafah is the most precious moment of worship."
+  },
+  {
+    "id": 92,
+    "baslik": "The Prophet's Manner of Drinking Zamzam",
+    "icerik": "When drinking Zamzam, the Prophet would face the qiblah, drink while standing, and then offer a prayer of thanks. He said: \"Zamzam water is for whatever purpose it is drunk.\" He stated that he drank it for health, knowledge, and beneficial deeds. Drinking Zamzam to one's fill and praying over it is part of the Prophet's Sunnah."
+  },
+  {
+    "id": 93,
+    "baslik": "Ibrahim's Visits to Makkah",
+    "icerik": "According to tradition, after settling his family in Makkah, Ibrahim came to visit them many times. On each visit he met Ismail, tended to the Kaaba, and worshipped Allah. These visits reveal both a father's love for his son and both their submission to Allah."
+  },
+  {
+    "id": 94,
+    "baslik": "Ibrahim's Prayer of Gratitude",
+    "icerik": "While building the Kaaba, Ibrahim prayed: \"Our Lord, make us Muslims [in submission] to You and from our descendants a community Muslim [in submission] to You. Show us our rites and accept our repentance.\" (Al-Baqarah, 128) This prayer shows that the origin of Hajj lies in gratitude and submission."
+  },
+  {
+    "id": 95,
+    "baslik": "Ismail's Role in Building the Kaaba",
+    "icerik": "Ismail, together with his father Ibrahim, raised the foundations of the Kaaba. The Quran describes this scene: \"And [mention] when Ibrahim was raising the foundations of the House and [with him] Ismail, [saying], 'Our Lord, accept [this] from us. Indeed You are the Hearing, the Knowing.'\" (Al-Baqarah, 127) Ismail carried the stones while Ibrahim built the wall."
+  },
+  {
+    "id": 96,
+    "baslik": "Men's Ihram Attire",
+    "icerik": "Men wear ihram consisting of two seamless white pieces of cloth: the \"izar\" covering the lower body and the \"rida\" wrapped over the shoulders. The head remains uncovered, and sandals exposing the heel are worn. Wearing sewn garments, gloves, headwear and socks is forbidden. This simple attire symbolizes equality before Allah and the erasure of worldly differences."
+  },
+  {
+    "id": 97,
+    "baslik": "Things Forbidden in Ihram",
+    "icerik": "While in ihram, it is forbidden to cut nails, cut hair or beard, apply fragrance, engage in marital relations or acts leading to it, hunt, kill living creatures, or contract or officiate a marriage. Violating any of these prohibitions may require a penalty sacrifice or ransom (fidyah). The prohibitions last until ihram is exited."
+  },
+  {
+    "id": 98,
+    "baslik": "The Intention for Ihram and the Talbiyah",
+    "icerik": "To enter ihram, one performs ghusl, wears the ihram garments, prays two rak'ahs of ihram prayer, then makes the intention and recites the Talbiyah. With the Talbiyah, the person enters ihram and the prohibitions begin. \"Labbayk Allahumma Labbayk, Labbayk la sharika laka Labbayk, innal hamda wan-ni'mata laka wal mulk, la sharika lak\" is the full text of the Talbiyah."
+  },
+  {
+    "id": 99,
+    "baslik": "Ihram for Women",
+    "icerik": "There is no special ihram garment for women; they enter ihram in ordinary, modest clothing. Only the face and hands must remain uncovered; they may not wear gloves or a face veil during prayer. Women recite the Talbiyah not aloud but only loud enough for themselves to hear. They do not perform Ramal or Harwalah."
+  },
+  {
+    "id": 100,
+    "baslik": "Types of Tawaf",
+    "icerik": "Several different Tawafs are performed during Hajj: Tawaf al-Qudum upon arrival in Makkah (Sunnah), Tawaf al-Ifadah/Ziyarah which is the pillar of Hajj (obligatory/fard), Tawaf al-Wada before leaving Makkah (wajib), and the Umrah Tawaf. Tawaf al-Ifadah is a pillar of Hajj, without which Hajj is not considered complete. Each Tawaf consists of seven shawts."
+  },
+  {
+    "id": 101,
+    "baslik": "Supplications Recited During Tawaf",
+    "icerik": "There is no fixed supplication for Tawaf; any prayer, remembrance or Quranic recitation may be made. However, it is Sunnah to recite between the Yemeni Corner and the Black Stone: \"Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina 'adhaban-nar.\" At the start of Tawaf, while greeting the Black Stone, one says \"Bismillahi Allahu Akbar.\""
+  },
+  {
+    "id": 102,
+    "baslik": "What Is Ramal?",
+    "icerik": "Ramal is the brisk, swaggering walk with shoulders swaying that men perform during the first three shawts of Tawaf. This tradition was performed during the Prophet's time to demonstrate strength before enemies, and later continued as a Sunnah. Ramal is performed only during Tawaf al-Qudum; women do not perform it."
+  },
+  {
+    "id": 103,
+    "baslik": "The Prayer of Tawaf",
+    "icerik": "After each Tawaf, it is Sunnah to pray two rak'ahs behind the Station of Ibrahim. It is recommended to recite Surah Al-Kafirun in the first rak'ah and Surah Al-Ikhlas in the second. If a place cannot be found right behind the Station of Ibrahim due to crowds, it may be performed anywhere in the mosque. Drinking Zamzam after the prayer is also Sunnah."
+  },
+  {
+    "id": 104,
+    "baslik": "How to Pray at Arafat",
+    "icerik": "During the standing at Arafat, it is recommended to face the qiblah, raise the hands, and supplicate sincerely and at length. Remembrance, seeking forgiveness, invoking blessings on the Prophet, and reciting the Quran are among the best deeds of this time. On the Day of Arafah, the Prophet most frequently repeated the remembrance \"La ilaha illallahu wahdahu...\" Supplication with tears is the most precious gift of this sacred standing."
+  },
+  {
+    "id": 105,
+    "baslik": "The Sermon of the Day of Arafah",
+    "icerik": "On the Day of Arafah, before the noon prayer, a Hajj sermon is delivered at Arafat. This sermon continues the tradition of the historic sermon the Prophet gave during the Farewell Hajj. By listening to this sermon, pilgrims are reminded once again of the importance of Hajj and Islam's core message. After the sermon, the noon and afternoon prayers are performed combined as Jam' Taqdim."
+  },
+  {
+    "id": 106,
+    "baslik": "Moving From Arafat to Muzdalifah",
+    "icerik": "After sunset, pilgrims move from Arafat to Muzdalifah. The Prophet commanded that this be done calmly and with dignity, without troubling the crowd. Upon arrival at Muzdalifah, the sunset and night prayers are combined as Jam' Ta'khir. Spending the night here is obligatory (wajib); stones for the stoning ritual are gathered this night."
+  },
+  {
+    "id": 107,
+    "baslik": "Conditions of the Standing",
+    "icerik": "For the standing at Arafat to be valid, one must be within the boundaries of Arafat during the designated time. Being present at Arafat for even a moment between the noon decline on the Day of Arafah and dawn on the first day of Eid makes the standing valid. Being without ablution or being asleep does not invalidate the standing. Being outside the boundaries of Arafat invalidates it."
+  },
+  {
+    "id": 108,
+    "baslik": "The Conditions of Sa'i",
+    "icerik": "For Sa'i to be valid, it must begin at Safa, end at Marwah, and consist of seven complete shawts. Each one-way trip counts as one shawt; going from Safa to Marwah is one, returning from Marwah to Safa is two. Sa'i is performed after Tawaf, and being in a state of ablution is recommended but not required."
+  },
+  {
+    "id": 109,
+    "baslik": "Supplications Recited During Sa'i",
+    "icerik": "While ascending Safa, the verse \"Innas-Safa wal-Marwata min sha'a'irillah\" is recited. At each hill, facing the qiblah, one recites the takbir, tahlil, and supplication. The Prophet repeated three times at Safa: \"La ilaha illallahu wahdahu la sharika lah...\" Any supplication or remembrance may be recited between the shawts; no fixed text is required."
+  },
+  {
+    "id": 110,
+    "baslik": "The Sa'i Corridor",
+    "icerik": "Today, Sa'i is performed in the specially built, enclosed and air-conditioned Mas'a corridor within al-Masjid al-Haram. The corridor is about 20 meters wide and spans multiple floors. Wheelchair and golf-cart services are available for the disabled and elderly. This area, once open to the sky, has over time been incorporated into the mosque."
+  },
+  {
+    "id": 111,
+    "baslik": "Times for Stoning the Devil",
+    "icerik": "On the first day of Eid, stones are thrown only at the Large Jamrah, from sunrise to sunset. On the second and third days, it is Sunnah to stone all three jamarat in the afternoon. Stoning at night without an excuse is disliked (makruh) but permissible. After finishing the stoning, it is Sunnah to pray beside the jamarat other than the Large Jamrah."
+  },
+  {
+    "id": 112,
+    "baslik": "Points to Note While Stoning",
+    "icerik": "During the stoning of the devil, it is of great importance to stay safe from the crowd, avoid rushing, and not harm others. The stones must land in the basin; a stone falling to the side does not count. Stoning may be performed by proxy on behalf of the elderly, the sick, or the disabled. The Prophet said, \"Beware of excess in your religion,\" commanding avoidance of extremism."
+  },
+  {
+    "id": 113,
+    "baslik": "The Jamarat Bridge",
+    "icerik": "The three jamarat are arranged in sequence in the valley of Mina: the Small Jamrah closest to al-Masjid al-Haram, the Middle Jamrah in the center, and the Large Jamrah at the far end. Today, the jamarat have been integrated into the modern multi-story Jamarat Bridge. This structure allows access from every level, easing crowd management."
+  },
+  {
+    "id": 114,
+    "baslik": "The Time for Slaughtering the Sacrifice",
+    "icerik": "The time for slaughtering the Hajj sacrifice begins at true dawn on the first day of Eid and lasts until the evening of the 13th of Dhul-Hijjah, the last of the days of Tashriq. However, it is more virtuous to slaughter it on the first day of Eid after stoning and shaving. Slaughtering at night is permissible but disliked."
+  },
+  {
+    "id": 115,
+    "baslik": "Distribution of the Sacrificial Meat",
+    "icerik": "It is recommended to eat one-third of the sacrificial meat, give one-third to relatives, and give one-third to the poor and needy. It is more virtuous for pilgrims to give the greater portion of the meat to the poor. Today, sacrifices slaughtered through authorized institutions are delivered to those in need in Saudi Arabia and various parts of the world."
+  },
+  {
+    "id": 116,
+    "baslik": "Characteristics of the Sacrificial Animal",
+    "icerik": "For the Hajj sacrifice, sheep and goats must be at least one year old, cattle and buffalo at least two years old, and camels at least five years old. The animal must be healthy and free of any obvious defect. A sheep or goat may be sacrificed on behalf of one person, while a cow or camel may be shared among up to seven people."
+  },
+  {
+    "id": 117,
+    "baslik": "Health Preparation for Hajj",
+    "icerik": "It is recommended to undergo a thorough health check before going on Hajj. The meningitis vaccine is required by Saudi Arabia. Flu and pneumonia vaccines are also recommended. Those with chronic conditions such as heart disease, high blood pressure, or diabetes should bring sufficient medication and consult their doctor. Hajj requires considerable physical stamina."
+  },
+  {
+    "id": 118,
+    "baslik": "Hajj Registration and Organization",
+    "icerik": "Citizens of Turkey wishing to go on Hajj must register with the Presidency of Religious Affairs. Due to the quota system, registered applicants are sent on Hajj in turn. The waiting period may vary by region and year. Hajj organization covers flights, accommodation, guidance, and transport; pilgrims travel in groups (caravans)."
+  },
+  {
+    "id": 119,
+    "baslik": "Hajj Education",
+    "icerik": "It is very important to learn the obligatory, wajib, and Sunnah elements of Hajj before departing. The Presidency of Religious Affairs provides practical Hajj training to registered pilgrims. These trainings cover Tawaf, Sa'i, the standing, and other rites; practice is done on a model Kaaba. Going on Hajj without proper knowledge greatly increases the risk of unintentional mistakes."
+  },
+  {
+    "id": 120,
+    "baslik": "Climate and Clothing in Makkah",
+    "icerik": "During Hajj season, temperatures in Makkah can reach 40-45 degrees Celsius. Drinking plenty of water, carrying an umbrella against sunstroke, and wearing light, white-colored clothing is recommended. Outside of ihram, breathable cotton clothing should be preferred. Choosing footwear is important; comfortable, sturdy sandals should be worn given the extensive walking involved."
+  },
+  {
+    "id": 121,
+    "baslik": "What to Carry in Your Hajj Bag",
+    "icerik": "A Hajj bag should include ihram garments, medications, personal care products (unscented), light clothing, a prayer/supplication book, and a Hajj guide. Photocopies of your passport, visa, and health documents should be kept in a separate place. Carrying an easily recognizable colored bag or badge reduces the risk of getting lost."
+  },
+  {
+    "id": 122,
+    "baslik": "The Conquest of Makkah",
+    "icerik": "Makkah was conquered without bloodshed in the 8th year after the Hijrah, in the month of Ramadan, by the Muslim army of 10,000 led by the Prophet. As he entered the city, the Prophet bowed his head in a prostration of gratitude and said, \"Today is a day of mercy.\" He forgave the Quraysh polytheists; this historic pardon became a symbol of Islam's spirit of tolerance."
+  },
+  {
+    "id": 123,
+    "baslik": "The Key of the Kaaba",
+    "icerik": "The key of the Kaaba has been held by the family of the Banu Shaybah for centuries. This tradition began when the Prophet, upon conquering Makkah, returned the key to the family's head, Uthman ibn Talha. The Prophet said: \"O sons of Shaybah, take this trust; none shall deprive you of it until the Day of Judgment except a wrongdoer.\" (Muslim)"
+  },
+  {
+    "id": 124,
+    "baslik": "The Birds of Ababil and the Army of Abrahah",
+    "icerik": "In 570 CE, the Abyssinian governor Abrahah marched on Makkah with an army of elephants to destroy the Kaaba. According to the Quran, Allah sent flocks of birds (Ababil) that struck the army down like scattered, eaten straw. (Surah Al-Fil) Because this event coincided with the year of the Prophet's birth, that year came to be called \"The Year of the Elephant.\""
+  },
+  {
+    "id": 125,
+    "baslik": "The Quraysh and the Care of the Kaaba",
+    "icerik": "Before the Prophet's time, the Quraysh tribe was responsible for the upkeep and service of the Kaaba. It was a great honor to provide water and food to visitors who came during the Hajj season. Qusay, the Prophet's great-great-grandfather, united the Quraysh around this duty and organized the administration of the Kaaba. This tradition took on a new dimension with the coming of Islam."
+  },
+  {
+    "id": 126,
+    "baslik": "Mount Uhud and the Martyrs",
+    "icerik": "Mount Uhud lies north of Madinah and is the site of the Battle of Uhud, in which 70 companions, foremost among them Hamzah, were martyred. The Prophet praised this mountain, saying, \"Uhud loves us, and we love it.\" The Uhud cemetery is one of the most important sites visited in Madinah; it is recommended to greet the graves of the companions and pray."
+  },
+  {
+    "id": 127,
+    "baslik": "Masjid al-Qiblatayn",
+    "icerik": "Masjid al-Qiblatayn means \"the Mosque of the Two Qiblahs.\" While the Prophet was praying here, the command came to change the qiblah from Jerusalem to Makkah, and the direction of prayer was changed mid-prayer. This unique historical event is reflected in the mosque's name. The mosque, now renovated, welcomes visitors in Madinah today."
+  },
+  {
+    "id": 128,
+    "baslik": "The History of Madinah",
+    "icerik": "Before the Prophet's migration, Madinah was known as \"Yathrib.\" With the Hijrah, it took the name \"Madinat an-Nabi,\" meaning \"City of the Prophet.\" This city, where the first Islamic state was founded and Islamic civilization flourished, is the second holiest city in Islam after Makkah. Visiting this city, a living witness to the Age of Bliss (Asr al-Sa'adah), is a great spiritual privilege."
+  },
+  {
+    "id": 129,
+    "baslik": "The Dates of Madinah",
+    "icerik": "The Prophet (pbuh) said: \"Whoever eats seven Ajwa dates in the morning will not be harmed that day by poison or magic.\" Madinah's Ajwa dates are known as the most esteemed variety. The Prophet loved visiting the date orchards. Bringing dates back from Madinah is considered a meaningful souvenir of Hajj."
+  },
+  {
+    "id": 130,
+    "baslik": "The Scale of the Hajj Organization",
+    "icerik": "Hajj is the largest annual gathering of people held anywhere in the world. Saudi Arabia spends billions of dollars each year on Hajj infrastructure. More than 100,000 security personnel are on duty, and thousands of ambulances and medical teams stand ready. Metro, tunnel and modern bridge systems have been built for the safety of pilgrims."
+  },
+  {
+    "id": 131,
+    "baslik": "The Production of the Kiswah",
+    "icerik": "The Kaaba's covering, the Kiswah, is hand-crafted by 240 specialists at a dedicated factory in Makkah. Woven from about 670 kg of pure silk, the kiswah is embroidered with Quranic verses using 120 kg of gold and silver thread. The kiswah, whose total cost runs into tens of millions of dollars, is renewed every year. The old kiswah is cut into small pieces and given as gifts to state officials and visitors."
+  },
+  {
+    "id": 132,
+    "baslik": "The Minarets of al-Masjid al-Haram",
+    "icerik": "Al-Masjid al-Haram has nine minarets. The tallest minaret stands approximately 89 meters high. The call to prayer being recited from these minarets five times a day creates a spiritual atmosphere that envelops all of Makkah. The minarets were added at different points in history, each with its own distinct architectural style."
+  },
+  {
+    "id": 133,
+    "baslik": "The Number of People Performing Tawaf",
+    "icerik": "During Hajj season, approximately 1 to 1.5 million people perform Tawaf every day. The Tawaf area around the Kaaba spans multiple levels; the ground floor, first floor, and rooftop are all used for Tawaf. AI-assisted crowd analysis systems and cameras are used to manage this immense crowd."
+  },
+  {
+    "id": 134,
+    "baslik": "The Dimensions of the Kaaba",
+    "icerik": "The Kaaba is approximately 13.1 meters high and rectangular in shape. Its four sides measure approximately 11.28, 12.86, 11.52 and 13.31 meters respectively. Its door is about 2 meters above the ground and is decorated with gold-plated panels. The Kaaba is washed inside and out by special teams at the beginning of every Rajab."
+  },
+  {
+    "id": 135,
+    "baslik": "The Supplication Upon First Seeing the Kaaba",
+    "icerik": "It is narrated that the Prophet prayed upon first seeing the Kaaba. The supplication \"Allahumma anta's-salam wa minka's-salam, hayyina Rabbana bis-salam\" may be recited at such moments. Because of the belief that a supplication made at first sight is accepted, pilgrims make sincere wishes the moment they first see the Kaaba. This moment is one of the most emotional of the entire Hajj journey."
+  },
+  {
+    "id": 136,
+    "baslik": "The Opening Supplication of Tawaf",
+    "icerik": "At the start of Tawaf, facing the Black Stone, one says \"Bismillahi Allahu Akbar\" and makes the intention. There is no fixed supplication required throughout Tawaf; any prayer, remembrance, or Quranic recitation may be made. The Prophet mostly remained silent or engaged in remembrance during Tawaf. He said Tawaf is like prayer, commanding it be performed with reverence and respect."
+  },
+  {
+    "id": 137,
+    "baslik": "The Morning Supplication at Muzdalifah",
+    "icerik": "Facing the qiblah and praying at al-Mash'ar al-Haram in Muzdalifah at the break of dawn earns great reward. The Quran commands: \"And when you depart from Arafat, remember Allah at al-Mash'ar al-Haram.\" (Al-Baqarah, 198) The Prophet moved toward Mina here before sunrise; the supplication made in these first lights of morning is extremely virtuous."
+  },
+  {
+    "id": 138,
+    "baslik": "Remembering Hajar During Sa'i",
+    "icerik": "Remembering Hajar and reflecting on her trust in Allah deepens the worship of Sa'i. Hajar ran with complete submission to Allah, seeking help for her son, and her prayer was accepted. It is fitting to raise one's hands at Safa and Marwah and pray, \"O Lord, grant good sustenance to me and my descendants, and make us among the grateful.\" Allah never turns away the prayer of the helpless."
+  },
+  {
+    "id": 139,
+    "baslik": "The Takbirs of Tashriq",
+    "icerik": "From the dawn prayer on the 9th of Dhul-Hijjah until the afternoon prayer on the 13th, the takbir of Tashriq is recited after every obligatory prayer: \"Allahu akbar Allahu akbar, la ilaha illallahu wallahu akbar, Allahu akbar wa lillahi'l-hamd.\" These takbirs are a special expression of glorifying Allah during the days of Hajj. The Quran's command, \"remember Allah during the appointed days,\" refers to these takbirs. (Al-Baqarah, 203)"
+  },
+  {
+    "id": 140,
+    "baslik": "Hajj and Repentance",
+    "icerik": "Hajj is a comprehensive process of spiritual purification. The Prophet said: \"Whoever performs Hajj and abstains from evil will return as the day his mother bore him.\" Hajj aims for a sincere repentance that renounces past sins, resolves to turn back to Allah, and opens a new chapter. For this reason, returning from Hajj is an opportunity for pilgrims to start life anew."
+  },
+  {
+    "id": 141,
+    "baslik": "Hajj and Trust in Allah (Tawakkul)",
+    "icerik": "The trust in Allah embodied in Hajar's act of Sa'i is one of the fundamental pillars of the spirit of Hajj. The pilgrim sets out trusting Allah amid the unknown; amid crowds, fatigue and heat, he relies on Him alone. Tawakkul means making effort while leaving the outcome to Allah. Hajj teaches this balance most beautifully."
+  },
+  {
+    "id": 142,
+    "baslik": "Hajj and Sincerity (Ikhlas)",
+    "icerik": "Ikhlas means performing a deed solely for Allah's pleasure. A pilgrim should set out not for show or social prestige, but only to answer Allah's call. The Prophet said: \"Deeds are judged by intentions.\" Worship performed without sincerity is rendered empty. Hajj is a spiritual journey that continually prompts self-examination of intention and renews sincerity."
+  },
+  {
+    "id": 143,
+    "baslik": "Hajj and Gratitude",
+    "icerik": "Being able to go on Hajj is a great blessing. The proportion of Muslims in the world who have the means to perform Hajj is quite small. A pilgrim's gratitude for this blessing is completed not only through prayer, but through becoming a better Muslim upon return, praying on time, giving zakat, and being of benefit to others. Gratitude is the surest way to sustain a blessing."
+  },
+  {
+    "id": 144,
+    "baslik": "Hajj and Awareness of Death",
+    "icerik": "The whiteness of ihram recalls the burial shroud. The gathering of millions evokes the Day of Judgment. Supplicating at Arafat is a profound moment that evokes the day of reckoning. The Prophet said: \"Remember death often; it wipes away sins and lessens attachment to this world.\" Hajj vividly brings death and the Hereafter to life for the pilgrim; this awareness is the key to transformation."
+  },
+  {
+    "id": 145,
+    "baslik": "The Brotherhood of Hajj",
+    "icerik": "Hajj is a unique gathering of brotherhood that brings together Muslims from every corner of the world. People of different languages, colors and cultures gather in the same attire for the same Allah. Even if the language of the pilgrim beside you cannot be understood, the excitement and tears of the same worship are shared. Hajj is the most powerful living experience that nurtures the consciousness of the ummah."
+  },
+  {
+    "id": 146,
+    "baslik": "The Pillars of Hajj",
+    "icerik": "Hajj has four pillars: entering ihram (with intention), the standing at Arafat, the Tawaf al-Ifadah, and Sa'i. If any of these pillars is not fulfilled, the Hajj is not valid; it cannot be compensated for with a sacrifice or any other expiation. Performing the pillars at the correct time and in the proper manner is the foundation of a valid Hajj."
+  },
+  {
+    "id": 147,
+    "baslik": "The Obligatory (Wajib) Acts of Hajj",
+    "icerik": "The wajib acts of Hajj include: entering ihram at the miqat boundary, spending the night at Muzdalifah, stoning the devil, spending the nights at Mina, shaving or trimming the hair, and performing the Farewell Tawaf. If a wajib is neglected, the Hajj is still considered valid, but a Dam sacrifice must be offered. The wajib acts are the completing elements of Hajj."
+  },
+  {
+    "id": 148,
+    "baslik": "What Is Muhsar?",
+    "icerik": "A Muhsar is a person who, after entering ihram, is unable to complete their Hajj due to illness, war, or another obstacle. A Muhsar may exit ihram by offering a sacrifice; if they cannot go on Hajj that year, they must make it up the following year. The Quran states: \"And if you are prevented, then [offer] what can be obtained with ease of sacrificial animals.\" (Al-Baqarah, 196)"
+  },
+  {
+    "id": 149,
+    "baslik": "What Is Fidyah?",
+    "icerik": "Fidyah is the expiation owed when one of the ihram prohibitions is violated. One of three options is carried out: fasting (three days), giving charity (feeding six poor people), or offering a sacrifice. The Quran explicitly states these three options. (Al-Baqarah, 196) Which violation requires which fidyah may vary according to the schools of Islamic law."
+  },
+  {
+    "id": 150,
+    "baslik": "The Difference Between Hajj and Umrah",
+    "icerik": "Umrah consists of performing Tawaf around the Kaaba, Sa'i, and shaving/trimming the hair, and may be performed at any time of the year. Hajj, on the other hand, is an obligatory act of worship that includes additional rites, most notably the standing at Arafat, performed on specific days of Dhul-Hijjah. Umrah is recommended (mustahab), while Hajj is obligatory once in a lifetime. In Tamattu' Hajj, both are performed together."
+  }
+]

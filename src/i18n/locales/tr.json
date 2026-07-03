@@ -1,12 +1,18 @@
 {
   "common": {
     "appTitle": "Hac İbadeti",
-    "selectLanguage": "Dil"
+    "selectLanguage": "Dil",
+    "close": "Kapat"
   },
   "languages": {
     "tr": "Türkçe",
     "en": "English",
-    "ar": "العربية"
+    "ar": "العربية",
+    "ur": "اردو",
+    "id": "Bahasa Indonesia",
+    "bn": "বাংলা",
+    "fr": "Français",
+    "fa": "فارسی"
   },
   "home": {
     "bismillah": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم",

@@ -13,11 +13,18 @@ import {
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useAppLanguage } from '../src/context/LanguageContext';
+import type { AppLanguage } from '../src/i18n/config';
 import bilgiKosesiItems from '../src/data/bilgiKosesiItems.json';
 import bilgiKosesiItemsEn from '../src/data/bilgiKosesiItems.en.json';
 import bilgiKosesiItemsAr from '../src/data/bilgiKosesiItems.ar.json';
+import bilgiKosesiItemsUr from '../src/data/bilgiKosesiItems.ur.json';
+import bilgiKosesiItemsId from '../src/data/bilgiKosesiItems.id.json';
+import bilgiKosesiItemsBn from '../src/data/bilgiKosesiItems.bn.json';
+import bilgiKosesiItemsFr from '../src/data/bilgiKosesiItems.fr.json';
+import bilgiKosesiItemsFa from '../src/data/bilgiKosesiItems.fa.json';
 import { kategoriBaslikRengi } from '../src/lib/bilgiKosesiKategoriColors';
 import { kategoriEtiketCevir } from '../src/lib/bilgiKosesiKategoriCeviri';
+import { pickLang, isLanguageRtl } from '../src/lib/multilingual';
 
 const GOLD = '#C9A84C';
 const OVERLAY = 'rgba(0,0,0,0.38)';
@@ -27,41 +34,46 @@ type BilgiKosesiItem = {
   kategori: string;
   baslik: string;
   icerik: string;
-  baslik_en?: string;
-  icerik_en?: string;
-  baslik_ar?: string;
-  icerik_ar?: string;
+  [key: `baslik_${string}`]: string | undefined;
+  [key: `icerik_${string}`]: string | undefined;
 };
 
 type Ceviri = { id: number; baslik: string; icerik: string };
 
-function cevirilerleBirlestir(base: BilgiKosesiItem[], en: Ceviri[], ar: Ceviri[]): BilgiKosesiItem[] {
-  const enById = new Map(en.map((c) => [c.id, c]));
-  const arById = new Map(ar.map((c) => [c.id, c]));
+const CEVIRI_DOSYALARI: Partial<Record<Exclude<AppLanguage, 'tr'>, Ceviri[]>> = {
+  en: bilgiKosesiItemsEn as Ceviri[],
+  ar: bilgiKosesiItemsAr as Ceviri[],
+  ur: bilgiKosesiItemsUr as Ceviri[],
+  id: bilgiKosesiItemsId as Ceviri[],
+  bn: bilgiKosesiItemsBn as Ceviri[],
+  fr: bilgiKosesiItemsFr as Ceviri[],
+  fa: bilgiKosesiItemsFa as Ceviri[],
+};
+
+function cevirilerleBirlestir(base: BilgiKosesiItem[]): BilgiKosesiItem[] {
+  const haritalar = Object.entries(CEVIRI_DOSYALARI).map(
+    ([lang, ceviriler]) => [lang, new Map(ceviriler!.map((c) => [c.id, c]))] as const,
+  );
   return base.map((item) => {
-    const enCeviri = enById.get(item.id);
-    const arCeviri = arById.get(item.id);
-    return {
-      ...item,
-      baslik_en: enCeviri?.baslik,
-      icerik_en: enCeviri?.icerik,
-      baslik_ar: arCeviri?.baslik,
-      icerik_ar: arCeviri?.icerik,
-    };
+    const ekler: BilgiKosesiItem = { ...item };
+    for (const [lang, harita] of haritalar) {
+      const ceviri = harita.get(item.id);
+      if (ceviri) {
+        ekler[`baslik_${lang}`] = ceviri.baslik;
+        ekler[`icerik_${lang}`] = ceviri.icerik;
+      }
+    }
+    return ekler;
   });
 }
 
-const DATA = cevirilerleBirlestir(
-  bilgiKosesiItems as BilgiKosesiItem[],
-  bilgiKosesiItemsEn as Ceviri[],
-  bilgiKosesiItemsAr as Ceviri[],
-);
+const DATA = cevirilerleBirlestir(bilgiKosesiItems as unknown as BilgiKosesiItem[]);
 
-function BilgiKart({ item, lang }: { item: BilgiKosesiItem; lang: string }) {
+function BilgiKart({ item, lang }: { item: BilgiKosesiItem; lang: AppLanguage }) {
   const baslikRengi = kategoriBaslikRengi(item.kategori);
-  const isRtl = lang === 'ar';
-  const baslik = lang === 'en' ? item.baslik_en ?? item.baslik : lang === 'ar' ? item.baslik_ar ?? item.baslik : item.baslik;
-  const icerik = lang === 'en' ? item.icerik_en ?? item.icerik : lang === 'ar' ? item.icerik_ar ?? item.icerik : item.icerik;
+  const isRtl = isLanguageRtl(lang);
+  const baslik = pickLang(item, 'baslik', lang);
+  const icerik = pickLang(item, 'icerik', lang);
   return (
     <View style={styles.kart} accessibilityRole="text">
       <View style={[styles.kartSolSerit, { backgroundColor: baslikRengi }]} />

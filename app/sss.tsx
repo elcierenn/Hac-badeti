@@ -6,7 +6,9 @@ import { FlatList, Pressable, ScrollView, StyleSheet, Text, View } from 'react-n
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useAppLanguage } from '../src/context/LanguageContext';
+import type { AppLanguage } from '../src/i18n/config';
 import sssList from '../src/data/sssList.json';
+import { pickLang, isLanguageRtl } from '../src/lib/multilingual';
 
 const BG = '#ECE6DC';
 const GOLD = '#C9A84C';
@@ -17,21 +19,19 @@ type SSSItem = {
   kategori: string;
   soru: string;
   cevap: string;
-  soru_en: string;
-  cevap_en: string;
-  soru_ar: string;
-  cevap_ar: string;
+  [key: `soru_${string}`]: string | undefined;
+  [key: `cevap_${string}`]: string | undefined;
 };
 
 type KategoriKey = 'all' | 'ihram' | 'tavaf' | 'say' | 'pratik';
 const KATEGORILER: KategoriKey[] = ['all', 'ihram', 'tavaf', 'say', 'pratik'];
-const DATA = sssList as SSSItem[];
+const DATA = sssList as unknown as SSSItem[];
 
-function AkorItem({ item, lang }: { item: SSSItem; lang: string }) {
+function AkorItem({ item, lang }: { item: SSSItem; lang: AppLanguage }) {
   const [open, setOpen] = useState(false);
-  const soru = lang === 'en' ? item.soru_en : lang === 'ar' ? item.soru_ar : item.soru;
-  const cevap = lang === 'en' ? item.cevap_en : lang === 'ar' ? item.cevap_ar : item.cevap;
-  const isRtl = lang === 'ar';
+  const soru = pickLang(item, 'soru', lang);
+  const cevap = pickLang(item, 'cevap', lang);
+  const isRtl = isLanguageRtl(lang);
 
   return (
     <Pressable

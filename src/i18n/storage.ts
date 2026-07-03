@@ -1,11 +1,11 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-import type { AppLanguage } from './config';
+import { APP_LANGUAGES, type AppLanguage } from './config';
 
 const KEY = 'language';
 
 function isAppLanguage(v: string | undefined): v is AppLanguage {
-  return v === 'tr' || v === 'en' || v === 'ar';
+  return !!v && (APP_LANGUAGES as string[]).includes(v);
 }
 
 export async function getStoredLanguage(): Promise<AppLanguage | null> {

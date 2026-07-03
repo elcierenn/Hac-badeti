@@ -1,12 +1,18 @@
 {
   "common": {
     "appTitle": "عبادة الحج",
-    "selectLanguage": "اللغة"
+    "selectLanguage": "اللغة",
+    "close": "إغلاق"
   },
   "languages": {
     "tr": "Türkçe",
     "en": "English",
-    "ar": "العربية"
+    "ar": "العربية",
+    "ur": "اردو",
+    "id": "Bahasa Indonesia",
+    "bn": "বাংলা",
+    "fr": "Français",
+    "fa": "فارسی"
   },
   "home": {
     "bismillah": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم",
