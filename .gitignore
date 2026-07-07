@@ -35,6 +35,11 @@ yarn-error.*
 
 # nested copy / local clone
 Hac-badeti/
+yenihacibadeti/
+
+# IDE / non-app files not needed in native builds
+.idea/
+*.pptx
 
 # typescript
 *.tsbuildinfo
