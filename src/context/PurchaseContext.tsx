@@ -8,18 +8,29 @@ import {
   useState,
   type ReactNode,
 } from 'react';
-import { finishTransaction, useIAP, type Product, type Purchase } from 'react-native-iap';
+import {
+  finishTransaction,
+  getAvailablePurchases as queryAvailablePurchases,
+  isUserCancelledError,
+  useIAP,
+  type Product,
+  type Purchase,
+} from 'react-native-iap';
 
 import { AD_REMOVAL_PRODUCT_ID } from '../iap/products';
 
 const STORAGE_KEY = '@hac_ibadeti_ad_free';
 
+export type RestoreResult = 'restored' | 'not_found' | 'error';
+
 type Ctx = {
   isAdFree: boolean;
   adRemovalProduct: Product | null;
   purchasing: boolean;
+  purchaseError: string | null;
+  clearPurchaseError: () => void;
   purchaseAdRemoval: () => Promise<void>;
-  restorePurchases: () => Promise<boolean>;
+  restorePurchases: () => Promise<RestoreResult>;
 };
 
 const PurchaseContext = createContext<Ctx | null>(null);
@@ -31,6 +42,9 @@ function ownsAdRemoval(purchases: Purchase[]): boolean {
 export function PurchaseProvider({ children }: { children: ReactNode }) {
   const [isAdFree, setIsAdFree] = useState(false);
   const [purchasing, setPurchasing] = useState(false);
+  const [purchaseError, setPurchaseError] = useState<string | null>(null);
+
+  const clearPurchaseError = useCallback(() => setPurchaseError(null), []);
 
   const persistAdFree = useCallback((value: boolean) => {
     setIsAdFree(value);
@@ -60,8 +74,11 @@ export function PurchaseProvider({ children }: { children: ReactNode }) {
       }
       setPurchasing(false);
     },
-    onPurchaseError: () => {
+    onPurchaseError: (error) => {
       setPurchasing(false);
+      if (!isUserCancelledError(error)) {
+        setPurchaseError(error.message || 'purchase_failed');
+      }
     },
   });
 
@@ -79,6 +96,7 @@ export function PurchaseProvider({ children }: { children: ReactNode }) {
 
   const purchaseAdRemoval = useCallback(async () => {
     setPurchasing(true);
+    setPurchaseError(null);
     try {
       await requestPurchase({
         request: {
@@ -87,19 +105,28 @@ export function PurchaseProvider({ children }: { children: ReactNode }) {
         },
         type: 'in-app',
       });
-    } catch {
+    } catch (error) {
       setPurchasing(false);
+      if (!isUserCancelledError(error)) {
+        setPurchaseError(error instanceof Error ? error.message : 'purchase_failed');
+      }
     }
   }, [requestPurchase]);
 
-  const restorePurchases = useCallback(async () => {
+  const restorePurchases = useCallback(async (): Promise<RestoreResult> => {
     try {
-      await getAvailablePurchases();
-      return true;
+      const purchases = await queryAvailablePurchases();
+      // Keep the useIAP hook's own state (availablePurchases) in sync too.
+      getAvailablePurchases().catch(() => {});
+      if (ownsAdRemoval(purchases)) {
+        persistAdFree(true);
+        return 'restored';
+      }
+      return 'not_found';
     } catch {
-      return false;
+      return 'error';
     }
-  }, [getAvailablePurchases]);
+  }, [getAvailablePurchases, persistAdFree]);
 
   const adRemovalProduct = useMemo(
     () => products.find((p) => p.id === AD_REMOVAL_PRODUCT_ID) ?? null,
@@ -107,8 +134,24 @@ export function PurchaseProvider({ children }: { children: ReactNode }) {
   );
 
   const value = useMemo(
-    () => ({ isAdFree, adRemovalProduct, purchasing, purchaseAdRemoval, restorePurchases }),
-    [isAdFree, adRemovalProduct, purchasing, purchaseAdRemoval, restorePurchases],
+    () => ({
+      isAdFree,
+      adRemovalProduct,
+      purchasing,
+      purchaseError,
+      clearPurchaseError,
+      purchaseAdRemoval,
+      restorePurchases,
+    }),
+    [
+      isAdFree,
+      adRemovalProduct,
+      purchasing,
+      purchaseError,
+      clearPurchaseError,
+      purchaseAdRemoval,
+      restorePurchases,
+    ],
   );
 
   return <PurchaseContext.Provider value={value}>{children}</PurchaseContext.Provider>;

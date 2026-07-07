@@ -1,7 +1,8 @@
 import { useRouter } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { useAppLanguage } from '../src/context/LanguageContext';
@@ -22,9 +23,43 @@ export default function ReklamKaldirScreen() {
   const { t } = useTranslation();
   const router = useRouter();
   const { isRtl } = useAppLanguage();
-  const { isAdFree, adRemovalProduct, purchasing, purchaseAdRemoval, restorePurchases } = usePurchase();
+  const {
+    isAdFree,
+    adRemovalProduct,
+    purchasing,
+    purchaseError,
+    clearPurchaseError,
+    purchaseAdRemoval,
+    restorePurchases,
+  } = usePurchase();
+  const [restoring, setRestoring] = useState(false);
 
   const fiyat = adRemovalProduct?.displayPrice ?? '$2.99';
+
+  useEffect(() => {
+    if (!purchaseError) return;
+    // Clear immediately: the alert text is static (doesn't depend on the error
+    // content), and Android can dismiss the alert (back button / tap outside)
+    // without firing the button's onPress, which would otherwise leave
+    // purchaseError stuck set and re-show this alert on the next mount.
+    clearPurchaseError();
+    Alert.alert(t('reklamKaldir.alerts.purchaseErrorTitle'), t('reklamKaldir.alerts.purchaseErrorMsg'), [
+      { text: t('reklamKaldir.alerts.ok') },
+    ]);
+  }, [purchaseError, clearPurchaseError, t]);
+
+  const handleRestore = async () => {
+    setRestoring(true);
+    const result = await restorePurchases();
+    setRestoring(false);
+    if (result === 'restored') {
+      Alert.alert(t('reklamKaldir.alerts.restoreSuccessTitle'), t('reklamKaldir.alerts.restoreSuccessMsg'));
+    } else if (result === 'not_found') {
+      Alert.alert(t('reklamKaldir.alerts.restoreNotFoundTitle'), t('reklamKaldir.alerts.restoreNotFoundMsg'));
+    } else {
+      Alert.alert(t('reklamKaldir.alerts.restoreErrorTitle'), t('reklamKaldir.alerts.restoreErrorMsg'));
+    }
+  };
 
   return (
     <View style={styles.root}>
@@ -87,11 +122,16 @@ export default function ReklamKaldirScreen() {
               </Pressable>
 
               <Pressable
-                onPress={() => void restorePurchases()}
-                style={({ pressed }) => [styles.restoreBtn, pressed && { opacity: 0.7 }]}
+                onPress={() => void handleRestore()}
+                disabled={restoring}
+                style={({ pressed }) => [styles.restoreBtn, pressed && { opacity: 0.7 }, restoring && { opacity: 0.6 }]}
                 accessibilityRole="button"
               >
-                <Text style={styles.restoreBtnText}>{t('reklamKaldir.restoreCta')}</Text>
+                {restoring ? (
+                  <ActivityIndicator color={GOLD} />
+                ) : (
+                  <Text style={styles.restoreBtnText}>{t('reklamKaldir.restoreCta')}</Text>
+                )}
               </Pressable>
             </>
           )}

@@ -995,7 +995,18 @@
     "buyCta": "Remove ads for {{price}}",
     "restoreCta": "Restore purchases",
     "alreadyOwned": "Ads are already removed on this device. Thank you! 🤲",
-    "note": "Purchases are processed securely through your App Store / Google Play account."
+    "note": "Purchases are processed securely through your App Store / Google Play account.",
+    "alerts": {
+      "ok": "OK",
+      "purchaseErrorTitle": "Purchase Failed",
+      "purchaseErrorMsg": "The purchase could not be completed. Please try again.",
+      "restoreSuccessTitle": "Restore Successful",
+      "restoreSuccessMsg": "Ad-free access has been enabled on this device. Thank you! 🤲",
+      "restoreNotFoundTitle": "No Purchase Found",
+      "restoreNotFoundMsg": "No 'Remove Ads' purchase was found associated with this account.",
+      "restoreErrorTitle": "Restore Failed",
+      "restoreErrorMsg": "Something went wrong while checking your purchases. Please check your internet connection and try again."
+    }
   },
   "araclar": {
     "title": "Tools & Guide",

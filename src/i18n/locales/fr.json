@@ -995,7 +995,18 @@
     "buyCta": "Supprimer les publicités pour {{price}}",
     "restoreCta": "Restaurer mes achats",
     "alreadyOwned": "Les publicités ont déjà été supprimées sur cet appareil. Merci ! 🤲",
-    "note": "L'achat est effectué en toute sécurité via votre compte App Store / Google Play."
+    "note": "L'achat est effectué en toute sécurité via votre compte App Store / Google Play.",
+    "alerts": {
+      "ok": "OK",
+      "purchaseErrorTitle": "Échec de l'achat",
+      "purchaseErrorMsg": "L'achat n'a pas pu être finalisé. Veuillez réessayer.",
+      "restoreSuccessTitle": "Restauration réussie",
+      "restoreSuccessMsg": "L'utilisation sans publicité a été activée sur cet appareil. Merci ! 🤲",
+      "restoreNotFoundTitle": "Aucun achat trouvé",
+      "restoreNotFoundMsg": "Aucun achat « Supprimer les publicités » associé à ce compte n'a été trouvé.",
+      "restoreErrorTitle": "Échec de la restauration",
+      "restoreErrorMsg": "Une erreur s'est produite lors de la vérification de vos achats. Vérifiez votre connexion internet et réessayez."
+    }
   },
   "araclar": {
     "title": "Outils & Guide",

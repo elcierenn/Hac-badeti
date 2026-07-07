@@ -995,7 +995,18 @@
     "buyCta": "Hapus iklan dengan {{price}}",
     "restoreCta": "Pulihkan pembelian",
     "alreadyOwned": "Iklan sudah dihapus di perangkat ini. Terima kasih! 🤲",
-    "note": "Pembelian dilakukan dengan aman melalui akun App Store / Google Play Anda."
+    "note": "Pembelian dilakukan dengan aman melalui akun App Store / Google Play Anda.",
+    "alerts": {
+      "ok": "OK",
+      "purchaseErrorTitle": "Pembelian Gagal",
+      "purchaseErrorMsg": "Pembelian tidak dapat diselesaikan. Silakan coba lagi.",
+      "restoreSuccessTitle": "Pemulihan Berhasil",
+      "restoreSuccessMsg": "Penggunaan bebas iklan telah diaktifkan di perangkat ini. Terima kasih! 🤲",
+      "restoreNotFoundTitle": "Pembelian Tidak Ditemukan",
+      "restoreNotFoundMsg": "Tidak ditemukan pembelian 'Hapus Iklan' yang terkait dengan akun ini.",
+      "restoreErrorTitle": "Pemulihan Gagal",
+      "restoreErrorMsg": "Terjadi kesalahan saat memeriksa pembelian Anda. Periksa koneksi internet Anda dan coba lagi."
+    }
   },
   "araclar": {
     "title": "Alat & Panduan",

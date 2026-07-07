@@ -995,7 +995,18 @@
     "buyCta": "{{price}} karşılığında reklamları kaldır",
     "restoreCta": "Satın alımları geri yükle",
     "alreadyOwned": "Reklamlar bu cihazda zaten kaldırıldı. Teşekkürler! 🤲",
-    "note": "Satın alma işlemi App Store / Google Play hesabınız üzerinden güvenle gerçekleştirilir."
+    "note": "Satın alma işlemi App Store / Google Play hesabınız üzerinden güvenle gerçekleştirilir.",
+    "alerts": {
+      "ok": "Tamam",
+      "purchaseErrorTitle": "Satın Alma Başarısız",
+      "purchaseErrorMsg": "Satın alma işlemi tamamlanamadı. Lütfen tekrar deneyin.",
+      "restoreSuccessTitle": "Geri Yükleme Başarılı",
+      "restoreSuccessMsg": "Reklamsız kullanım bu cihazda etkinleştirildi. Teşekkürler! 🤲",
+      "restoreNotFoundTitle": "Satın Alma Bulunamadı",
+      "restoreNotFoundMsg": "Bu hesapla ilişkili bir 'Reklamları Kaldır' satın alımı bulunamadı.",
+      "restoreErrorTitle": "Geri Yükleme Başarısız",
+      "restoreErrorMsg": "Satın alımlar kontrol edilirken bir sorun oluştu. Lütfen internet bağlantınızı kontrol edip tekrar deneyin."
+    }
   },
   "araclar": {
     "title": "Araçlar & Rehber",
