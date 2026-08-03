@@ -22,11 +22,6 @@
     "imageDemoCaption": "Home cover image (local asset, expo-image)",
     "startCta": "Start Hajj →"
   },
-  "gorevler": {
-    "title": "Tasks",
-    "placeholder": "This screen will be filled in soon.",
-    "back": "← Back"
-  },
   "anaGorev": {
     "screenTitle": "Main task",
     "missionHeading": "Entering Ihram",

@@ -22,11 +22,6 @@
     "imageDemoCaption": "Ana ekran görseli (yerel dosya, expo-image)",
     "startCta": "Hacca Başla →"
   },
-  "gorevler": {
-    "title": "Görevler",
-    "placeholder": "Bu ekran yakında doldurulacak.",
-    "back": "← Geri"
-  },
   "anaGorev": {
     "screenTitle": "Ana Görev",
     "missionHeading": "İhrama Giriş",

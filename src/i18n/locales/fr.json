@@ -22,11 +22,6 @@
     "imageDemoCaption": "Image de l'écran d'accueil (fichier local, expo-image)",
     "startCta": "Commencer le Hajj →"
   },
-  "gorevler": {
-    "title": "Étapes",
-    "placeholder": "Cet écran sera bientôt complété.",
-    "back": "← Retour"
-  },
   "anaGorev": {
     "screenTitle": "Étape Principale",
     "missionHeading": "Entrée en Ihram",

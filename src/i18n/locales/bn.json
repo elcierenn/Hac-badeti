@@ -22,11 +22,6 @@
     "imageDemoCaption": "হোম স্ক্রিন ছবি (স্থানীয় ফাইল, expo-image)",
     "startCta": "হজ শুরু করুন →"
   },
-  "gorevler": {
-    "title": "কার্যাবলি",
-    "placeholder": "এই স্ক্রিন শীঘ্রই পূর্ণ করা হবে।",
-    "back": "← পেছনে"
-  },
   "anaGorev": {
     "screenTitle": "প্রধান কার্য",
     "missionHeading": "ইহরাম বাঁধা",

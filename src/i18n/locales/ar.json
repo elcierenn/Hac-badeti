@@ -22,11 +22,6 @@
     "imageDemoCaption": "صورة الشاشة الرئيسية (ملف محلي، expo-image)",
     "startCta": "ابدأ الحج →"
   },
-  "gorevler": {
-    "title": "المهام",
-    "placeholder": "سيتم إكمال هذه الشاشة قريباً.",
-    "back": "← رجوع"
-  },
   "anaGorev": {
     "screenTitle": "المهمة الرئيسية",
     "missionHeading": "دخول الإحرام",

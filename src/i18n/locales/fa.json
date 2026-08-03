@@ -22,11 +22,6 @@
     "imageDemoCaption": "تصویر صفحه اصلی (فایل محلی، expo-image)",
     "startCta": "شروع حج ←"
   },
-  "gorevler": {
-    "title": "وظایف",
-    "placeholder": "این صفحه به‌زودی تکمیل خواهد شد.",
-    "back": "← بازگشت"
-  },
   "anaGorev": {
     "screenTitle": "وظیفه اصلی",
     "missionHeading": "ورود به احرام",
