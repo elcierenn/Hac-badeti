@@ -3,6 +3,7 @@ import { AdEventType, InterstitialAd } from 'react-native-google-mobile-ads';
 
 import { usePurchase } from '../context/PurchaseContext';
 import { INTERSTITIAL_AD_UNIT_ID } from './adUnits';
+import { useCanRequestAds } from './consent';
 
 /** Show an interstitial at most this often, to keep the app from feeling ad-heavy. */
 const SHOW_EVERY_N_CALLS = 3;
@@ -22,9 +23,12 @@ export function useInterstitialAd() {
   const [loaded, setLoaded] = useState(false);
   const callCount = useRef(0);
   const { isAdFree } = usePurchase();
+  // No pre-loading before UMP consent is settled — that would already be an
+  // ad request.
+  const canRequestAds = useCanRequestAds();
 
   useEffect(() => {
-    if (isAdFree) {
+    if (isAdFree || !canRequestAds) {
       return;
     }
     let unsubscribers: Array<() => void> = [];
@@ -49,10 +53,10 @@ export function useInterstitialAd() {
     attach(loadInterstitial());
 
     return () => unsubscribers.forEach((unsub) => unsub());
-  }, [isAdFree]);
+  }, [isAdFree, canRequestAds]);
 
   return useCallback(() => {
-    if (isAdFree) {
+    if (isAdFree || !canRequestAds) {
       return;
     }
     callCount.current += 1;
@@ -62,5 +66,5 @@ export function useInterstitialAd() {
     if (loaded && adRef.current) {
       adRef.current.show();
     }
-  }, [isAdFree, loaded]);
+  }, [isAdFree, canRequestAds, loaded]);
 }

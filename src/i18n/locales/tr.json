@@ -1001,7 +1001,8 @@
       "restoreNotFoundMsg": "Bu hesapla ilişkili bir 'Reklamları Kaldır' satın alımı bulunamadı.",
       "restoreErrorTitle": "Geri Yükleme Başarısız",
       "restoreErrorMsg": "Satın alımlar kontrol edilirken bir sorun oluştu. Lütfen internet bağlantınızı kontrol edip tekrar deneyin."
-    }
+    },
+    "privacyOptionsCta": "Reklam gizlilik tercihlerini yönet"
   },
   "araclar": {
     "title": "Araçlar & Rehber",

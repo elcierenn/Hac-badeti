@@ -1001,7 +1001,8 @@
       "restoreNotFoundMsg": "Tidak ditemukan pembelian 'Hapus Iklan' yang terkait dengan akun ini.",
       "restoreErrorTitle": "Pemulihan Gagal",
       "restoreErrorMsg": "Terjadi kesalahan saat memeriksa pembelian Anda. Periksa koneksi internet Anda dan coba lagi."
-    }
+    },
+    "privacyOptionsCta": "Kelola setelan privasi iklan"
   },
   "araclar": {
     "title": "Alat & Panduan",

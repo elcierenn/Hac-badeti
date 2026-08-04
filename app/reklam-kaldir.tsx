@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { ActivityIndicator, Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { isPrivacyOptionsRequired, showAdsPrivacyOptions } from '../src/ads/consent';
 import { useAppLanguage } from '../src/context/LanguageContext';
 import { usePurchase } from '../src/context/PurchaseContext';
 
@@ -33,8 +34,21 @@ export default function ReklamKaldirScreen() {
     restorePurchases,
   } = usePurchase();
   const [restoring, setRestoring] = useState(false);
+  // Only EEA/UK users get a privacy options entry point; elsewhere UMP reports
+  // it as not required and the button stays hidden.
+  const [showPrivacyOptions, setShowPrivacyOptions] = useState(false);
 
   const fiyat = adRemovalProduct?.displayPrice ?? '$2.99';
+
+  useEffect(() => {
+    let active = true;
+    void isPrivacyOptionsRequired().then((required) => {
+      if (active) setShowPrivacyOptions(required);
+    });
+    return () => {
+      active = false;
+    };
+  }, []);
 
   useEffect(() => {
     if (!purchaseError) return;
@@ -136,6 +150,16 @@ export default function ReklamKaldirScreen() {
             </>
           )}
 
+          {showPrivacyOptions && (
+            <Pressable
+              onPress={() => void showAdsPrivacyOptions()}
+              style={({ pressed }) => [styles.privacyBtn, pressed && { opacity: 0.7 }]}
+              accessibilityRole="button"
+            >
+              <Text style={styles.privacyBtnText}>{t('reklamKaldir.privacyOptionsCta')}</Text>
+            </Pressable>
+          )}
+
           <Text style={[styles.note, isRtl && styles.rtlText]}>{t('reklamKaldir.note')}</Text>
         </ScrollView>
       </SafeAreaView>
@@ -203,6 +227,8 @@ const styles = StyleSheet.create({
   buyBtnText: { color: DARK_TEXT, fontSize: 17, fontWeight: '800' },
   restoreBtn: { paddingVertical: 8, marginBottom: 18 },
   restoreBtnText: { color: GOLD, fontSize: 14, fontWeight: '700' },
+  privacyBtn: { paddingVertical: 8, marginBottom: 14 },
+  privacyBtnText: { color: '#8a7a5c', fontSize: 13, fontWeight: '700', textAlign: 'center' },
   note: { color: '#9b8d75', fontSize: 12, textAlign: 'center', lineHeight: 18 },
   activeBanner: {
     width: '100%',

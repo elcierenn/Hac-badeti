@@ -3,6 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import { BannerAd, BannerAdSize } from 'react-native-google-mobile-ads';
 
 import { BANNER_AD_UNIT_ID } from '../ads/adUnits';
+import { useCanRequestAds } from '../ads/consent';
 import { usePurchase } from '../context/PurchaseContext';
 
 /**
@@ -12,8 +13,11 @@ import { usePurchase } from '../context/PurchaseContext';
 export function AdBanner() {
   const [failed, setFailed] = useState(false);
   const { isAdFree } = usePurchase();
+  // Renders nothing until UMP consent is settled, so no ad request goes out
+  // before the user has answered the consent form.
+  const canRequestAds = useCanRequestAds();
 
-  if (failed || isAdFree) {
+  if (failed || isAdFree || !canRequestAds) {
     return null;
   }
 

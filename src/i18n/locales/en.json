@@ -1001,7 +1001,8 @@
       "restoreNotFoundMsg": "No 'Remove Ads' purchase was found associated with this account.",
       "restoreErrorTitle": "Restore Failed",
       "restoreErrorMsg": "Something went wrong while checking your purchases. Please check your internet connection and try again."
-    }
+    },
+    "privacyOptionsCta": "Manage ad privacy settings"
   },
   "araclar": {
     "title": "Tools & Guide",

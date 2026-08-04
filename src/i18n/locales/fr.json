@@ -1001,7 +1001,8 @@
       "restoreNotFoundMsg": "Aucun achat « Supprimer les publicités » associé à ce compte n'a été trouvé.",
       "restoreErrorTitle": "Échec de la restauration",
       "restoreErrorMsg": "Une erreur s'est produite lors de la vérification de vos achats. Vérifiez votre connexion internet et réessayez."
-    }
+    },
+    "privacyOptionsCta": "Gérer les préférences de confidentialité des annonces"
   },
   "araclar": {
     "title": "Outils & Guide",
