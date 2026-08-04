@@ -12,7 +12,7 @@ export function ensureMobileAdsInitialized(): Promise<void> {
     initialization = mobileAds()
       .initialize()
       .then((adapterStatuses) => {
-        console.log('[MobileAds] initialized', adapterStatuses);
+        if (__DEV__) console.log('[MobileAds] initialized', adapterStatuses);
       })
       .catch((error) => {
         console.warn('[MobileAds] initialize failed', error);

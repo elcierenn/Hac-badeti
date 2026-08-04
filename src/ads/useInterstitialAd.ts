@@ -36,7 +36,7 @@ export function useInterstitialAd() {
     const attach = (ad: InterstitialAd) => {
       adRef.current = ad;
       const unsubLoaded = ad.addAdEventListener(AdEventType.LOADED, () => {
-        console.log('[Interstitial] loaded');
+        if (__DEV__) console.log('[Interstitial] loaded');
         setLoaded(true);
       });
       const unsubError = ad.addAdEventListener(AdEventType.ERROR, (error) => {

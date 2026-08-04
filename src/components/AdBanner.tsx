@@ -30,7 +30,9 @@ export function AdBanner() {
           console.warn('[AdBanner] failed to load', error);
           setFailed(true);
         }}
-        onAdLoaded={() => console.log('[AdBanner] loaded')}
+        onAdLoaded={() => {
+          if (__DEV__) console.log('[AdBanner] loaded');
+        }}
       />
     </View>
   );

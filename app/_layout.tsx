@@ -20,7 +20,7 @@ export default function RootLayout() {
 
       const canRequestAds = await gatherAdsConsent();
       if (!canRequestAds) {
-        console.log('[MobileAds] consent withheld, skipping initialization');
+        if (__DEV__) console.log('[MobileAds] consent withheld, skipping initialization');
         return;
       }
 
