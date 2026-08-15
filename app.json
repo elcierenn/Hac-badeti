@@ -52,7 +52,7 @@
       [
         "expo-tracking-transparency",
         {
-          "userTrackingPermission": "Bu izin, size daha uygun reklamlar gösterilmesine ve uygulamanın ücretsiz kalmasına yardımcı olur."
+          "userTrackingPermission": "This allows us to show you more relevant ads and keeps the app free to use."
         }
       ],
       "react-native-iap"
