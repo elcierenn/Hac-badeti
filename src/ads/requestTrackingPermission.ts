@@ -14,7 +14,16 @@ import {
 const ACTIVE_WAIT_TIMEOUT_MS = 10_000;
 
 /** Extra breathing room after `active` so the key window is fully presented. */
-const POST_ACTIVE_DELAY_MS = 700;
+const POST_ACTIVE_DELAY_MS = 1_200;
+
+/**
+ * When iOS decides the app is not ready to present the prompt it resolves the
+ * request without showing anything and leaves the status `undetermined` — no
+ * error, no denial. The first launch is the slowest one (bundle load, splash),
+ * so that is exactly when it happens. Retrying with a growing gap turns a
+ * "prompt appeared on the third launch" into "prompt appeared on the first".
+ */
+const RETRY_DELAYS_MS = [1_000, 2_000, 3_000, 4_000];
 
 function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -66,13 +75,30 @@ export async function ensureTrackingPermission(): Promise<void> {
   await waitUntilActive();
   await delay(POST_ACTIVE_DELAY_MS);
 
-  // The status can change while we wait (a prompt shown by an earlier launch
-  // path, or the user answering elsewhere), so re-check before asking.
-  const { status: currentStatus } = await getTrackingPermissionsAsync();
-  if (currentStatus !== 'undetermined') {
-    return;
-  }
+  for (let attempt = 0; ; attempt += 1) {
+    // The status can change between attempts (the user answering a prompt that
+    // did appear, or another launch path), so re-check before asking again.
+    const { status: currentStatus } = await getTrackingPermissionsAsync();
+    if (currentStatus !== 'undetermined') {
+      return;
+    }
 
-  const result = await requestTrackingPermissionsAsync();
-  if (__DEV__) console.log('[ATT] permission request result', result.status);
+    // Make sure the app did not slip into the background between attempts —
+    // asking there is the very thing that gets silently dropped.
+    await waitUntilActive();
+
+    const { status } = await requestTrackingPermissionsAsync();
+    if (__DEV__) console.log('[ATT] request attempt', attempt + 1, '->', status);
+
+    if (status !== 'undetermined') {
+      return;
+    }
+
+    if (attempt >= RETRY_DELAYS_MS.length) {
+      if (__DEV__) console.log('[ATT] prompt never presented, giving up');
+      return;
+    }
+
+    await delay(RETRY_DELAYS_MS[attempt]);
+  }
 }
